@@ -548,6 +548,9 @@ body > nav {
               body > nav > div.inner div.language ul li a:hover, body > nav > div.inner div.language ul li span:hover {
                 background: #d8f7ff; } }
 
+#homeheader {
+  background: #0062BD; }
+
 @media (min-width: 1110px) {
   body > .inner {
     width: 1110px;

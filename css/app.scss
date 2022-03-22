@@ -313,6 +313,9 @@ body > nav{
     }
   }
 }
+#homeheader{
+  background: #0062BD;
+}
 body > .inner  {
   @media (min-width: $siteWidth) {
     width: $siteWidth;
