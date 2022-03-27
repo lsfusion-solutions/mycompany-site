@@ -254,7 +254,7 @@ em {
   /* Non-prefixed version, currently
                supported by Chrome, Edge, Opera and Firefox */ }
 
-.btn-default, .btn, body > .inner h1 a, .btn-empty {
+.btn-default, .btn, .btn-empty {
   position: relative;
   text-decoration: none;
   transition: background-color .3s, border-color 0.3s, color 0.3s;
@@ -268,17 +268,17 @@ em {
   white-space: nowrap;
   display: inline-block; }
   @media (max-width: 479px) {
-    .btn-default, .btn, body > .inner h1 a, .btn-empty {
+    .btn-default, .btn, .btn-empty {
       padding: 10px 18px; } }
-  .btn-default:active, .btn:active, body > .inner h1 a:active, .btn-empty:active {
+  .btn-default:active, .btn:active, .btn-empty:active {
     top: 1px; }
 
-.btn, body > .inner h1 a {
+.btn {
   background: #26C4F7;
   color: #fff !important; }
-  .btn:hover, body > .inner h1 a:hover {
+  .btn:hover {
     background-color: #0295FF; }
-  .btn:active, body > .inner h1 a:active {
+  .btn:active {
     background-color: #0B85DE; }
 
 .btn-empty {
@@ -548,48 +548,105 @@ body > nav {
               body > nav > div.inner div.language ul li a:hover, body > nav > div.inner div.language ul li span:hover {
                 background: #d8f7ff; } }
 
-#homeheader {
+section#section-header {
   background: #0062BD; }
-
+  section#section-header > div.inner {
+    background: url(../imgs/header.svg) no-repeat right top;
+    padding: 100px 0 30px;
+    min-height: 416px; }
+    section#section-header > div.inner h1 {
+      max-width: 550px; }
+    section#section-header > div.inner p {
+      max-width: 550px;
+      color: #fff;
+      margin: 0 0 40px 0; }
+    section#section-header > div.inner nav:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section#section-header > div.inner nav a {
+      float: left; }
+section#section-sql {
+  background: #EFF6F8; }
+section#section-l {
+  background: #EFF6F8; }
+section#section-easy {
+  background: #EFF6F8; }
+section#section-footer {
+  background: #0062BD; }
 @media (min-width: 1110px) {
-  body > .inner {
+  section.inner {
     width: 1110px;
     margin: 0 auto;
     padding: 30px 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; } }
-body > .inner h1, body > .inner h2, body > .inner h3, body > .inner h4 {
+@media (min-width: 1110px) {
+  section > div.inner {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+section h1, section h2, section h3, section h4 {
   font-family: Poppins, Montserrat, "Open Sans"; }
-body > .inner h1 {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 500;
-  margin: 0 0 20px 0; }
-  body > .inner h1 em {
-    font-style: normal;
-    color: #26C4F7; }
-  @media (min-width: 768px) {
-    body > .inner h1 a {
-      float: right; } }
-body > .inner h2 {
+section h1 {
+  color: #fff;
+  font-size: 35px;
+  line-height: 42px;
+  margin: 0 0 20px 0;
+  font-weight: 600; }
+section h2 {
   font-weight: 500;
   font-size: 30px;
-  line-height: 45px;
-  margin: 0 0 21px 0; }
-body > .inner p {
-  font-size: 14px;
-  line-height: 19px; }
-body > .inner a {
+  line-height: 36px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: center; }
+  section h2 + p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+section p {
+  font-size: 16px;
+  line-height: 22px; }
+section a {
   color: #0E84BC;
   transition: color 0.3s, background 0.3s; }
-  body > .inner a:hover {
+  section a:hover {
     color: #26C4F7; }
-  body > .inner a:active {
+  section a:active {
     color: #0E84BC; }
 @media (max-width: 1109px) {
-  body > .inner {
+  section {
     padding: 30px 20px; } }
+
+ul.list3 {
+  list-style: none;
+  margin: 0 0 20px 0; }
+  ul.list3:after {
+    content: "";
+    display: table;
+    clear: both; }
+  ul.list3 li {
+    float: left;
+    width: 33.33%; }
+    ul.list3 li > div.inner {
+      border: 1px solid #F2F2F2;
+      border-radius: 4px;
+      padding: 30px 20px; }
+      ul.list3 li > div.inner h3 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400; }
+      ul.list3 li > div.inner p {
+        color: #848484;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 0; }
 
 body > footer {
   background: #181819; }
