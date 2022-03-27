@@ -568,12 +568,70 @@ section#section-header {
       float: left; }
 section#section-sql {
   background: #EFF6F8; }
-section#section-l {
+section#section-low {
   background: #EFF6F8; }
+section#section-progress {
+  background: #EFF6F8; }
+section#section-work > div.inner nav {
+  text-align: center;
+  margin: 0 0 30px 0; }
+section#section-work > div.inner div {
+  background: #26C4F7;
+  border-radius: 4px;
+  padding: 30px;
+  color: #fff; }
 section#section-easy {
-  background: #EFF6F8; }
+  background: #EFF6F8;
+  padding: 0 0 50px 0; }
+  section#section-easy nav {
+    text-align: center;
+    margin: 0 0 30px 0; }
+  section#section-easy:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section#section-easy ul {
+    float: left;
+    font-size: 16px;
+    line-height: 21px;
+    list-style: none;
+    max-width: 530px; }
+    section#section-easy ul li {
+      display: block;
+      margin: 0 0 50px 0;
+      padding: 0 0 0 40px; }
+      section#section-easy ul li:nth-child(1) {
+        background: url(../imgs/icons/easy1.svg) no-repeat 0 0; }
+      section#section-easy ul li:nth-child(2) {
+        background: url(../imgs/icons/easy2.svg) no-repeat 0 0; }
+      section#section-easy ul li:nth-child(3) {
+        background: url(../imgs/icons/easy3.svg) no-repeat 0 0; }
+  section#section-easy div.img {
+    float: right;
+    background: #F7FBFC;
+    padding: 20px;
+    border-radius: 4px; }
 section#section-footer {
-  background: #0062BD; }
+  background: #0062BD url(../imgs/points.svg) no-repeat 0 bottom; }
+  section#section-footer > div.inner {
+    background: url(../imgs/run.svg) no-repeat right bottom; }
+    section#section-footer > div.inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section#section-footer > div.inner > div {
+      float: left;
+      width: 700px; }
+      section#section-footer > div.inner > div h2 {
+        color: #fff;
+        text-align: left;
+        max-width: 700px; }
+      section#section-footer > div.inner > div p {
+        color: #fff;
+        text-align: left;
+        max-width: 700px; }
+    section#section-footer > div.inner > a {
+      float: right; }
 @media (min-width: 1110px) {
   section.inner {
     width: 1110px;
