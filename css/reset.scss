@@ -300,7 +300,7 @@ em{
 }
 .btn-empty{
   @extend .btn-default;
-
+  background: transparent;
   border: 1px solid #fff;
   color: #fff !important;;
   &:hover{

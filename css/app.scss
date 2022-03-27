@@ -322,6 +322,11 @@ section{
       min-height: 416px;
       h1{
         max-width: 550px;
+        color: #fff;
+        font-size: 35px;
+        line-height: 42px;
+        margin: 0 0 20px 0;
+        font-weight: 600;
       }
       p{
         max-width: 550px;
@@ -333,17 +338,110 @@ section{
         a{
           float: left;
           &:first-child{
-
-          }
-          &:last-child{
-
+            margin-right: 30px;
           }
         }
       }
     }
   }
-  &#section-sql{
+  &#section-functions{
+    & > div.inner{
+      h2{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 20px;
+      }
+      & > p{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 20px;
+      }
+      ul.list3{
+        li{
+          div.inner{
+            h3{
+              padding-left: 50px;
+            }
+          }
+          &:nth-child(1){
+            h3{
+              background: url(../imgs/icons/function1.svg) no-repeat 0 0;
+            }
+          }
+          &:nth-child(2){
+            h3{
+              background: url(../imgs/icons/function2.svg) no-repeat 0 0;
+            }
+          }
+          &:nth-child(3){
+            h3{
+              background: url(../imgs/icons/function3.svg) no-repeat 0 0;
+            }
+          }
+          &:nth-child(4){
+            h3{
+              background: url(../imgs/icons/function4.svg) no-repeat 0 0;
+            }
+          }
+          &:nth-child(5){
+            h3{
+              background: url(../imgs/icons/function5.svg) no-repeat 0 0;
+            }
+          }
+          &:nth-child(6){
+            h3{
+              background: url(../imgs/icons/function6.svg) no-repeat 0 0;
+            }
+          }
+          &:nth-child(7){
+            h3{
+              background: url(../imgs/icons/function7.svg) no-repeat 0 0;
+            }
+          }
+        }
+      }
+      nav{
+        @include clearfix;
+        p{
+          text-align: center;
+          margin: 0 0 10px 0;
+        }
+        a{
+          display: block;
+          background: #26C4F7;
+          transition: background 0.3s;
+          border-radius: 4px;
+          text-decoration: none;
+          line-height: 70px;
+          padding: 0 0 0 70px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          color: #fff;
+          width: 48.5%;
+          &:hover{
+            background-color: darken(#26C4F7, 10) !important;
+          }
+          span{
+            background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
+            display: block;
+          }
+          &:nth-of-type(1){
+            float: left;
+            background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%;
+          }
+          &:nth-of-type(2){
+            float: right;
+            background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%;
+          }
+        }
+      }
+    }
+  }
+  &#section-sql{//2nd block
     background: #EFF6F8;
+    & > div.inner{
+    }
   }
   &#section-low{
     background: #EFF6F8;
@@ -452,26 +550,10 @@ section{
   h1, h2, h3, h4{
     font-family: Poppins, Montserrat, "Open Sans";
   }
-  h1{
-    color: #fff;
-    font-size: 35px;
-    line-height: 42px;
-    margin: 0 0 20px 0;
-    font-weight: 600;
-  }
   h2{
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
-    max-width: 600px;
-    margin: 0 auto 20px;
-    text-align: center;
-    & + p{
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
   }
   p{
     font-size: 16px;
@@ -495,18 +577,28 @@ section{
 ul.list3{
   list-style: none;
   @include clearfix;
-  margin: 0 0 20px 0;
+  margin: 0 -15px 20px -15px;
+  display: flex;
+  flex-wrap: wrap;
+
   li{
     float: left;
     width: 33.33%;
+    flex: 0 0 33.33333%;
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
     & > div.inner{
       border: 1px solid #F2F2F2;
       border-radius: 4px;
-      padding: 30px 20px;
+      padding: 22px 20px;
       h3{
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
+        margin: 0 0 20px 0;
       }
       p{
         color: #848484;
