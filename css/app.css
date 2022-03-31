@@ -254,7 +254,7 @@ em {
   /* Non-prefixed version, currently
                supported by Chrome, Edge, Opera and Firefox */ }
 
-.btn-default, .btn, section#section-tasks > div.inner h2 a, .btn-empty, .btn-empty-invert {
+.btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner > div a, .btn-empty, .btn-invert, .btn-empty-invert {
   position: relative;
   text-decoration: none;
   transition: background-color .3s, border-color 0.3s, color 0.3s;
@@ -268,17 +268,17 @@ em {
   white-space: nowrap;
   display: inline-block; }
   @media (max-width: 479px) {
-    .btn-default, .btn, section#section-tasks > div.inner h2 a, .btn-empty, .btn-empty-invert {
+    .btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner > div a, .btn-empty, .btn-invert, .btn-empty-invert {
       padding: 10px 18px; } }
-  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, .btn-empty:active, .btn-empty-invert:active {
+  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner > div a:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active {
     top: 1px; }
 
-.btn, section#section-tasks > div.inner h2 a {
+.btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner > div a {
   background: #26C4F7;
   color: #fff !important; }
-  .btn:hover, section#section-tasks > div.inner h2 a:hover {
+  .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner > div a:hover {
     background-color: #0295FF; }
-  .btn:active, section#section-tasks > div.inner h2 a:active {
+  .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner > div a:active {
     background-color: #0B85DE; }
 
 .btn-empty {
@@ -289,6 +289,17 @@ em {
     background-color: #FFFFFF;
     color: #26C4F7 !important; }
   .btn-empty:active {
+    background-color: #F1F8FA;
+    color: #26C4F7; }
+
+.btn-invert, section#section-work > div.inner > div a {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff !important; }
+  .btn-invert:hover, section#section-work > div.inner > div a:hover {
+    background-color: #FFFFFF;
+    color: #26C4F7 !important; }
+  .btn-invert:active, section#section-work > div.inner > div a:active {
     background-color: #F1F8FA;
     color: #26C4F7; }
 
@@ -728,7 +739,8 @@ section#section-tasks > div.inner h2 {
   section#section-tasks > div.inner h2 a {
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    font-weight: 400; }
 section#section-tasks > div.inner ul.list2 li > div.inner {
   display: flex;
   flex-direction: row;
@@ -806,15 +818,46 @@ section#section-low {
   background: #EFF6F8; }
 section#section-work > div.inner h2 {
   text-align: center;
-  margin: 0 0; }
+  margin: 0 0 20px 0; }
 section#section-work > div.inner nav {
   text-align: center;
-  margin: 0 0 30px 0; }
-section#section-work > div.inner div {
+  margin: 0 0 10px 0; }
+section#section-work > div.inner ul.list2 li > div.inner {
+  background: #F7FBFC;
+  transition: background-color 0.3s;
+  background-repeat: no-repeat;
+  background-position: 20px 22px;
+  padding-left: 62px; }
+  section#section-work > div.inner ul.list2 li > div.inner:hover {
+    background-color: #d2e8ee; }
+section#section-work > div.inner ul.list2 li:nth-child(1) > div.inner {
+  background-image: url(../imgs/work/1.svg) !important; }
+section#section-work > div.inner ul.list2 li:nth-child(2) > div.inner {
+  background-image: url(../imgs/work/2.svg) !important; }
+section#section-work > div.inner ul.list2 li:nth-child(3) > div.inner {
+  background-image: url(../imgs/work/3.svg) !important; }
+section#section-work > div.inner ul.list2 li:nth-child(4) > div.inner {
+  background-image: url(../imgs/work/4.svg) !important; }
+section#section-work > div.inner ul.list2 li:nth-child(5) > div.inner {
+  background-image: url(../imgs/work/5.svg) !important; }
+section#section-work > div.inner ul.list2 li:nth-child(6) > div.inner {
+  background-image: url(../imgs/work/6.svg) !important; }
+section#section-work > div.inner ul.list2 li:nth-child(7) > div.inner {
+  background-image: url(../imgs/work/7.svg) !important; }
+section#section-work > div.inner > div {
   background: #26C4F7;
   border-radius: 4px;
-  padding: 30px;
-  color: #fff; }
+  padding: 30px 275px 30px 30px;
+  color: #fff;
+  position: relative; }
+  section#section-work > div.inner > div h3 {
+    margin: 0 0 10px 0; }
+  section#section-work > div.inner > div p {
+    color: #fff; }
+  section#section-work > div.inner > div a {
+    position: absolute;
+    right: 30px;
+    bottom: 30px; }
 section#section-easy {
   background: #EFF6F8;
   padding: 0 0 50px 0; }
