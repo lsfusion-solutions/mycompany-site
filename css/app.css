@@ -859,36 +859,43 @@ section#section-work > div.inner > div {
     right: 30px;
     bottom: 30px; }
 section#section-easy {
-  background: #EFF6F8;
-  padding: 0 0 50px 0; }
-  section#section-easy nav {
-    text-align: center;
-    margin: 0 0 30px 0; }
-  section#section-easy:after {
-    content: "";
-    display: table;
-    clear: both; }
-  section#section-easy ul {
-    float: left;
-    font-size: 16px;
-    line-height: 21px;
-    list-style: none;
-    max-width: 530px; }
-    section#section-easy ul li {
-      display: block;
-      margin: 0 0 50px 0;
-      padding: 0 0 0 40px; }
-      section#section-easy ul li:nth-child(1) {
-        background: url(../imgs/icons/easy1.svg) no-repeat 0 0; }
-      section#section-easy ul li:nth-child(2) {
-        background: url(../imgs/icons/easy2.svg) no-repeat 0 0; }
-      section#section-easy ul li:nth-child(3) {
-        background: url(../imgs/icons/easy3.svg) no-repeat 0 0; }
-  section#section-easy div.img {
-    float: right;
-    background: #F7FBFC;
-    padding: 20px;
-    border-radius: 4px; }
+  padding: 50px 0 0 0;
+  background: #EFF6F8; }
+  section#section-easy > div.inner {
+    padding: 0 0 50px 0; }
+    section#section-easy > div.inner h2 {
+      text-align: center;
+      margin: 0 0 20px 0; }
+    section#section-easy > div.inner nav {
+      text-align: center;
+      margin: 0 0 30px 0; }
+    section#section-easy > div.inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section#section-easy > div.inner ul {
+      float: left;
+      font-size: 16px;
+      line-height: 21px;
+      list-style: none;
+      max-width: 530px; }
+      section#section-easy > div.inner ul li {
+        display: block;
+        margin: 0 0 50px 0;
+        padding: 0 0 0 40px; }
+        section#section-easy > div.inner ul li:nth-child(1) {
+          background: url(../imgs/icons/easy1.svg) no-repeat 0 0; }
+        section#section-easy > div.inner ul li:nth-child(2) {
+          background: url(../imgs/icons/easy2.svg) no-repeat 0 0; }
+        section#section-easy > div.inner ul li:nth-child(3) {
+          background: url(../imgs/icons/easy3.svg) no-repeat 0 0; }
+    section#section-easy > div.inner div.img {
+      float: right;
+      background: #F7FBFC;
+      padding: 12px;
+      border-radius: 4px; }
+      section#section-easy > div.inner div.img img {
+        background: #fff; }
 section#section-footer {
   background: #0062BD url(../imgs/points.svg) no-repeat 0 bottom; }
   section#section-footer > div.inner {

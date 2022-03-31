@@ -750,39 +750,49 @@ section{
     }
   }
   &#section-easy{
+    padding: 50px 0 0 0;
     background: #EFF6F8;
-    nav{
-      text-align: center;
-      margin: 0 0 30px 0;
-    }
-    @include clearfix;
-    padding: 0 0 50px 0;
-    ul{
-      float: left;
-      font-size: 16px;
-      line-height: 21px;
-      list-style: none;
-      max-width: 530px;
-      li{
-        display: block;
-        margin: 0 0 50px 0;
-        padding: 0 0 0 40px;
-        &:nth-child(1){
-          background: url(../imgs/icons/easy1.svg) no-repeat 0 0;
-        }
-        &:nth-child(2){
-          background: url(../imgs/icons/easy2.svg) no-repeat 0 0;
-        }
-        &:nth-child(3){
-          background: url(../imgs/icons/easy3.svg) no-repeat 0 0;
+    & > div.inner {
+      h2{
+        text-align: center;
+        margin: 0 0 20px 0;
+      }
+      nav {
+        text-align: center;
+        margin: 0 0 30px 0;
+      }
+      @include clearfix;
+      padding: 0 0 50px 0;
+      ul {
+        float: left;
+        font-size: 16px;
+        line-height: 21px;
+        list-style: none;
+        max-width: 530px;
+        li {
+          display: block;
+          margin: 0 0 50px 0;
+          padding: 0 0 0 40px;
+          &:nth-child(1) {
+            background: url(../imgs/icons/easy1.svg) no-repeat 0 0;
+          }
+          &:nth-child(2) {
+            background: url(../imgs/icons/easy2.svg) no-repeat 0 0;
+          }
+          &:nth-child(3) {
+            background: url(../imgs/icons/easy3.svg) no-repeat 0 0;
+          }
         }
       }
-    }
-    div.img{
-      float: right;
-      background: #F7FBFC;
-      padding: 20px;
-      border-radius: 4px;
+      div.img {
+        float: right;
+        background: #F7FBFC;
+        padding: 12px;
+        border-radius: 4px;
+        img{
+          background: #fff;
+        }
+      }
     }
   }
   &#section-footer{
