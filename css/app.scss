@@ -557,6 +557,42 @@ section{
           @extend .btn-empty-invert;
         }
       }
+
+      ul.list2 {
+        li{
+          & > div.inner{
+            display: flex;
+            flex-direction: row;
+            & > div.img{
+              flex: 0 0 107px;
+              img {
+                max-width: 100%;
+                height: auto;
+              }
+            }
+            & > div.info{
+              padding: 0 0 0 20px;
+              strong{
+                display: block;
+                margin: 0 0 20px 0;
+                font-size: 16px;
+                line-height: 22px;
+              }
+              p{
+                font-size: 16px;
+                line-height: 22px;
+                margin: 0 0 20px 0;
+                color: #000;
+              }
+              em{
+                color: #596062;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
   &#section-progress{
@@ -618,10 +654,6 @@ section{
       nav {
         text-align: center;
         margin: 0 0 30px 0;
-      }
-      ul {
-
-
       }
       div {
         background: #26C4F7;
