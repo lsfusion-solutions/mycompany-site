@@ -254,7 +254,7 @@ em {
   /* Non-prefixed version, currently
                supported by Chrome, Edge, Opera and Firefox */ }
 
-.btn-default, .btn, .btn-empty {
+.btn-default, .btn, section#section-tasks > div.inner h2 a, .btn-empty, .btn-empty-invert {
   position: relative;
   text-decoration: none;
   transition: background-color .3s, border-color 0.3s, color 0.3s;
@@ -268,17 +268,17 @@ em {
   white-space: nowrap;
   display: inline-block; }
   @media (max-width: 479px) {
-    .btn-default, .btn, .btn-empty {
+    .btn-default, .btn, section#section-tasks > div.inner h2 a, .btn-empty, .btn-empty-invert {
       padding: 10px 18px; } }
-  .btn-default:active, .btn:active, .btn-empty:active {
+  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, .btn-empty:active, .btn-empty-invert:active {
     top: 1px; }
 
-.btn {
+.btn, section#section-tasks > div.inner h2 a {
   background: #26C4F7;
   color: #fff !important; }
-  .btn:hover {
+  .btn:hover, section#section-tasks > div.inner h2 a:hover {
     background-color: #0295FF; }
-  .btn:active {
+  .btn:active, section#section-tasks > div.inner h2 a:active {
     background-color: #0B85DE; }
 
 .btn-empty {
@@ -291,6 +291,15 @@ em {
   .btn-empty:active {
     background-color: #F1F8FA;
     color: #26C4F7; }
+
+.btn-empty-invert, section#section-tasks > div.inner h2 a {
+  background: transparent !important;
+  border: 1px solid rgba(132, 132, 132, 0.2);
+  color: #0E84BC !important; }
+  .btn-empty-invert:hover, section#section-tasks > div.inner h2 a:hover {
+    border-color: #848484; }
+  .btn-empty-invert:active, section#section-tasks > div.inner h2 a:active {
+    border-color: #848484; }
 
 html, body {
   height: 100%;
@@ -706,6 +715,20 @@ section#section-free > div.inner div.img {
 section#section-free > div.inner div.info {
   float: right;
   width: 520px; }
+  section#section-free > div.inner div.info h2 {
+    margin: 0 0 20px 0; }
+  section#section-free > div.inner div.info p {
+    margin: 0 0 20px 0; }
+  section#section-free > div.inner div.info p:first-of-type {
+    color: #848484; }
+section#section-tasks > div.inner h2 {
+  position: relative;
+  padding: 0 200px 0 0;
+  margin: 0 0 20px 0; }
+  section#section-tasks > div.inner h2 a {
+    position: absolute;
+    right: 0;
+    top: 0; }
 section#section-progress {
   background: #EFF6F8; }
   section#section-progress > div.inner h2 {
@@ -823,6 +846,9 @@ section h2 {
   font-size: 30px;
   line-height: 36px;
   color: #2C2A28; }
+  section h2 em {
+    font-style: normal;
+    color: #26C4F7; }
 section p {
   font-size: 16px;
   line-height: 22px;
@@ -866,6 +892,39 @@ ul.list3 {
         font-weight: 400;
         margin: 0 0 20px 0; }
       ul.list3 li > div.inner p {
+        color: #848484;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 0; }
+
+ul.list2 {
+  list-style: none;
+  margin: 0 -15px 20px -15px;
+  display: flex;
+  flex-wrap: wrap; }
+  ul.list2:after {
+    content: "";
+    display: table;
+    clear: both; }
+  ul.list2 li {
+    float: left;
+    width: 50%;
+    flex: 0 0 50%;
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex; }
+    ul.list2 li > div.inner {
+      border: 1px solid #F2F2F2;
+      border-radius: 4px;
+      padding: 22px 20px; }
+      ul.list2 li > div.inner h3 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        margin: 0 0 20px 0; }
+      ul.list2 li > div.inner p {
         color: #848484;
         font-size: 14px;
         line-height: 19px;

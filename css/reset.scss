@@ -288,7 +288,6 @@ em{
 }
 .btn{
   @extend .btn-default;
-
   background:#26C4F7;
   color: #fff !important;
   &:hover{
@@ -302,7 +301,7 @@ em{
   @extend .btn-default;
   background: transparent;
   border: 1px solid #fff;
-  color: #fff !important;;
+  color: #fff !important;
   &:hover{
     background-color: #FFFFFF;
     color: #26C4F7 !important;
@@ -310,5 +309,18 @@ em{
   &:active{
     background-color: #F1F8FA;
     color: #26C4F7;
+  }
+}
+
+.btn-empty-invert{
+  @extend .btn-default;
+  background: transparent !important;
+  border: 1px solid rgba(132, 132, 132, 0.2);;
+  color: #0E84BC !important;
+  &:hover{
+    border-color: #848484;
+  }
+  &:active{
+    border-color: #848484;
   }
 }

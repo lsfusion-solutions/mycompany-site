@@ -528,6 +528,34 @@ section{
       div.info {
         float: right;
         width: 520px;
+        h2{
+          margin: 0 0 20px 0;
+        }
+        p{
+          margin: 0 0 20px 0;
+        }
+        p:first-of-type{
+          color: #848484;
+        }
+        & > a{
+
+        }
+      }
+    }
+  }
+  &#section-tasks{
+    & > div.inner{
+      h2{
+        position: relative;
+        padding: 0 200px 0 0;
+        margin: 0 0 20px 0;
+        a{
+          position: absolute;
+          right: 0;
+          top: 0;
+          @extend .btn;
+          @extend .btn-empty-invert;
+        }
       }
     }
   }
@@ -691,6 +719,10 @@ section{
     font-size: 30px;
     line-height: 36px;
     color: #2C2A28;
+    em{
+      font-style: normal;
+      color: #26C4F7;
+    }
   }
   p{
     font-size: 16px;
@@ -718,11 +750,44 @@ ul.list3{
   margin: 0 -15px 20px -15px;
   display: flex;
   flex-wrap: wrap;
-
   li{
     float: left;
     width: 33.33%;
     flex: 0 0 33.33333%;
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    & > div.inner{
+      border: 1px solid #F2F2F2;
+      border-radius: 4px;
+      padding: 22px 20px;
+      h3{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+      }
+      p{
+        color: #848484;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 0;
+      }
+    }
+  }
+}
+ul.list2{
+  list-style: none;
+  @include clearfix;
+  margin: 0 -15px 20px -15px;
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    float: left;
+    width: 50%;
+    flex: 0 0 50%;
     padding: 10px 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
