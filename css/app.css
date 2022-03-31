@@ -731,7 +731,10 @@ section#section-tasks > div.inner h2 {
     top: 0; }
 section#section-tasks > div.inner ul.list2 li > div.inner {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  transition: background 0.3s; }
+  section#section-tasks > div.inner ul.list2 li > div.inner:hover {
+    background: #F7FBFC; }
   section#section-tasks > div.inner ul.list2 li > div.inner > div.img {
     flex: 0 0 107px; }
     section#section-tasks > div.inner ul.list2 li > div.inner > div.img img {
@@ -751,7 +754,22 @@ section#section-tasks > div.inner ul.list2 li > div.inner {
       color: #000; }
     section#section-tasks > div.inner ul.list2 li > div.inner > div.info em {
       color: #596062;
-      font-style: italic; }
+      font-style: normal; }
+section#section-low > div.inner h2 {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 30px; }
+section#section-low > div.inner ul.list3 li > div.inner {
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  background: #fff;
+  transition: background 0.3s; }
+  section#section-low > div.inner ul.list3 li > div.inner:hover {
+    background: #F7FBFC; }
+  section#section-low > div.inner ul.list3 li > div.inner img {
+    display: block;
+    max-height: 40px;
+    margin: 0 0 15px 0; }
 section#section-progress {
   background: #EFF6F8; }
   section#section-progress > div.inner h2 {
@@ -786,6 +804,9 @@ section#section-progress {
         font-weight: 700; }
 section#section-low {
   background: #EFF6F8; }
+section#section-work > div.inner h2 {
+  text-align: center;
+  margin: 0 0; }
 section#section-work > div.inner nav {
   text-align: center;
   margin: 0 0 30px 0; }
@@ -908,7 +929,8 @@ ul.list3 {
     ul.list3 li > div.inner {
       border: 1px solid #F2F2F2;
       border-radius: 4px;
-      padding: 22px 20px; }
+      padding: 22px 20px;
+      width: 100%; }
       ul.list3 li > div.inner h3 {
         font-size: 20px;
         line-height: 30px;
@@ -941,7 +963,8 @@ ul.list2 {
     ul.list2 li > div.inner {
       border: 1px solid #F2F2F2;
       border-radius: 4px;
-      padding: 22px 20px; }
+      padding: 22px 20px;
+      width: 100%; }
       ul.list2 li > div.inner h3 {
         font-size: 20px;
         line-height: 30px;
