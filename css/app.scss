@@ -122,7 +122,7 @@ body > nav{
     h2{
       float: left;
       margin: 0 0 0 20px;
-      font-size: 16px;
+      font-size: 18px;
       a{
         display: block;
         width: 135px;
@@ -313,25 +313,46 @@ body > nav{
     }
   }
 }
+
 section{
+  & > div.inner{
+    @media (max-width: $siteWidth - 1){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
   &#section-header{
     background: #0062BD;
     & > div.inner{
-      background: url(../imgs/header.svg) no-repeat right top;
-      padding: 100px 0 30px;
-      min-height: 416px;
+      @media (min-width: $siteWidth) {
+        background: url(../imgs/header.svg) no-repeat right top;
+        padding: 100px 0 30px;
+        min-height: 425px;
+      }
       h1{
-        max-width: 550px;
+        @media (min-width: $siteWidth) {
+          max-width: 550px;
+        }
         color: #fff;
         font-size: 35px;
         line-height: 42px;
         margin: 0 0 20px 0;
         font-weight: 600;
+        @media(max-width: $siteWidth - 1){
+          br{
+            display: none;
+          }
+        }
       }
       p{
         max-width: 550px;
         color: #fff;
         margin: 0 0 40px 0;
+        @media(max-width: $siteWidth - 1){
+          br{
+            display: none;
+          }
+        }
       }
       nav{
         @include clearfix;
@@ -345,6 +366,7 @@ section{
     }
   }
   &#section-functions{
+    padding: 22px 0 0 0;
     & > div.inner{
       h2{
         text-align: center;
@@ -354,17 +376,26 @@ section{
       & > p{
         text-align: center;
         max-width: 600px;
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
       }
       ul.list3{
         li{
           div.inner{
             transition: background 0.3s;
+            padding-top: 29px;
             &:hover{
               background: #F7FBFC;
             }
             h3{
               padding-left: 50px;
+              line-height: 32px;
+              @media (max-width: $siteWidth - 1){
+                font-size: 18px;
+                padding-left: 45px;
+              }
+              @media (max-width: 767px){
+                padding-left: 40px;
+              }
             }
           }
           &:nth-child(1){
@@ -418,26 +449,35 @@ section{
           transition: background 0.3s;
           border-radius: 4px;
           text-decoration: none;
-          line-height: 70px;
-          padding: 0 0 0 70px;
+          line-height: 20px;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           color: #fff;
-          width: 48.5%;
+          @media (min-width: 768px) {
+            width: 48.5%;
+          }
           &:hover{
             background-color: darken(#26C4F7, 10) !important;
           }
           span{
+            padding: 25px 70px;
             background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
             display: block;
           }
           &:nth-of-type(1){
-            float: left;
+            @media (min-width: 768px) {
+              float: left;
+            }
+            @media (max-width: 767px) {
+              margin: 0 0 20px 0;
+            }
             background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%;
           }
           &:nth-of-type(2){
-            float: right;
+            @media (min-width: 768px) {
+              float: right;
+            }
             background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%;
           }
         }
@@ -449,8 +489,11 @@ section{
     & > div.inner{
       @include clearfix;
       div.info{
-        float: left;
-        width: 540px;
+        @media (min-width: $siteWidth) {
+          float: left;
+          width: 540px;
+        }
+        @include clearfix;
         h2{
           margin: 0 0 20px 0;
         }
@@ -460,8 +503,10 @@ section{
         ul{
           list-style: none;
           li{
-            float: left;
-            width: 50%;
+            @media (min-width: 767px) {
+              float: left;
+              width: 50%;
+            }
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -486,7 +531,12 @@ section{
         }
       }
       div.img{
-        float: right;
+        @media (min-width: $siteWidth) {
+          float: right;
+        }
+        @media (max-width: $siteWidth - 1) {
+          display: inline-block;
+        }
         background: #F7FBFC;
         border-radius: 4px;
         padding: 12px;
@@ -508,11 +558,17 @@ section{
     & > div.inner{
       @include clearfix;
       div.img{
-        float: left;
+        @media (min-width: $siteWidth) {
+          float: left;
+          width: 500px;
+        }
+        @media (max-width: $siteWidth - 1) {
+          display: inline-block;
+          margin: 0 0 20px 0;
+        }
         background: #F7FBFC;
         border-radius: 4px;
         padding: 12px;
-        width: 500px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -526,8 +582,10 @@ section{
         }
       }
       div.info {
-        float: right;
-        width: 520px;
+        @media (min-width: $siteWidth) {
+          float: right;
+          width: 520px;
+        }
         h2{
           margin: 0 0 20px 0;
         }
@@ -547,12 +605,21 @@ section{
     & > div.inner{
       h2{
         position: relative;
-        padding: 0 200px 0 0;
+        @media (min-width: 768px) {
+          padding: 0 200px 0 0;
+        }
         margin: 0 0 20px 0;
         a{
-          position: absolute;
-          right: 0;
-          top: 0;
+          @media (min-width: 768px) {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          @media (max-width: 767px) {
+            margin: 20px 0 0 auto;
+            display: block;
+            max-width: 200px;
+          }
           @extend .btn;
           @extend .btn-empty-invert;
           font-weight: 400;
@@ -561,6 +628,11 @@ section{
 
       ul.list2 {
         li{
+          @media (max-width: 767px){
+            width: 100%;
+            flex: 0 0 100%;
+            padding: 10px 0;
+          }
           & > div.inner{
             display: flex;
             flex-direction: row;
@@ -568,7 +640,6 @@ section{
             &:hover{
               background: #F7FBFC;
             }
-
             & > div.img{
               flex: 0 0 107px;
               img {
@@ -632,7 +703,9 @@ section{
     & > div.inner{
       h2{
         text-align: center;
-        width: 730px;
+        @media (min-width: $siteWidth) {
+          width: 730px;
+        }
         margin: 0 auto 20px;
       }
       ul.list3{
@@ -730,7 +803,12 @@ section{
       & > div {
         background: #26C4F7;
         border-radius: 4px;
-        padding: 30px 275px 30px 30px;
+        @media (min-width: 768px) {
+          padding: 30px 275px 30px 30px;
+        }
+        @media (max-width: 767px) {
+          padding: 30px;
+        }
         color: #fff;
         position: relative;
         h3{
@@ -738,11 +816,16 @@ section{
         }
         p{
           color: #fff;
+          @media (max-width: 767px) {
+            margin: 0 0 10px 0;
+          }
         }
         a{
-          position: absolute;
-          right: 30px;
-          bottom: 30px;
+          @media (min-width: 768px) {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+          }
           @extend .btn;
           @extend .btn-invert;
         }
@@ -750,7 +833,9 @@ section{
     }
   }
   &#section-easy{
-    padding: 50px 0 0 0;
+    @media (min-width: $siteWidth) {
+      padding-top: 20px;
+    }
     background: #EFF6F8;
     & > div.inner {
       h2{
@@ -762,17 +847,23 @@ section{
         margin: 0 0 30px 0;
       }
       @include clearfix;
-      padding: 0 0 50px 0;
       ul {
-        float: left;
+        @media (min-width: $siteWidth) {
+          float: left;
+          max-width: 530px;
+        }
         font-size: 16px;
         line-height: 21px;
         list-style: none;
-        max-width: 530px;
+        @media (max-width: $siteWidth - 1) {
+          margin: 0 0 20px 0;
+        }
         li {
           display: block;
-          margin: 0 0 50px 0;
-          padding: 0 0 0 40px;
+          padding: 6px 0 50px 40px;
+          @media (max-width: $siteWidth - 1){
+            padding: 6px 0 15px 40px;
+          }
           &:nth-child(1) {
             background: url(../imgs/icons/easy1.svg) no-repeat 0 0;
           }
@@ -785,33 +876,52 @@ section{
         }
       }
       div.img {
-        float: right;
+        @media (min-width: $siteWidth) {
+          float: right;
+        }
+        @media (max-width: $siteWidth - 1) {
+          display: inline-block;
+        }
         background: #F7FBFC;
         padding: 12px;
         border-radius: 4px;
         img{
           background: #fff;
+          max-width: 100%;
         }
       }
     }
   }
   &#section-footer{
-    background: #0062BD url(../imgs/points.svg) no-repeat 0 bottom;
+    @media (min-width: $siteWidth) {
+      background: #0062BD url(../imgs/points.svg) no-repeat 0 bottom;
+    }
+    @media (max-width: $siteWidth - 1) {
+      background: #0062BD;
+    }
     & > div.inner{
-      background: url(../imgs/run.svg) no-repeat right bottom;
+      @media (min-width: $siteWidth) {
+        background: url(../imgs/run.svg) no-repeat right bottom;
+      }
       @include clearfix;
       & > div {
-        float: left;
-        width: 700px;
+        @media (min-width: $siteWidth) {
+          float: left;
+          width: 700px;
+        }
         h2{
           color: #fff;
           text-align: left;
           max-width: 700px;
+          margin: 0 0 10px 0;
         }
         p{
           color: #fff;
           text-align: left;
           max-width: 700px;
+          @media (max-width: $siteWidth - 1) {
+            margin: 0 0 10px 0;
+          }
         }
       }
       & > a{
@@ -820,20 +930,20 @@ section{
     }
   }
   &.inner{
+    padding: 30px 20px;
     @media (min-width: $siteWidth) {
       width: $siteWidth;
       margin: 0 auto;
-      padding: 30px 20px;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
   }
   & > div.inner{
+    padding: 30px 20px;
     @media (min-width: $siteWidth) {
       width: $siteWidth;
       margin: 0 auto;
-      padding: 30px 20px;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
@@ -867,22 +977,31 @@ section{
       color: #0E84BC;
     }
   }
-  @media (max-width: $siteWidth - 1){
-    padding: 30px 20px;
-  }
 }
 
 ul.list3{
   list-style: none;
   @include clearfix;
-  margin: 0 -15px 20px -15px;
+  margin: 0 0 20px 0;
   display: flex;
   flex-wrap: wrap;
   li{
     float: left;
-    width: 33.33%;
-    flex: 0 0 33.33333%;
     padding: 10px 15px;
+    @media (min-width: 768px) {
+      width: 33.33%;
+      flex: 0 0 33.33333%;
+    }
+    @media (max-width: 767px){
+      width: 50%;
+      flex: 0 0 50%;
+      padding: 8px 12px;
+    }
+    @media (max-width: 479px){
+      width: 100%;
+      flex: 0 0 100%;
+      padding: 10px 0;
+    }
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -891,6 +1010,9 @@ ul.list3{
       border: 1px solid #F2F2F2;
       border-radius: 4px;
       padding: 22px 20px;
+      @media (max-width: 767px){
+        padding: 18px 15px;
+      }
       width: 100%;
       h3{
         font-size: 20px;
@@ -910,7 +1032,7 @@ ul.list3{
 ul.list2{
   list-style: none;
   @include clearfix;
-  margin: 0 -15px 20px -15px;
+  margin: 0 0 20px 0;
   display: flex;
   flex-wrap: wrap;
   li{
@@ -918,6 +1040,12 @@ ul.list2{
     width: 50%;
     flex: 0 0 50%;
     padding: 10px 15px;
+    @media (max-width: 767px){
+      width: 100%;
+      flex: 0 0 100%;
+      padding: 10px 0;
+    }
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1011,6 +1139,12 @@ body > footer{
       @media (max-width: $mobileWidth - 1){
         width: 33.33%;
         margin: 0 0 30px 0;
+      }
+      @media (max-width: 479px){
+        width: 100% !important;
+        li a{
+          padding: 0 0 0 27px;
+        }
       }
       &.links{
         @media (min-width: $mobileWidth) {
