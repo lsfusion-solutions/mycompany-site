@@ -896,6 +896,10 @@ section#section-work > div.inner nav {
   margin: 0 0 10px 0; }
   section#section-work > div.inner nav span {
     cursor: pointer; }
+    @media (max-width: 479px) {
+      section#section-work > div.inner nav span {
+        display: block !important;
+        margin: 0 0 10px 0; } }
 section#section-work > div.inner.for_developers ul#for_developers {
   display: flex; }
 section#section-work > div.inner.for_developers ul#for_administrators {
@@ -962,6 +966,10 @@ section#section-easy {
     margin: 0 0 30px 0; }
     section#section-easy > div.inner nav span {
       cursor: pointer; }
+      @media (max-width: 479px) {
+        section#section-easy > div.inner nav span {
+          display: block !important;
+          margin: 0 0 10px 0; } }
   section#section-easy > div.inner.for_users div.for_users {
     display: block; }
   section#section-easy > div.inner.for_users div.for_business {

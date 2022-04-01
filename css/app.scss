@@ -769,6 +769,10 @@ section{
         margin: 0 0 10px 0;
         span{
           cursor: pointer;
+          @media (max-width: 479px){
+            display: block !important;
+            margin: 0 0 10px 0;
+          }
         }
       }
       &.for_developers{
@@ -893,6 +897,10 @@ section{
         margin: 0 0 30px 0;
         span{
           cursor: pointer;
+          @media (max-width: 479px){
+            display: block !important;
+            margin: 0 0 10px 0;
+          }
         }
       }
       &.for_users{
