@@ -383,6 +383,8 @@ body {
 
 body {
   padding-top: 80px; }
+  body main {
+    scroll-margin-top: 100px; }
 
 body > nav {
   position: fixed;
