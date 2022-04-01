@@ -764,7 +764,49 @@ section{
       nav {
         text-align: center;
         margin: 0 0 10px 0;
+        span{
+          cursor: pointer;
+        }
       }
+      &.for_developers{
+        nav{
+          span{
+            &.for_developers{
+              @extend .btn;
+            }
+            &.for_administrators{
+              @extend .btn;
+              @extend .btn-empty-invert;
+            }
+          }
+        }
+        ul#for_developers{
+          display: flex;
+        }
+        ul#for_administrators{
+          display: none;
+        }
+      }
+      &.for_administrators{
+        nav{
+          span{
+            &.for_developers{
+              @extend .btn;
+              @extend .btn-empty-invert;
+            }
+            &.for_administrators{
+              @extend .btn;
+            }
+          }
+        }
+        ul#for_developers{
+          display: none;
+        }
+        ul#for_administrators{
+          display: flex;
+        }
+      }
+
       ul.list2{
         li {
           & > div.inner {

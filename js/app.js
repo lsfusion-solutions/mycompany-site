@@ -10,4 +10,10 @@ $(document).ready(function() {
         }
     })
     $(".menu-link").click(function(e){$(this).toggleClass("active");e.preventDefault()})
+    $("#section-work nav .for_developers").click(function(){
+        $(this).closest(".inner").removeClass("for_administrators").addClass("for_developers")
+    })
+    $("#section-work nav .for_administrators").click(function(){
+        $(this).closest(".inner").removeClass("for_developers").addClass("for_administrators")
+    })
 })
