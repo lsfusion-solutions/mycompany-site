@@ -609,85 +609,87 @@ section#section-header {
       margin-right: 30px; }
 section#section-functions {
   padding: 22px 0 0 0; }
-  section#section-functions > div.inner h2 {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 20px; }
-  section#section-functions > div.inner > p {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 10px; }
-  section#section-functions > div.inner ul.list3 li div.inner {
-    transition: background 0.3s;
-    padding-top: 29px; }
-    section#section-functions > div.inner ul.list3 li div.inner:hover {
-      background: #F7FBFC; }
-    section#section-functions > div.inner ul.list3 li div.inner h3 {
-      padding-left: 50px;
-      line-height: 32px; }
-      @media (max-width: 1109px) {
-        section#section-functions > div.inner ul.list3 li div.inner h3 {
-          font-size: 18px;
-          padding-left: 45px; } }
-      @media (max-width: 767px) {
-        section#section-functions > div.inner ul.list3 li div.inner h3 {
-          padding-left: 40px; } }
-  section#section-functions > div.inner ul.list3 li:nth-child(1) h3 {
-    background: url(../imgs/icons/function1.svg) no-repeat 0 0; }
-  section#section-functions > div.inner ul.list3 li:nth-child(2) h3 {
-    background: url(../imgs/icons/function2.svg) no-repeat 0 0; }
-  section#section-functions > div.inner ul.list3 li:nth-child(3) h3 {
-    background: url(../imgs/icons/function3.svg) no-repeat 0 0; }
-  section#section-functions > div.inner ul.list3 li:nth-child(4) h3 {
-    background: url(../imgs/icons/function4.svg) no-repeat 0 0; }
-  section#section-functions > div.inner ul.list3 li:nth-child(5) h3 {
-    background: url(../imgs/icons/function5.svg) no-repeat 0 0; }
-  section#section-functions > div.inner ul.list3 li:nth-child(6) h3 {
-    background: url(../imgs/icons/function6.svg) no-repeat 0 0; }
-  section#section-functions > div.inner ul.list3 li:nth-child(7) h3 {
-    background: url(../imgs/icons/function7.svg) no-repeat 0 0; }
-  section#section-functions > div.inner nav:after {
-    content: "";
-    display: table;
-    clear: both; }
-  section#section-functions > div.inner nav p {
-    text-align: center;
-    margin: 0 0 10px 0;
-    color: #848484;
-    font-size: 14px; }
-  section#section-functions > div.inner nav a {
-    display: block;
-    background: #26C4F7;
-    transition: background 0.3s;
-    border-radius: 4px;
-    text-decoration: none;
-    line-height: 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #fff; }
-    @media (min-width: 768px) {
-      section#section-functions > div.inner nav a {
-        width: 48.5%; } }
-    section#section-functions > div.inner nav a:hover {
-      background-color: #08ade2 !important; }
-    section#section-functions > div.inner nav a span {
-      padding: 25px 70px;
-      background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
-      display: block; }
-    section#section-functions > div.inner nav a:nth-of-type(1) {
-      background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
+  section#section-functions > div.inner {
+    scroll-margin-top: 100px; }
+    section#section-functions > div.inner h2 {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 20px; }
+    section#section-functions > div.inner > p {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 10px; }
+    section#section-functions > div.inner ul.list3 li > .inner {
+      transition: background 0.3s, color 0.3s;
+      padding-top: 29px; }
+      section#section-functions > div.inner ul.list3 li > .inner:hover {
+        background: #F7FBFC; }
+      section#section-functions > div.inner ul.list3 li > .inner h3 {
+        padding-left: 50px;
+        line-height: 32px; }
+        @media (max-width: 1109px) {
+          section#section-functions > div.inner ul.list3 li > .inner h3 {
+            font-size: 18px;
+            padding-left: 45px; } }
+        @media (max-width: 767px) {
+          section#section-functions > div.inner ul.list3 li > .inner h3 {
+            padding-left: 40px; } }
+    section#section-functions > div.inner ul.list3 li:nth-child(1) h3 {
+      background: url(../imgs/icons/function1.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(2) h3 {
+      background: url(../imgs/icons/function2.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(3) h3 {
+      background: url(../imgs/icons/function3.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(4) h3 {
+      background: url(../imgs/icons/function4.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(5) h3 {
+      background: url(../imgs/icons/function5.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(6) h3 {
+      background: url(../imgs/icons/function6.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(7) h3 {
+      background: url(../imgs/icons/function7.svg) no-repeat 0 0; }
+    section#section-functions > div.inner nav:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section#section-functions > div.inner nav p {
+      text-align: center;
+      margin: 0 0 10px 0;
+      color: #848484;
+      font-size: 14px; }
+    section#section-functions > div.inner nav a {
+      display: block;
+      background: #26C4F7;
+      transition: background 0.3s;
+      border-radius: 4px;
+      text-decoration: none;
+      line-height: 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #fff; }
       @media (min-width: 768px) {
-        section#section-functions > div.inner nav a:nth-of-type(1) {
-          float: left; } }
-      @media (max-width: 767px) {
-        section#section-functions > div.inner nav a:nth-of-type(1) {
-          margin: 0 0 20px 0; } }
-    section#section-functions > div.inner nav a:nth-of-type(2) {
-      background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
-      @media (min-width: 768px) {
-        section#section-functions > div.inner nav a:nth-of-type(2) {
-          float: right; } }
+        section#section-functions > div.inner nav a {
+          width: 48.5%; } }
+      section#section-functions > div.inner nav a:hover {
+        background-color: #08ade2 !important; }
+      section#section-functions > div.inner nav a span {
+        padding: 25px 70px;
+        background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
+        display: block; }
+      section#section-functions > div.inner nav a:nth-of-type(1) {
+        background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
+        @media (min-width: 768px) {
+          section#section-functions > div.inner nav a:nth-of-type(1) {
+            float: left; } }
+        @media (max-width: 767px) {
+          section#section-functions > div.inner nav a:nth-of-type(1) {
+            margin: 0 0 20px 0; } }
+      section#section-functions > div.inner nav a:nth-of-type(2) {
+        background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
+        @media (min-width: 768px) {
+          section#section-functions > div.inner nav a:nth-of-type(2) {
+            float: right; } }
 section#section-sql {
   background: #EFF6F8; }
   section#section-sql > div.inner:after {
@@ -1087,20 +1089,22 @@ ul.list3 {
         width: 100%;
         flex: 0 0 100%;
         padding: 10px 0; } }
-    ul.list3 li > div.inner {
+    ul.list3 li > .inner {
       border: 1px solid #F2F2F2;
       border-radius: 4px;
       padding: 22px 20px;
+      display: block;
+      text-decoration: none;
       width: 100%; }
       @media (max-width: 767px) {
-        ul.list3 li > div.inner {
+        ul.list3 li > .inner {
           padding: 18px 15px; } }
-      ul.list3 li > div.inner h3 {
+      ul.list3 li > .inner h3 {
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
         margin: 0 0 20px 0; }
-      ul.list3 li > div.inner p {
+      ul.list3 li > .inner p {
         color: #848484;
         font-size: 14px;
         line-height: 19px;

@@ -368,6 +368,7 @@ section{
   &#section-functions{
     padding: 22px 0 0 0;
     & > div.inner{
+      scroll-margin-top: 100px;
       h2{
         text-align: center;
         max-width: 600px;
@@ -380,8 +381,8 @@ section{
       }
       ul.list3{
         li{
-          div.inner{
-            transition: background 0.3s;
+          & > .inner{
+            transition: background 0.3s, color 0.3s;
             padding-top: 29px;
             &:hover{
               background: #F7FBFC;
@@ -1006,10 +1007,12 @@ ul.list3{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: flex;
-    & > div.inner{
+    & > .inner{
       border: 1px solid #F2F2F2;
       border-radius: 4px;
       padding: 22px 20px;
+      display: block;
+      text-decoration: none;
       @media (max-width: 767px){
         padding: 18px 15px;
       }
