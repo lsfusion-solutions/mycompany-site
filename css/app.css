@@ -254,7 +254,7 @@ em {
   /* Non-prefixed version, currently
                supported by Chrome, Edge, Opera and Firefox */ }
 
-.btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, .btn-empty, .btn-invert, .btn-empty-invert {
+.btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, .btn-empty, .btn-invert, .btn-empty-invert {
   position: relative;
   text-decoration: none;
   transition: background-color .3s, border-color 0.3s, color 0.3s;
@@ -268,17 +268,17 @@ em {
   white-space: nowrap;
   display: inline-block; }
   @media (max-width: 479px) {
-    .btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, .btn-empty, .btn-invert, .btn-empty-invert {
+    .btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, .btn-empty, .btn-invert, .btn-empty-invert {
       padding: 10px 18px; } }
-  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active {
+  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active {
     top: 1px; }
 
-.btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a {
+.btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business {
   background: #26C4F7;
   color: #fff !important; }
-  .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover {
+  .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover, section#section-easy > div.inner.for_users nav span.for_users:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-easy > div.inner.for_business nav span.for_business:hover {
     background-color: #0295FF; }
-  .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active {
+  .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active {
     background-color: #0B85DE; }
 
 .btn-empty {
@@ -303,13 +303,13 @@ em {
     background-color: #F1F8FA;
     color: #26C4F7; }
 
-.btn-empty-invert, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers {
+.btn-empty-invert, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users {
   background: transparent !important;
   border: 1px solid rgba(132, 132, 132, 0.2);
   color: #0E84BC !important; }
-  .btn-empty-invert:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover {
+  .btn-empty-invert:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover {
     border-color: #848484; }
-  .btn-empty-invert:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active {
+  .btn-empty-invert:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active {
     border-color: #848484; }
 
 html, body {
@@ -958,6 +958,16 @@ section#section-easy {
   section#section-easy > div.inner nav {
     text-align: center;
     margin: 0 0 30px 0; }
+    section#section-easy > div.inner nav span {
+      cursor: pointer; }
+  section#section-easy > div.inner.for_users div.for_users {
+    display: block; }
+  section#section-easy > div.inner.for_users div.for_business {
+    display: none; }
+  section#section-easy > div.inner.for_business div.for_users {
+    display: none; }
+  section#section-easy > div.inner.for_business div.for_business {
+    display: block; }
   section#section-easy > div.inner:after {
     content: "";
     display: table;

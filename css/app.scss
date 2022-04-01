@@ -888,6 +888,47 @@ section{
       nav {
         text-align: center;
         margin: 0 0 30px 0;
+        span{
+          cursor: pointer;
+        }
+      }
+      &.for_users{
+        nav{
+          span{
+            &.for_users{
+              @extend .btn;
+            }
+            &.for_business{
+              @extend .btn;
+              @extend .btn-empty-invert;
+            }
+          }
+        }
+        div.for_users{
+          display: block;
+        }
+        div.for_business{
+          display: none;
+        }
+      }
+      &.for_business{
+        nav{
+          span{
+            &.for_users{
+              @extend .btn;
+              @extend .btn-empty-invert;
+            }
+            &.for_business{
+              @extend .btn;
+            }
+          }
+        }
+        div.for_users{
+          display: none;
+        }
+        div.for_business{
+          display: block;
+        }
       }
       @include clearfix;
       ul {
