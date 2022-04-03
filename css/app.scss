@@ -872,7 +872,7 @@ section{
         }
         a{
           @media (min-width: 768px) {
-            position: absolute;
+            position: absolute;!
             right: 30px;
             bottom: 30px;
           }
@@ -900,7 +900,7 @@ section{
           @media (max-width: 479px){
             display: block !important;
             margin: 0 0 10px 0;
-          }
+          }!
         }
       }
       &.for_users{
