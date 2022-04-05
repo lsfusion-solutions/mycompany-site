@@ -650,16 +650,25 @@ section#section-functions {
       background: url(../imgs/icons/function6.svg) no-repeat 0 0; }
     section#section-functions > div.inner ul.list3 li:nth-child(7) h3 {
       background: url(../imgs/icons/function7.svg) no-repeat 0 0; }
-    section#section-functions > div.inner nav:after {
+  section#section-functions nav {
+    background: #EFF6F8;
+    padding: 20px 0 30px 0; }
+    @media (min-width: 1110px) {
+      section#section-functions nav > div.inner {
+        width: 1110px;
+        margin: 0 auto; } }
+    section#section-functions nav > div.inner:after {
       content: "";
       display: table;
       clear: both; }
-    section#section-functions > div.inner nav p {
+    section#section-functions nav > div.inner p {
       text-align: center;
       margin: 0 0 10px 0;
-      color: #848484;
-      font-size: 14px; }
-    section#section-functions > div.inner nav a {
+      color: #2C2A28;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600; }
+    section#section-functions nav > div.inner a {
       display: block;
       background: #26C4F7;
       transition: background 0.3s;
@@ -671,26 +680,26 @@ section#section-functions {
       box-sizing: border-box;
       color: #fff; }
       @media (min-width: 768px) {
-        section#section-functions > div.inner nav a {
+        section#section-functions nav > div.inner a {
           width: 48.5%; } }
-      section#section-functions > div.inner nav a:hover {
+      section#section-functions nav > div.inner a:hover {
         background-color: #08ade2 !important; }
-      section#section-functions > div.inner nav a span {
+      section#section-functions nav > div.inner a span {
         padding: 25px 70px;
         background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
         display: block; }
-      section#section-functions > div.inner nav a:nth-of-type(1) {
+      section#section-functions nav > div.inner a:nth-of-type(1) {
         background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
         @media (min-width: 768px) {
-          section#section-functions > div.inner nav a:nth-of-type(1) {
+          section#section-functions nav > div.inner a:nth-of-type(1) {
             float: left; } }
         @media (max-width: 767px) {
-          section#section-functions > div.inner nav a:nth-of-type(1) {
+          section#section-functions nav > div.inner a:nth-of-type(1) {
             margin: 0 0 20px 0; } }
-      section#section-functions > div.inner nav a:nth-of-type(2) {
+      section#section-functions nav > div.inner a:nth-of-type(2) {
         background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
         @media (min-width: 768px) {
-          section#section-functions > div.inner nav a:nth-of-type(2) {
+          section#section-functions nav > div.inner a:nth-of-type(2) {
             float: right; } }
 section#section-sql {
   background: #EFF6F8; }
