@@ -122,8 +122,26 @@
             <nav>
                 <p>Добавляйте новые функции самостоятельно или с нашей помощью</p>
                 <a href="https://github.com/lsfusion-solutions/mycompany/issues/new" target="_blank"><span>Оставить комментарий на GitHub</span></a>
-                <a href="#" onclick="alert('todo')"><span>Заказать доработку</span></a>
+                <a href="#" id="order"><span>Заказать доработку</span></a>
             </nav>
+            <div id="orderpopup" class="popup">
+                <span class="close">x</span>
+                <div class="inner">
+                    <h3>Order revision</h3>
+                    <p>The developers of our company will offer a solution</p>
+                    <form method="post" action="#">
+                        <fieldset>
+                            <input type="text" name="name" value="" placeholder="Your name*" required />
+                            <input type="email" name="email" value="" placeholder="Email*" required />
+                            <input type="text" name="phone" value="" placeholder="Phone" />
+                            <textarea name="comment" placeholder="What kind of revision do ypu need?" rows="10" cols="6"></textarea>
+                        </fieldset>
+                        <div class="buttons">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
