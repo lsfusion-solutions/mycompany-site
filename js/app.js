@@ -25,4 +25,13 @@ $(document).ready(function() {
         $(this).closest(".inner").removeClass("for_users").addClass("for_business")
     })
 
+    $("#order").click(function(e){
+        $("#orderpopup").popup({
+            closeelement: "span.close",
+        }).popup("show")
+        e.preventDefault()
+        return false;
+    })
+    $("#orderpopup form").validate();
+
 })

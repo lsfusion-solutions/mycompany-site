@@ -119,14 +119,32 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <nav>
-            <div class="inner">
+            <nav>
                 <p>Add new features yourself or with our support</p>
                 <a href="https://github.com/lsfusion-solutions/mycompany/issues/new" target="_blank"><span>Leave a comment on GitHub</span></a>
-                <a href="#" onclick="alert('todo')"><span>Order customisation</span></a>
+                <a href="#" id="order"><span>Order customisation</span></a>
+            </nav>
+
+            <div id="orderpopup" class="popup">
+                <span class="close">x</span>
+                <div class="inner">
+                    <h3>Order revision</h3>
+                    <p>The developers of our company will offer a solution</p>
+                    <form method="post" action="#">
+                        <fieldset>
+                            <input type="text" name="name" value="" placeholder="Your name*" required />
+                            <input type="email" name="email" value="" placeholder="Email*" required />
+                            <input type="text" name="phone" value="" placeholder="Phone" />
+                            <textarea name="comment" placeholder="What kind of revision do ypu need?" rows="10" cols="6"></textarea>
+                        </fieldset>
+                        <div class="buttons">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
             </div>
-        </nav>
+
+        </div>
     </section>
 
     <section id="section-sql">
@@ -325,6 +343,9 @@
                     <li>LGPL v3 license. Free use and distribution.</li>
                     <li>Built-in encryption of transmitted data. Corporate-ready.</li>
                 </ul>
+                <div class="img">
+                    <img src="imgs/easy-user.png" alt="" />
+                </div>
             </div>
         </div>
     </section>
@@ -376,6 +397,8 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

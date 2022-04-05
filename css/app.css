@@ -254,7 +254,7 @@ em {
   /* Non-prefixed version, currently
                supported by Chrome, Edge, Opera and Firefox */ }
 
-.btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, .btn-empty, .btn-invert, .btn-empty-invert {
+.btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"], .btn-empty, .btn-invert, .btn-empty-invert {
   position: relative;
   text-decoration: none;
   transition: background-color .3s, border-color 0.3s, color 0.3s;
@@ -268,17 +268,17 @@ em {
   white-space: nowrap;
   display: inline-block; }
   @media (max-width: 479px) {
-    .btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, .btn-empty, .btn-invert, .btn-empty-invert {
+    .btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"], .btn-empty, .btn-invert, .btn-empty-invert {
       padding: 10px 18px; } }
-  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active {
+  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active {
     top: 1px; }
 
-.btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business {
+.btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"] {
   background: #26C4F7;
   color: #fff !important; }
-  .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover, section#section-easy > div.inner.for_users nav span.for_users:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-easy > div.inner.for_business nav span.for_business:hover {
+  .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover, section#section-easy > div.inner.for_users nav span.for_users:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-easy > div.inner.for_business nav span.for_business:hover, div.popup > div.inner input[type="submit"]:hover {
     background-color: #0295FF; }
-  .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active {
+  .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active {
     background-color: #0B85DE; }
 
 .btn-empty {
@@ -650,57 +650,55 @@ section#section-functions {
       background: url(../imgs/icons/function6.svg) no-repeat 0 0; }
     section#section-functions > div.inner ul.list3 li:nth-child(7) h3 {
       background: url(../imgs/icons/function7.svg) no-repeat 0 0; }
-  section#section-functions nav {
-    background: #EFF6F8;
-    padding: 20px 0 30px 0; }
-    @media (min-width: 1110px) {
-      section#section-functions nav > div.inner {
-        width: 1110px;
-        margin: 0 auto; } }
-    section#section-functions nav > div.inner:after {
-      content: "";
-      display: table;
-      clear: both; }
-    section#section-functions nav > div.inner p {
-      text-align: center;
-      margin: 0 0 10px 0;
-      color: #2C2A28;
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 600; }
-    section#section-functions nav > div.inner a {
-      display: block;
+    section#section-functions > div.inner nav {
       background: #26C4F7;
-      transition: background 0.3s;
       border-radius: 4px;
-      text-decoration: none;
-      line-height: 20px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #fff; }
-      @media (min-width: 768px) {
-        section#section-functions nav > div.inner a {
-          width: 48.5%; } }
-      section#section-functions nav > div.inner a:hover {
-        background-color: #08ade2 !important; }
-      section#section-functions nav > div.inner a span {
-        padding: 25px 70px;
-        background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
-        display: block; }
-      section#section-functions nav > div.inner a:nth-of-type(1) {
-        background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
+      padding: 20px 30px 30px; }
+      section#section-functions > div.inner nav:after {
+        content: "";
+        display: table;
+        clear: both; }
+      section#section-functions > div.inner nav p {
+        text-align: center;
+        margin: 0 0 10px 0;
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600; }
+      section#section-functions > div.inner nav a {
+        display: block;
+        background: #26C4F7;
+        transition: background 0.3s;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        line-height: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff; }
         @media (min-width: 768px) {
-          section#section-functions nav > div.inner a:nth-of-type(1) {
-            float: left; } }
-        @media (max-width: 767px) {
-          section#section-functions nav > div.inner a:nth-of-type(1) {
-            margin: 0 0 20px 0; } }
-      section#section-functions nav > div.inner a:nth-of-type(2) {
-        background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
-        @media (min-width: 768px) {
-          section#section-functions nav > div.inner a:nth-of-type(2) {
-            float: right; } }
+          section#section-functions > div.inner nav a {
+            width: 48.5%; } }
+        section#section-functions > div.inner nav a:hover {
+          background-color: #08ade2 !important; }
+        section#section-functions > div.inner nav a span {
+          padding: 25px 70px;
+          background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
+          display: block; }
+        section#section-functions > div.inner nav a:nth-of-type(1) {
+          background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
+          @media (min-width: 768px) {
+            section#section-functions > div.inner nav a:nth-of-type(1) {
+              float: left; } }
+          @media (max-width: 767px) {
+            section#section-functions > div.inner nav a:nth-of-type(1) {
+              margin: 0 0 20px 0; } }
+        section#section-functions > div.inner nav a:nth-of-type(2) {
+          background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
+          @media (min-width: 768px) {
+            section#section-functions > div.inner nav a:nth-of-type(2) {
+              float: right; } }
 section#section-sql {
   background: #EFF6F8; }
   section#section-sql > div.inner:after {
@@ -925,20 +923,34 @@ section#section-work > div.inner ul.list2 li > div.inner {
   padding-left: 62px; }
   section#section-work > div.inner ul.list2 li > div.inner:hover {
     background-color: #d2e8ee; }
-section#section-work > div.inner ul.list2 li:nth-child(1) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(1) > div.inner {
   background-image: url(../imgs/work/1.svg) !important; }
-section#section-work > div.inner ul.list2 li:nth-child(2) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(2) > div.inner {
   background-image: url(../imgs/work/2.svg) !important; }
-section#section-work > div.inner ul.list2 li:nth-child(3) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(3) > div.inner {
   background-image: url(../imgs/work/3.svg) !important; }
-section#section-work > div.inner ul.list2 li:nth-child(4) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(4) > div.inner {
   background-image: url(../imgs/work/4.svg) !important; }
-section#section-work > div.inner ul.list2 li:nth-child(5) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(5) > div.inner {
   background-image: url(../imgs/work/5.svg) !important; }
-section#section-work > div.inner ul.list2 li:nth-child(6) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(6) > div.inner {
   background-image: url(../imgs/work/6.svg) !important; }
-section#section-work > div.inner ul.list2 li:nth-child(7) > div.inner {
+section#section-work > div.inner ul.list2#for_developers li:nth-child(7) > div.inner {
   background-image: url(../imgs/work/7.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(1) > div.inner {
+  background-image: url(../imgs/work/2-1.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(2) > div.inner {
+  background-image: url(../imgs/work/2-2.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(3) > div.inner {
+  background-image: url(../imgs/work/2-3.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(4) > div.inner {
+  background-image: url(../imgs/work/2-4.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(5) > div.inner {
+  background-image: url(../imgs/work/2-5.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(6) > div.inner {
+  background-image: url(../imgs/work/2-6.svg) !important; }
+section#section-work > div.inner ul.list2#for_administrators li:nth-child(7) > div.inner {
+  background-image: url(../imgs/work/2-7.svg) !important; }
 section#section-work > div.inner > div {
   background: #26C4F7;
   border-radius: 4px;
@@ -1008,12 +1020,24 @@ section#section-easy {
       @media (max-width: 1109px) {
         section#section-easy > div.inner ul li {
           padding: 6px 0 15px 40px; } }
-      section#section-easy > div.inner ul li:nth-child(1) {
-        background: url(../imgs/icons/easy1.svg) no-repeat 0 0; }
-      section#section-easy > div.inner ul li:nth-child(2) {
-        background: url(../imgs/icons/easy2.svg) no-repeat 0 0; }
-      section#section-easy > div.inner ul li:nth-child(3) {
-        background: url(../imgs/icons/easy3.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_users ul li:nth-child(1) {
+    background: url(../imgs/icons/easy1.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_users ul li:nth-child(2) {
+    background: url(../imgs/icons/easy2.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_users ul li:nth-child(3) {
+    background: url(../imgs/icons/easy3.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_business ul li:nth-child(1) {
+    background: url(../imgs/icons/easy2-1.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_business ul li:nth-child(2) {
+    background: url(../imgs/icons/easy2-2.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_business ul li:nth-child(3) {
+    background: url(../imgs/icons/easy2-3.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_business ul li:nth-child(4) {
+    background: url(../imgs/icons/easy2-4.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_business ul li:nth-child(5) {
+    background: url(../imgs/icons/easy2-5.svg) no-repeat 0 0; }
+  section#section-easy > div.inner .for_business ul li:nth-child(6) {
+    background: url(../imgs/icons/easy2-6.svg) no-repeat 0 0; }
   section#section-easy > div.inner div.img {
     background: #F7FBFC;
     padding: 12px;
@@ -1327,5 +1351,91 @@ body > footer {
             color: #F1F8FA; }
           body > footer #absfooter ul li a:active {
             color: #848484; }
+
+div.popup {
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+  max-width: 550px;
+  display: none; }
+  div.popup > span.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #F1F8FA;
+    border-radius: 4px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E84BC;
+    transition: color 0.3s, border-color 0.3s; }
+    div.popup > span.close:hover {
+      border: 1px solid #0E84BC; }
+  div.popup > div.inner {
+    padding: 50px 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    div.popup > div.inner h3 {
+      color: #2C2A28;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 0 10px 0; }
+    div.popup > div.inner p {
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0 0 20px 0; }
+    div.popup > div.inner input[type="text"],
+    div.popup > div.inner input[type="email"],
+    div.popup > div.inner textarea {
+      display: block;
+      border: 1px solid #F2F2F2;
+      border-radius: 4px;
+      padding: 8px 15px;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: Poppins, Montserrat, "Open Sans";
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0 0 15px 0;
+      outline: none;
+      transition: color 0.3s, border-color 0.3s; }
+      div.popup > div.inner input[type="text"]:active,
+      div.popup > div.inner input[type="email"]:active,
+      div.popup > div.inner textarea:active {
+        border-color: #bfbfbf; }
+      div.popup > div.inner input[type="text"]:focus,
+      div.popup > div.inner input[type="email"]:focus,
+      div.popup > div.inner textarea:focus {
+        border-color: #d9d9d9; }
+      div.popup > div.inner input[type="text"].error,
+      div.popup > div.inner input[type="email"].error,
+      div.popup > div.inner textarea.error {
+        border-color: #ff0000; }
+      div.popup > div.inner input[type="text"]::placeholder,
+      div.popup > div.inner input[type="email"]::placeholder,
+      div.popup > div.inner textarea::placeholder {
+        color: #C1C1C1; }
+    div.popup > div.inner textarea {
+      height: 150px; }
+    div.popup > div.inner label.error {
+      font-size: 12px;
+      padding: 3px 0;
+      color: #ff0000;
+      display: block;
+      margin: -15px 0 15px 0; }
+    div.popup > div.inner div.buttons {
+      text-align: center;
+      padding: 30px 0 0 0; }
+    div.popup > div.inner input[type="submit"] {
+      margin: 0 auto;
+      text-align: center;
+      border: 0; }
 
 /*# sourceMappingURL=app.css.map */
