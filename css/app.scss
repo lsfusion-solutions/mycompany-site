@@ -15,7 +15,7 @@ html, body {
   body.flex {
     display: flex;
     flex-direction: column;
-    & > .inner {
+    & > main {
       flex: auto;
     }
   }
@@ -322,6 +322,23 @@ section{
     @media (max-width: $siteWidth - 1){
       padding-left: 20px;
       padding-right: 20px;
+    }
+  }
+  &#section-404,
+  &#section-thankyou{
+    h1{
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 500;
+      margin: 0 0 20px 0;
+      em{
+        font-style: normal;
+        color: #26C4F7;
+
+      }
+    }
+    p{
+
     }
   }
   &#section-header{

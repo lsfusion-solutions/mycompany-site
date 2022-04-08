@@ -323,7 +323,7 @@ html, body {
   body.flex {
     display: flex;
     flex-direction: column; }
-    body.flex > .inner {
+    body.flex > main {
       flex: auto; } }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -575,6 +575,14 @@ body > nav {
   section > div.inner {
     padding-left: 20px;
     padding-right: 20px; } }
+section#section-404 h1, section#section-thankyou h1 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  margin: 0 0 20px 0; }
+  section#section-404 h1 em, section#section-thankyou h1 em {
+    font-style: normal;
+    color: #26C4F7; }
 section#section-header {
   background: #0062BD; }
   @media (min-width: 1110px) {
