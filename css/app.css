@@ -323,7 +323,7 @@ html, body {
   body.flex {
     display: flex;
     flex-direction: column; }
-    body.flex > .inner {
+    body.flex > main {
       flex: auto; } }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -1102,6 +1102,14 @@ section > div.inner {
       box-sizing: border-box; } }
 section h1, section h2, section h3, section h4 {
   font-family: Poppins, Montserrat, "Open Sans"; }
+section h1 {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 0 0 20px 0;
+  font-weight: 500; }
+  section h1 em {
+    font-style: normal;
+    color: #26C4F7; }
 section h2 {
   font-weight: 500;
   font-size: 30px;

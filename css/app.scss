@@ -15,7 +15,7 @@ html, body {
   body.flex {
     display: flex;
     flex-direction: column;
-    & > .inner {
+    & > main {
       flex: auto;
     }
   }
@@ -1110,6 +1110,16 @@ section{
   }
   h1, h2, h3, h4{
     font-family: Poppins, Montserrat, "Open Sans";
+  }
+  h1{
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    em {
+      font-style: normal;
+      color: #26C4F7;
+    }
   }
   h2{
     font-weight: 500;

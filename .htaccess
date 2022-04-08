@@ -2,6 +2,8 @@ DirectoryIndex index.html
 
 ErrorDocument 404 /404.html
 
+Redirect 302 /thankyou /thankyou.html
+
 #AddType text/html .html
 #AddHandler server-parsed .html
 Options Indexes FollowSymLinks Includes
