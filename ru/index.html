@@ -390,6 +390,29 @@
     </div>
 </footer>
 
+<span class="contactus" title="Связаться с нами">Связаться с нами</span>
+
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>Напишите нам</h3>
+        <form method="post" action="/contact-us.php" class="frm">
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="ФИО*" required />
+                <input type="text" name="phone" value="" placeholder="Телефон*" required />
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <input type="text" name="company" value="" placeholder="Организация*" required />
+                <input type="text" name="position" value="" placeholder="Должность*" required />
+                <textarea name="comment" placeholder="Вопрос*" rows="10" cols="6" required></textarea>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Отправить" />
+            </div>
+        </form>
+    </div>
+</div>
+
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="

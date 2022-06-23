@@ -32,6 +32,57 @@ $(document).ready(function() {
         e.preventDefault()
         return false;
     })
-    $("#orderpopup form").validate();
+
+
+    $.validator.methods.matches = function( value, element, params ) {
+        return this.optional( element ) || (new RegExp( params )).test( value );
+    }
+    let phoneErrorMessage = "Please enter a valid phone number";
+    if(document.location.href.indexOf("/ru/") !== -1){
+        phoneErrorMessage = "Некорректный формат номера телефона";
+    }else if(document.location.href.indexOf("/uk/") !== -1){
+        phoneErrorMessage = "Некоректний формат номера телефону";
+    }else if(document.location.href.indexOf("/by/") !== -1){
+        phoneErrorMessage = "Некарэктны фармат нумара тэлефона";
+    }
+    $("#orderpopup form").validate({
+        rules: {
+            phone: {
+                matches: /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/,
+            }
+        },
+        messages: {
+            phone: phoneErrorMessage,
+        }
+    });
+
+
+    $(".contactus").click(function(e){
+        $("#contactuspopup").popup({closeelement:".close"}).popup("show");
+        e.preventDefault()
+        return false;
+    })
+    if( $("#contactuspopup").length > 0) {
+        $("#contactuspopup form").validate({
+            errorPlacement: function(error, element) {
+                if( $(element).closest(".line").length > 0 ){
+                    error.appendTo($(element).closest(".line"));
+                }else{
+                    error.insertAfter(element);
+                }
+            }
+        });
+    }
+    if( $("#contactusfrm").length > 0) {
+        $("#contactusfrm").validate({
+            errorPlacement: function(error, element) {
+                if( $(element).closest(".line").length > 0 ){
+                    error.appendTo($(element).closest(".line"));
+                }else{
+                    error.insertAfter(element);
+                }
+            }
+        });
+    }
 
 })

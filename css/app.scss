@@ -1447,6 +1447,7 @@ div.popup{
     &:hover{
       border: 1px solid #0E84BC;
     }
+
   }
   & > div.inner{
     padding: 50px 60px;
@@ -1519,5 +1520,42 @@ div.popup{
       border: 0;
     }
 
+  }
+}
+
+#contactuspopup{
+  width: 750px;
+}
+body > .contactus{
+  position: fixed;
+  right: 0;
+  top: 500px;
+  width: 40px;
+  height: 40px;
+  text-indent: -3000px;
+  background: #26C4F7 url(../imgs/icons/contactus.svg) no-repeat 50% 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  z-index: 10;
+  &:hover{
+    background-color: #0B85DE;
+  }
+  @media(max-width: $siteWidth - 1){
+    display: none;
+  }
+}
+#contactusfrm{
+  background: #EFF6F8;
+  padding: 40px 60px;
+  p{
+    margin: 0 0 28px 0;
+  }
+  input[type="submit"]{
+    margin-top: 40px;
+  }
+  textarea{
+    @media (min-width: $mobileWidth) {
+      height: calc(100% - 15px);
+    }
   }
 }
