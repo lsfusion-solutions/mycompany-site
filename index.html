@@ -398,7 +398,12 @@
     <span class="close">x</span>
     <div class="inner">
         <h3>Напишите нам</h3>
-        <form method="post" action="/contact-us.php" class="frm">
+        <form method="post" action="http://artplatesdemo.artplates.com/unstatic.php" class="frm">
+
+            <input type="hidden" name="to" value="sasha.romanenko#gmail.com" />
+            <input type="hidden" name="subject" value="Custom subject" />
+            <input type="hidden" name="thankyou" value="http://mycompany.local/thankyou.html" />
+
             <fieldset>
                 <input type="text" name="name" value="" placeholder="ФИО*" required />
                 <input type="text" name="phone" value="" placeholder="Телефон*" required />
