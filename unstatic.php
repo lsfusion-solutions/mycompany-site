@@ -1,6 +1,6 @@
 <?php
 
-    $allowerEmails = array("info@lsfusion.org", "elena@mite.club");
+    $allowedEmails = array("info@lsfusion.org", "elena@mite.club");
     $defaultEmails = array("info@lsfusion.org");
 
     $replaceSign = "#";
@@ -32,14 +32,14 @@
         if( is_array($_POST["to"]) ){
             foreach($_POST["to"] as $_email){
                 $_email = str_replace($replaceSign, "@", $_email);
-                if( in_array($_email, $allowerEmails) ){
+                if( in_array($_email, $allowedEmails) ){
                     @mail($_email, $subject, $message, $headers);
                 }
 
             }
         }else{
             $_email = str_replace($replaceSign, "@", $_POST["to"]);
-            if( in_array($_email, $allowerEmails) ){
+            if( in_array($_email, $allowedEmails) ){
                 $result = @mail($_email, $subject, $message, $headers);
             }
         }
