@@ -1,11 +1,11 @@
 <?php
 
-    $allowerEmails = array("sasha.romanenko@gmail.com", "anotheremail@gmail.com");
-    $defaultEmails = array("sasha.romanenko@gmail.com");
+    $allowerEmails = array("info@lsfusion.org", "elena@mite.club");
+    $defaultEmails = array("info@lsfusion.org");
 
     $replaceSign = "#";
 
-    $subject = "Новый запрос (" .date("Y-m-d H:i:s") . ")";
+    $subject = "Запрос с Mycompany (" .date("Y-m-d H:i:s") . ")";
 
 
     $message = "";
