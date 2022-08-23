@@ -3,7 +3,7 @@
 <head>
     <link rel="alternate" href="https://mycompany.lsfusion.org/" hreflang="en" />
     <link rel="alternate" href="https://mycompany.lsfusion.org/ru/" hreflang="ru" />
-    <link rel="alternate" href="https://mycompany.lsfusion.org/by/" hreflang="by" />
+    <!--link rel="alternate" href="https://mycompany.lsfusion.org/by/" hreflang="by" /-->
     <link rel="alternate" href="https://mycompany.lsfusion.org/uk/" hreflang="uk" />
 
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
 
     <link href="css/app.css" rel="stylesheet" type="text/css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png title="Free ERP for small/medium business">
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon_32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon_16x16.png">
     <link rel="icon" type="image/x-icon" href="imgs/favicon/favicon.ico">
@@ -39,18 +39,18 @@
         <a class="menu-link" href="#menu">Navigation</a>
         <ul class="nav">
             <li><a href="./#functions">Functions</a></li>
-            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank">Demo</a></li>
-            <li><a href="https://mycompany-docs.lsfusion.org/en/Development/" target="_blank">Development</a></li>
+          <!--  <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank">Demo</a></li> -->
+            <li><a href="https://mycompany-docs.lsfusion.org/en/Development/" target="_blank">Developer</a></li>
             <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
             <li><a href="https://mycompany-docs.lsfusion.org/en/" target="_blank">Documentation</a></li>
-            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">Try Demo</a></li>
+            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">Try demo</a></li>
             <li id="languages">
                 <div class="language">
                     <strong>En</strong>
                     <ul>
                         <li><a href="ru/">Ру</a></li>
                         <li><a href="uk/">Ук</a></li>
-                        <li><a href="by/">Бе</a></li>
+                        <!--li><a href="by/">Бе</a></li-->
                         <li><span class="current">En</span></li>
                     </ul>
                 </div>
@@ -80,7 +80,7 @@
                 <p>Developed on free open source platform<br /> <a href="https://lsfusion.org/" target="_blank">lsFusion</a></p>
             </div>
             <ul class="links">
-                <li><a href="#">Equipment</a></li>
+             <!--   <li><a href="#">Equipment</a></li> --> 
                 <li><a href="https://mycompany-docs.lsfusion.org/en/" target="_blank">Documentation</a></li>
             </ul>
             <ul class="social">
@@ -104,6 +104,33 @@
         </div>
     </div>
 </footer>
+
+<span class="contactus" title="Связаться с нами">Связаться с нами</span>
+
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>Напишите нам</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+            <input type="hidden" name="to" value="info@lsfusion.org" />
+            <input type="hidden" name="subject" value="Custom subject" />
+            <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/en/thankyou.html" />
+
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="ФИО*" required />
+                <input type="text" name="phone" value="" placeholder="Телефон*" required />
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <input type="text" name="company" value="" placeholder="Организация*" required />
+                <input type="text" name="position" value="" placeholder="Должность*" required />
+                <textarea name="comment" placeholder="Вопрос*" rows="10" cols="6" required></textarea>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Отправить" />
+            </div>
+        </form>
+    </div>
+</div>
 
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"

@@ -3,7 +3,7 @@
 <head>
     <link rel="alternate" href="https://mycompany.lsfusion.org/" hreflang="en" />
     <link rel="alternate" href="https://mycompany.lsfusion.org/ru/" hreflang="ru" />
-    <link rel="alternate" href="https://mycompany.lsfusion.org/by/" hreflang="by" />
+    <!--link rel="alternate" href="https://mycompany.lsfusion.org/by/" hreflang="by" /-->
     <link rel="alternate" href="https://mycompany.lsfusion.org/uk/" hreflang="uk" />
 
     <meta charset="utf-8" />
@@ -50,7 +50,7 @@
                     <ul>
                         <li><a href="../ru/">Ру</a></li>
                         <li><span class="current">Ук</span></li>
-                        <li><a href="../by/">Бе</a></li>
+                        <!--li><a href="../by/">Бе</a></li-->
                         <li><a href="../">En</a></li>
                     </ul>
                 </div>
@@ -106,6 +106,32 @@
     </div>
 </footer>
 
+<span class="contactus" title="Связаться с нами">Связаться с нами</span>
+
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>Напишите нам</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+                <input type="hidden" name="to" value="info@lsfusion.org" />
+                <input type="hidden" name="subject" value="Custom subject" />
+                <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/uk/thankyou.html" />
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="ФИО*" required />
+                <input type="text" name="phone" value="" placeholder="Телефон*" required />
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <input type="text" name="company" value="" placeholder="Организация*" required />
+                <input type="text" name="position" value="" placeholder="Должность*" required />
+                <textarea name="comment" placeholder="Вопрос*" rows="10" cols="6" required></textarea>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Отправить" />
+            </div>
+        </form>
+    </div>
+</div>
+
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -113,6 +139,7 @@
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
 <script src="../js/jquery.popupoverlay.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
+<script src="../js/localization/messages_uk.min.js"></script>
 <script src="../js/app.js"></script>
 </body>
 </html>
