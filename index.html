@@ -124,29 +124,6 @@
                 <a href="https://github.com/lsfusion-solutions/mycompany/issues/new" target="_blank"><span>Leave a comment on GitHub</span></a>
                 <a href="https://forms.un-static.com/forms/b93c52bba67143bca10126d1ab60ca8a85d5f089" id="order"><span>Order revision</span></a>
             </nav>
-            <div id="orderpopup" class="popup">
-                <span class="close">x</span>
-                <div class="inner">
-                    <h3>Order revision</h3>
-                    <p>The developers of our company will offer a solution</p>
-                    <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
-                   <!-- <form method="post" action="https://forms.un-static.com/forms/62bd4e02f0e64e2ba8b3972160daedb3ea2fed86">-->
-                    <input type="hidden" name="to" value="info@lsfusion.org" />
-                    <input type="hidden" name="subject" value="Custom subject" />
-                    <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/thankyou.html" />
-                    <!-- <form method="post" action="https://forms.un-static.com/forms/b990a06abc8c3636d121a2d629241d646cf7c8ee"> -->
-                        <fieldset>
-                            <input type="text" name="name" value="" placeholder="Your name*" required />
-                            <input type="email" name="email" value="" placeholder="Email*" required />
-                            <input type="text" name="phone" value="" placeholder="Phone" class="validate-phone" />
-                            <textarea name="comment" placeholder="What kind of revision do you need?" rows="10" cols="6"></textarea>
-                        </fieldset>
-                        <div class="buttons">
-                            <input type="submit" value="Submit" />
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -410,6 +387,7 @@
             <fieldset>
                 <input type="text" name="name" value="" placeholder="Name*" required />
                 <input type="text" name="phone" value="" placeholder="Phone*" required />
+                <span class="note">Add country code to your phone number, for example <strong>+375 (29) 351-97-73</strong></span>
                 <input type="email" name="email" value="" placeholder="E-mail*" required />
                 <input type="text" name="company" value="" placeholder="Organiztion*" required />
                 <input type="text" name="position" value="" placeholder="Position*" required />

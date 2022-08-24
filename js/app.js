@@ -26,9 +26,8 @@ $(document).ready(function() {
     })
 
     $("#order").click(function(e){
-        $("#orderpopup").popup({
-            closeelement: "span.close",
-        }).popup("show")
+        //$("#orderpopup").popup({closeelement: "span.close",}).popup("show")
+        $("#contactuspopup").popup({closeelement:".close"}).popup("show");
         e.preventDefault()
         return false;
     })
