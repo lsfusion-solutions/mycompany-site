@@ -926,6 +926,10 @@ section{
             position: absolute;
             right: 30px;
             bottom: 30px;
+            &:active{
+              top: auto !important;
+              bottom: 31px !important;
+            }
           }
           @extend .btn;
           @extend .btn-invert;

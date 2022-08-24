@@ -981,7 +981,10 @@ section#section-work > div.inner > div {
     section#section-work > div.inner > div a {
       position: absolute;
       right: 30px;
-      bottom: 30px; } }
+      bottom: 30px; }
+      section#section-work > div.inner > div a:active {
+        top: auto !important;
+        bottom: 31px !important; } }
 section#section-easy {
   background: #EFF6F8; }
   @media (min-width: 1110px) {
