@@ -1126,31 +1126,53 @@ section#section-services-2 > div.inner ul {
   section#section-services-2 > div.inner ul li {
     background: #26c4f7;
     color: #fff;
-    flex: 0 0 25%;
+    flex: 0 0 27%;
     padding: 21px 21px;
-    border-radius: 6px; }
+    border-radius: 6px;
+    min-height: 285px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: background 0.3s;
+    background-position: left 50% top 50px;
+    text-align: center;
+    padding-top: 210px; }
     section#section-services-2 > div.inner ul li h3 {
       font-size: 24px;
       margin: 0 0 30px 0;
-      font-weight: 600; }
+      font-weight: 600;
+      display: none;
+      padding: 0 0 0 40px;
+      background-size: 30px !important; }
+    section#section-services-2 > div.inner ul li h4 {
+      font-size: 35px;
+      text-transform: uppercase;
+      margin: 0; }
     section#section-services-2 > div.inner ul li p {
       color: #fff;
       font-size: 18px;
-      line-height: 24px; }
+      line-height: 24px;
+      display: none; }
+    section#section-services-2 > div.inner ul li:hover {
+      text-align: left;
+      padding-top: 21px;
+      background-image: none !important; }
+      section#section-services-2 > div.inner ul li:hover h3, section#section-services-2 > div.inner ul li:hover p {
+        display: block; }
+      section#section-services-2 > div.inner ul li:hover h4 {
+        display: none; }
+      section#section-services-2 > div.inner ul li:hover:nth-child(1) h3 {
+        background: url(../imgs/icons/speed.svg) no-repeat left top 50%; }
+      section#section-services-2 > div.inner ul li:hover:nth-child(2) h3 {
+        background: url(../imgs/icons/quality.svg) no-repeat left top 50%; }
+      section#section-services-2 > div.inner ul li:hover:nth-child(3) h3 {
+        background: url(../imgs/icons/price.svg) no-repeat left top 50%; }
+    section#section-services-2 > div.inner ul li:nth-child(1) {
+      background: #26c4f7 url(../imgs/icons/speed.svg) no-repeat left 50% top 50px; }
     section#section-services-2 > div.inner ul li:nth-child(2) {
-      background: #26c4f7 url(../imgs/icons/quality.svg) no-repeat left 50% top 50px;
-      text-align: center;
-      padding-top: 210px; }
-      section#section-services-2 > div.inner ul li:nth-child(2) h3 {
-        font-size: 35px;
-        text-transform: uppercase; }
+      background: #26c4f7 url(../imgs/icons/quality.svg) no-repeat left 50% top 50px; }
     section#section-services-2 > div.inner ul li:nth-child(3) {
-      background: #26c4f7 url(../imgs/icons/price.svg) no-repeat left 50% top 50px;
-      text-align: center;
-      padding-top: 210px; }
-      section#section-services-2 > div.inner ul li:nth-child(3) h3 {
-        font-size: 35px;
-        text-transform: uppercase; }
+      background: #26c4f7 url(../imgs/icons/price.svg) no-repeat left 50% top 50px; }
 section#section-services-3 {
   background: #eff6f8; }
   section#section-services-3 > div.inner h2 {
@@ -1208,9 +1230,10 @@ section#section-footer > div.inner.section-footer-services > div {
   position: relative; }
   section#section-footer > div.inner.section-footer-services > div p {
     font-size: 18px; }
-section#section-footer > div.inner.section-footer-services > a {
+section#section-footer > div.inner.section-footer-services > a, section#section-footer > div.inner.section-footer-services > span.btn, section#section-work > div.inner.for_developers nav section#section-footer > div.inner.section-footer-services > span.for_developers, section#section-work > div.inner.for_developers nav section#section-footer > div.inner.section-footer-services > span.for_administrators, section#section-work > div.inner.for_administrators nav section#section-footer > div.inner.section-footer-services > span.for_developers, section#section-work > div.inner.for_administrators nav section#section-footer > div.inner.section-footer-services > span.for_administrators, section#section-easy > div.inner.for_users nav section#section-footer > div.inner.section-footer-services > span.for_users, section#section-easy > div.inner.for_users nav section#section-footer > div.inner.section-footer-services > span.for_business, section#section-easy > div.inner.for_business nav section#section-footer > div.inner.section-footer-services > span.for_users, section#section-easy > div.inner.for_business nav section#section-footer > div.inner.section-footer-services > span.for_business {
   margin: 45px 0 0 10px;
-  float: left; }
+  float: left;
+  cursor: pointer; }
 @media (min-width: 1110px) {
   section#section-footer > div.inner > div {
     float: left;

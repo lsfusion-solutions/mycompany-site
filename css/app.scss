@@ -1157,36 +1157,72 @@ section{
         li{
           background: #26c4f7;
           color: #fff;
-          flex: 0 0 25%;
+          flex: 0 0 27%;
           padding: 21px 21px;
           border-radius: 6px;
+          min-height: 285px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          transition: background 0.3s;
+          background-position: left 50% top 50px;
           h3{
             font-size: 24px;
             margin: 0 0 30px 0;
             font-weight: 600;
+            display: none;
+            padding: 0 0 0 40px;
+            background-size: 30px !important;
+          }
+          h4{
+            font-size: 35px;
+            text-transform: uppercase;
+            margin: 0;
           }
           p{
             color: #fff;
             font-size: 18px;
             line-height: 24px;
+            display: none;
+          }
+          text-align: center;
+          padding-top: 210px;
+          &:hover{
+            text-align: left;
+            padding-top: 21px;
+            h3,p{
+              display: block;
+            }
+            h4{
+              display: none;
+            }
+            background-image: none !important;
+
+
+            &:nth-child(1){
+              h3 {
+                background: url(../imgs/icons/speed.svg) no-repeat left top 50%;
+              }
+            }
+            &:nth-child(2){
+              h3 {
+                background: url(../imgs/icons/quality.svg) no-repeat left top 50%;
+              }
+            }
+            &:nth-child(3){
+              h3 {
+                background: url(../imgs/icons/price.svg) no-repeat left top 50%;
+              }
+            }
+          }
+          &:nth-child(1){
+            background: #26c4f7 url(../imgs/icons/speed.svg) no-repeat left 50% top 50px;
           }
           &:nth-child(2){
             background: #26c4f7 url(../imgs/icons/quality.svg) no-repeat left 50% top 50px;
-            text-align: center;
-            padding-top: 210px;
-            h3{
-              font-size: 35px;
-              text-transform: uppercase;
-            }
           }
           &:nth-child(3){
             background: #26c4f7 url(../imgs/icons/price.svg) no-repeat left 50% top 50px;
-            text-align: center;
-            padding-top: 210px;
-            h3{
-              font-size: 35px;
-              text-transform: uppercase;
-            }
           }
         }
       }
@@ -1272,9 +1308,11 @@ section{
             font-size: 18px;
           }
         }
-        & > a{
+        & > a,
+        & > span.btn{
           margin: 45px 0 0 10px;
           float: left;
+          cursor: pointer;
         }
       }
       & > div {
