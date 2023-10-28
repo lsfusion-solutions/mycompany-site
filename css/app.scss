@@ -1089,11 +1089,16 @@ section{
       ul:first-of-type{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 0 45px 0;
         li{
           background: #fff;
           flex: 0 0 31.3%;
+          @media (max-width: $mobileWidth - 1){
+            flex: 0 0 100%;
+            margin: 0 0 21px;
+          }
           padding: 27px 21px;
           border: 1px solid #C1C1C1;
           border-radius: 6px;
@@ -1153,11 +1158,16 @@ section{
         list-style: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         li{
           background: #26c4f7;
           color: #fff;
           flex: 0 0 27%;
+          @media (max-width: $mobileWidth - 1){
+            flex: 0 0 100%;
+            margin: 0 0 21px;
+          }
           padding: 21px 21px;
           border-radius: 6px;
           min-height: 285px;
@@ -1238,12 +1248,25 @@ section{
         list-style: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         position: relative;
-        left: 50px;
+        @media (min-width: $siteWidth) {
+          left: 50px;
+        }
+        @media (max-width: $siteWidth - 1){
+          padding: 0 0 0 50px;
+        }
         margin: 0 0 60px 0;
         li{
           flex: 0 0 20%;
+          @media (max-width: $siteWidth - 1){
+            flex: 0 0 40%;
+            margin-bottom: 80px;
+          }
+          @media (max-width: $mobileWidth - 1){
+            flex: 0 0 100%;
+          }
           position: relative;
           z-index: 2;
           border-radius: 6px;
@@ -1297,7 +1320,7 @@ section{
     }
     & > div.inner{
       @media (min-width: $siteWidth) {
-        background: url(../imgs/run.svg) no-repeat right 0 bottom 0;
+        //background: url(../imgs/run.svg) no-repeat right 0 bottom 0;
         background: url(../imgs/run.svg) no-repeat right 0 top 94px;
       }
       @include clearfix;
@@ -1308,11 +1331,13 @@ section{
             font-size: 18px;
           }
         }
-        & > a,
-        & > span.btn{
-          margin: 45px 0 0 10px;
-          float: left;
-          cursor: pointer;
+        @media (min-width: $siteWidth) {
+          & > a,
+          & > span.btn {
+            margin: 45px 0 0 10px;
+            float: left;
+            cursor: pointer;
+          }
         }
       }
       & > div {
@@ -1335,7 +1360,7 @@ section{
           }
           strong{
             display: block;
-            padding: 19px 0 0 0;
+            padding: 20px 0 10px 0;
             font-size: 24px;
             font-weight: 700;
           }

@@ -1074,6 +1074,7 @@ section#section-services-1 {
   section#section-services-1 > div.inner ul:first-of-type {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 0 45px 0; }
     section#section-services-1 > div.inner ul:first-of-type li {
@@ -1086,6 +1087,10 @@ section#section-services-1 {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
+      @media (max-width: 767px) {
+        section#section-services-1 > div.inner ul:first-of-type li {
+          flex: 0 0 100%;
+          margin: 0 0 21px; } }
       section#section-services-1 > div.inner ul:first-of-type li h3 {
         font-size: 24px;
         font-weight: 600;
@@ -1122,6 +1127,7 @@ section#section-services-2 > div.inner ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around; }
   section#section-services-2 > div.inner ul li {
     background: #26c4f7;
@@ -1137,6 +1143,10 @@ section#section-services-2 > div.inner ul {
     background-position: left 50% top 50px;
     text-align: center;
     padding-top: 210px; }
+    @media (max-width: 767px) {
+      section#section-services-2 > div.inner ul li {
+        flex: 0 0 100%;
+        margin: 0 0 21px; } }
     section#section-services-2 > div.inner ul li h3 {
       font-size: 24px;
       margin: 0 0 30px 0;
@@ -1181,16 +1191,29 @@ section#section-services-3 {
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    left: 50px;
     margin: 0 0 60px 0; }
+    @media (min-width: 1110px) {
+      section#section-services-3 > div.inner ul {
+        left: 50px; } }
+    @media (max-width: 1109px) {
+      section#section-services-3 > div.inner ul {
+        padding: 0 0 0 50px; } }
     section#section-services-3 > div.inner ul li {
       flex: 0 0 20%;
       position: relative;
       z-index: 2;
       border-radius: 6px;
       background: #fff; }
+      @media (max-width: 1109px) {
+        section#section-services-3 > div.inner ul li {
+          flex: 0 0 40%;
+          margin-bottom: 80px; } }
+      @media (max-width: 767px) {
+        section#section-services-3 > div.inner ul li {
+          flex: 0 0 100%; } }
       section#section-services-3 > div.inner ul li div.inner {
         padding: 15px 18px 15px 12px;
         z-index: 2;
@@ -1220,7 +1243,6 @@ section#section-services-3 {
     background: #0062BD; } }
 @media (min-width: 1110px) {
   section#section-footer > div.inner {
-    background: url(../imgs/run.svg) no-repeat right 0 bottom 0;
     background: url(../imgs/run.svg) no-repeat right 0 top 94px; } }
 section#section-footer > div.inner:after {
   content: "";
@@ -1230,10 +1252,11 @@ section#section-footer > div.inner.section-footer-services > div {
   position: relative; }
   section#section-footer > div.inner.section-footer-services > div p {
     font-size: 18px; }
-section#section-footer > div.inner.section-footer-services > a, section#section-footer > div.inner.section-footer-services > span.btn, section#section-work > div.inner.for_developers nav section#section-footer > div.inner.section-footer-services > span.for_developers, section#section-work > div.inner.for_developers nav section#section-footer > div.inner.section-footer-services > span.for_administrators, section#section-work > div.inner.for_administrators nav section#section-footer > div.inner.section-footer-services > span.for_developers, section#section-work > div.inner.for_administrators nav section#section-footer > div.inner.section-footer-services > span.for_administrators, section#section-easy > div.inner.for_users nav section#section-footer > div.inner.section-footer-services > span.for_users, section#section-easy > div.inner.for_users nav section#section-footer > div.inner.section-footer-services > span.for_business, section#section-easy > div.inner.for_business nav section#section-footer > div.inner.section-footer-services > span.for_users, section#section-easy > div.inner.for_business nav section#section-footer > div.inner.section-footer-services > span.for_business {
-  margin: 45px 0 0 10px;
-  float: left;
-  cursor: pointer; }
+@media (min-width: 1110px) {
+  section#section-footer > div.inner.section-footer-services > a, section#section-footer > div.inner.section-footer-services > span.btn, section#section-work > div.inner.for_developers nav section#section-footer > div.inner.section-footer-services > span.for_developers, section#section-work > div.inner.for_developers nav section#section-footer > div.inner.section-footer-services > span.for_administrators, section#section-work > div.inner.for_administrators nav section#section-footer > div.inner.section-footer-services > span.for_developers, section#section-work > div.inner.for_administrators nav section#section-footer > div.inner.section-footer-services > span.for_administrators, section#section-easy > div.inner.for_users nav section#section-footer > div.inner.section-footer-services > span.for_users, section#section-easy > div.inner.for_users nav section#section-footer > div.inner.section-footer-services > span.for_business, section#section-easy > div.inner.for_business nav section#section-footer > div.inner.section-footer-services > span.for_users, section#section-easy > div.inner.for_business nav section#section-footer > div.inner.section-footer-services > span.for_business {
+    margin: 45px 0 0 10px;
+    float: left;
+    cursor: pointer; } }
 @media (min-width: 1110px) {
   section#section-footer > div.inner > div {
     float: left;
@@ -1252,7 +1275,7 @@ section#section-footer > div.inner > div p {
       margin: 0 0 10px 0; } }
   section#section-footer > div.inner > div p strong {
     display: block;
-    padding: 19px 0 0 0;
+    padding: 20px 0 10px 0;
     font-size: 24px;
     font-weight: 700; }
 section#section-footer > div.inner > a {
