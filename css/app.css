@@ -1505,9 +1505,8 @@ body > footer {
         width: 39%; } }
     @media (max-width: 767px) {
       body > footer nav div {
-        margin: 0 0 20px 0; }
-        body > footer nav div br {
-          display: none; } }
+        margin: 0 0 20px 0;
+        width: 100%; } }
     body > footer nav div h3 {
       margin: 0 0 9px 0;
       font-weight: 700;
@@ -1551,19 +1550,25 @@ body > footer {
           width: 17%; } }
       @media (max-width: 767px) {
         body > footer nav ul.links {
-          width: 33.3333%; } }
+          width: 25%; } }
+      @media (max-width: 599px) {
+        body > footer nav ul.links {
+          width: 100%; } }
       @media (min-width: 768px) {
         body > footer nav ul.social {
           width: 27%; } }
       @media (max-width: 767px) {
         body > footer nav ul.social {
-          width: 33.3333%; } }
+          width: 50%; } }
+      @media (max-width: 599px) {
+        body > footer nav ul.social {
+          width: 100%; } }
       @media (min-width: 768px) {
         body > footer nav ul.community {
           width: 17%; } }
       @media (max-width: 767px) {
         body > footer nav ul.community {
-          width: 33.3333%; } }
+          width: 25%; } }
       body > footer nav ul li {
         margin: 0 0 9px 0; }
         body > footer nav ul li a {

@@ -1308,13 +1308,13 @@ body > footer{
       }
       @media (max-width: $mobileWidth - 1){
         margin: 0 0 20px 0;
+        width: 100%;
         br{
-          display: none;
+          //display: none;
         }
       }
       h3{
         margin: 0 0 9px 0;
-
         font-weight: 700;
         font-size: 14px;
         line-height: 27px;
@@ -1365,7 +1365,10 @@ body > footer{
           width: 17%;
         }
         @media (max-width: $mobileWidth - 1){
-          width: 33.3333%;
+          width: 25%;
+        }
+        @media (max-width: 599px){
+          width: 100%;
         }
       }
       &.social{
@@ -1373,7 +1376,10 @@ body > footer{
           width: 27%;
         }
         @media (max-width: $mobileWidth - 1){
-          width: 33.3333%;
+          width: 50%;
+        }
+        @media (max-width: 599px){
+          width: 100%;
         }
       }
       &.community{
@@ -1381,7 +1387,10 @@ body > footer{
           width: 17%;
         }
         @media (max-width: $mobileWidth - 1){
-          width: 33.3333%;
+          width: 25%;
+        }
+        @media (max-width: 599px){
+          width: 100%;
         }
       }
 
