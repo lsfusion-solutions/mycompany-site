@@ -84,4 +84,17 @@ $(document).ready(function() {
         });
     }
 
+    const services = new Swiper(".swiper-container", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        loop: true,
+
+
+        autoplay: {
+            delay: 3500,
+            pauseOnMouseEnter: true,
+        },
+
+    });
+
 })
