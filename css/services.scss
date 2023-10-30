@@ -39,7 +39,10 @@
     div.swiper-container-wrapper {
       background: url(../imgs/icons/bg-left.svg) no-repeat left 0 top 0, url(../imgs/icons/bg-right.svg) no-repeat right 0 top 0;
       padding: 0 50px;
-
+      @media (max-width: 479px){
+        padding: 0 50px 0 10px;
+        overflow: hidden;
+      }
       margin: 0 auto;
       @media (min-width: $mobileWidth){
         width: 630px;
@@ -126,17 +129,19 @@
       li{
         background: #26c4f7;
         color: #fff;
+        width: 290px;
         @media (min-width: $mobileWidth) {
-          width: 290px;
           min-height: 350px;
+
+          @media (max-width: $siteWidth - 1) {
+            width: 30%;
+            min-height: 490px;
+          }
         }
 
-        @media (max-width: $siteWidth - 1) and (min-width: $mobileWidth) {
-          width: 30%;
-          min-height: 490px;
-        }
         @media (max-width: $mobileWidth - 1){
           margin: 0 0 21px;
+          width: 100%;
         }
         padding: 21px 21px;
         border-radius: 6px;
@@ -212,8 +217,6 @@
             display: none;
           }
           background-image: none !important;
-
-
           &:nth-child(1){
             h3 {
               background: url(../imgs/icons/speed.svg) no-repeat left top 3px;
