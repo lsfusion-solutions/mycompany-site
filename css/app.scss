@@ -382,8 +382,22 @@ section{
         @include clearfix;
         a{
           float: left;
-          &:first-child{
-            margin-right: 30px;
+          margin-right: 30px;
+          &:last-child{
+            margin-right: 0 !important;
+          }
+          @media (max-width: $mobileWidth){
+            padding: 9px 15px;
+            margin-right: 18px;
+          }
+          @media (max-width: 479px){
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            margin-right: 0;
           }
         }
       }

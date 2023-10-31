@@ -290,6 +290,7 @@ em{
   @extend .btn-default;
   background:#26C4F7;
   color: #fff !important;
+  border: 1px solid transparent;
   &:hover{
     background-color: #0295FF;
   }

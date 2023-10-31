@@ -275,7 +275,8 @@ em {
 
 .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"] {
   background: #26C4F7;
-  color: #fff !important; }
+  color: #fff !important;
+  border: 1px solid transparent; }
   .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover, section#section-easy > div.inner.for_users nav span.for_users:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-easy > div.inner.for_business nav span.for_business:hover, div.popup > div.inner input[type="submit"]:hover {
     background-color: #0295FF; }
   .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active {
@@ -617,9 +618,22 @@ section#section-header {
     display: table;
     clear: both; }
   section#section-header > div.inner nav a {
-    float: left; }
-    section#section-header > div.inner nav a:first-child {
-      margin-right: 30px; }
+    float: left;
+    margin-right: 30px; }
+    section#section-header > div.inner nav a:last-child {
+      margin-right: 0 !important; }
+    @media (max-width: 768px) {
+      section#section-header > div.inner nav a {
+        padding: 9px 15px;
+        margin-right: 18px; } }
+    @media (max-width: 479px) {
+      section#section-header > div.inner nav a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-right: 0; }
+        section#section-header > div.inner nav a:last-child {
+          margin-bottom: 0; } }
 section#section-functions {
   padding: 22px 0 0 0; }
   section#section-functions > div.inner {
@@ -1103,6 +1117,10 @@ section#section-services-1 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+    @media (max-width: 479px) {
+      section#section-services-1 > div.inner div.swiper-container-wrapper {
+        padding: 0 50px 0 10px;
+        overflow: hidden; } }
     @media (min-width: 768px) {
       section#section-services-1 > div.inner div.swiper-container-wrapper {
         width: 630px; } }
@@ -1162,6 +1180,7 @@ section#section-services-2 > div.inner ul {
   section#section-services-2 > div.inner ul li {
     background: #26c4f7;
     color: #fff;
+    width: 290px;
     padding: 21px 21px;
     border-radius: 6px;
     -webkit-box-sizing: border-box;
@@ -1173,15 +1192,16 @@ section#section-services-2 > div.inner ul {
     padding-top: 210px; }
     @media (min-width: 768px) {
       section#section-services-2 > div.inner ul li {
-        width: 290px;
         min-height: 350px; } }
-    @media (max-width: 1109px) and (min-width: 768px) {
-      section#section-services-2 > div.inner ul li {
-        width: 30%;
-        min-height: 490px; } }
+  @media (min-width: 768px) and (max-width: 1109px) {
+    section#section-services-2 > div.inner ul li {
+      width: 30%;
+      min-height: 490px; } }
+
     @media (max-width: 767px) {
       section#section-services-2 > div.inner ul li {
-        margin: 0 0 21px; } }
+        margin: 0 0 21px;
+        width: 100%; } }
     section#section-services-2 > div.inner ul li h3 {
       font-size: 24px;
       margin: 0 0 30px 0;
@@ -1569,6 +1589,9 @@ body > footer {
       @media (max-width: 767px) {
         body > footer nav ul.community {
           width: 25%; } }
+      @media (max-width: 599px) {
+        body > footer nav ul.community {
+          width: 100%; } }
       body > footer nav ul li {
         margin: 0 0 9px 0; }
         body > footer nav ul li a {
