@@ -1430,7 +1430,7 @@ body > footer{
             transition: background 0.3s;
           }
 
-          $classes: sl,em,blog,ln;
+          $classes: sl,em,blog,ln,tel;
           @each $class in $classes{
             &.#{$class} {
               a {
