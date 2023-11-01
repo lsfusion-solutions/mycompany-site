@@ -1629,6 +1629,12 @@ body > footer {
           background: url(../imgs/icons/ln-hover.svg) no-repeat 0 0; }
         body > footer nav ul.social li.ln a:active, body > footer nav ul.community li.ln a:active {
           background: url(../imgs/icons/ln-active.svg) no-repeat 0 0; }
+      body > footer nav ul.social li.tel a, body > footer nav ul.community li.tel a {
+        background: url(../imgs/icons/tel.svg) no-repeat 0 0; }
+        body > footer nav ul.social tel.sl a:hover, body > footer nav ul.community li.tel a:hover {
+           background: url(../imgs/icons/tel-hover.svg) no-repeat 0 0; }
+        body > footer nav ul.social li.tel a:active, body > footer nav ul.community li.tel a:active {
+            background: url(../imgs/icons/tel-active.svg) no-repeat 0 0; }
   body > footer #absfooter {
     clear: both;
     border-top: 1px solid #596062;
