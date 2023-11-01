@@ -37,7 +37,6 @@
       }
     }
     div.swiper-container-wrapper {
-      background: url(../imgs/icons/bg-left.svg) no-repeat left 0 top 0, url(../imgs/icons/bg-right.svg) no-repeat right 0 top 0;
       padding: 0 50px;
       @media (max-width: 479px){
         padding: 0 50px 0 10px;
@@ -55,7 +54,28 @@
       div.swiper-container {
         overflow: hidden;
         position: relative;
-        left: 25px;
+        left_: 25px;
+        &:before{
+          content: "";
+          position: absolute;
+          z-index: 2;
+          background: linear-gradient(90deg, #eff6f8 0%, rgba(239,246,248, 0) 100%);
+          left: 0;
+          width: 50px;
+          top: 0;
+          bottom: 0;
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          z-index: 2;
+          background: linear-gradient(-90deg, #eff6f8 0%, rgba(239,246,248, 0) 100%);
+          right: 0px;
+          width: 50px;
+          top: 0;
+          bottom: 0;
+        }
+
         div.swiper-wrapper {
           position: relative;
           height: 193px;
@@ -67,9 +87,13 @@
           div.swiper-slide {
             width: 128px + 50px;
             min-width: 178px;
-            padding: 120px 0 24px 0;
-            background: #b3c9d6;
-            border-right: 50px solid #eff6f8;
+
+            padding: 0 25px;
+            div.inner{
+              background: #b3c9d6;
+              padding: 120px 0 24px 0;
+
+            }
 
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -90,22 +114,22 @@
               font-size: 28px;
               font-weight: 200;
             }
-            &.biz-1 {
+            &.biz-1 div.inner{
               background: #b3c9d6 url(../imgs/services/any.svg) no-repeat left 50% top 30px;
             }
-            &.biz-2 {
+            &.biz-2 div.inner{
               background: #b3c9d6 url(../imgs/services/pod.svg) no-repeat left 50% top 30px;
             }
-            &.biz-3 {
+            &.biz-3 div.inner{
               background: #b3c9d6 url(../imgs/services/opt.svg) no-repeat left 50% top 30px;
             }
-            &.biz-4 {
+            &.biz-4 div.inner{
               background: #b3c9d6 url(../imgs/services/roz.svg) no-repeat left 50% top 30px;
             }
-            &.biz-5 {
+            &.biz-5 div.inner{
               background: #b3c9d6 url(../imgs/services/ecom.svg) no-repeat left 50% top 30px;
             }
-            &.biz-6 {
+            &.biz-6 div.inner{
               background: #b3c9d6 url(../imgs/services/serv.svg) no-repeat left 50% top 30px;
             }
           }

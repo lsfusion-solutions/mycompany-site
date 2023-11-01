@@ -1111,7 +1111,6 @@ section#section-services-1 {
       section#section-services-1 > div.inner > ul:first-of-type li p {
         font-size: 14px; }
   section#section-services-1 > div.inner div.swiper-container-wrapper {
-    background: url(../imgs/icons/bg-left.svg) no-repeat left 0 top 0, url(../imgs/icons/bg-right.svg) no-repeat right 0 top 0;
     padding: 0 50px;
     margin: 0 auto;
     -webkit-box-sizing: border-box;
@@ -1127,7 +1126,25 @@ section#section-services-1 {
     section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container {
       overflow: hidden;
       position: relative;
-      left: 25px; }
+      left_: 25px; }
+      section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(90deg, #eff6f8 0%, rgba(239, 246, 248, 0) 100%);
+        left: 0;
+        width: 50px;
+        top: 0;
+        bottom: 0; }
+      section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(-90deg, #eff6f8 0%, rgba(239, 246, 248, 0) 100%);
+        right: 0px;
+        width: 50px;
+        top: 0;
+        bottom: 0; }
       section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper {
         position: relative;
         height: 193px;
@@ -1137,15 +1154,16 @@ section#section-services-1 {
         section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide {
           width: 178px;
           min-width: 178px;
-          padding: 120px 0 24px 0;
-          background: #b3c9d6;
-          border-right: 50px solid #eff6f8;
+          padding: 0 25px;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           color: #fff;
           text-align: center;
           position: relative; }
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide div.inner {
+            background: #b3c9d6;
+            padding: 120px 0 24px 0; }
           section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide p {
             color: #fff;
             font-size: 14px;
@@ -1157,17 +1175,17 @@ section#section-services-1 {
           section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide h3 {
             font-size: 28px;
             font-weight: 200; }
-          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-1 {
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-1 div.inner {
             background: #b3c9d6 url(../imgs/services/any.svg) no-repeat left 50% top 30px; }
-          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-2 {
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-2 div.inner {
             background: #b3c9d6 url(../imgs/services/pod.svg) no-repeat left 50% top 30px; }
-          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-3 {
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-3 div.inner {
             background: #b3c9d6 url(../imgs/services/opt.svg) no-repeat left 50% top 30px; }
-          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-4 {
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-4 div.inner {
             background: #b3c9d6 url(../imgs/services/roz.svg) no-repeat left 50% top 30px; }
-          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-5 {
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-5 div.inner {
             background: #b3c9d6 url(../imgs/services/ecom.svg) no-repeat left 50% top 30px; }
-          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-6 {
+          section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-6 div.inner {
             background: #b3c9d6 url(../imgs/services/serv.svg) no-repeat left 50% top 30px; }
 section#section-services-2 > div.inner h2 {
   margin: 0 0 30px 0; }
