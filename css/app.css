@@ -1174,7 +1174,8 @@ section#section-services-1 {
             text-align: center; }
           section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide h3 {
             font-size: 28px;
-            font-weight: 200; }
+            font-weight: 200;
+            font-family: 'Open Sans', sans-serif; }
           section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-1 div.inner {
             background: #b3c9d6 url(../imgs/services/any.svg) no-repeat left 50% top 30px; }
           section#section-services-1 > div.inner div.swiper-container-wrapper div.swiper-container div.swiper-wrapper div.swiper-slide.biz-2 div.inner {
@@ -1649,10 +1650,10 @@ body > footer {
           background: url(../imgs/icons/ln-active.svg) no-repeat 0 0; }
       body > footer nav ul.social li.tel a, body > footer nav ul.community li.tel a {
         background: url(../imgs/icons/tel.svg) no-repeat 0 0; }
-        body > footer nav ul.social tel.sl a:hover, body > footer nav ul.community li.tel a:hover {
-           background: url(../imgs/icons/tel-hover.svg) no-repeat 0 0; }
+        body > footer nav ul.social li.tel a:hover, body > footer nav ul.community li.tel a:hover {
+          background: url(../imgs/icons/tel-hover.svg) no-repeat 0 0; }
         body > footer nav ul.social li.tel a:active, body > footer nav ul.community li.tel a:active {
-            background: url(../imgs/icons/tel-active.svg) no-repeat 0 0; }
+          background: url(../imgs/icons/tel-active.svg) no-repeat 0 0; }
   body > footer #absfooter {
     clear: both;
     border-top: 1px solid #596062;
