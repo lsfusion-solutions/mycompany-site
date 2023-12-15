@@ -585,9 +585,17 @@ section#section-404 h1, section#section-thankyou h1, section#section-content h1 
     font-style: normal;
     color: #26C4F7; }
 section#section-404 h2, section#section-thankyou h2, section#section-content h2 {
-  font-size: 26px; }
+  font-size: 26px;
+  margin: 0 0 20px 0; }
+section#section-404 h3, section#section-thankyou h3, section#section-content h3 {
+  font-size: 22px;
+  margin: 0 0 20px 0; }
 section#section-404 ul, section#section-thankyou ul, section#section-content ul {
-  margin: 0 0 20px 40px; }
+  margin: 0 0 20px 50px; }
+  section#section-404 ul li, section#section-thankyou ul li, section#section-content ul li {
+    margin: 0 0 5px 0; }
+    section#section-404 ul li:last-child, section#section-thankyou ul li:last-child, section#section-content ul li:last-child {
+      margin: 0; }
 section#section-404 p, section#section-thankyou p, section#section-content p {
   margin: 0 0 20px 0; }
 section#section-header {
