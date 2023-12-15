@@ -325,7 +325,8 @@ section{
     }
   }
   &#section-404,
-  &#section-thankyou{
+  &#section-thankyou,
+  &#section-content{
     h1{
       font-size: 30px;
       line-height: 45px;
@@ -334,11 +335,17 @@ section{
       em{
         font-style: normal;
         color: #26C4F7;
-
       }
     }
-    p{
+    h2{
+      font-size: 26px;
+    }
+    ul{
+      margin: 0 0 20px 40px;
+    }
 
+    p{
+      margin: 0 0 20px 0;
     }
   }
   &#section-header{

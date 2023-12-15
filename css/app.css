@@ -576,14 +576,20 @@ body > nav {
   section > div.inner {
     padding-left: 20px;
     padding-right: 20px; } }
-section#section-404 h1, section#section-thankyou h1 {
+section#section-404 h1, section#section-thankyou h1, section#section-content h1 {
   font-size: 30px;
   line-height: 45px;
   font-weight: 500;
   margin: 0 0 20px 0; }
-  section#section-404 h1 em, section#section-thankyou h1 em {
+  section#section-404 h1 em, section#section-thankyou h1 em, section#section-content h1 em {
     font-style: normal;
     color: #26C4F7; }
+section#section-404 h2, section#section-thankyou h2, section#section-content h2 {
+  font-size: 26px; }
+section#section-404 ul, section#section-thankyou ul, section#section-content ul {
+  margin: 0 0 20px 40px; }
+section#section-404 p, section#section-thankyou p, section#section-content p {
+  margin: 0 0 20px 0; }
 section#section-header {
   background: #0062BD; }
   @media (min-width: 1110px) {
