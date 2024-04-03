@@ -83,7 +83,7 @@ $(document).ready(function() {
             }
         });
     }
-
+/*
     const services = new Swiper(".swiper-container", {
         slidesPerView: "auto",
         spaceBetween: 0,
@@ -96,5 +96,42 @@ $(document).ready(function() {
         },
 
     });
+*/
+    function getUrlVars(url) {
+        var vars = {};
+        var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+            function(m,key,value) {
+                vars[key] = value;
+            });
+        return vars;
+    }
+    function getYouTubeCode(url){
+        let t = getUrlVars(url)["t"];
+        let start = "";
+        if(t){
+            start = "?start=" + parseInt( t )
+        }
+        var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+        var match = url.match(regExp);
+        return (match&&match[7].length==11)? match[7] + start : false;
+    }
+    $("a.video").click(function(e){
+        if( $("#videopopup").length == 0 ){
+            $("body").append(
+                '<div id="videopopup" class="popup"><span class="close">x</span><div class="inner"></div></div>'
+            )
+            $("#videopopup").popup({
+                closeelement: ".close",
+                onclose: function(){
+                    $("#videopopup .inner").html("");
+                }
+            });
+        }
+        $("#videopopup .inner").html( '<iframe src="https://www.youtube.com/embed/' + getYouTubeCode($(this).attr("href")) + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' )
+        $("#videopopup").popup("show");
+
+        e.preventDefault()
+        return false;
+    })
 
 })
