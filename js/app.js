@@ -83,20 +83,22 @@ $(document).ready(function() {
             }
         });
     }
-/*
-    const services = new Swiper(".swiper-container", {
-        slidesPerView: "auto",
-        spaceBetween: 0,
-        loop: true,
+
+    if(window.Swiper) {
+        const services = new Swiper(".swiper-container", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            loop: true,
 
 
-        autoplay: {
-            delay: 3500,
-            pauseOnMouseEnter: true,
-        },
+            autoplay: {
+                delay: 3500,
+                pauseOnMouseEnter: true,
+            },
 
-    });
-*/
+        });
+    }
+
     function getUrlVars(url) {
         var vars = {};
         var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi,
