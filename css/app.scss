@@ -1645,6 +1645,7 @@ body > .contactus{
   width: 40px;
   height: 40px;
   text-indent: -3000px;
+  overflow: hidden;
   background: #26C4F7 url(../imgs/icons/contactus.svg) no-repeat 50% 50%;
   transition: background-color 0.3s;
   cursor: pointer;
