@@ -690,6 +690,12 @@ section#section-functions {
       background: url(../imgs/icons/function6.svg) no-repeat 0 0; }
     section#section-functions > div.inner ul.list3 li:nth-child(7) h3 {
       background: url(../imgs/icons/function7.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(8) h3 {
+      background: url(../imgs/icons/function8.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(9) h3 {
+      background: url(../imgs/icons/function9.svg) no-repeat 0 0; }
+    section#section-functions > div.inner ul.list3 li:nth-child(10) h3 {
+      background: url(../imgs/icons/function10.svg) no-repeat 0 0; }
     section#section-functions > div.inner nav {
       background: #26C4F7;
       border-radius: 4px;
