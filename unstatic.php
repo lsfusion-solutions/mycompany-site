@@ -5,7 +5,7 @@
 
     $replaceSign = "#";
 
-    $subject = "Запрос с Mycompany (" .date("Y-m-d H:i:s") . ")";
+    $subject = "Запрос с МайКомпани (" .date("Y-m-d H:i:s") . ")";
 
 
     $message = "";
