@@ -476,7 +476,7 @@ body > nav {
       @media (min-width: 950px) {
         body > nav > div.inner > ul.nav > li {
           display: inline;
-          padding: 0 23px 0 22px; } }
+          padding: 0 18px 0 18px; } }
       @media (min-width: 950px) and (max-width: 1109px) {
         body > nav > div.inner > ul.nav > li {
           padding: 0 10px; } }
