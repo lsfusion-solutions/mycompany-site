@@ -459,7 +459,11 @@ body > nav {
       list-style: none; }
       @media (min-width: 950px) {
         body > nav > div.inner > ul.nav {
-          float: right; } }
+          float: right;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: calc(100% - 250px); } }
       @media (max-width: 949px) {
         body > nav > div.inner > ul.nav {
           display: none;
@@ -476,10 +480,10 @@ body > nav {
       @media (min-width: 950px) {
         body > nav > div.inner > ul.nav > li {
           display: inline;
-          padding: 0 18px 0 18px; } }
+          padding: 0 6px 0 6px; } }
       @media (min-width: 950px) and (max-width: 1109px) {
         body > nav > div.inner > ul.nav > li {
-          padding: 0 10px; } }
+          padding: 0 5px; } }
       @media (max-width: 949px) {
         body > nav > div.inner > ul.nav > li {
           display: block;

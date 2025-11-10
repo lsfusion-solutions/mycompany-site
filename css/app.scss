@@ -173,6 +173,12 @@ body > nav{
     & > ul.nav{
       @media (min-width: 950px){
         float: right;
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100% - 250px);
       }
       @media (max-width: 949px){
         display: none;
@@ -195,10 +201,10 @@ body > nav{
       & > li{
         @media (min-width: 950px) {
           display: inline;
-          padding: 0 18px 0 18px;
+          padding: 0 6px 0 6px;
         }
         @media (min-width: 950px) and (max-width: $siteWidth - 1){
-          padding: 0 10px;
+          padding: 0 5px;
         }
         @media (max-width: 949px){
           display: block;
