@@ -749,63 +749,6 @@ section#section-functions {
           @media (min-width: 768px) {
             section#section-functions > div.inner nav a:nth-of-type(2) {
               float: right; } }
-section#section-ksef {
-  background: #EFF6F8;
-   }
-  section#section-ksef > div.inner:after {
-    content: "";
-    display: table;
-    clear: both;}
-  @media (min-width: 1110px) {
-    section#section-ksef > div.inner div.info {
-      float: right;
-      width: 540px; } }
-  section#section-ksef > div.inner div.info:after {
-    content: "";
-    display: table;
-    clear: both; }
-  section#section-ksef > div.inner div.info h2 {
-    margin: 0 0 20px 0; }
-  section#section-ksef > div.inner div.info p {
-    margin: 0 0 30px 0; }
-  section#section-ksef > div.inner div.info ul {
-    list-style: none; }
-    section#section-ksef > div.inner div.info ul li {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      margin: 0 0 10px 0;
-      padding: 0 0px 0 50px; }
-      @media (min-width: 767px) {
-        section#section-ksef > div.inner div.info ul li {
-          float: left;
-          background: url(../imgs/icons/tick1.svg) no-repeat 0 0;
-                   padding-bottom: 6px;} }
-
-  section#section-ksef > div.inner div.img {
-    background: #F7FBFC;
-    border-radius: 4px;
-    padding: 12px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    @media (min-width: 1110px) {
-      section#section-ksef > div.inner div.img {
-        float: left;
-        width: 520px;} }
-    @media (max-width: 1109px) {
-      section#section-ksef > div.inner div.img {
-        display: inline-block;
-        margin: 0 200px 0 0;} }
-    section#section-ksef > div.inner div.img img {
-      display: block;
-      border: 12px solid #fff;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      max-width: 100%; }
-
-
 section#section-sql {
   background: #EFF6F8; }
   section#section-sql > div.inner:after {

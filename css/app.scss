@@ -568,62 +568,6 @@ section{
       }
     }
   }
-  &#section-ksef{
-      background: #EFF6F8;
-      & > div.inner{
-        @include clearfix;
-        div.info{
-          @media (min-width: $siteWidth) {
-            float: right;
-            width: 540px;
-          }
-          @include clearfix;
-          h2{
-            margin: 0 0 20px 0;
-          }
-          p{
-            margin: 0 0 30px 0;
-          }
-          ul{
-            list-style: none;
-            li{
-              @media (min-width: 767px) {
-                float: left;
-                background: url(../imgs/icons/tick1.svg) no-repeat 0 0;
-                                                   padding-bottom: 6px;}
-              -webkit-box-sizing: border-box;
-              -moz-box-sizing: border-box;
-              box-sizing: border-box;
-              margin: 0 0 10px 0;
-              padding: 0 0 0 50px;
-            }
-          }
-        }
-        div.img{
-          @media (min-width: $siteWidth) {
-            float: left;
-            width: 520px;
-          }
-          @media (max-width: $siteWidth - 1) {
-            display: inline-block;
-          }
-          background: #F7FBFC;
-          border-radius: 4px;
-          padding: 12px;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          img{
-            display: block;
-            border: 12px solid #fff;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            max-width: 100%;
-          }
-        }
-      }
-    }
   &#section-sql{
     background: #EFF6F8;
     & > div.inner{
