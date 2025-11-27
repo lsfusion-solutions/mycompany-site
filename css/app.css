@@ -685,6 +685,7 @@ section#section-ksef {
       @media (min-width: 767px) {
         section#section-ksef > div.inner div.info ul li {
           float: left;
+          clear: both;
           } }
   section#section-ksef > div.inner div.img {
       background: #F7FBFC;
