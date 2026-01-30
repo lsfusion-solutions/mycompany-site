@@ -1738,6 +1738,12 @@ body > footer {
           background: url(../imgs/icons/tel-hover.svg) no-repeat 0 0; }
         body > footer nav ul.social li.tel a:active, body > footer nav ul.community li.tel a:active {
           background: url(../imgs/icons/tel-active.svg) no-repeat 0 0; }
+      body > footer nav ul.social li.wp a, body > footer nav ul.community li.wp a {
+              background: url(../imgs/icons/wp.svg) no-repeat 0 0; }
+              body > footer nav ul.social li.wp a:hover, body > footer nav ul.community li.wp a:hover {
+                background: url(../imgs/icons/wp-hover.svg) no-repeat 0 0; }
+              body > footer nav ul.social li.wp a:active, body > footer nav ul.community li.wp a:active {
+                background: url(../imgs/icons/wp-active.svg) no-repeat 0 0; }
   body > footer #absfooter {
     clear: both;
     border-top: 1px solid #596062;
