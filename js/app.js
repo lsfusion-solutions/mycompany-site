@@ -56,7 +56,7 @@ $(document).ready(function() {
     });
 
 
-    $(".contactus").click(function(e){
+    $(".contactus, #contactus").click(function(e){
         $("#contactuspopup").popup({closeelement:".close"}).popup("show");
         e.preventDefault()
         return false;
