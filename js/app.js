@@ -129,7 +129,11 @@ $(document).ready(function() {
                 }
             });
         }
-        $("#videopopup .inner").html( '<iframe src="https://www.youtube.com/embed/' + getYouTubeCode($(this).attr("href")) + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' )
+        let _attr = "";
+        if( $(this).attr("data-autoplay") ){
+            _attr = "?autoplay=1";
+        }
+        $("#videopopup .inner").html( '<iframe src="https://www.youtube.com/embed/' + getYouTubeCode($(this).attr("href")) + _attr + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' )
         $("#videopopup").popup("show");
 
         e.preventDefault()
