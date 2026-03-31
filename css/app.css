@@ -1835,15 +1835,51 @@ div.popup {
       position: relative;
       height: 0;
       padding: 0 0 66.6666%; }
-    div.popup#videopopup iframe {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
+      div.popup#videopopup > .inner .notice {
+        position: absolute;
+        background: #ff0000;
+        left: 20px;
+        right: 20px;
+        bottom: 100%;
+        bottom: calc(100% + 3px);
+        padding: 6px 9px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 9px;
+        text-align: center;
+        vertical-align: middle; }
+        div.popup#videopopup > .inner .notice a {
+          color: #0E84BC;
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          text-indent: -3000px;
+          overflow: hidden;
+          background-size: 32px 32px !important;
+          vertical-align: inherit; }
+          div.popup#videopopup > .inner .notice a.youtube {
+            background: url(../imgs/icons/youtube.svg); }
+          div.popup#videopopup > .inner .notice a.dzen {
+            background: url(../imgs/icons/dzen.svg); }
+          div.popup#videopopup > .inner .notice a.vk {
+            background: url(../imgs/icons/vk.svg); }
+        div.popup#videopopup > .inner .notice .c {
+          cursor: pointer;
+          font-style: normal;
+          position: absolute;
+          right: 6px;
+          top: 0px;
+          font-weight: bold; }
+      div.popup#videopopup > .inner iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
   div.popup > span.close {
     position: absolute;
     right: 20px;
