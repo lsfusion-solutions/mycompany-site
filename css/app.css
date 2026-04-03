@@ -254,7 +254,7 @@ em {
   /* Non-prefixed version, currently
                supported by Chrome, Edge, Opera and Firefox */ }
 
-.btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"], .btn-empty, .btn-invert, .btn-empty-invert {
+.btn-default, .btn, section.std > div.inner .buttons a, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"], .btn-empty, .btn-invert, .btn-empty-invert, section#section-tarrifs > div.inner > ul > li > div.inner a.select {
   position: relative;
   text-decoration: none;
   transition: background-color .3s, border-color 0.3s, color 0.3s;
@@ -268,18 +268,18 @@ em {
   white-space: nowrap;
   display: inline-block; }
   @media (max-width: 479px) {
-    .btn-default, .btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"], .btn-empty, .btn-invert, .btn-empty-invert {
+    .btn-default, .btn, section.std > div.inner .buttons a, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"], .btn-empty, .btn-invert, .btn-empty-invert, section#section-tarrifs > div.inner > ul > li > div.inner a.select {
       padding: 10px 18px; } }
-  .btn-default:active, .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active {
+  .btn-default:active, .btn:active, section.std > div.inner .buttons a:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active, .btn-empty:active, .btn-invert:active, .btn-empty-invert:active, section#section-tarrifs > div.inner > ul > li > div.inner a.select:active {
     top: 1px; }
 
-.btn, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"] {
+.btn, section.std > div.inner .buttons a, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_developers, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-work > div.inner.for_administrators nav span.for_administrators, section#section-work > div.inner > div a, section#section-easy > div.inner.for_users nav span.for_users, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-easy > div.inner.for_business nav span.for_business, div.popup > div.inner input[type="submit"] {
   background: #26C4F7;
   color: #fff !important;
   border: 1px solid transparent; }
-  .btn:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover, section#section-easy > div.inner.for_users nav span.for_users:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-easy > div.inner.for_business nav span.for_business:hover, div.popup > div.inner input[type="submit"]:hover {
+  .btn:hover, section.std > div.inner .buttons a:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_developers:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-work > div.inner.for_administrators nav span.for_administrators:hover, section#section-work > div.inner > div a:hover, section#section-easy > div.inner.for_users nav span.for_users:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-easy > div.inner.for_business nav span.for_business:hover, div.popup > div.inner input[type="submit"]:hover {
     background-color: #0295FF; }
-  .btn:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active {
+  .btn:active, section.std > div.inner .buttons a:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_developers:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-work > div.inner.for_administrators nav span.for_administrators:active, section#section-work > div.inner > div a:active, section#section-easy > div.inner.for_users nav span.for_users:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-easy > div.inner.for_business nav span.for_business:active, div.popup > div.inner input[type="submit"]:active {
     background-color: #0B85DE; }
 
 .btn-empty {
@@ -304,13 +304,13 @@ em {
     background-color: #F1F8FA;
     color: #26C4F7; }
 
-.btn-empty-invert, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users {
+.btn-empty-invert, section#section-tasks > div.inner h2 a, section#section-work > div.inner.for_developers nav span.for_administrators, section#section-work > div.inner.for_administrators nav span.for_developers, section#section-easy > div.inner.for_users nav span.for_business, section#section-easy > div.inner.for_business nav span.for_users, section#section-tarrifs > div.inner > ul > li > div.inner a.select {
   background: transparent !important;
   border: 1px solid rgba(132, 132, 132, 0.2);
   color: #0E84BC !important; }
-  .btn-empty-invert:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover {
+  .btn-empty-invert:hover, section#section-tasks > div.inner h2 a:hover, section#section-work > div.inner.for_developers nav span.for_administrators:hover, section#section-work > div.inner.for_administrators nav span.for_developers:hover, section#section-easy > div.inner.for_users nav span.for_business:hover, section#section-easy > div.inner.for_business nav span.for_users:hover, section#section-tarrifs > div.inner > ul > li > div.inner a.select:hover {
     border-color: #848484; }
-  .btn-empty-invert:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active {
+  .btn-empty-invert:active, section#section-tasks > div.inner h2 a:active, section#section-work > div.inner.for_developers nav span.for_administrators:active, section#section-work > div.inner.for_administrators nav span.for_developers:active, section#section-easy > div.inner.for_users nav span.for_business:active, section#section-easy > div.inner.for_business nav span.for_users:active, section#section-tarrifs > div.inner > ul > li > div.inner a.select:active {
     border-color: #848484; }
 
 html, body {
@@ -580,6 +580,25 @@ body > nav {
   section > div.inner {
     padding-left: 20px;
     padding-right: 20px; } }
+section.std > div.inner h1 {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+  font-weight: 600; }
+section.std > div.inner h2 {
+  font-size: 24px;
+  margin: 0 0 24px 0; }
+section.std > div.inner p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px 0; }
+section.std > div.inner .buttons {
+  text-align: center; }
+  section.std > div.inner .buttons a {
+    margin: 0 30px 15px 30px; }
+    @media (max-width: 480px) {
+      section.std > div.inner .buttons a {
+        margin: 0 0 15px 0;
+        width: 100%; } }
 section#section-404 h1, section#section-thankyou h1, section#section-content h1 {
   font-size: 30px;
   line-height: 45px;
@@ -1291,6 +1310,136 @@ section#section-possibilities {
         background-image: url(../imgs/icons/report.svg); }
     section#section-possibilities > div.inner ul.list3 > li > .inner p {
       margin: 0; }
+section#section-tarrifs {
+  background: #EFF6F8; }
+  section#section-tarrifs > div.inner h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 24px 0; }
+  section#section-tarrifs > div.inner p {
+    margin: 0 0 24px 0;
+    color: #596062; }
+  section#section-tarrifs > div.inner > ul {
+    list-style: none; }
+    @media (min-width: 768px) {
+      section#section-tarrifs > div.inner > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 25px; } }
+    @media (max-width: 1109px) {
+      section#section-tarrifs > div.inner > ul {
+        margin: 0 -10px; } }
+    section#section-tarrifs > div.inner > ul > li {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      @media (min-width: 768px) {
+        section#section-tarrifs > div.inner > ul > li {
+          flex: 0 0 33.33%;
+          padding: 0 25px;
+          display: flex; } }
+      @media (max-width: 1109px) {
+        section#section-tarrifs > div.inner > ul > li {
+          padding: 0 10px; } }
+      @media (max-width: 767px) {
+        section#section-tarrifs > div.inner > ul > li {
+          margin: 0 0 20px 0; } }
+      section#section-tarrifs > div.inner > ul > li > div.inner {
+        border: 1px solid #26C4F7;
+        border-radius: 8px;
+        padding: 15px 15px 100px 15px;
+        transition: background-color 0.3s;
+        position: relative; }
+        section#section-tarrifs > div.inner > ul > li > div.inner:hover {
+          background: #fff; }
+        section#section-tarrifs > div.inner > ul > li > div.inner h3 {
+          font-size: 24px;
+          font-weight: 600;
+          margin: 0 0 30px 0; }
+        section#section-tarrifs > div.inner > ul > li > div.inner p {
+          margin: 0 0 20px 20px; }
+        section#section-tarrifs > div.inner > ul > li > div.inner strong {
+          display: block;
+          color: #0E84BC;
+          text-align: center;
+          margin: 0 0 30px 0;
+          font-size: 16px;
+          font-weight: 600; }
+        section#section-tarrifs > div.inner > ul > li > div.inner ul {
+          margin: 0 0 10px 20px; }
+          section#section-tarrifs > div.inner > ul > li > div.inner ul li {
+            display: block;
+            background: url(../imgs/icons/bullet.svg) no-repeat 0 50%;
+            padding: 6px 0 6px 30px; }
+        section#section-tarrifs > div.inner > ul > li > div.inner a.more {
+          position: relative;
+          left: 20px; }
+        section#section-tarrifs > div.inner > ul > li > div.inner a.select {
+          position: absolute;
+          bottom: 15px;
+          left: 50%;
+          transform: translateX(-50%); }
+          section#section-tarrifs > div.inner > ul > li > div.inner a.select:active {
+            top: auto !important;
+            bottom: 16px; }
+section#section-compare > div.inner h2 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  font-weight: 600; }
+section#section-compare > div.inner table {
+  width: 100%;
+  margin: 0 0 30px 0; }
+  section#section-compare > div.inner table thead tr th {
+    background: #7DE2FF;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 36px;
+    padding: 5px 5px; }
+    @media (max-width: 767px) {
+      section#section-compare > div.inner table thead tr th {
+        font-size: 20px;
+        padding: 0px 3px; } }
+  section#section-compare > div.inner table tbody tr {
+    /*
+    @media (max-width: 767px){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    */
+    position: relative; }
+    section#section-compare > div.inner table tbody tr:nth-child(2n+1) {
+      background: #F7FBFC; }
+    section#section-compare > div.inner table tbody tr:nth-child(2n) {
+      background: #E1F7FE; }
+    section#section-compare > div.inner table tbody tr td {
+      text-align: center;
+      padding: 5px 5px;
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: middle; }
+      @media (max-width: 767px) {
+        section#section-compare > div.inner table tbody tr td {
+          padding: 3px 3px;
+          font-size: 14px;
+          line-height: 20px;
+          padding-top: 40px; } }
+      section#section-compare > div.inner table tbody tr td:nth-child(1) {
+        font-weight: 700; }
+        @media (max-width: 767px) {
+          section#section-compare > div.inner table tbody tr td:nth-child(1) {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            padding: 5px 0 5px 5px;
+            font-size: 18px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; } }
 section#section-services-1 {
   background: #eff6f8; }
   section#section-services-1 > div.inner h2 {
