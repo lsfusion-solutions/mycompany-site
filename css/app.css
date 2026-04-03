@@ -796,55 +796,56 @@ section#section-functions {
       background: url(../imgs/icons/function10.svg) no-repeat 0 0; }
     section#section-functions > div.inner ul.list3:nth-child(11) h3 {
       background: url(../imgs/icons/function11.svg) no-repeat 0 0; }
-  section#section-functions nav {
+section nav#functions-nav {
+  background: #26C4F7;
+  border-radius: 4px;
+  padding: 20px 30px 30px;
+  margin: 0 0 30px 0; }
+  section nav#functions-nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section nav#functions-nav p {
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600; }
+  section nav#functions-nav a {
+    display: block;
     background: #26C4F7;
+    transition: background 0.3s;
+    border: 1px solid #fff;
     border-radius: 4px;
-    padding: 20px 30px 30px; }
-    section#section-functions nav:after {
-      content: "";
-      display: table;
-      clear: both; }
-    section#section-functions nav p {
-      text-align: center;
-      margin: 0 0 10px 0;
-      color: #fff;
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 600; }
-    section#section-functions nav a {
-      display: block;
-      background: #26C4F7;
-      transition: background 0.3s;
-      border: 1px solid #fff;
-      border-radius: 4px;
-      text-decoration: none;
-      line-height: 20px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #fff; }
+    text-decoration: none;
+    line-height: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff; }
+    @media (min-width: 768px) {
+      section nav#functions-nav a {
+        width: 48.5%; } }
+    section nav#functions-nav a:hover {
+      background-color: #08ade2 !important; }
+    section nav#functions-nav a span {
+      padding: 25px 70px;
+      background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
+      display: block; }
+    section nav#functions-nav a:nth-of-type(1) {
+      background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
       @media (min-width: 768px) {
-        section#section-functions nav a {
-          width: 48.5%; } }
-      section#section-functions nav a:hover {
-        background-color: #08ade2 !important; }
-      section#section-functions nav a span {
-        padding: 25px 70px;
-        background: url(../imgs/icons/more-white.svg) no-repeat right 20px top 50%;
-        display: block; }
-      section#section-functions nav a:nth-of-type(1) {
-        background: #26C4F7 url(../imgs/icons/github.svg) no-repeat 20px 50%; }
-        @media (min-width: 768px) {
-          section#section-functions nav a:nth-of-type(1) {
-            float: left; } }
-        @media (max-width: 767px) {
-          section#section-functions nav a:nth-of-type(1) {
-            margin: 0 0 20px 0; } }
-      section#section-functions nav a:nth-of-type(2) {
-        background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
-        @media (min-width: 768px) {
-          section#section-functions nav a:nth-of-type(2) {
-            float: right; } }
+        section nav#functions-nav a:nth-of-type(1) {
+          float: left; } }
+      @media (max-width: 767px) {
+        section nav#functions-nav a:nth-of-type(1) {
+          margin: 0 0 20px 0; } }
+    section nav#functions-nav a:nth-of-type(2) {
+      background: #26C4F7 url(../imgs/icons/develop.svg) no-repeat 20px 50%; }
+      @media (min-width: 768px) {
+        section nav#functions-nav a:nth-of-type(2) {
+          float: right; } }
 section#section-ksef {
   background: #EFF6F8; }
   section#section-ksef > div.inner:after {
