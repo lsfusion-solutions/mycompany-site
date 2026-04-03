@@ -1015,6 +1015,36 @@ section#section-tasks > div.inner h2 {
         margin: 20px 0 0 auto;
         display: block;
         max-width: 200px; } }
+section#section-tasks > div.inner div.jcarousel {
+  position: relative;
+  overflow: hidden; }
+  section#section-tasks > div.inner div.jcarousel ul {
+    width: 1000%;
+    /* Ensure list is wide enough for all items */
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    section#section-tasks > div.inner div.jcarousel ul li {
+      width: auto;
+      flex: 0 0 5%; }
+      @media (max-width: 767px) {
+        section#section-tasks > div.inner div.jcarousel ul li {
+          flex: 0 0 10%; } }
+  section#section-tasks > div.inner div.jcarousel .jcarousel-pagination {
+    text-align: center; }
+    section#section-tasks > div.inner div.jcarousel .jcarousel-pagination a {
+      background: #EFF6F8;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-indent: -3000px;
+      overflow: hidden;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s; }
+      section#section-tasks > div.inner div.jcarousel .jcarousel-pagination a.active {
+        background: #26C4F7; }
 @media (max-width: 767px) {
   section#section-tasks > div.inner ul.list2 li {
     width: 100%;

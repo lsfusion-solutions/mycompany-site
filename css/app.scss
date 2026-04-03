@@ -893,7 +893,41 @@ section{
           font-weight: 400;
         }
       }
-
+      div.jcarousel{
+        position: relative;
+        overflow: hidden;
+        ul{
+          width: 1000%; /* Ensure list is wide enough for all items */
+          position: relative;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li{
+            width: auto;
+            flex: 0 0 5%;
+            @media (max-width: 767px) {
+              flex: 0 0 10%;
+            }
+          };
+        }
+        .jcarousel-pagination{
+          text-align: center;
+          a{
+            background: #EFF6F8;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-indent: -3000px;
+            overflow: hidden;
+            margin: 0 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+            &.active{
+              background: #26C4F7;
+            }
+          }
+        }
+      }
       ul.list2 {
         li{
           @media (max-width: 767px){
