@@ -405,6 +405,9 @@ section{
           background: url(../imgs/header-services.svg) no-repeat right 0 top 30px;
           min-height: 375px;
         }
+        &.section-header-ecom{
+          background: url(../imgs/header-ecom.svg) no-repeat right 0 top 30px;
+        }
       }
       h1{
         @media (min-width: $siteWidth) {
@@ -910,23 +913,6 @@ section{
             }
           };
         }
-        .jcarousel-pagination{
-          text-align: center;
-          a{
-            background: #EFF6F8;
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            text-indent: -3000px;
-            overflow: hidden;
-            margin: 0 5px;
-            border-radius: 50%;
-            transition: background-color 0.3s;
-            &.active{
-              background: #26C4F7;
-            }
-          }
-        }
       }
       ul.list2 {
         li{
@@ -971,6 +957,23 @@ section{
             }
           }
         }
+      }
+    }
+  }
+  .jcarousel-pagination{
+    text-align: center;
+    a{
+      background: #EFF6F8;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-indent: -3000px;
+      overflow: hidden;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+      &.active{
+        background: #26C4F7 !important;
       }
     }
   }
@@ -1385,6 +1388,14 @@ section{
           }
         }
       }
+      ul.integrations{
+        list-style: none;
+        text-align: center;
+        li{
+          display: inline-block;
+          padding: 0 10px;
+        }
+      }
     }
   }
   &#section-possibilities{
@@ -1438,7 +1449,113 @@ section{
       }
     }
   }
-
+  &#section-clients{
+    background: #EFF6F8;
+    & > div.inner{
+      h2{
+        text-align: center;
+        margin: 0 0 30px 0;
+      }
+      div.jcarousel{
+        position: relative;
+        overflow: hidden;
+        max-width: 910px;
+        margin: 0 auto;
+        ul{
+          width: 1000%; /* Ensure list is wide enough for all items */
+          position: relative;
+          list-style: none;
+          margin: 0 0 20px 0;
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+          li{
+            width: auto;
+            flex: 0 0 210px;
+            padding: 0 10px;
+            @media (max-width: 767px) {
+              //flex: 0 0 5%;
+            }
+            img{
+              max-width: 100%;
+              display: block;
+              margin: 0 auto;
+            }
+          };
+        }
+        .jcarousel-pagination{
+          a{
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  &#section-howitworks{
+    & > div.inner{
+      h2{
+        text-align: center;
+        margin: 0 0 30px 0;
+      }
+      div.cols{
+        @media (min-width: $siteWidth) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        div.info{
+          @media (max-width: $siteWidth - 1){
+            margin: 0 0 20px 0;
+          }
+          & > div {
+            margin: 0 0 20px 0;
+            padding: 0 0 0 65px;
+            min-height: 60px;
+            position: relative;
+            &:before{
+              content: "";
+              position: absolute;
+              top: 15px;
+              left: 0;
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              background: #7DE2FF;
+            }
+            &:nth-child(2){
+              &:before{
+                background: #26C4F7;
+              }
+            }
+            &:nth-child(3){
+              &:before{
+                background: #0E84BC;
+              }
+            }
+            &:nth-child(4){
+              &:before{
+                background: #0B85DE;
+              }
+            }
+            &:nth-child(5){
+              &:before{
+                background: #0C5394;
+              }
+            }
+            h3 {
+              font-size: 22px;
+              line-height: 28px;
+              margin: 0 0 10px 0;
+            }
+            p {
+              font-size: 14px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
   &#section-tarrifs{
     background: #EFF6F8;
     & > div.inner{

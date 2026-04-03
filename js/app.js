@@ -164,7 +164,7 @@ $(document).ready(function() {
     $(document).on("click", "#videopopup .c", function(e){
         $(this).closest("span.notice").hide();
     })
-    $(document).on("click", "a.video, a.youtube, a.dzen, a.vk", function(e){
+    $(document).on("click", "a.v, a.video, a.youtube, a.dzen, a.vk", function(e){
         if( $("#videopopup").length == 0 ){
             $("body").append(
                 '<div id="videopopup" class="popup"><span class="close">x</span><div class="inner"></div></div>'

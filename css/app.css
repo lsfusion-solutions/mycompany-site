@@ -633,7 +633,9 @@ section#section-header {
         min-height: 425px; }
         section#section-header > div.inner.section-header-services {
           background: url(../imgs/header-services.svg) no-repeat right 0 top 30px;
-          min-height: 375px; } }
+          min-height: 375px; }
+        section#section-header > div.inner.section-header-ecom {
+          background: url(../imgs/header-ecom.svg) no-repeat right 0 top 30px; } }
     section#section-header > div.inner h1 {
       color: #fff;
       font-size: 35px;
@@ -1031,20 +1033,6 @@ section#section-tasks > div.inner div.jcarousel {
       @media (max-width: 767px) {
         section#section-tasks > div.inner div.jcarousel ul li {
           flex: 0 0 10%; } }
-  section#section-tasks > div.inner div.jcarousel .jcarousel-pagination {
-    text-align: center; }
-    section#section-tasks > div.inner div.jcarousel .jcarousel-pagination a {
-      background: #EFF6F8;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      text-indent: -3000px;
-      overflow: hidden;
-      margin: 0 5px;
-      border-radius: 50%;
-      transition: background-color 0.3s; }
-      section#section-tasks > div.inner div.jcarousel .jcarousel-pagination a.active {
-        background: #26C4F7; }
 @media (max-width: 767px) {
   section#section-tasks > div.inner ul.list2 li {
     width: 100%;
@@ -1077,6 +1065,20 @@ section#section-tasks > div.inner ul.list2 li > .inner {
     section#section-tasks > div.inner ul.list2 li > .inner > div.info em {
       color: #596062;
       font-style: normal; }
+section .jcarousel-pagination {
+  text-align: center; }
+  section .jcarousel-pagination a {
+    background: #EFF6F8;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -3000px;
+    overflow: hidden;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s; }
+    section .jcarousel-pagination a.active {
+      background: #26C4F7 !important; }
 section#section-low {
   background: #EFF6F8; }
   section#section-low > div.inner h2 {
@@ -1308,6 +1310,12 @@ section#section-advantages > div.inner ul.list4 > li > .inner {
       background-image: url(../imgs/icons/synchronization.svg); }
     section#section-advantages > div.inner ul.list4 > li > .inner h3.optimization {
       background-image: url(../imgs/icons/optimization.svg); }
+section#section-advantages > div.inner ul.integrations {
+  list-style: none;
+  text-align: center; }
+  section#section-advantages > div.inner ul.integrations li {
+    display: inline-block;
+    padding: 0 10px; }
 section#section-possibilities {
   background: #EFF6F8; }
   section#section-possibilities > div.inner h2 {
@@ -1341,6 +1349,75 @@ section#section-possibilities {
         background-image: url(../imgs/icons/report.svg); }
     section#section-possibilities > div.inner ul.list3 > li > .inner p {
       margin: 0; }
+section#section-clients {
+  background: #EFF6F8; }
+  section#section-clients > div.inner h2 {
+    text-align: center;
+    margin: 0 0 30px 0; }
+  section#section-clients > div.inner div.jcarousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 910px;
+    margin: 0 auto; }
+    section#section-clients > div.inner div.jcarousel ul {
+      width: 1000%;
+      /* Ensure list is wide enough for all items */
+      position: relative;
+      list-style: none;
+      margin: 0 0 20px 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row; }
+      section#section-clients > div.inner div.jcarousel ul li {
+        width: auto;
+        flex: 0 0 210px;
+        padding: 0 10px; }
+        section#section-clients > div.inner div.jcarousel ul li img {
+          max-width: 100%;
+          display: block;
+          margin: 0 auto; }
+    section#section-clients > div.inner div.jcarousel .jcarousel-pagination a {
+      background: #fff; }
+section#section-howitworks > div.inner h2 {
+  text-align: center;
+  margin: 0 0 30px 0; }
+@media (min-width: 1110px) {
+  section#section-howitworks > div.inner div.cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+@media (max-width: 1109px) {
+  section#section-howitworks > div.inner div.cols div.info {
+    margin: 0 0 20px 0; } }
+section#section-howitworks > div.inner div.cols div.info > div {
+  margin: 0 0 20px 0;
+  padding: 0 0 0 65px;
+  min-height: 60px;
+  position: relative; }
+  section#section-howitworks > div.inner div.cols div.info > div:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #7DE2FF; }
+  section#section-howitworks > div.inner div.cols div.info > div:nth-child(2):before {
+    background: #26C4F7; }
+  section#section-howitworks > div.inner div.cols div.info > div:nth-child(3):before {
+    background: #0E84BC; }
+  section#section-howitworks > div.inner div.cols div.info > div:nth-child(4):before {
+    background: #0B85DE; }
+  section#section-howitworks > div.inner div.cols div.info > div:nth-child(5):before {
+    background: #0C5394; }
+  section#section-howitworks > div.inner div.cols div.info > div h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 10px 0; }
+  section#section-howitworks > div.inner div.cols div.info > div p {
+    font-size: 14px;
+    margin: 0; }
 section#section-tarrifs {
   background: #EFF6F8; }
   section#section-tarrifs > div.inner h2 {
