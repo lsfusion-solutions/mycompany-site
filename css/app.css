@@ -2250,6 +2250,17 @@ div.popup {
         color: #C1C1C1; }
     div.popup > div.inner textarea {
       height: 150px; }
+    div.popup > div.inner .options {
+      border: 1px solid #26C4F7;
+      border-radius: 4px;
+      padding: 12px 12px;
+      margin: 0 0 20px 0; }
+      div.popup > div.inner .options h4 {
+        margin: 0 0 12px 0;
+        font-weight: 600;
+        font-size: 16px; }
+      div.popup > div.inner .options label {
+        display: block; }
     div.popup > div.inner label.error {
       font-size: 12px;
       padding: 3px 0;
@@ -2269,7 +2280,8 @@ div.popup {
       text-align: center;
       border: 0; }
 
-#contactuspopup {
+#contactuspopup,
+#contactus-supportpopup {
   width: 750px; }
 
 body > .contactus {

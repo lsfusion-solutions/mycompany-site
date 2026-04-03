@@ -31,7 +31,33 @@ $(document).ready(function() {
         e.preventDefault()
         return false;
     })
+    $("#section-tarrifs .select").click(function(){
+        switch ($(this).attr("data-tarrif")) {
+            case "start":
+                $("#contactus-supportpopup #tarrif-start").prop("checked", true);
+                $("#contactus-supportpopup #tarrif-standard").prop("checked", false);
+                $("#contactus-supportpopup #tarrif-premium").prop("checked", false);
+                break;
+            case "standard":
+                $("#contactus-supportpopup #tarrif-start").prop("checked", false);
+                $("#contactus-supportpopup #tarrif-standard").prop("checked", true);
+                $("#contactus-supportpopup #tarrif-premium").prop("checked", false);
+                break;
+            case "premium":
+                $("#contactus-supportpopup #tarrif-start").prop("checked", false);
+                $("#contactus-supportpopup #tarrif-standard").prop("checked", false);
+                $("#contactus-supportpopup #tarrif-premium").prop("checked", true);
+                break;
+            default:
+                $("#contactus-supportpopup #tarrif-start").prop("checked", true);
+                $("#contactus-supportpopup #tarrif-standard").prop("checked", true);
+                $("#contactus-supportpopup #tarrif-premium").prop("checked", true);
+        }
 
+        $("#contactus-supportpopup").popup({closeelement:".close"}).popup("show");
+        e.preventDefault()
+        return false;
+    })
 
     $.validator.methods.matches = function( value, element, params ) {
         return this.optional( element ) || (new RegExp( params )).test( value );

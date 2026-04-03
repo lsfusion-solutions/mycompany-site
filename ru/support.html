@@ -110,7 +110,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <li>отдельный чат для поддержки</li>
                         </ul>
                         <a href="#section-compare" class="more">Подробнее &gt;</a>
-                        <a href="#section-compare" class="select">Выбрать</a>
+                        <a href="#section-compare" class="select" data-tarrif="start">Выбрать</a>
                     </div>
                 </li>
                 <li>
@@ -124,7 +124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <li>быстрая реакция на обращения</li>
                         </ul>
                         <a href="#section-compare" class="more">Подробнее &gt;</a>
-                        <a href="#section-compare" class="select">Выбрать</a>
+                        <a href="#section-compare" class="select" data-tarrif="standard">Выбрать</a>
                     </div>
                 </li>
                 <li>
@@ -136,7 +136,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <li>объем и порядок оказания услуг определяется по результатам оценки проекта</li>
                         </ul>
                         <a href="#section-compare" class="more">Подробнее &gt;</a>
-                        <a href="#section-compare" class="select">Выбрать</a>
+                        <a href="#section-compare" class="select" data-tarrif="premium">Выбрать</a>
                     </div>
                 </li>
             </ul>
@@ -264,7 +264,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <input type="text" name="company" value="" placeholder="Организация*" required />
                 <input type="text" name="position" value="" placeholder="Должность*" required />
                 <textarea name="comment" placeholder="Вопрос*" rows="10" cols="6" required></textarea>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Отправить" />
+            </div>
+        </form>
+    </div>
+</div>
 
+<div id="contactus-supportpopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>Напишите нам</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+            <input type="hidden" name="to" value="info@lsfusion.org" />
+            <input type="hidden" name="subject" value="Choose a tarrif" />
+            <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/ru/thankyou.html" />
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="Имя*" required />
+                <input type="text" name="phone" value="" placeholder="Телефон*" required />
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <div class="options">
+                    <h4>Тарифные план:</h4>
+                    <label for="tarrif-start"><input type="checkbox" name="tarrif-start" id="tarrif-start" value="yes" /> Старт</label>
+                    <label for="tarrif-standard"><input type="checkbox" name="tarrif-start" id="tarrif-standard" value="yes" /> Стандарт</label>
+                    <label for="tarrif-premium"><input type="checkbox" name="tarrif-start" id="tarrif-premium" value="yes" /> Премиум</label>
+                </div>
+                <textarea name="comment" placeholder="Вопрос*" rows="10" cols="6" required></textarea>
             </fieldset>
             <div class="buttons">
                 <input type="submit" value="Отправить" />
