@@ -229,17 +229,6 @@ $(document).ready(function() {
             return strSplit[2] + '/' + strSplit[1] + '/' + strSplit[0];
         }
 
-        class Node {
-            constructor(title, date, content) {
-                this.id = Node.nextID++;
-                this.title = title;
-                this.date = date != "" ? date : null;
-                this.content = content;
-                //this.style = styles.baseNode;
-            }
-        }
-        Node.nextID = 0;
-
         $.ajax({
             'url': $(".commits").attr("data-url"),//'https://api.github.com/repos/lsfusion-solutions/mycompany/commits',
             'type': 'GET',
