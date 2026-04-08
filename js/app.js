@@ -226,7 +226,7 @@ $(document).ready(function() {
         //Extract the date from a GitHub datetime string
         function extractDateTime(str) {
             var strSplit = str.split(/-|T|:/);
-            return strSplit[2] + '/' + strSplit[1] + '/' + strSplit[0];
+            return strSplit[2] + '.' + strSplit[1] + '.' + strSplit[0];
         }
 
         $.ajax({
