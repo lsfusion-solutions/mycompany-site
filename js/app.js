@@ -221,4 +221,36 @@ $(document).ready(function() {
         return false;
     })
 
+    if( $(".commits").length > 0 ) {
+
+        //Extract the date from a GitHub datetime string
+        function extractDateTime(str) {
+            var strSplit = str.split(/-|T|:/);
+            return strSplit[1] + '/' + strSplit[2] + '/' + strSplit[0];
+        }
+
+        class Node {
+            constructor(title, date, content) {
+                this.id = Node.nextID++;
+                this.title = title;
+                this.date = date != "" ? date : null;
+                this.content = content;
+                //this.style = styles.baseNode;
+            }
+        }
+        Node.nextID = 0;
+
+        $.ajax({
+            'url': $(".commits").attr("data-url"),//'https://api.github.com/repos/lsfusion-solutions/mycompany/commits',
+            'type': 'GET',
+            'success': function (data) {
+                $(".commits").html("");
+
+                for (var i in data) {
+                    $(".commits").append("<p><em>" + data[i].committer.login + "</em> <date>" + extractDateTime(data[i].commit.committer.date) + "</date>: <strong>" + data[i].commit.message + "</strong></p>");
+                }
+            }
+        });
+    }
+
 })

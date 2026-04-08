@@ -1738,7 +1738,29 @@ section{
   }
 
   @import "services.scss";
+  &#section-commits{
+    & > .inner{
+      h2{
+        text-align: center;
+        margin: 0 0 30px 0;
+      }
+      div.commits{
+        max-height: 250px;
+        overflow-y: scroll;
+        p{
+          em{
 
+          }
+          date{
+            font-size: 12px;
+          }
+          strong{
+
+          }
+        }
+      }
+    }
+  }
   &#section-footer{
     @media (min-width: $siteWidth) {
       background: #0062BD url(../imgs/points.svg) no-repeat 0 bottom;
