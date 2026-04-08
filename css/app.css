@@ -422,6 +422,11 @@ body > nav {
       float: left;
       margin: 0 0 0 20px;
       font-size: 18px; }
+      body > nav > div.inner h2.ecom a {
+        width: 100px;
+        background: url(../imgs/logo_ecom.svg) no-repeat;
+        text-indent: -3000px;
+        overflow: hidden; }
       body > nav > div.inner h2 a {
         display: block;
         width: 135px;
@@ -2087,6 +2092,8 @@ body > footer {
       font-weight: 700;
       font-size: 14px;
       line-height: 27px; }
+      body > footer nav div h3.ecom {
+        line-height: 14px; }
       body > footer nav div h3 a {
         color: #fff;
         background: url(../imgs/logo_small.svg) no-repeat 0 0;

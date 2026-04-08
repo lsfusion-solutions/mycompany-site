@@ -126,6 +126,14 @@ body > nav{
       float: left;
       margin: 0 0 0 20px;
       font-size: 18px;
+      &.ecom{
+        a{
+          width: 100px;
+          background: url(../imgs/logo_ecom.svg) no-repeat;
+          text-indent: -3000px;
+          overflow: hidden;
+        }
+      }
       a{
         display: block;
         width: 135px;
@@ -2038,6 +2046,9 @@ body > footer{
         font-weight: 700;
         font-size: 14px;
         line-height: 27px;
+        &.ecom{
+          line-height: 14px;
+        }
         a{
           color: #fff;
           background: url(../imgs/logo_small.svg) no-repeat 0 0;
