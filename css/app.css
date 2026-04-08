@@ -1819,8 +1819,8 @@ section#section-commits > .inner h2 {
 section#section-commits > .inner div.commits {
   max-height: 250px;
   overflow-y: scroll; }
-  section#section-commits > .inner div.commits p date {
-    font-size: 12px; }
+  section#section-commits > .inner div.commits p em {
+    display: none; }
 @media (min-width: 1110px) {
   section#section-footer {
     background: #0062BD url(../imgs/points.svg) no-repeat 0 bottom; } }
