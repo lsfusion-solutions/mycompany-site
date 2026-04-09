@@ -1337,11 +1337,11 @@ section#section-possibilities {
   section#section-possibilities > div.inner h2 {
     text-align: center;
     margin: 0 0 20px 0; }
-  section#section-possibilities > div.inner p {
+  section#section-possibilities > div.inner > p {
     margin: 0 0 30px 0;
     text-align: center; }
     @media (min-width: 1110px) {
-      section#section-possibilities > div.inner p {
+      section#section-possibilities > div.inner > p {
         white-space: pre; } }
   section#section-possibilities > div.inner ul.list3 > li > .inner {
     background: #fff; }
