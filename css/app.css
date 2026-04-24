@@ -724,10 +724,6 @@ section#section-header {
           padding: 80% 0 0 0; } }
       section#section-header > div.inner > a.video:hover:after {
         opacity: 1; }
-      section#section-header > div.inner > a.video.video-index-ru:after {
-        margin: 0 0 0 0 !important;
-        background-image: url(../imgs/icons/play-index-ru.svg) !important;
-        background-size: auto; }
 section#section-header-settings {
   background: #0062BD; }
   section#section-header-settings > div.inner {
