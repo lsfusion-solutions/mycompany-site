@@ -985,6 +985,7 @@ section#section-free > div.inner:after {
   display: table;
   clear: both; }
 section#section-free > div.inner div.img {
+  max-width: 100%;
   background: #F7FBFC;
   border-radius: 4px;
   padding: 12px;
@@ -1069,6 +1070,9 @@ section#section-tasks > div.inner ul.list2 li > .inner {
   transition: background 0.3s; }
   section#section-tasks > div.inner ul.list2 li > .inner:hover {
     background: #F7FBFC; }
+  @media (max-width: 480px) {
+    section#section-tasks > div.inner ul.list2 li > .inner .img {
+      display: none; } }
   section#section-tasks > div.inner ul.list2 li > .inner > div.img {
     flex: 0 0 107px; }
     section#section-tasks > div.inner ul.list2 li > .inner > div.img img {

@@ -856,6 +856,7 @@ section{
         h3{
           margin: 0 0 10px 0;
         }
+        max-width: 100%;
         div.commits {
           max-height: 250px;
           overflow-y: scroll;
@@ -971,6 +972,12 @@ section{
             &:hover{
               background: #F7FBFC;
             }
+            @media (max-width: 480px){
+              .img{
+                display: none;
+              }
+            }
+
             & > div.img{
               flex: 0 0 107px;
               img {
