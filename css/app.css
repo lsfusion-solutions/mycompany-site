@@ -1072,7 +1072,9 @@ section#section-tasks > div.inner ul.list2 li > .inner {
     background: #F7FBFC; }
   @media (max-width: 480px) {
     section#section-tasks > div.inner ul.list2 li > .inner .img {
-      display: none; } }
+      display: none; }
+    section#section-tasks > div.inner ul.list2 li > .inner .info {
+      padding-left: 0 !important; } }
   section#section-tasks > div.inner ul.list2 li > .inner > div.img {
     flex: 0 0 107px; }
     section#section-tasks > div.inner ul.list2 li > .inner > div.img img {
