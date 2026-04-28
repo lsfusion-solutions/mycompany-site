@@ -472,6 +472,13 @@ section{
         }
       }
       position: relative;
+      &.ru{
+        & > a.video{
+          @media (max-width: $siteWidth - 1){
+            background: url(../imgs/header-ru.svg) no-repeat 50% 0 !important;
+          }
+        }
+      }
       & > a.video{
         &:after{
           content: "";
@@ -1584,6 +1591,11 @@ section{
               font-size: 14px;
               margin: 0;
             }
+          }
+        }
+        div.img{
+          img{
+            max-width: 100%;
           }
         }
       }
