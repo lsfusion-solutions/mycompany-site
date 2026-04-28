@@ -689,6 +689,10 @@ section#section-header {
     @media (max-width: 1109px) {
       section#section-header > div.inner.ru > a.video {
         background: url(../imgs/header-ru.svg) no-repeat 50% 0 !important; } }
+  @media (max-width: 1109px) and (max-width: 599px) {
+    section#section-header > div.inner.ru > a.video {
+      background-size: 100% !important; } }
+
     section#section-header > div.inner > a.video {
       text-indent: -3000px;
       overflow: hidden; }
@@ -722,7 +726,7 @@ section#section-header {
       @media (max-width: 599px) {
         section#section-header > div.inner > a.video {
           margin: 30px -20px 0;
-          background-size: 100%;
+          background-size: 100% !important;
           height: 0;
           padding: 80% 0 0 0; } }
       section#section-header > div.inner > a.video:hover:after {

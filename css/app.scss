@@ -476,6 +476,9 @@ section{
         & > a.video{
           @media (max-width: $siteWidth - 1){
             background: url(../imgs/header-ru.svg) no-repeat 50% 0 !important;
+            @media (max-width: 599px){
+              background-size: 100%!important;
+            }
           }
         }
       }
@@ -511,7 +514,7 @@ section{
         }
         @media (max-width: 599px){
           margin: 30px -20px 0;
-          background-size: 100%;
+          background-size: 100%!important;
           height: 0;
           padding: 80% 0 0 0;
         }
