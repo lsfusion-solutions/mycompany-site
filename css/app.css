@@ -686,6 +686,13 @@ section#section-header {
           margin-right: 0; }
           section#section-header > div.inner nav a:last-child {
             margin-bottom: 0; } }
+    @media (max-width: 1109px) {
+      section#section-header > div.inner.ru > a.video {
+        background: url(../imgs/header-ru.svg) no-repeat 50% 0 !important; } }
+  @media (max-width: 1109px) and (max-width: 599px) {
+    section#section-header > div.inner.ru > a.video {
+      background-size: 100% !important; } }
+
     section#section-header > div.inner > a.video {
       text-indent: -3000px;
       overflow: hidden; }
@@ -719,7 +726,7 @@ section#section-header {
       @media (max-width: 599px) {
         section#section-header > div.inner > a.video {
           margin: 30px -20px 0;
-          background-size: 100%;
+          background-size: 100% !important;
           height: 0;
           padding: 80% 0 0 0; } }
       section#section-header > div.inner > a.video:hover:after {
@@ -978,6 +985,7 @@ section#section-free > div.inner:after {
   display: table;
   clear: both; }
 section#section-free > div.inner div.img {
+  max-width: 100%;
   background: #F7FBFC;
   border-radius: 4px;
   padding: 12px;
@@ -1062,6 +1070,11 @@ section#section-tasks > div.inner ul.list2 li > .inner {
   transition: background 0.3s; }
   section#section-tasks > div.inner ul.list2 li > .inner:hover {
     background: #F7FBFC; }
+  @media (max-width: 480px) {
+    section#section-tasks > div.inner ul.list2 li > .inner .img {
+      display: none; }
+    section#section-tasks > div.inner ul.list2 li > .inner .info {
+      padding-left: 0 !important; } }
   section#section-tasks > div.inner ul.list2 li > .inner > div.img {
     flex: 0 0 107px; }
     section#section-tasks > div.inner ul.list2 li > .inner > div.img img {
@@ -1436,6 +1449,8 @@ section#section-howitworks > div.inner div.cols div.info > div {
   section#section-howitworks > div.inner div.cols div.info > div p {
     font-size: 14px;
     margin: 0; }
+section#section-howitworks > div.inner div.cols div.img img {
+  max-width: 100%; }
 section#section-tarrifs {
   background: #EFF6F8; }
   section#section-tarrifs > div.inner h2 {

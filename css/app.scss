@@ -472,6 +472,16 @@ section{
         }
       }
       position: relative;
+      &.ru{
+        & > a.video{
+          @media (max-width: $siteWidth - 1){
+            background: url(../imgs/header-ru.svg) no-repeat 50% 0 !important;
+            @media (max-width: 599px){
+              background-size: 100%!important;
+            }
+          }
+        }
+      }
       & > a.video{
         &:after{
           content: "";
@@ -504,7 +514,7 @@ section{
         }
         @media (max-width: 599px){
           margin: 30px -20px 0;
-          background-size: 100%;
+          background-size: 100%!important;
           height: 0;
           padding: 80% 0 0 0;
         }
@@ -846,6 +856,7 @@ section{
         h3{
           margin: 0 0 10px 0;
         }
+        max-width: 100%;
         div.commits {
           max-height: 250px;
           overflow-y: scroll;
@@ -961,6 +972,15 @@ section{
             &:hover{
               background: #F7FBFC;
             }
+            @media (max-width: 480px){
+              .img{
+                display: none;
+              }
+              .info{
+                padding-left: 0!important;
+              }
+            }
+
             & > div.img{
               flex: 0 0 107px;
               img {
@@ -1584,6 +1604,11 @@ section{
               font-size: 14px;
               margin: 0;
             }
+          }
+        }
+        div.img{
+          img{
+            max-width: 100%;
           }
         }
       }
