@@ -8,22 +8,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
     <!-- End Google Tag Manager -->
-    <link rel="canonical" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
-    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
-    <link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/" />
-    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
-    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+    <link rel="canonical" href="https://mycompany.lsfusion.org/pl/erp-dla-produkcji/" />
+    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
+    <link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-proizvodstva/" />
+    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-produkcji/" />
+    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Darmowy program magazynowy open source: magazyny, strefy i miejsca składowania, przyjęcia i wydania, przemieszczenia, partie i numery seryjne, inwentaryzacja, kompletacja mobilna i raporty stanów." />
+    <meta name="description" content="Darmowy system ERP dla produkcji: zestawienia materiałów (BOM), zamówienia produkcji, rezerwacja materiałów, stanowiska robocze, rzeczywisty koszt wytworzenia i produkcja na zamówienie. Open source." />
 
-    <title>Darmowy program magazynowy open source | MyCompany</title>
+    <title>System ERP dla produkcji | MyCompany</title>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyCompany" />
-    <meta property="og:title" content="Darmowy program magazynowy open source | MyCompany" />
-    <meta property="og:description" content="Darmowy program magazynowy open source: magazyny, strefy i miejsca składowania, przyjęcia i wydania, przemieszczenia, partie i numery seryjne, inwentaryzacja, kompletacja mobilna i raporty stanów." />
-    <meta property="og:url" content="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
+    <meta property="og:title" content="System ERP dla produkcji | MyCompany" />
+    <meta property="og:description" content="Darmowy system ERP dla produkcji: zestawienia materiałów (BOM), zamówienia produkcji, rezerwacja materiałów, stanowiska robocze, rzeczywisty koszt wytworzenia i produkcja na zamówienie. Open source." />
+    <meta property="og:url" content="https://mycompany.lsfusion.org/pl/erp-dla-produkcji/" />
     <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
     <meta property="og:image:width" content="986" />
     <meta property="og:image:height" content="564" />
@@ -94,63 +94,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main id="top">
     <section id="section-content">
         <div class="inner">
-            <h1>Darmowy program magazynowy dla małych i średnich firm</h1>
-            <p><strong>MyCompany</strong> to darmowy program magazynowy o otwartym kodzie źródłowym (licencja Apache 2.0), stworzony z myślą o małych i średnich firmach. Nie płacisz za licencje, nie ma ukrytych opłat ani uzależnienia od dostawcy — system instalujesz na własnym serwerze w 10–15 minut i zachowujesz pełną kontrolę nad danymi.</p>
-            <p>Jako system magazynowy MyCompany obejmuje całą gospodarkę magazynową: strukturę magazynów ze strefami i miejscami składowania, przyjęcia, wydania i przemieszczenia, partie i numery seryjne, inwentaryzację, mobilną kompletację ze skanowaniem kodów kreskowych oraz raporty stanów magazynowych. Całość działa na platformie lsFusion (LGPL v3, Java + PostgreSQL, transakcje ACID).</p>
+            <h1>Darmowy system ERP dla małej produkcji</h1>
+            <p><strong>MyCompany</strong> to darmowy system ERP dla produkcji o otwartym kodzie źródłowym (licencja Apache 2.0), stworzony z myślą o małych i średnich firmach. Nie płacisz za licencje ani za liczbę użytkowników — system instalujesz na własnym serwerze w 10–15 minut i zachowujesz pełną kontrolę nad danymi.</p>
+            <p>Jako program do zarządzania produkcją MyCompany prowadzi cały proces: od zestawień materiałów (BOM) i zamówień produkcji, przez rezerwację materiałów i zlecenia produkcyjne na stanowiskach roboczych, aż po rejestrację faktycznego zużycia i rzeczywisty koszt wytworzenia. Całość działa na platformie lsFusion (LGPL v3, Java + PostgreSQL, transakcje ACID).</p>
             <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Wypróbuj demo</a> <a href="#" class="btn contactus">Skontaktuj się z nami</a></p>
 
-            <h2>Magazyny, strefy i miejsca składowania</h2>
-            <p>Lokalizacje tworzą drzewo o dowolnej głębokości: magazyny dzielą się na strefy, a strefy na miejsca składowania. Liczba magazynów jest nieograniczona. Dla wybranych lokalizacji możesz włączyć „Zakaz ujemnych stanów” oraz blokadę nadmiernych rezerwacji — ustawienia te są dziedziczone przez lokalizacje podrzędne.</p>
+            <h2>Zestawienia materiałów (BOM)</h2>
+            <p>Zestawienie materiałów opisuje, z jakich materiałów i w jakich ilościach powstaje produkt, a także produkty uboczne procesu. Do Zestawienia dodajesz operacje z przypisanym stanowiskiem roboczym, czasem rozpoczęcia i czasem trwania — na ich podstawie system generuje zlecenia produkcyjne. Struktury mogą być wielopoziomowe: Zestawienia można zagnieżdżać jedno w drugim i pracować z półproduktami. Domyślne Zestawienie jest podstawiane do dokumentów automatycznie, a zmiany receptur są wersjonowane.</p>
 
-            <h2>Przyjęcia, wydania i przemieszczenia</h2>
-            <p>Ruch towarów rejestrujesz dokumentami: przyjęcia, wydania, przemieszczenia, odpady (odpisy z tytułu uszkodzeń, strat, wad lub przeterminowania) oraz korekty zapasów.</p>
-            <ul>
-                <li>Przyjęcia przechodzą przez statusy Projekt → Gotowy → Wykonano i obsługują rozmieszczenie adresowe; zatwierdzenie zamówienia zakupu automatycznie tworzy dokument przyjęcia.</li>
-                <li>Wydania kontrolują dostępność towaru i rezerwują go na stanie.</li>
-                <li>Przemieszczenia działają z dwustronnym potwierdzaniem — magazyn źródłowy potwierdza wydanie, a docelowy przyjęcie; towar trafia do magazynu docelowego z kosztem z magazynu źródłowego.</li>
-                <li>Stany początkowe zaimportujesz z Excela, a aktualne stany magazynowe możesz wyeksportować.</li>
-            </ul>
+            <h2>Zamówienia produkcji i rezerwacja materiałów</h2>
+            <p>Zamówienie produkcji to główny dokument procesu: łączy plan, strukturę materiałową oraz faktyczną produkcję i zużycie. Akcja „Sprawdź dostępność” kontroluje dostępność materiałów i rezerwuje je — linie dokumentu pokazują ilości na stanie, oczekiwane, dostępne i zarezerwowane. Na brakujące materiały utworzysz zamówienia zakupu jedną akcją — system pogrupuje towary według domyślnego dostawcy i przygotuje po jednym zamówieniu na dostawcę. Faktyczne ilości rejestrujesz w polach Wyprodukowane i Zużyte, a system proporcjonalnie rozdziela je według planu. Dokument przechodzi przez statusy: Projekt, Oczekiwanie, Gotowy, W trakcie, Wykonano.</p>
 
-            <h2>Kompletacja mobilna ze skanowaniem kodów</h2>
-            <p>Dla wydań w statusie Gotowy system automatycznie generuje zadania kompletacji. Magazynier realizuje je na mobilnym formularzu kompletacji, skanując kody kreskowe miejsc składowania i towarów. Z urządzenia mobilnego wykona też przemieszczenia między lokalizacjami.</p>
+            <h2>Produkcja na zamówienie klienta</h2>
+            <p>Zamówienia produkcji utworzysz bezpośrednio z linii zamówień sprzedaży — także automatycznie w momencie potwierdzenia zamówienia. Do chwili uruchomienia produkcji zmiany w zamówieniu sprzedaży są synchronizowane z powiązanym zamówieniem produkcji, więc plan zawsze odpowiada temu, co zamówił klient.</p>
 
-            <h2>Partie i numery seryjne</h2>
-            <p>Śledzenie partii włączysz globalnie, dla wybranej kategorii albo dla pojedynczego towaru; dostępny jest również tryb numerów seryjnych. Identyfikatory partii nadawane są automatycznie według wzorca prefiks + licznik (np. LOT-000123). Partie rejestruje się w przyjęciach, wydaniach i przemieszczeniach, a zeskanowanie nowego kodu może od razu utworzyć partię. Etykiety partii z kodem kreskowym zapiszesz do PDF, DOCX, XLSX, RTF lub HTML.</p>
+            <h2>Rzeczywisty koszt wytworzenia</h2>
+            <p>System wylicza koszt wytworzenia z faktycznych danych: materiałów, kosztów dodatkowych (m.in. odpadów), robocizny z wpisów czasu pracy oraz usług z faktur zakupu. Koszt jednostkowy to koszt linii wyjścia podzielony przez faktycznie wyprodukowaną ilość — wiesz dokładnie, ile kosztuje każda sztuka.</p>
 
-            <h2>Inwentaryzacja</h2>
-            <p>Arkusz inwentaryzacji wypełnisz według lokalizacji, według kategorii lub ręcznie — także ze skanowaniem kodów kreskowych. System sam wylicza różnice inwentaryzacyjne: nadwyżki i braki. Przy większych spisach pracę dzielisz na arkusze inwentaryzacyjne dla zespołów, które są automatycznie sumowane; arkusze i etykiety można drukować.</p>
+            <h2>Stanowiska robocze i planowanie obciążenia</h2>
+            <p>Operacje z Zestawienia materiałów trafiają jako zlecenia produkcyjne na konkretne stanowiska robocze. Pulpit obciążenia stanowisk roboczych pokazuje macierz stanowiska × dni z kolorowym oznaczeniem obciążenia — od razu widzisz plan pracy i wąskie gardła w produkcji.</p>
 
-            <h2>Stany magazynowe i raporty</h2>
-            <p>Raport bieżących stanów pokazuje wartości Oczekiwane, Zarezerwowane, Dostępne i Na stanie — z widokiem pivot, historią i podziałem na partie. Do tego dochodzą wycena stanów, historia ruchu oraz raport kosztów, prowadzone na trzech rejestrach: stanów, rezerwacji i kosztów. Stany magazynowe udostępnisz też innym systemom przez HTTP API w formacie JSON, z filtrowaniem po kategorii i lokalizacji.</p>
-            <p>Jednostki miary są elastyczne: wiele towarów sprzedażowych można zmapować na jeden magazynowy SKU ze współczynnikiem przeliczenia, a jednostki opakowań ustawić osobno dla każdego typu dokumentu.</p>
+            <h2>Demontaż, produkty uboczne i partie</h2>
+            <p>Demontaż („odwrócona produkcja”) rozkłada produkt z powrotem na składniki. System obsługuje produkty uboczne i odpady, a partie i numery seryjne pochodzą z modułu magazynowego — zachowujesz identyfikowalność surowców i wyrobów gotowych.</p>
 
             <h2>Jak to działa w MyCompany</h2>
             <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/" target="_blank">Magazynowanie — przegląd</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/locations/" target="_blank">Lokalizacje: magazyny, strefy, miejsca składowania</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/receipts/" target="_blank">Przyjęcia</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/shipments/" target="_blank">Wydania</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/transfers/" target="_blank">Przemieszczenia</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/adjustments/" target="_blank">Inwentaryzacja i korekty zapasów</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/lots-and-packages/" target="_blank">Partie i pakiety</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/reports-and-ledgers/" target="_blank">Raporty i rejestry</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/" target="_blank">Produkcja — przegląd</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/bom/" target="_blank">Zestawienia materiałów</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/orders/" target="_blank">Zamówienia produkcji</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/sales-orders/" target="_blank">Produkcja z zamówień sprzedaży</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/workflow/" target="_blank">Proces i statusy</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/costing/" target="_blank">Koszt wytworzenia</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/manufacturing/work-orders/" target="_blank">Stanowiska robocze</a></li>
             </ul>
 
             <h2>FAQ</h2>
-            <h3>Czy ten program magazynowy jest naprawdę darmowy?</h3>
-            <p>Tak. MyCompany jest bezpłatny i ma otwarty kod źródłowy na licencji Apache 2.0 — bez ukrytych opłat i bez uzależnienia od dostawcy. Instalujesz go na własnym serwerze w 10–15 minut.</p>
-            <h3>Ile magazynów mogę prowadzić?</h3>
-            <p>Dowolną liczbę. Każdy magazyn możesz dodatkowo podzielić na strefy i miejsca składowania — drzewo lokalizacji ma dowolną głębokość.</p>
-            <h3>Czy program obsługuje kody kreskowe?</h3>
-            <p>Tak. Kody kreskowe skanujesz przy mobilnej kompletacji (miejsca i towary), przy inwentaryzacji oraz przy pracy z partiami; etykiety partii z kodem kreskowym wydrukujesz z systemu.</p>
-            <h3>Czy system śledzi partie i numery seryjne?</h3>
-            <p>Tak. Partie włączysz globalnie, dla wybranej kategorii lub pojedynczego towaru, z automatyczną numeracją (np. LOT-000123); dostępny jest też tryb numerów seryjnych.</p>
-            <h3>Jak przeprowadzę inwentaryzację?</h3>
-            <p>Tworzysz korektę zapasów i wypełniasz ją według lokalizacji, kategorii albo ręcznie ze skanowaniem. System automatycznie wylicza nadwyżki i braki, a przy większych spisach sumuje arkusze poszczególnych zespołów.</p>
-            <h3>Czy magazynierzy mogą pracować na urządzeniach mobilnych?</h3>
-            <p>Tak — dostępny jest mobilny formularz kompletacji ze skanowaniem kodów kreskowych oraz mobilne przemieszczenia towarów.</p>
+            <h3>Czy MyCompany nadaje się dla małej produkcji?</h3>
+            <p>Tak, system powstał z myślą o małych i średnich firmach. Do pracy wystarczy serwer z 4 GB RAM; instalacja to jedna komenda na Linuksie, instalator na Windows lub obraz Docker, a aktualizacja polega na podmianie jednego pliku JAR.</p>
+            <h3>Czy obsługiwane są wielopoziomowe zestawienia materiałów?</h3>
+            <p>Tak. Zestawienia materiałów można zagnieżdżać i pracować z półproduktami, a zmiany receptur są wersjonowane. Domyślne Zestawienie jest podstawiane do zamówienia produkcji automatycznie.</p>
+            <h3>Jak liczony jest koszt wytworzenia?</h3>
+            <p>Z danych rzeczywistych: materiały, koszty dodatkowe (m.in. odpady), robocizna z wpisów czasu pracy i usługi z faktur zakupu. Koszt jednostkowy to koszt linii wyjścia podzielony przez faktycznie wyprodukowaną ilość.</p>
+            <h3>Czy mogę planować obciążenie stanowisk roboczych?</h3>
+            <p>Tak. Pulpit obciążenia stanowisk roboczych pokazuje macierz stanowiska × dni z kolorowym oznaczeniem obciążenia, co ułatwia planowanie i wykrywanie wąskich gardeł.</p>
+            <h3>Czy system obsługuje produkcję pod zamówienie klienta?</h3>
+            <p>Tak. Zamówienia produkcji tworzysz z linii zamówień sprzedaży — również automatycznie przy potwierdzeniu — a zmiany są synchronizowane aż do uruchomienia produkcji.</p>
+            <h3>Ile kosztuje ten system ERP dla produkcji?</h3>
+            <p>Nic — MyCompany jest darmowy i open source (licencja Apache 2.0), a kod znajdziesz na github.com/lsfusion-solutions/mycompany. Możesz od razu przetestować demo online, a dokumentacja jest dostępna po polsku, angielsku i rosyjsku.</p>
 
-            <p>Zobacz także: <a href="/pl/darmowy-system-erp/">darmowy system ERP</a> — pełen obraz możliwości MyCompany, <a href="/pl/program-do-faktur-ksef/">program do faktur z KSeF</a> oraz <a href="/pl/">stronę główną MyCompany</a>.</p>
+            <p>Zobacz także: <a href="/pl/program-magazynowy/">program magazynowy</a> — gospodarka magazynowa z partiami i kompletacją, <a href="/pl/darmowy-system-erp/">darmowy system ERP</a> — pełen obraz możliwości MyCompany oraz <a href="/pl/">stronę główną MyCompany</a>.</p>
         </div>
     </section>
 </main>
@@ -204,7 +196,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h3>Napisz do nas</h3>
         <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
             <input type="hidden" name="to" value="info@lsfusion.org" />
-            <input type="hidden" name="subject" value="Program magazynowy — kontakt" />
+            <input type="hidden" name="subject" value="ERP dla produkcji — kontakt" />
             <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/pl/thankyou.html" />
             <fieldset>
                 <input type="text" name="name" value="" placeholder="Imię*" required />

@@ -8,22 +8,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
     <!-- End Google Tag Manager -->
-    <link rel="canonical" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
-    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
-    <link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/" />
-    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
-    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+    <link rel="canonical" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Darmowy program magazynowy open source: magazyny, strefy i miejsca składowania, przyjęcia i wydania, przemieszczenia, partie i numery seryjne, inwentaryzacja, kompletacja mobilna i raporty stanów." />
+    <meta name="description" content="Zainstaluj system ERP na własnym serwerze: jedna komenda na Linuksie, instalator Windows lub Docker, wystarczą 4 GB RAM. Twoje dane zostają u Ciebie — bez abonamentu i opłat za użytkownika." />
 
-    <title>Darmowy program magazynowy open source | MyCompany</title>
+    <title>ERP na własnym serwerze (self-hosted) | MyCompany</title>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyCompany" />
-    <meta property="og:title" content="Darmowy program magazynowy open source | MyCompany" />
-    <meta property="og:description" content="Darmowy program magazynowy open source: magazyny, strefy i miejsca składowania, przyjęcia i wydania, przemieszczenia, partie i numery seryjne, inwentaryzacja, kompletacja mobilna i raporty stanów." />
-    <meta property="og:url" content="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
+    <meta property="og:title" content="ERP na własnym serwerze (self-hosted) | MyCompany" />
+    <meta property="og:description" content="Zainstaluj system ERP na własnym serwerze: jedna komenda na Linuksie, instalator Windows lub Docker, wystarczą 4 GB RAM. Twoje dane zostają u Ciebie — bez abonamentu i opłat za użytkownika." />
+    <meta property="og:url" content="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
     <meta property="og:image:width" content="986" />
     <meta property="og:image:height" content="564" />
@@ -94,63 +93,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main id="top">
     <section id="section-content">
         <div class="inner">
-            <h1>Darmowy program magazynowy dla małych i średnich firm</h1>
-            <p><strong>MyCompany</strong> to darmowy program magazynowy o otwartym kodzie źródłowym (licencja Apache 2.0), stworzony z myślą o małych i średnich firmach. Nie płacisz za licencje, nie ma ukrytych opłat ani uzależnienia od dostawcy — system instalujesz na własnym serwerze w 10–15 minut i zachowujesz pełną kontrolę nad danymi.</p>
-            <p>Jako system magazynowy MyCompany obejmuje całą gospodarkę magazynową: strukturę magazynów ze strefami i miejscami składowania, przyjęcia, wydania i przemieszczenia, partie i numery seryjne, inwentaryzację, mobilną kompletację ze skanowaniem kodów kreskowych oraz raporty stanów magazynowych. Całość działa na platformie lsFusion (LGPL v3, Java + PostgreSQL, transakcje ACID).</p>
+            <h1>System ERP na własnym serwerze</h1>
+            <p><strong>MyCompany</strong> to darmowy system ERP o otwartym kodzie źródłowym (licencja Apache 2.0), który instalujesz na własnym serwerze w 10–15 minut. W modelu self-hosted wszystkie dane pozostają na Twojej infrastrukturze — nie płacisz abonamentu, nie ma opłat za użytkownika ani uzależnienia od dostawcy.</p>
+            <p>Całe środowisko jest pod Twoją kontrolą: serwer aplikacji lsFusion (Java) oraz baza danych PostgreSQL z transakcjami ACID. Platforma lsFusion jest dostępna na licencji LGPL v3, a samo rozwiązanie MyCompany na Apache 2.0 — bez kluczy licencyjnych i bez DRM. Lokalny system ERP może pracować nawet wyłącznie w sieci lokalnej, bez dostępu do internetu.</p>
             <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Wypróbuj demo</a> <a href="#" class="btn contactus">Skontaktuj się z nami</a></p>
 
-            <h2>Magazyny, strefy i miejsca składowania</h2>
-            <p>Lokalizacje tworzą drzewo o dowolnej głębokości: magazyny dzielą się na strefy, a strefy na miejsca składowania. Liczba magazynów jest nieograniczona. Dla wybranych lokalizacji możesz włączyć „Zakaz ujemnych stanów” oraz blokadę nadmiernych rezerwacji — ustawienia te są dziedziczone przez lokalizacje podrzędne.</p>
+            <h2>Instalacja na Linuksie jedną komendą</h2>
+            <p>Na Ubuntu 18+ lub Debianie 9+ wystarczy jedna komenda, która instaluje wszystkie komponenty — serwer aplikacji, bazę danych i klienta webowego:</p>
+            <pre><code>source &lt;(curl -s https://download.lsfusion.org/solutions/install-mycompany-ubuntu18-pl.sh)</code></pre>
+            <p>Dla dystrybucji RHEL 8+, CentOS 8+ i Fedora 35+ dostępny jest analogiczny wariant skryptu (CentOS). Typowa instalacja self-hosted ERP zajmuje 10–15 minut.</p>
 
-            <h2>Przyjęcia, wydania i przemieszczenia</h2>
-            <p>Ruch towarów rejestrujesz dokumentami: przyjęcia, wydania, przemieszczenia, odpady (odpisy z tytułu uszkodzeń, strat, wad lub przeterminowania) oraz korekty zapasów.</p>
-            <ul>
-                <li>Przyjęcia przechodzą przez statusy Projekt → Gotowy → Wykonano i obsługują rozmieszczenie adresowe; zatwierdzenie zamówienia zakupu automatycznie tworzy dokument przyjęcia.</li>
-                <li>Wydania kontrolują dostępność towaru i rezerwują go na stanie.</li>
-                <li>Przemieszczenia działają z dwustronnym potwierdzaniem — magazyn źródłowy potwierdza wydanie, a docelowy przyjęcie; towar trafia do magazynu docelowego z kosztem z magazynu źródłowego.</li>
-                <li>Stany początkowe zaimportujesz z Excela, a aktualne stany magazynowe możesz wyeksportować.</li>
-            </ul>
+            <h2>Windows i Docker</h2>
+            <p>Nie każda firma używa Linuksa na serwerze. Dla Windows przygotowany jest instalator, który przeprowadza przez cały proces krok po kroku. Dostępny jest również oficjalny wariant uruchomienia w Dockerze — wygodny, gdy chcesz odizolować system od reszty środowiska albo włączyć go do istniejącej infrastruktury kontenerowej.</p>
 
-            <h2>Kompletacja mobilna ze skanowaniem kodów</h2>
-            <p>Dla wydań w statusie Gotowy system automatycznie generuje zadania kompletacji. Magazynier realizuje je na mobilnym formularzu kompletacji, skanując kody kreskowe miejsc składowania i towarów. Z urządzenia mobilnego wykona też przemieszczenia między lokalizacjami.</p>
+            <h2>Wymagania i pierwsze uruchomienie</h2>
+            <p>Do pracy wystarczy serwer z minimum 4 GB RAM. Po instalacji klient webowy jest dostępny w przeglądarce na porcie 8080 (http://ip-serwera:8080), a klient desktop łączy się przez port 7652. Logujesz się jako użytkownik <strong>admin</strong> z pustym hasłem — zaraz po pierwszym uruchomieniu zalecamy je zmienić.</p>
 
-            <h2>Partie i numery seryjne</h2>
-            <p>Śledzenie partii włączysz globalnie, dla wybranej kategorii albo dla pojedynczego towaru; dostępny jest również tryb numerów seryjnych. Identyfikatory partii nadawane są automatycznie według wzorca prefiks + licznik (np. LOT-000123). Partie rejestruje się w przyjęciach, wydaniach i przemieszczeniach, a zeskanowanie nowego kodu może od razu utworzyć partię. Etykiety partii z kodem kreskowym zapiszesz do PDF, DOCX, XLSX, RTF lub HTML.</p>
+            <h2>Twoje dane na Twojej infrastrukturze</h2>
+            <p>ERP na własnym serwerze oznacza pełną suwerenność danych: informacje o klientach, zamówieniach, magazynie i finansach nie opuszczają Twojej firmy. Nie ma abonamentu per użytkownik, więc koszt nie rośnie wraz z zespołem. System działa w sieci lokalnej, a otwarte licencje bez kluczy i DRM gwarantują, że nikt nie wyłączy Ci systemu zdalnie i nie uzależnisz się od jednego dostawcy.</p>
+            <p>Dane przechowywane są w PostgreSQL — jednej z najpopularniejszych otwartych baz danych — więc w każdej chwili masz do nich bezpośredni dostęp na poziomie bazy.</p>
 
-            <h2>Inwentaryzacja</h2>
-            <p>Arkusz inwentaryzacji wypełnisz według lokalizacji, według kategorii lub ręcznie — także ze skanowaniem kodów kreskowych. System sam wylicza różnice inwentaryzacyjne: nadwyżki i braki. Przy większych spisach pracę dzielisz na arkusze inwentaryzacyjne dla zespołów, które są automatycznie sumowane; arkusze i etykiety można drukować.</p>
-
-            <h2>Stany magazynowe i raporty</h2>
-            <p>Raport bieżących stanów pokazuje wartości Oczekiwane, Zarezerwowane, Dostępne i Na stanie — z widokiem pivot, historią i podziałem na partie. Do tego dochodzą wycena stanów, historia ruchu oraz raport kosztów, prowadzone na trzech rejestrach: stanów, rezerwacji i kosztów. Stany magazynowe udostępnisz też innym systemom przez HTTP API w formacie JSON, z filtrowaniem po kategorii i lokalizacji.</p>
-            <p>Jednostki miary są elastyczne: wiele towarów sprzedażowych można zmapować na jeden magazynowy SKU ze współczynnikiem przeliczenia, a jednostki opakowań ustawić osobno dla każdego typu dokumentu.</p>
+            <h2>Aktualizacje i własne modyfikacje</h2>
+            <p>Aktualizacja systemu sprowadza się do podmiany jednego pliku JAR — bez skomplikowanych procedur migracji. Logikę dostosujesz do swoich procesów, dodając własne moduły w plikach .lsf bez rekompilacji całego systemu. Pełny kod źródłowy znajdziesz na <a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHubie</a>, a dokumentacja jest dostępna po polsku, angielsku i rosyjsku.</p>
 
             <h2>Jak to działa w MyCompany</h2>
             <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/" target="_blank">Magazynowanie — przegląd</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/locations/" target="_blank">Lokalizacje: magazyny, strefy, miejsca składowania</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/receipts/" target="_blank">Przyjęcia</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/shipments/" target="_blank">Wydania</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/transfers/" target="_blank">Przemieszczenia</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/adjustments/" target="_blank">Inwentaryzacja i korekty zapasów</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/lots-and-packages/" target="_blank">Partie i pakiety</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/reports-and-ledgers/" target="_blank">Raporty i rejestry</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/administration/installation/" target="_blank">Instalacja krok po kroku (PL)</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/administration/installation-docker/" target="_blank">Instalacja w Dockerze</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/pl/administration/development/" target="_blank">Rozwój i dostosowanie</a></li>
+                <li><a href="https://download.lsfusion.org/" target="_blank">Pobieranie</a></li>
+                <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">Kod źródłowy na GitHubie</a></li>
             </ul>
 
             <h2>FAQ</h2>
-            <h3>Czy ten program magazynowy jest naprawdę darmowy?</h3>
-            <p>Tak. MyCompany jest bezpłatny i ma otwarty kod źródłowy na licencji Apache 2.0 — bez ukrytych opłat i bez uzależnienia od dostawcy. Instalujesz go na własnym serwerze w 10–15 minut.</p>
-            <h3>Ile magazynów mogę prowadzić?</h3>
-            <p>Dowolną liczbę. Każdy magazyn możesz dodatkowo podzielić na strefy i miejsca składowania — drzewo lokalizacji ma dowolną głębokość.</p>
-            <h3>Czy program obsługuje kody kreskowe?</h3>
-            <p>Tak. Kody kreskowe skanujesz przy mobilnej kompletacji (miejsca i towary), przy inwentaryzacji oraz przy pracy z partiami; etykiety partii z kodem kreskowym wydrukujesz z systemu.</p>
-            <h3>Czy system śledzi partie i numery seryjne?</h3>
-            <p>Tak. Partie włączysz globalnie, dla wybranej kategorii lub pojedynczego towaru, z automatyczną numeracją (np. LOT-000123); dostępny jest też tryb numerów seryjnych.</p>
-            <h3>Jak przeprowadzę inwentaryzację?</h3>
-            <p>Tworzysz korektę zapasów i wypełniasz ją według lokalizacji, kategorii albo ręcznie ze skanowaniem. System automatycznie wylicza nadwyżki i braki, a przy większych spisach sumuje arkusze poszczególnych zespołów.</p>
-            <h3>Czy magazynierzy mogą pracować na urządzeniach mobilnych?</h3>
-            <p>Tak — dostępny jest mobilny formularz kompletacji ze skanowaniem kodów kreskowych oraz mobilne przemieszczenia towarów.</p>
+            <h3>Jakie są wymagania serwera?</h3>
+            <p>Minimum 4 GB RAM. System zainstalujesz na Ubuntu 18+ / Debianie 9+, na RHEL 8+ / CentOS 8+ / Fedorze 35+, na Windows (instalator) albo w Dockerze.</p>
+            <h3>Ile trwa instalacja?</h3>
+            <p>Zwykle 10–15 minut. Na Linuksie cały proces wykonuje jedna komenda, na Windows prowadzi Cię instalator.</p>
+            <h3>Czy system działa w sieci lokalnej, bez internetu?</h3>
+            <p>Tak. Po instalacji wszystko działa na Twoim serwerze: użytkownicy łączą się przez przeglądarkę na porcie 8080 lub klientem desktop na porcie 7652 — także wyłącznie w sieci lokalnej.</p>
+            <h3>Jak wyglądają aktualizacje?</h3>
+            <p>Aktualizujesz system, podmieniając jeden plik JAR na serwerze. To Ty decydujesz, kiedy i na jaką wersję przejść.</p>
+            <h3>Czy moje dane są zamknięte w systemie?</h3>
+            <p>Nie. Dane leżą w bazie PostgreSQL na Twoim serwerze, a kod systemu jest otwarty (Apache 2.0, platforma LGPL v3) — masz do nich pełny, bezpośredni dostęp.</p>
+            <h3>Czy mogę uruchomić system w Dockerze?</h3>
+            <p>Tak, dostępny jest oficjalny wariant instalacji w Dockerze, opisany w dokumentacji.</p>
 
-            <p>Zobacz także: <a href="/pl/darmowy-system-erp/">darmowy system ERP</a> — pełen obraz możliwości MyCompany, <a href="/pl/program-do-faktur-ksef/">program do faktur z KSeF</a> oraz <a href="/pl/">stronę główną MyCompany</a>.</p>
+            <p>Zobacz także: <a href="/pl/system-erp-open-source/">ERP open source</a> — dlaczego otwarty kod ma znaczenie, <a href="/pl/darmowy-system-erp/">darmowy system ERP</a> — pełen obraz możliwości MyCompany, oraz <a href="/pl/">stronę główną MyCompany</a>.</p>
         </div>
     </section>
 </main>
@@ -204,7 +193,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h3>Napisz do nas</h3>
         <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
             <input type="hidden" name="to" value="info@lsfusion.org" />
-            <input type="hidden" name="subject" value="Program magazynowy — kontakt" />
+            <input type="hidden" name="subject" value="ERP self-hosted — kontakt" />
             <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/pl/thankyou.html" />
             <fieldset>
                 <input type="text" name="name" value="" placeholder="Imię*" required />

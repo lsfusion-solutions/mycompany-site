@@ -2499,3 +2499,14 @@ a.video{
     }
   }
 }
+/* --- Opaque mobile menu (fixes pre-existing content bleed-through) --- */
+@media (max-width: 949px) {
+  body > nav > div.inner > ul.nav {
+    background: #fff;
+  }
+}
+@media (max-width: 949px) {
+  body > nav:has(.menu-link.active) {
+    opacity: 1;
+  }
+}

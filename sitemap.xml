@@ -5,7 +5,7 @@
   <!-- Homepages (en / ru / uk / pl) -->
   <url>
     <loc>https://mycompany.lsfusion.org/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/" />
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/ru/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/" />
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/uk/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/" />
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/" />
@@ -43,7 +43,7 @@
   <!-- Services (en / ru / pl) -->
   <url>
     <loc>https://mycompany.lsfusion.org/services.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/services.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/services.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/services.html" />
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/ru/services.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/services.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/services.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/services.html" />
@@ -59,7 +59,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/services.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/services.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/services.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/services.html" />
@@ -69,7 +69,7 @@
   <!-- Terms of cooperation (en / ru / pl) -->
   <url>
     <loc>https://mycompany.lsfusion.org/terms_of_cooperation.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/terms_of_cooperation.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/terms_of_cooperation.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/terms_of_cooperation.html" />
@@ -77,7 +77,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/ru/terms_of_cooperation.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/terms_of_cooperation.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/terms_of_cooperation.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/terms_of_cooperation.html" />
@@ -85,7 +85,7 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/terms_of_cooperation.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/terms_of_cooperation.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/terms_of_cooperation.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/terms_of_cooperation.html" />
@@ -95,34 +95,134 @@
   <!-- Russian-only pages -->
   <url>
     <loc>https://mycompany.lsfusion.org/ru/support.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/ru/e-com.html</loc>
-    <lastmod>2026-07-13</lastmod>
-  </url>
-
-  <!-- English landing pages -->
-  <url>
-    <loc>https://mycompany.lsfusion.org/open-source-erp/</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
+
+  <!-- Landing cluster: free ERP (en / ru / pl) -->
   <url>
     <loc>https://mycompany.lsfusion.org/free-erp-software/</loc>
     <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-erp-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-erp-sistema/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/darmowy-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-erp-software/" />
   </url>
   <url>
-    <loc>https://mycompany.lsfusion.org/self-hosted-erp/</loc>
+    <loc>https://mycompany.lsfusion.org/ru/besplatnaya-erp-sistema/</loc>
     <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-erp-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-erp-sistema/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/darmowy-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-erp-software/" />
   </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/darmowy-system-erp/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-erp-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-erp-sistema/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/darmowy-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-erp-software/" />
+  </url>
+
+  <!-- Landing cluster: open-source ERP (en / ru / pl) -->
+  <url>
+    <loc>https://mycompany.lsfusion.org/open-source-erp/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-s-otkrytym-kodom/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/system-erp-open-source/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/erp-s-otkrytym-kodom/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-s-otkrytym-kodom/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/system-erp-open-source/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/system-erp-open-source/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-s-otkrytym-kodom/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/system-erp-open-source/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-erp/" />
+  </url>
+
+  <!-- Landing cluster: inventory (en / ru / pl) -->
   <url>
     <loc>https://mycompany.lsfusion.org/open-source-inventory-management/</loc>
     <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
   </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/program-magazynowy/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-magazynowy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-inventory-management/" />
+  </url>
+
+  <!-- Landing cluster: manufacturing (en / ru / pl) -->
   <url>
     <loc>https://mycompany.lsfusion.org/open-source-manufacturing-erp/</loc>
     <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-proizvodstva/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-produkcji/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
   </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/erp-dlya-proizvodstva/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-proizvodstva/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-produkcji/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/erp-dla-produkcji/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-proizvodstva/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-produkcji/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
+  </url>
+
+  <!-- Landing cluster: self-hosted (en / pl) -->
+  <url>
+    <loc>https://mycompany.lsfusion.org/self-hosted-erp/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+  </url>
+
+  <!-- Single-language landing pages -->
   <url>
     <loc>https://mycompany.lsfusion.org/customizable-erp/</loc>
     <lastmod>2026-07-14</lastmod>
@@ -135,36 +235,16 @@
     <loc>https://mycompany.lsfusion.org/odoo-alternative/</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
-
-  <!-- Russian landing pages -->
-  <url>
-    <loc>https://mycompany.lsfusion.org/ru/besplatnaya-erp-sistema/</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-  <url>
-    <loc>https://mycompany.lsfusion.org/ru/erp-s-otkrytym-kodom/</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-  <url>
-    <loc>https://mycompany.lsfusion.org/ru/programma-skladskogo-ucheta/</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-  <url>
-    <loc>https://mycompany.lsfusion.org/ru/erp-dlya-proizvodstva/</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-
-  <!-- Polish landing pages -->
-  <url>
-    <loc>https://mycompany.lsfusion.org/pl/darmowy-system-erp/</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/program-do-faktur-ksef/</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://mycompany.lsfusion.org/pl/program-magazynowy/</loc>
+    <loc>https://mycompany.lsfusion.org/pl/crm-open-source/</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/ewidencja-czasu-pracy/</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
 
