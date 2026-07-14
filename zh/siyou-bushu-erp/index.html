@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
+    <link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
+    <link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="将MyCompany ERP部署到自己的服务器：Linux一条命令安装、Windows安装程序或Docker，最低4 GB内存，自带Web客户端。数据完全由您掌控——免费且开源。" />
+
+    <title>私有部署ERP，运行在自己的服务器上 | MyCompany</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyCompany" />
+    <meta property="og:title" content="私有部署ERP，运行在自己的服务器上 | MyCompany" />
+    <meta property="og:description" content="将MyCompany ERP部署到自己的服务器：Linux一条命令安装、Windows安装程序或Docker，最低4 GB内存，自带Web客户端。数据完全由您掌控——免费且开源。" />
+    <meta property="og:url" content="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
+    <meta property="og:image:width" content="986" />
+    <meta property="og:image:height" content="564" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon_16x16.png">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon/favicon.ico">
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(95551513, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body class="flex">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <noscript><div><img src="https://mc.yandex.ru/watch/95551513" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<nav>
+    <div class="inner">
+        <h2><a href="/zh/" title="返回首页">MyCompany</a></h2>
+        <a class="menu-link" href="#menu">导航</a>
+        <ul class="nav">
+            <li><a href="/zh/#functions">功能</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">开发</a></li>
+            <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">文档</a></li>
+            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">试用演示</a></li>
+            <li id="languages">
+                <div class="language">
+                    <strong>中文</strong>
+                    <ul>
+                        <li><a href="/ru/">Ру</a></li>
+                        <li><a href="/uk/">Ук</a></li>
+                        <li><a href="/pl/">Pl</a></li>
+                        <li><a href="/pt/">Pt</a></li>
+                        <li><a href="/es/">Es</a></li>
+                        <li><span class="current">中文</span></li>
+                        <li><a href="/">En</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main id="top">
+    <section id="section-content">
+        <div class="inner">
+            <h1>运行在自己服务器上的私有部署ERP</h1>
+            <p><strong>MyCompany</strong>是为私有部署而设计的免费开源ERP系统。您把它安装在自己的服务器上——物理机或虚拟机、在办公室或您自己的云账户中——一切都留在那里：应用程序、数据库以及企业产生的每一条记录。没有SaaS账户，没有按用户订阅，也没有任何供应商横在您和您的数据之间。</p>
+            <p>如果您在寻找一款小团队无需咨询项目就能自行部署的私有化ERP或本地部署（on-premise）ERP，MyCompany是一个务实的选择：10-15分钟即可安装到自己的服务器上，开箱即提供Web客户端，并以Apache 2.0许可证发布——没有隐藏费用，也没有许可证绑定。</p>
+            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">试用演示</a> <a href="#" class="btn contactus">联系我们</a></p>
+
+            <h2>安装：Linux一行命令，Windows安装程序</h2>
+            <p>在Ubuntu 18+或Debian 9+上，整个安装过程只是在服务器上执行一条命令：</p>
+            <pre><code>source &lt;(curl -s https://download.lsfusion.org/solutions/install-mycompany-ubuntu18.sh)</code></pre>
+            <p>面向CentOS的脚本变体覆盖RHEL 8+、CentOS 8+和Fedora 35+。Windows上有独立安装程序；如果偏好容器，Docker部署也有官方文档。安装完成后，在浏览器中打开<code>http://您的服务器IP:8080</code>，以<code>admin</code>身份、空密码登录——当然，之后请修改密码。</p>
+
+            <h2>服务器要求不高</h2>
+            <ul>
+                <li>最低4 GB内存——一台小型VPS或办公室电脑即可起步</li>
+                <li>开箱即用的Web客户端，服务于8080端口</li>
+                <li>偏好桌面客户端的用户可使用7652端口</li>
+                <li>在局域网中运行良好——员工只需一个浏览器即可接入</li>
+            </ul>
+
+            <h2>端到端完全可控的技术栈</h2>
+            <p>MyCompany的底层是用Java编写、运行于PostgreSQL之上的lsFusion应用服务器，为您的事务提供完整的ACID保证。lsFusion平台采用LGPL v3许可证，MyCompany应用采用Apache 2.0许可证。这意味着：没有许可证密钥、没有DRM、没有“回连验证”的授权机制——您安装的软件完全归您运行。</p>
+
+            <h2>企业选择私有部署的原因</h2>
+            <ul>
+                <li><strong>数据留在您手中。</strong>客户、价格、库存和财务都保存在您的基础设施上，而不是别人的云里。</li>
+                <li><strong>没有按用户订阅。</strong>需要多少员工就加多少，账单不会随之增长。</li>
+                <li><strong>可在局域网运行。</strong>Web客户端跑在您自己的网络里，规则由您定。</li>
+                <li><strong>没有供应商绑定。</strong>开放的源代码加上标准PostgreSQL数据库，您永远不会被困住。</li>
+            </ul>
+
+            <h2>升级简单，定制真实</h2>
+            <p>升级一套私有部署系统不应该本身就是个项目。在MyCompany中，升级只是替换服务器classpath中的一个JAR文件——发布版本都在download.lsfusion.org。而且由于应用由lsFusion模块构建，您可以在自己的服务器上扩展它而无需重新编译任何东西：把一个<code>.lsf</code>文件放到应用旁边，并将<code>logics.topModule</code>指向它。</p>
+
+            <h2>在MyCompany中如何实现</h2>
+            <ul>
+                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank">安装指南</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation-docker/" target="_blank">Docker部署</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">开发与定制</a></li>
+                <li><a href="https://download.lsfusion.org/" target="_blank">下载</a></li>
+                <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub上的源代码</a></li>
+            </ul>
+
+            <h2>常见问题</h2>
+            <h3>服务器要求是什么？</h3>
+            <p>一台至少4 GB内存的机器，运行Ubuntu 18+、Debian 9+、RHEL 8+、CentOS 8+、Fedora 35+或Windows。Web客户端服务于8080端口，桌面客户端使用7652端口。</p>
+
+            <h3>安装需要多长时间？</h3>
+            <p>在自己的服务器上大约10-15分钟。Linux上是一条命令；Windows上运行独立安装程序。之后在服务器地址的8080端口打开Web客户端即可。</p>
+
+            <h3>可以在Docker中运行吗？</h3>
+            <p>可以。Docker部署有官方文档，您可以将MyCompany与其他容器化服务一起运行。</p>
+
+            <h3>升级如何进行？</h3>
+            <p>用download.lsfusion.org上的新版本替换服务器classpath中的一个JAR文件即可。无需重新激活许可证，因为根本没有许可证需要激活。</p>
+
+            <h3>可以在没有云的局域网中运行吗？</h3>
+            <p>可以。一切都运行在您自己的服务器上，系统在局域网中即可工作，不依赖外部云服务——员工只需在浏览器中打开Web客户端。</p>
+
+            <h3>我的数据会被锁定吗？</h3>
+            <p>不会。数据保存在您自己服务器上的标准PostgreSQL数据库中，应用代码以Apache 2.0开源。您随时可以直接查询、备份或迁移数据。</p>
+
+            <p>想了解全局？看看MyCompany为什么是出色的<a href="/zh/kaiyuan-erp/">开源ERP</a>之选、<a href="/zh/mianfei-erp/">免费ERP软件</a>中“免费”的真正含义，或者从<a href="/zh/">MyCompany首页</a>开始。</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="inner">
+        <nav>
+            <div>
+                <h3><a href="#top">MyCompany</a></h3>
+                <p>基于免费开源平台<br /> <a href="https://lsfusion.org/" target="_blank">lsFusion</a> 开发</p>
+            </div>
+            <ul class="links">
+                <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">文档</a></li>
+                <li><a href="/zh/mianfei-erp/">免费ERP</a></li>
+                <li><a href="/zh/kaiyuan-erp/">开源ERP</a></li>
+                <li><a href="/zh/siyou-bushu-erp/">私有部署ERP</a></li>
+                <li><a href="/zh/cangku-guanli/">仓库管理</a></li>
+                <li><a href="/zh/shengchan-erp/">生产ERP</a></li>
+            </ul>
+            <ul class="social">
+                <li class="tel"><a href="https://t.me/lsfusion_official" target="_blank" title="点击在新标签页中打开">在Telegram上关注我们</a></li>
+                <li class="blog"><a href="https://habr.com/en/company/lsfusion/blog/" target="_blank" title="点击在新标签页中打开">在Habr上阅读我们的博客</a></li>
+                <li class="ln"><a href="https://www.linkedin.com/company/lsfusion" target="_blank" title="点击在新标签页中打开">在LinkedIn上关注我们的动态</a></li>
+                <li class="sl"><a href="https://join.slack.com/t/lsfusion/shared_invite/zt-2klihpl2q-h6ol~nDRPky~O1uHC14Dwg" target="_blank" title="点击在新标签页中打开">加入我们的Slack聊天</a></li>
+            </ul>
+            <ul class="community">
+                <li class="em"><a href="mailto:info@lsfusion.org" target="_blank" title="点击在新标签页中打开">info@lsfusion.org</a></li>
+            </ul>
+        </nav>
+
+        <div id="absfooter">
+            <p id="copyright">&copy; <script>document.write((new Date()).getFullYear())</script> lsFusion Foundation</p>
+
+            <ul>
+                <li><a href="mailto:info@lsfusion.org">报告错误</a></li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+<span class="contactus" title="联系我们">联系我们</span>
+
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>给我们写信</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+            <input type="hidden" name="to" value="info@lsfusion.org" />
+            <input type="hidden" name="subject" value="Self-hosted ERP (zh) — contact" />
+            <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/zh/thankyou.html" />
+
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="姓名*" required />
+                <input type="text" name="phone" value="" placeholder="电话*" required />
+                <span class="note">请在电话号码中加上国家区号，例如 <strong>+375 (29) 351-97-73</strong></span>
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <input type="text" name="company" value="" placeholder="公司*" required />
+                <input type="text" name="position" value="" placeholder="职位*" required />
+                <textarea name="comment" placeholder="留言*" rows="10" cols="6" required></textarea>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="发送" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
+<script src="/js/jquery.popupoverlay.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/localization/messages_zh.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
