@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
+    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
+    <link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
+    <link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+    <link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
+    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Hébergez l'ERP MyCompany sur votre propre serveur : installation en une commande sous Linux, installateur Windows ou Docker, 4 Go de RAM minimum, client web inclus. Vos données restent chez vous — gratuit et open source." />
+
+    <title>ERP auto-hébergé sur votre propre serveur | MyCompany</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyCompany" />
+    <meta property="og:title" content="ERP auto-hébergé sur votre propre serveur | MyCompany" />
+    <meta property="og:description" content="Hébergez l'ERP MyCompany sur votre propre serveur : installation en une commande sous Linux, installateur Windows ou Docker, 4 Go de RAM minimum, client web inclus. Vos données restent chez vous — gratuit et open source." />
+    <meta property="og:url" content="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
+    <meta property="og:image:width" content="986" />
+    <meta property="og:image:height" content="564" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon_16x16.png">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon/favicon.ico">
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(95551513, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body class="flex">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <noscript><div><img src="https://mc.yandex.ru/watch/95551513" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<nav>
+    <div class="inner">
+        <h2><a href="/fr/" title="Aller à la page d'accueil">MyCompany</a></h2>
+        <a class="menu-link" href="#menu">Navigation</a>
+        <ul class="nav">
+            <li><a href="/fr/#functions">Fonctions</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">Développement</a></li>
+            <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">Documentation</a></li>
+            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">Essayer la démo</a></li>
+            <li id="languages">
+                <div class="language">
+                    <strong>Fr</strong>
+                    <ul>
+                        <li><a href="/ru/">Ру</a></li>
+                        <li><a href="/uk/">Ук</a></li>
+                        <li><a href="/pl/">Pl</a></li>
+                        <li><a href="/pt/">Pt</a></li>
+                        <li><a href="/es/">Es</a></li>
+                        <li><a href="/zh/">中文</a></li>
+                        <li><span class="current">Fr</span></li>
+                        <li><a href="/">En</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main id="top">
+    <section id="section-content">
+        <div class="inner">
+            <h1>Un ERP auto-hébergé qui tourne sur votre propre serveur</h1>
+            <p><strong>MyCompany</strong> est un système ERP gratuit et open source conçu pour l'auto-hébergement. Vous l'installez sur votre propre serveur — physique ou virtuel, dans vos locaux ou dans votre propre compte cloud — et tout y reste : l'application, la base de données et chaque enregistrement créé par votre entreprise. Pas de compte SaaS, pas d'abonnement par utilisateur, pas de fournisseur entre vous et vos données.</p>
+            <p>Si vous cherchez un ERP auto-hébergé ou un ERP on-premise qu'une petite équipe peut mettre en place sans projet de conseil, MyCompany est un choix pragmatique : il s'installe sur votre propre serveur en 10-15 minutes, sert un client web d'origine et est publié sous licence Apache 2.0 — sans coûts cachés ni dépendance aux licences.</p>
+            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Essayer la démo</a> <a href="#" class="btn contactus">Contactez-nous</a></p>
+
+            <h2>Installation : une ligne sous Linux, un installateur sous Windows</h2>
+            <p>Sous Ubuntu 18+ ou Debian 9+, toute l'installation tient en une seule commande exécutée sur votre serveur :</p>
+            <pre><code>source &lt;(curl -s https://download.lsfusion.org/solutions/install-mycompany-ubuntu18.sh)</code></pre>
+            <p>Une variante du script pour CentOS couvre RHEL 8+, CentOS 8+ et Fedora 35+. Sous Windows, il existe un installateur autonome, et le déploiement Docker est officiellement documenté si vous préférez les conteneurs. Une fois l'installation terminée, ouvrez <code>http://ip-de-votre-serveur:8080</code> dans un navigateur et connectez-vous en <code>admin</code> avec un mot de passe vide — puis changez-le, bien sûr.</p>
+
+            <h2>Des exigences serveur modestes</h2>
+            <ul>
+                <li>4 Go de RAM minimum — un petit VPS ou une machine de bureau suffit pour commencer</li>
+                <li>Client web servi sur le port 8080, d'origine</li>
+                <li>Client de bureau disponible sur le port 7652 pour ceux qui le préfèrent</li>
+                <li>Fonctionne parfaitement sur votre réseau local — les employés se connectent avec un simple navigateur</li>
+            </ul>
+
+            <h2>Une pile que vous contrôlez de bout en bout</h2>
+            <p>Sous le capot, MyCompany est un serveur d'applications lsFusion écrit en Java au-dessus de PostgreSQL, avec des garanties ACID complètes pour vos transactions. La plateforme lsFusion est sous licence LGPL v3 et l'application MyCompany sous Apache 2.0. Autrement dit : pas de clés de licence, pas de DRM, pas de licence qui « téléphone à la maison » — le logiciel que vous installez est entièrement à vous.</p>
+
+            <h2>Pourquoi les entreprises choisissent l'auto-hébergement</h2>
+            <ul>
+                <li><strong>Vos données restent chez vous.</strong> Clients, prix, stocks et finances vivent sur votre infrastructure, pas dans le cloud de quelqu'un d'autre.</li>
+                <li><strong>Pas d'abonnement par utilisateur.</strong> Ajoutez autant d'employés que nécessaire sans que la facture grimpe.</li>
+                <li><strong>Fonctionne sur votre LAN.</strong> Le client web tourne sur votre propre réseau, selon vos règles.</li>
+                <li><strong>Pas de dépendance au fournisseur.</strong> Un code open source et une base PostgreSQL standard : vous n'êtes jamais prisonnier.</li>
+            </ul>
+
+            <h2>Mises à jour simples, personnalisation réelle</h2>
+            <p>Mettre à jour un système auto-hébergé ne devrait pas être un projet en soi. Dans MyCompany, une mise à jour consiste à remplacer un seul fichier JAR dans le classpath du serveur — les versions publiées sont sur download.lsfusion.org. Et comme l'application est construite en modules lsFusion, vous pouvez l'étendre sur votre propre serveur sans rien recompiler : déposez un fichier <code>.lsf</code> à côté de l'application et pointez <code>logics.topModule</code> vers lui.</p>
+
+            <h2>Comment ça marche dans MyCompany</h2>
+            <ul>
+                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank">Guide d'installation</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation-docker/" target="_blank">Déploiement Docker</a></li>
+                <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">Développement et personnalisation</a></li>
+                <li><a href="https://download.lsfusion.org/" target="_blank">Téléchargements</a></li>
+                <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">Code source sur GitHub</a></li>
+            </ul>
+
+            <h2>FAQ</h2>
+            <h3>Quelles sont les exigences serveur ?</h3>
+            <p>Une machine avec au moins 4 Go de RAM sous Ubuntu 18+, Debian 9+, RHEL 8+, CentOS 8+, Fedora 35+ ou Windows. Le client web est servi sur le port 8080 et le client de bureau sur le port 7652.</p>
+
+            <h3>Combien de temps prend l'installation ?</h3>
+            <p>Environ 10-15 minutes sur votre propre serveur. Sous Linux, c'est une seule commande ; sous Windows, vous lancez un installateur autonome. Ensuite, il suffit d'ouvrir le client web à l'adresse de votre serveur, sur le port 8080.</p>
+
+            <h3>Puis-je l'exécuter dans Docker ?</h3>
+            <p>Oui. Le déploiement Docker est officiellement documenté : vous pouvez faire tourner MyCompany aux côtés de vos autres services conteneurisés.</p>
+
+            <h3>Comment fonctionnent les mises à jour ?</h3>
+            <p>Vous remplacez un seul fichier JAR dans le classpath du serveur par une version plus récente depuis download.lsfusion.org. Pas de réactivation de licence, puisqu'il n'y a aucune licence à activer.</p>
+
+            <h3>Fonctionne-t-il sur un réseau local, sans cloud ?</h3>
+            <p>Oui. Tout tourne sur votre propre serveur : le système fonctionne sur votre LAN sans dépendre d'un service cloud externe — les employés ouvrent simplement le client web dans leur navigateur.</p>
+
+            <h3>Mes données sont-elles verrouillées ?</h3>
+            <p>Non. Vos données vivent dans une base PostgreSQL standard sur votre propre serveur, et le code de l'application est open source sous Apache 2.0. Vous pouvez interroger, sauvegarder ou migrer les données directement à tout moment.</p>
+
+            <p>Envie d'une vue d'ensemble ? Découvrez pourquoi MyCompany est un excellent choix d'<a href="/fr/erp-open-source/">ERP open source</a>, ce que « gratuit » veut vraiment dire dans le <a href="/fr/erp-gratuit/">logiciel ERP gratuit</a>, ou partez de la <a href="/fr/">page d'accueil de MyCompany</a>.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="inner">
+        <nav>
+            <div>
+                <h3><a href="#top">MyCompany</a></h3>
+                <p>Développé sur la plateforme gratuite et open source<br /> <a href="https://lsfusion.org/" target="_blank">lsFusion</a></p>
+            </div>
+            <ul class="links">
+                <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">Documentation</a></li>
+                <li><a href="/fr/erp-gratuit/">ERP gratuit</a></li>
+                <li><a href="/fr/erp-open-source/">ERP open source</a></li>
+                <li><a href="/fr/erp-auto-heberge/">ERP auto-hébergé</a></li>
+                <li><a href="/fr/gestion-de-stock/">Gestion de stock</a></li>
+                <li><a href="/fr/erp-production/">ERP production</a></li>
+            </ul>
+            <ul class="social">
+                <li class="tel"><a href="https://t.me/lsfusion_official" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Suivez-nous sur Telegram</a></li>
+                <li class="blog"><a href="https://habr.com/en/company/lsfusion/blog/" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Lisez notre blog sur Habr</a></li>
+                <li class="ln"><a href="https://www.linkedin.com/company/lsfusion" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Suivez nos actualités sur LinkedIn</a></li>
+                <li class="sl"><a href="https://join.slack.com/t/lsfusion/shared_invite/zt-2klihpl2q-h6ol~nDRPky~O1uHC14Dwg" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Rejoignez notre chat Slack</a></li>
+            </ul>
+            <ul class="community">
+                <li class="em"><a href="mailto:info@lsfusion.org" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">info@lsfusion.org</a></li>
+            </ul>
+        </nav>
+
+        <div id="absfooter">
+            <p id="copyright">&copy; <script>document.write((new Date()).getFullYear())</script> lsFusion Foundation</p>
+
+            <ul>
+                <li><a href="mailto:info@lsfusion.org">Signaler une erreur</a></li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+<span class="contactus" title="Contactez-nous">Contactez-nous</span>
+
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>Écrivez-nous</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+            <input type="hidden" name="to" value="info@lsfusion.org" />
+            <input type="hidden" name="subject" value="ERP auto-heberge (fr) — contact" />
+            <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/fr/thankyou.html" />
+
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="Nom*" required />
+                <input type="text" name="phone" value="" placeholder="Téléphone*" required />
+                <span class="note">Indiquez votre numéro de téléphone avec l'indicatif du pays, par exemple <strong>+375 (29) 351-97-73</strong></span>
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <input type="text" name="company" value="" placeholder="Société*" required />
+                <input type="text" name="position" value="" placeholder="Fonction*" required />
+                <textarea name="comment" placeholder="Message*" rows="10" cols="6" required></textarea>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
+<script src="/js/jquery.popupoverlay.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/localization/messages_fr.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
