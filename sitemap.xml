@@ -702,19 +702,131 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
   </url>
 
-  <!-- Landing cluster: CRM (en / pl) -->
-  <url>
+  <!-- Landing cluster: CRM (en / ru / uk / pl / pt / es / zh / fr / de) -->
++  <url>
     <loc>https://mycompany.lsfusion.org/free-crm/</loc>
     <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/besplatnaya-crm/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/crm-open-source/</loc>
     <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/besplatnaya-crm/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/bezkoshtovna-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/crm-gratuito-open-source/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/crm-gratis-codigo-abierto/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/mianfei-kaiyuan-crm/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/crm-gratuit-open-source/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kostenloses-open-source-crm/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
   </url>
 
