@@ -5,7 +5,7 @@
   <!-- Homepages (en / ru / uk / pl / pt / es / zh / fr / de) -->
   <url>
     <loc>https://mycompany.lsfusion.org/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/" />
@@ -702,6 +702,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
   </url>
 
+  <!-- Landing cluster: CRM (en / pl) -->
+  <url>
+    <loc>https://mycompany.lsfusion.org/free-crm/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/crm-open-source/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/crm-open-source/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
+  </url>
+
   <!-- Single-language landing pages -->
   <url>
     <loc>https://mycompany.lsfusion.org/customizable-erp/</loc>
@@ -713,14 +729,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/odoo-alternative/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/program-do-faktur-ksef/</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-  <url>
-    <loc>https://mycompany.lsfusion.org/pl/crm-open-source/</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
