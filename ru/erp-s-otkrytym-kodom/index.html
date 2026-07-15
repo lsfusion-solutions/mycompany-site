@@ -29,9 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title" content="ERP с открытым исходным кодом | MyCompany" />
     <meta property="og:description" content="MyCompany — ERP с открытым исходным кодом (Apache 2.0): полный код на GitHub, самостоятельный хостинг и low-code платформа lsFusion для доработки под любые бизнес-процессы." />
     <meta property="og:url" content="https://mycompany.lsfusion.org/ru/erp-s-otkrytym-kodom/" />
-    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
-    <meta property="og:image:width" content="986" />
-    <meta property="og:image:height" content="564" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/crm-leads-ru.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="700" />
     <meta property="og:locale" content="ru_RU" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/erp.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex erp-page erp-open">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -102,86 +103,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
-        <div class="inner">
-            <h1>
+<section class="erp-hero"><div class="inner erp-hero-grid"><div class="erp-hero-copy"><p class="erp-eyebrow"><span></span> Открытый код · Apache 2.0</p><h1>
                 ERP с открытым исходным кодом для вашего бизнеса
-            </h1>
-            <p>
+            </h1><p class="erp-hero-lead">
                 <strong>MyCompany</strong> — это бесплатная ERP с открытым исходным кодом. Весь код системы опубликован на GitHub под лицензией Apache 2.0: её можно свободно использовать в коммерческих целях, изменять и дорабатывать под собственные процессы. Никаких лицензионных ключей, скрытых платежей и обязательных подписок.
-            </p>
-            <p>
+            </p><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">Попробовать демо <span aria-hidden="true">↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">Связаться с нами</a></div><ul class="erp-proof"><li><strong>100%</strong><span>исходный код открыт</span></li><li><strong>0</strong><span>лицензионных платежей</span></li><li><strong>10–15 min</strong><span>типовая установка</span></li></ul></div><div class="erp-preview"><div class="erp-browser"><div class="erp-browser-bar"><i></i><i></i><i></i><span>MyCompany · ERP</span></div><img src="/imgs/crm-leads-ru.png" width="1200" height="700" alt="ERP с открытым исходным кодом для вашего бизнеса" /></div><div class="erp-float-card top"><span class="erp-float-icon">A2</span><div><strong>Apache 2.0</strong><small>Коммерческое использование разрешено</small></div></div><div class="erp-float-card bottom"><span class="erp-float-icon">DB</span><div><strong>Ваш сервер. Ваши данные.</strong><small>Стандартная база PostgreSQL</small></div></div></div></div></section>
+<section class="erp-trust-strip"><div class="inner erp-trust-row"><span>Открытый стек от базы данных до интерфейса</span><ul><li><b>✓</b> Коммерческое использование</li><li><b>✓</b> Полный исходный код</li><li><b>✓</b> На собственном сервере</li><li><b>◇</b> Без оплаты за пользователей</li><li><b>◇</b> Все модули</li></ul></div></section>
+<section class="erp-value-section"><div class="inner"><div class="erp-section-heading center"><p class="erp-kicker">Открытость означает контроль</p><h2>Код, данные и развитие ERP — под вашим контролем</h2><p>
                 Система устанавливается на собственном сервере за 10-15 минут и уже в базовой комплектации закрывает основные контуры управления предприятием: справочники, бухгалтерию, склад, счета, закупки, производство, продажи, POS, CRM, проекты, кадры и транспорт.
-            </p>
-            <p>
-                В основе MyCompany — открытая low-code платформа <a href="https://lsfusion.org/ru/" target="_blank" title="Откроется в новом окне">lsFusion</a> (лицензия LGPL v3) на Java и PostgreSQL с поддержкой ACID-транзакций из коробки. Благодаря этому open source ERP остаётся по-настоящему расширяемой: недостающую логику можно дописать самостоятельно, не дожидаясь вендора.
-            </p>
-            <p>
-                <a class="btn" href="https://demo.lsfusion.org/mycompany/" target="_blank">Попробовать демо</a>
-                <a href="#" class="btn contactus">Связаться с нами</a>
-            </p>
-
-            <h2>Что даёт лицензия Apache 2.0</h2>
-            <p>
+            </p></div><div class="erp-value-grid"><article class="erp-value-card"><span class="erp-value-icon">↗</span><h3>Что даёт лицензия Apache 2.0</h3><p>
                 Исходный код MyCompany размещён в репозитории <a href="https://github.com/lsfusion-solutions/mycompany" target="_blank" title="Откроется в новом окне">github.com/lsfusion-solutions/mycompany</a>, условия использования зафиксированы в файле LICENSE. Apache 2.0 — одна из самых свободных open-source лицензий: она разрешает коммерческое использование, модификацию и распространение изменённых версий. В системе нет лицензионных ключей и DRM — вы контролируете и код, и данные.
-            </p>
-
-            <h2>Никакой привязки к поставщику</h2>
-            <p>
-                ERP с открытым кодом избавляет от главного риска проприетарных систем — зависимости от вендора. MyCompany работает на вашем сервере, все данные хранятся в PostgreSQL, а средствами платформы их можно выгружать в популярные форматы: JSON, XML, CSV, XLS и DBF. Обновление сводится к замене JAR-файла, и вы сами решаете, когда и на какую версию переходить.
-            </p>
-
-            <h2>Доработка без перекомпиляции ядра</h2>
-            <p>
-                Чтобы изменить или расширить логику, не нужно пересобирать систему. Вы создаёте собственный модуль на языке lsFusion — файл .lsf, который начинается с директивы REQUIRE MyCompany, — кладёте его на сервер и указываете в параметре logics.topModule. Стандартный код при этом остаётся нетронутым, поэтому ваши доработки переживают обновления. Полный цикл разработки — с IntelliJ IDEA и платформой lsFusion — подробно задокументирован.
-            </p>
-
-            <h2>Проверенные открытые технологии</h2>
-            <p>
+            </p></article><article class="erp-value-card"><span class="erp-value-icon">DB</span><h3>Проверенные открытые технологии</h3><p>
                 Платформа lsFusion сама распространяется как open source (LGPL v3) и построена на Java и PostgreSQL с гарантиями ACID из коробки; для разработчиков есть IDE на базе IntelliJ IDEA. По заявлению разработчика платформы, она рассчитана на тысячи одновременных пользователей и терабайты данных, так что системе есть куда расти вместе с бизнесом.
-            </p>
-
-            <h2>Быстрый старт</h2>
-            <p>
+            </p></article><article class="erp-value-card"><span class="erp-value-icon">✓</span><h3>Быстрый старт</h3><p>
                 Установить MyCompany можно скриптом одной командой, установщиком для Windows или через Docker — достаточно сервера с 4 ГБ ОЗУ. Документация доступна на русском, английском и польском языках. А чтобы оценить систему без установки, откройте живое демо.
-            </p>
-
-            <h2>Как это работает в MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/" target="_blank" title="Откроется в новом окне">Пользовательская документация MyCompany на русском</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/administration/development/" target="_blank" title="Откроется в новом окне">Разработка: как дорабатывать систему под себя</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/administration/installation/" target="_blank" title="Откроется в новом окне">Установка: одна команда, Windows или Docker</a></li>
-                <li><a href="https://lsfusion.org/ru/" target="_blank" title="Откроется в новом окне">Платформа lsFusion</a></li>
-                <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank" title="Откроется в новом окне">Исходный код на GitHub</a></li>
-            </ul>
-
-            <h2>Вопросы и ответы</h2>
-            <h3>Под какой лицензией распространяется MyCompany?</h3>
-            <p>
-                Под лицензией Apache 2.0 — текст лежит в файле LICENSE в репозитории на GitHub. Она разрешает бесплатное коммерческое использование, изменение кода и распространение собственных версий системы.
-            </p>
-            <h3>Чем ERP с открытым кодом полезна бизнесу?</h3>
-            <p>
-                Открытый код означает отсутствие привязки к поставщику: систему можно проверить (аудит кода), доработать своими силами или силами любого подрядчика и развернуть на собственной инфраструктуре. Данные всегда остаются под вашим контролем в PostgreSQL.
-            </p>
-            <h3>Как вносить доработки и обновляться без потери изменений?</h3>
-            <p>
-                Доработки оформляются отдельным модулем .lsf с директивой REQUIRE MyCompany, который подключается через параметр logics.topModule. Ядро системы не изменяется, поэтому при обновлении достаточно заменить JAR-файл — ваши модули продолжат работать.
-            </p>
-            <h3>На чём написана система?</h3>
-            <p>
-                MyCompany построена на открытой платформе lsFusion (LGPL v3): сервер на Java, хранение данных в PostgreSQL, транзакции ACID из коробки. Логика описывается на языке lsFusion, разработка ведётся в IDE на базе IntelliJ IDEA.
-            </p>
-            <h3>Есть ли сообщество и каналы поддержки?</h3>
-            <p>
-                Да. Вопросы по разработке и использованию можно задать в открытых каналах сообщества — <a href="https://t.me/lsfusion_official" target="_blank" title="Откроется в новом окне">Telegram</a> и <a href="https://join.slack.com/t/lsfusion/shared_invite/zt-2klihpl2q-h6ol~nDRPky~O1uHC14Dwg" target="_blank" title="Откроется в новом окне">Slack</a>, а для гарантированной поддержки доступны <a href="/ru/services.html">платные услуги</a> команды разработчиков.
-            </p>
-
-            <p>
+            </p></article></div></div></section>
+<section class="erp-platform-section"><div class="inner erp-platform-grid"><div class="erp-platform-copy"><p class="erp-kicker">Доработки без постоянного форка</p><h2>Доработка без перекомпиляции ядра</h2><p>
+                Чтобы изменить или расширить логику, не нужно пересобирать систему. Вы создаёте собственный модуль на языке lsFusion — файл .lsf, который начинается с директивы REQUIRE MyCompany, — кладёте его на сервер и указываете в параметре logics.topModule. Стандартный код при этом остаётся нетронутым, поэтому ваши доработки переживают обновления. Полный цикл разработки — с IntelliJ IDEA и платформой lsFusion — подробно задокументирован.
+            </p><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank" class="erp-text-link-light">Как это работает в MyCompany →</a></div><div class="erp-stack"><div class="erp-stack-label"><span>MyCompany</span><span>Open source</span></div><div class="erp-stack-layer"><span>YOU</span><div><strong>Ваш модуль расширения</strong><small>Правила компании и интеграции</small></div><em>отдельно</em></div><div class="erp-stack-layer"><span>MC</span><div><strong>MyCompany ERP</strong><small>Готовые бизнес-модули</small></div><em>Apache 2.0</em></div><div class="erp-stack-layer"><span>LSF</span><div><strong>Платформа lsFusion</strong><small>Интерфейс, логика и транзакции</small></div><em>LGPL v3</em></div><div class="erp-stack-layer"><span>DB</span><div><strong>Java + PostgreSQL</strong><small>Переносимая инфраструктура</small></div><em>ваш сервер</em></div><div class="erp-code-note"><b>MODULE</b> MyCompanyExtension;<br /><b>REQUIRE</b> MyCompany;</div></div></div></section>
+<section class="erp-modules-section"><div class="inner"><div class="erp-section-heading"><p class="erp-kicker">Готовая система, а не пустой фреймворк</p><h2>Основные процессы работают с первого дня</h2><p>
+                Система устанавливается на собственном сервере за 10-15 минут и уже в базовой комплектации закрывает основные контуры управления предприятием: справочники, бухгалтерию, склад, счета, закупки, производство, продажи, POS, CRM, проекты, кадры и транспорт.
+            </p></div><div class="erp-module-grid"><article class="erp-module-card"><span>MD</span><h3>НСИ и справочники</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>ACC</span><h3>Бухгалтерский учёт</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>INV</span><h3>Склад и счета</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>BUY</span><h3>Закупки</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>MFG</span><h3>Производство</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>POS</span><h3>Продажи и розница</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>CRM</span><h3>CRM и проекты</h3><p>Входит в полный пакет</p></article><article class="erp-module-card"><span>HR</span><h3>Кадры и транспорт</h3><p>Входит в полный пакет</p></article></div><div class="erp-module-note"><span>→</span><div>
                 Смотрите также: <a href="/ru/besplatnaya-erp-sistema/">бесплатная ERP-система</a>, <a href="/ru/programma-skladskogo-ucheta/">программа складского учёта</a>, <a href="/ru/erp-dlya-proizvodstva/">ERP для производства</a> — или вернитесь на <a href="/ru/">главную страницу MyCompany</a>.
-            </p>
-        </div>
-    </section>
+            </div></div></div></section>
+<section class="erp-flow-section"><div class="inner erp-flow-grid"><div class="erp-flow-copy"><p class="erp-kicker">Одна система вместо набора программ</p><h2>Все процессы связаны общей моделью данных</h2><p>
+                Система устанавливается на собственном сервере за 10-15 минут и уже в базовой комплектации закрывает основные контуры управления предприятием: справочники, бухгалтерию, склад, счета, закупки, производство, продажи, POS, CRM, проекты, кадры и транспорт.
+            </p></div><div class="erp-flow-board"><div class="erp-flow-node n1"><span>SO</span><div><strong>НСИ и справочники</strong><small>MyCompany</small></div></div><div class="erp-flow-node n2"><span>PO</span><div><strong>Бухгалтерский учёт</strong><small>MyCompany</small></div></div><div class="erp-flow-node n3"><span>INV</span><div><strong>Склад и счета</strong><small>MyCompany</small></div></div><div class="erp-flow-node n4"><span>GL</span><div><strong>Закупки</strong><small>MyCompany</small></div></div><div class="erp-flow-core"><span><strong>MyCompany</strong><small>ERP</small></span></div></div></div></section>
+<section class="erp-deploy-section"><div class="inner erp-deploy-grid"><div class="erp-deploy-copy"><p class="erp-kicker">От репозитория до рабочей ERP</p><h2>Быстрый старт</h2><p>
+                Установить MyCompany можно скриптом одной командой, установщиком для Windows или через Docker — достаточно сервера с 4 ГБ ОЗУ. Документация доступна на русском, английском и польском языках. А чтобы оценить систему без установки, откройте живое демо.
+            </p></div><ol class="erp-deploy-steps"><li><span>01</span><div><strong><a href="https://mycompany-docs.lsfusion.org/ru/" target="_blank">Пользовательская документация MyCompany на русском</a></strong></div><em>MyCompany</em></li><li><span>02</span><div><strong><a href="https://mycompany-docs.lsfusion.org/ru/administration/development/" target="_blank">Разработка: как дорабатывать систему под себя</a></strong></div><em>MyCompany</em></li><li><span>03</span><div><strong><a href="https://mycompany-docs.lsfusion.org/ru/administration/installation/" target="_blank">Установка: одна команда, Windows или Docker</a></strong></div><em>MyCompany</em></li><li><span>04</span><div><strong><a href="https://lsfusion.org/ru/" target="_blank">Платформа lsFusion</a></strong></div><em>MyCompany</em></li><li><span>05</span><div><strong><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">Исходный код на GitHub</a></strong></div><em>MyCompany</em></li></ol></div></section>
+<section class="erp-faq-section"><div class="inner erp-faq-grid"><div class="erp-section-heading"><p class="erp-kicker">Вопросы и ответы</p><h2>Перед внедрением</h2><p><a href="#" class="contactus">Связаться с нами</a></p></div><div class="erp-faq-list"><details open><summary>Под какой лицензией распространяется MyCompany?<span></span></summary><p>
+                Под лицензией Apache 2.0 — текст лежит в файле LICENSE в репозитории на GitHub. Она разрешает бесплатное коммерческое использование, изменение кода и распространение собственных версий системы.
+            </p></details><details><summary>Чем ERP с открытым кодом полезна бизнесу?<span></span></summary><p>
+                Открытый код означает отсутствие привязки к поставщику: систему можно проверить (аудит кода), доработать своими силами или силами любого подрядчика и развернуть на собственной инфраструктуре. Данные всегда остаются под вашим контролем в PostgreSQL.
+            </p></details><details><summary>Как вносить доработки и обновляться без потери изменений?<span></span></summary><p>
+                Доработки оформляются отдельным модулем .lsf с директивой REQUIRE MyCompany, который подключается через параметр logics.topModule. Ядро системы не изменяется, поэтому при обновлении достаточно заменить JAR-файл — ваши модули продолжат работать.
+            </p></details><details><summary>На чём написана система?<span></span></summary><p>
+                MyCompany построена на открытой платформе lsFusion (LGPL v3): сервер на Java, хранение данных в PostgreSQL, транзакции ACID из коробки. Логика описывается на языке lsFusion, разработка ведётся в IDE на базе IntelliJ IDEA.
+            </p></details><details><summary>Есть ли сообщество и каналы поддержки?<span></span></summary><p>
+                Да. Вопросы по разработке и использованию можно задать в открытых каналах сообщества — <a href="https://t.me/lsfusion_official" target="_blank" title="Откроется в новом окне">Telegram</a> и <a href="https://join.slack.com/t/lsfusion/shared_invite/zt-2klihpl2q-h6ol~nDRPky~O1uHC14Dwg" target="_blank" title="Откроется в новом окне">Slack</a>, а для гарантированной поддержки доступны <a href="/ru/services.html">платные услуги</a> команды разработчиков.
+            </p></details></div></div></section>
+<section class="erp-final-cta"><div class="inner erp-final-row"><div class="erp-final-copy"><p class="erp-kicker">ERP должна работать на вас</p><h2>Посмотрите полную систему в действии</h2><p>Откройте демо, изучите исходный код или расскажите, что нужно изменить.</p></div><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">Попробовать демо <span>↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">Связаться с нами</a></div></div></section>
 </main>
 <footer>
     <div class="inner">

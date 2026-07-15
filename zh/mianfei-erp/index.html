@@ -29,9 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title" content="免费ERP软件，适合中小企业 | MyCompany" />
     <meta property="og:description" content="MyCompany是真正免费的ERP软件：没有许可费用，源代码开放（Apache 2.0）。仓库、开票、生产、销售、采购、POS、项目、人力资源和CRM，尽在一个系统。" />
     <meta property="og:url" content="https://mycompany.lsfusion.org/zh/mianfei-erp/" />
-    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
-    <meta property="og:image:width" content="986" />
-    <meta property="og:image:height" content="564" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/manufacturing-demo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="700" />
     <meta property="og:locale" content="zh_CN" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/erp.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex erp-page erp-free">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,63 +102,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
-        <div class="inner">
-            <h1>适合中小企业的免费ERP软件</h1>
-            <p><strong>MyCompany</strong>是最字面意义上的免费ERP软件：整个系统以Apache 2.0许可证发布，源代码公开在GitHub上，没有许可费、隐藏收费或付费版本。它不是试用版，也不是freemium套餐——所有模块都包含在同一个免费软件包中。</p>
-            <p>如果您经营一家中小企业，这套免费ERP系统将仓库、开票、采购、销售、生产、POS收银、CRM、项目和人力资源集中在一处，安装在您自己的服务器上，完全由您掌控。</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">试用演示</a> <a href="#" class="btn contactus">联系我们</a></p>
-
-            <h2>这里的“免费”究竟意味着什么</h2>
-            <p>许多号称免费的ERP软件会限制用户数、记录数或模块数量，然后对其余部分收费。MyCompany采取了不同的方式。无论怎么使用，软件本身都分文不取：Apache 2.0许可证允许您运行、修改并将其用于商业用途，无需征得任何人的许可。项目的长期承诺很简单——MyCompany现在是、将来也永远是开源解决方案。由于系统由您自己托管，唯一的实际成本是您自己的服务器，以及您自愿选择的<a href="/services.html">付费开发和支持服务</a>。</p>
-
-            <h2>包含所有模块，没有付费插件</h2>
-            <p>免费软件包覆盖了经典中小企业ERP的全部范围：</p>
-            <ul>
-                <li>主数据与会计</li>
-                <li>仓库与开票</li>
-                <li>采购与销售</li>
-                <li>生产与运输</li>
-                <li>POS（收银）</li>
-                <li>CRM、项目与人力资源</li>
-            </ul>
-            <p>不存在保留功能的“企业版”——这就是完整的系统。</p>
-
-            <h2>免费安装，普通硬件即可运行</h2>
-            <p>10-15分钟即可将MyCompany安装到自己的服务器上：Linux上一行脚本，Windows上有安装程序，也支持Docker。一台4 GB内存的机器就足够了，系统自带Web客户端，团队直接在浏览器中工作。安装后使用默认管理员账号登录，日后升级只需替换一个JAR文件。系统底层基于lsFusion平台（LGPL v3）——Java和PostgreSQL，提供完整的ACID保证。</p>
-
-            <h2>不仅在后台管理，还能在柜台销售</h2>
-            <p>内置POS模块为收银员提供专用界面，支持条码扫描、组合支付、退货、折扣卡以及财政设备指令——商店可以用管理库存和账务的同一套免费系统来运营收银台。</p>
-
-            <h2>赢得客户，交付工作</h2>
-            <p>CRM在看板上跟踪销售线索，将通话和邮件关联到每条线索，并支持直接从线索创建订单和发票。项目模块提供看板和甘特图视图，支持工时记录和工时表；人力资源模块负责招聘、移动打卡考勤，以及根据薪资规则和记录的工时计算薪酬。</p>
-
-            <h2>在MyCompany中如何实现</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">文档首页</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank">安装指南（Linux、Windows、Docker）</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/retail/pos/" target="_blank">POS收银</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/crm/" target="_blank">CRM与线索</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/projectManagement/" target="_blank">项目管理</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/humanResources/" target="_blank">人力资源</a></li>
-                <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub上的源代码</a></li>
-            </ul>
-
-            <h2>常见问题</h2>
-            <h3>MyCompany真的免费吗？</h3>
-            <p>是的。软件以Apache 2.0许可证发布，没有许可费用，完整源代码在GitHub上公开。下载、安装到自己的硬件上即可使用——无需购买任何东西。</p>
-            <h3>有付费版本或用户数限制吗？</h3>
-            <p>没有。不存在付费版本、用户数限制或功能限制。唯一的付费项目是可选的定制开发和支持服务，与软件本身完全无关。</p>
-            <h3>可以商用吗？</h3>
-            <p>可以。Apache 2.0许可证明确允许商业使用、修改和再分发，您可以用它经营自己的业务，并根据需要修改代码。</p>
-            <h3>有什么“陷阱”吗？</h3>
-            <p>坦率地说：需要您自己托管。MyCompany运行在您自己的服务器上，这台机器由您负责。作为回报，没有订阅费、没有按用户收费、没有供应商绑定——而且安装通常只需10-15分钟。</p>
-            <h3>安装前可以在哪里试用？</h3>
-            <p>在线演示地址为<a href="https://demo.lsfusion.org/mycompany/" target="_blank">demo.lsfusion.org/mycompany</a>——在浏览器中打开，即可通过示例数据浏览各个模块。</p>
-
-            <p>想了解全局？阅读MyCompany作为<a href="/zh/kaiyuan-erp/">开源ERP</a>和<a href="/zh/siyou-bushu-erp/">私有部署ERP</a>的介绍，深入了解<a href="/zh/cangku-guanli/">开源仓库管理</a>或<a href="/zh/shengchan-erp/">开源生产ERP</a>，或者从<a href="/zh/">MyCompany首页</a>开始。</p>
-        </div>
-    </section>
+<section class="erp-hero"><div class="inner erp-hero-grid"><div class="erp-hero-copy"><p class="erp-eyebrow"><span></span> 永久免费 · 没有付费版</p><h1>适合中小企业的免费ERP软件</h1><p class="erp-hero-lead"><strong>MyCompany</strong>是最字面意义上的免费ERP软件：整个系统以Apache 2.0许可证发布，源代码公开在GitHub上，没有许可费、隐藏收费或付费版本。它不是试用版，也不是freemium套餐——所有模块都包含在同一个免费软件包中。</p><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">试用演示 <span aria-hidden="true">↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">联系我们</a></div><ul class="erp-proof"><li><strong>$0</strong><span>软件许可</span></li><li><strong>∞</strong><span>用户和记录</span></li><li><strong>100%</strong><span>全部模块</span></li></ul></div><div class="erp-preview"><div class="erp-browser"><div class="erp-browser-bar"><i></i><i></i><i></i><span>MyCompany · ERP</span></div><img src="/imgs/manufacturing-demo.png" width="1200" height="700" alt="适合中小企业的免费ERP软件" /></div><div class="erp-float-card top"><span class="erp-float-icon">$0</span><div><strong>没有许可账单</strong><small>现在、明年、永远</small></div></div><div class="erp-float-card bottom"><span class="erp-float-icon">∞</span><div><strong>用户不限</strong><small>没有席位或付费套餐</small></div></div></div></div></section>
+<section class="erp-trust-strip"><div class="inner erp-trust-row"><span>没有隐藏的人为限制</span><ul><li><b>✓</b> 商业使用</li><li><b>✓</b> 全部模块</li><li><b>✓</b> 源代码</li><li><b>✓</b> 网页客户端</li><li><b>✓</b> 更新</li></ul></div></section>
+<section class="erp-value-section"><div class="inner"><div class="erp-section-heading center"><p class="erp-kicker">免费就是免费</p><h2>没有试用期、用户上限或付费模块</h2><p>如果您经营一家中小企业，这套免费ERP系统将仓库、开票、采购、销售、生产、POS收银、CRM、项目和人力资源集中在一处，安装在您自己的服务器上，完全由您掌控。</p></div><div class="erp-value-grid"><article class="erp-value-card"><span class="erp-value-icon">$0</span><h3>这里的“免费”究竟意味着什么</h3><p>许多号称免费的ERP软件会限制用户数、记录数或模块数量，然后对其余部分收费。MyCompany采取了不同的方式。无论怎么使用，软件本身都分文不取：Apache 2.0许可证允许您运行、修改并将其用于商业用途，无需征得任何人的许可。项目的长期承诺很简单——MyCompany现在是、将来也永远是开源解决方案。由于系统由您自己托管，唯一的实际成本是您自己的服务器，以及您自愿选择的<a href="/services.html">付费开发和支持服务</a>。</p></article><article class="erp-value-card"><span class="erp-value-icon">∞</span><h3>包含所有模块，没有付费插件</h3><p>免费软件包覆盖了经典中小企业ERP的全部范围：</p></article><article class="erp-value-card"><span class="erp-value-icon">✓</span><h3>免费安装，普通硬件即可运行</h3><p>10-15分钟即可将MyCompany安装到自己的服务器上：Linux上一行脚本，Windows上有安装程序，也支持Docker。一台4 GB内存的机器就足够了，系统自带Web客户端，团队直接在浏览器中工作。安装后使用默认管理员账号登录，日后升级只需替换一个JAR文件。系统底层基于lsFusion平台（LGPL v3）——Java和PostgreSQL，提供完整的ACID保证。</p></article></div></div></section>
+<section class="erp-platform-section"><div class="inner erp-platform-grid"><div class="erp-platform-copy"><p class="erp-kicker">免费并不意味着功能有限</p><h2>不仅在后台管理，还能在柜台销售</h2><p>内置POS模块为收银员提供专用界面，支持条码扫描、组合支付、退货、折扣卡以及财政设备指令——商店可以用管理库存和账务的同一套免费系统来运营收银台。</p><ul class="erp-check-list"><li><span>✓</span>赢得客户，交付工作</li><li><span>✓</span>Apache 2.0 · PostgreSQL · Java</li><li><span>✓</span>在MyCompany中如何实现</li></ul></div><div class="erp-stack"><div class="erp-stack-label"><span>MyCompany</span><span>已包含</span></div><div class="erp-stack-layer"><span>ERP</span><div><strong>全部业务模块</strong><small>运营、财务和客户管理</small></div><em>已包含</em></div><div class="erp-stack-layer"><span>WEB</span><div><strong>浏览器客户端</strong><small>通过现代浏览器工作</small></div><em>已包含</em></div><div class="erp-stack-layer"><span>DEV</span><div><strong>定制平台</strong><small>扩展数据、表单和逻辑</small></div><em>已包含</em></div><div class="erp-stack-layer"><span>SRC</span><div><strong>完整源代码</strong><small>公开GitHub仓库</small></div><em>已包含</em></div><div class="erp-code-note">software_license = <b>$0</b><br />user_limit = <b>none</b></div></div></div></section>
+<section class="erp-modules-section"><div class="inner"><div class="erp-section-heading"><p class="erp-kicker">一个软件包服务整个企业</p><h2>包含所有模块，没有付费插件</h2><p>免费软件包覆盖了经典中小企业ERP的全部范围：</p></div><div class="erp-module-grid"><article class="erp-module-card"><span>INV</span><h3>主数据与会计</h3><p>包含在免费软件包中</p></article><article class="erp-module-card"><span>DOC</span><h3>仓库与开票</h3><p>包含在免费软件包中</p></article><article class="erp-module-card"><span>BUY</span><h3>采购与销售</h3><p>包含在免费软件包中</p></article><article class="erp-module-card"><span>MFG</span><h3>生产与运输</h3><p>包含在免费软件包中</p></article><article class="erp-module-card"><span>POS</span><h3>POS（收银）</h3><p>包含在免费软件包中</p></article><article class="erp-module-card"><span>CRM</span><h3>CRM、项目与人力资源</h3><p>包含在免费软件包中</p></article></div><div class="erp-module-note"><span>→</span><div>想了解全局？阅读MyCompany作为<a href="/zh/kaiyuan-erp/">开源ERP</a>和<a href="/zh/siyou-bushu-erp/">私有部署ERP</a>的介绍，深入了解<a href="/zh/cangku-guanli/">开源仓库管理</a>或<a href="/zh/shengchan-erp/">开源生产ERP</a>，或者从<a href="/zh/">MyCompany首页</a>开始。</div></div></div></section>
+<section class="erp-flow-section"><div class="inner erp-flow-grid"><div class="erp-flow-copy"><p class="erp-kicker">从设计之初就互联</p><h2>一个操作推动整个业务前进</h2><p>如果您经营一家中小企业，这套免费ERP系统将仓库、开票、采购、销售、生产、POS收银、CRM、项目和人力资源集中在一处，安装在您自己的服务器上，完全由您掌控。</p></div><div class="erp-flow-board"><div class="erp-flow-node n1"><span>CRM</span><div><strong>主数据与会计</strong><small>MyCompany</small></div></div><div class="erp-flow-node n2"><span>POS</span><div><strong>仓库与开票</strong><small>MyCompany</small></div></div><div class="erp-flow-node n3"><span>MFG</span><div><strong>采购与销售</strong><small>MyCompany</small></div></div><div class="erp-flow-node n4"><span>ACC</span><div><strong>生产与运输</strong><small>MyCompany</small></div></div><div class="erp-flow-core"><span><strong>MyCompany</strong><small>ERP</small></span></div></div></div></section>
+<section class="erp-cost-section"><div class="inner erp-cost-grid"><div class="erp-cost-copy"><p class="erp-kicker">透明的成本模式</p><h2>软件免费，其他投入由您决定</h2><p>服务器和实施方式由您选择。使用自己的团队或购买服务，都不会改变您免费使用ERP的权利。</p></div><div class="erp-cost-panel"><div class="erp-cost-head"><strong>软件免费，其他投入由您决定</strong><span>没有意外</span></div><div class="erp-cost-row"><strong>软件许可</strong><span>Apache 2.0</span><em>免费</em></div><div class="erp-cost-row"><strong>用户与模块</strong><span>∞</span><em>免费</em></div><div class="erp-cost-row"><strong>您的基础设施</strong><span>Linux · Windows · Docker</span><em class="optional">自主选择</em></div><div class="erp-cost-row"><strong>实施与支持</strong><span>MyCompany</span><em class="optional">可选</em></div></div></div></section>
+<section class="erp-deploy-section"><div class="inner erp-deploy-grid"><div class="erp-deploy-copy"><p class="erp-kicker">无需采购项目即可开始</p><h2>免费安装，普通硬件即可运行</h2><p>10-15分钟即可将MyCompany安装到自己的服务器上：Linux上一行脚本，Windows上有安装程序，也支持Docker。一台4 GB内存的机器就足够了，系统自带Web客户端，团队直接在浏览器中工作。安装后使用默认管理员账号登录，日后升级只需替换一个JAR文件。系统底层基于lsFusion平台（LGPL v3）——Java和PostgreSQL，提供完整的ACID保证。</p></div><ol class="erp-deploy-steps"><li><span>01</span><div><strong><a href="https://mycompany-docs.lsfusion.org/" target="_blank">文档首页</a></strong></div><em>MyCompany</em></li><li><span>02</span><div><strong><a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank">安装指南（Linux、Windows、Docker）</a></strong></div><em>MyCompany</em></li><li><span>03</span><div><strong><a href="https://mycompany-docs.lsfusion.org/retail/pos/" target="_blank">POS收银</a></strong></div><em>MyCompany</em></li><li><span>04</span><div><strong><a href="https://mycompany-docs.lsfusion.org/crm/" target="_blank">CRM与线索</a></strong></div><em>MyCompany</em></li><li><span>05</span><div><strong><a href="https://mycompany-docs.lsfusion.org/projectManagement/" target="_blank">项目管理</a></strong></div><em>MyCompany</em></li></ol></div></section>
+<section class="erp-faq-section"><div class="inner erp-faq-grid"><div class="erp-section-heading"><p class="erp-kicker">常见问题</p><h2>“免费”的真正含义</h2><p><a href="#" class="contactus">联系我们</a></p></div><div class="erp-faq-list"><details open><summary>MyCompany真的免费吗？<span></span></summary><p>是的。软件以Apache 2.0许可证发布，没有许可费用，完整源代码在GitHub上公开。下载、安装到自己的硬件上即可使用——无需购买任何东西。</p></details><details><summary>有付费版本或用户数限制吗？<span></span></summary><p>没有。不存在付费版本、用户数限制或功能限制。唯一的付费项目是可选的定制开发和支持服务，与软件本身完全无关。</p></details><details><summary>可以商用吗？<span></span></summary><p>可以。Apache 2.0许可证明确允许商业使用、修改和再分发，您可以用它经营自己的业务，并根据需要修改代码。</p></details><details><summary>有什么“陷阱”吗？<span></span></summary><p>坦率地说：需要您自己托管。MyCompany运行在您自己的服务器上，这台机器由您负责。作为回报，没有订阅费、没有按用户收费、没有供应商绑定——而且安装通常只需10-15分钟。</p></details><details><summary>安装前可以在哪里试用？<span></span></summary><p>在线演示地址为<a href="https://demo.lsfusion.org/mycompany/" target="_blank">demo.lsfusion.org/mycompany</a>——在浏览器中打开，即可通过示例数据浏览各个模块。</p></details></div></div></section>
+<section class="erp-final-cta"><div class="inner erp-final-row"><div class="erp-final-copy"><p class="erp-kicker">无需信用卡，没有倒计时</p><h2>立即打开完整ERP</h2><p>体验演示、查看代码，并按自己的节奏做决定。</p></div><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">试用演示 <span>↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">联系我们</a></div></div></section>
 </main>
 <footer>
     <div class="inner">

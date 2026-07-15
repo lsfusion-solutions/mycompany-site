@@ -1179,6 +1179,15 @@
   font-size: 14px;
 }
 
+.erp-deploy-steps strong a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.erp-deploy-steps strong a:hover {
+  color: var(--erp-accent);
+}
+
 .erp-deploy-steps small {
   color: var(--erp-muted);
   font-size: 11px;
