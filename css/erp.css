@@ -45,6 +45,14 @@
   --erp-pale: #ecfaf8;
 }
 
+.erp-compare {
+  --erp-accent: #ca6537;
+  --erp-bright: #ffae68;
+  --erp-deep: #97472a;
+  --erp-night: #35231d;
+  --erp-pale: #fff4eb;
+}
+
 .erp-page main,
 .erp-page main * {
   box-sizing: border-box;
@@ -122,7 +130,8 @@
 .erp-open .erp-eyebrow,
 .erp-self .erp-eyebrow,
 .erp-custom .erp-eyebrow,
-.erp-dev .erp-eyebrow {
+.erp-dev .erp-eyebrow,
+.erp-compare .erp-eyebrow {
   color: #a9eafa !important;
 }
 
@@ -160,6 +169,13 @@
     radial-gradient(circle at 88% 17%, rgba(98, 223, 207, .18), transparent 31%),
     radial-gradient(circle at 9% 90%, rgba(21, 153, 143, .25), transparent 36%),
     linear-gradient(122deg, #061f2d 0%, #0b3a49 57%, #0c5a5e 100%);
+}
+
+.erp-compare .erp-hero {
+  background:
+    radial-gradient(circle at 88% 17%, rgba(255, 174, 104, .2), transparent 31%),
+    radial-gradient(circle at 9% 90%, rgba(202, 101, 55, .28), transparent 36%),
+    linear-gradient(122deg, #251914 0%, #4b2b20 57%, #79412b 100%);
 }
 
 .erp-free .erp-hero {
@@ -219,7 +235,8 @@
 .erp-open .erp-hero h1,
 .erp-self .erp-hero h1,
 .erp-custom .erp-hero h1,
-.erp-dev .erp-hero h1 {
+.erp-dev .erp-hero h1,
+.erp-compare .erp-hero h1 {
   color: #fff;
 }
 
@@ -241,6 +258,10 @@
   color: #8ce9dd;
 }
 
+.erp-compare .erp-hero h1 em {
+  color: #ffc08a;
+}
+
 .erp-hero .erp-hero-lead {
   max-width: 525px;
   margin-bottom: 30px;
@@ -252,7 +273,8 @@
 .erp-open .erp-hero .erp-hero-lead,
 .erp-self .erp-hero .erp-hero-lead,
 .erp-custom .erp-hero .erp-hero-lead,
-.erp-dev .erp-hero .erp-hero-lead {
+.erp-dev .erp-hero .erp-hero-lead,
+.erp-compare .erp-hero .erp-hero-lead {
   color: #c6d9e3;
 }
 
@@ -264,6 +286,25 @@
 .erp-dev .erp-platform-copy .erp-kicker,
 .erp-dev .erp-final-cta .erp-kicker {
   color: #8ce9dd !important;
+}
+
+.erp-compare .erp-platform-copy .erp-kicker,
+.erp-compare .erp-final-cta .erp-kicker {
+  color: #ffc08a !important;
+}
+
+.erp-legal-section {
+  padding: 22px 0;
+  border-top: 1px solid var(--erp-line);
+  background: #fff;
+}
+
+.erp-page main .erp-legal-section p {
+  max-width: 950px;
+  margin: 0;
+  color: #7a8992;
+  font-size: 12px;
+  line-height: 1.6;
 }
 
 .erp-actions {
