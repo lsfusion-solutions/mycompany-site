@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/manufacturing.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex manufacturing-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -102,64 +103,294 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="mfg-hero">
+        <div class="inner mfg-hero-grid">
+            <div class="mfg-hero-copy">
+                <p class="mfg-eyebrow"><span></span> Open source · Apache 2.0</p>
+                <h1>Manufacturing,<br /><em>from BOM to built.</em></h1>
+                <p class="mfg-lead">Plan production with bills of materials, run manufacturing orders through your work centers and see what every unit really cost — in one self-hosted system.</p>
+                <div class="mfg-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">Explore live demo <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus mfg-secondary-action">Talk to us</a>
+                </div>
+                <ul class="mfg-proof" aria-label="Product highlights">
+                    <li><strong>End to end</strong><span>BOM to actual cost</span></li>
+                    <li><strong>10–15 min</strong><span>self-hosted setup</span></li>
+                    <li><strong>Zero</strong><span>license fees</span></li>
+                </ul>
+            </div>
+
+            <div class="mfg-product-visual">
+                <a class="mfg-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Open the live MyCompany manufacturing demo">
+                    <img src="/imgs/manufacturing-demo.png" width="1200" height="700" alt="MyCompany manufacturing orders list with production statuses, items, start dates and filters" />
+                    <span class="mfg-demo-badge"><i></i> Actual product UI</span>
+                    <span class="mfg-demo-open">Open live demo <b aria-hidden="true">↗</b></span>
+                </a>
+                <div class="mfg-float-card" aria-hidden="true">
+                    <div class="mfg-float-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v2.8M12 18.7v2.8M2.5 12h2.8M18.7 12h2.8M5.3 5.3l2 2M16.7 16.7l2 2M18.7 5.3l-2 2M7.3 16.7l-2 2"/></svg>
+                    </div>
+                    <div>
+                        <span>Work order · Final assembly line</span>
+                        <strong>WO/000112 — In progress</strong>
+                        <i><b></b></i>
+                    </div>
+                </div>
+                <p class="mfg-demo-caption"><span>Manufacturing orders</span><small>Captured from the public MyCompany demo</small></p>
+            </div>
+        </div>
+        <div class="mfg-hero-orb mfg-hero-orb-one"></div>
+        <div class="mfg-hero-orb mfg-hero-orb-two"></div>
+    </section>
+
+    <section class="mfg-flow-section">
         <div class="inner">
-            <h1>Open-source ERP for small manufacturing</h1>
-            <p><strong>MyCompany</strong> is a free, open-source manufacturing ERP for small workshops and production businesses. It covers the production cycle end to end: bills of materials, manufacturing orders, material reservation, work centers and actual-cost calculation — all inside one system that also handles sales, purchasing, inventory and invoicing.</p>
-            <p>Unlike closed manufacturing ERP suites priced per user per month, MyCompany is released under the Apache 2.0 license: no license fees, no hidden costs and no vendor lock-in. It is built on the lsFusion platform (LGPL v3, Java and PostgreSQL, fully ACID) and can be installed on your own server in 10-15 minutes — your production data stays with you.</p>
-            <p>If you are comparing open source manufacturing software, the fastest way to evaluate MyCompany is the live demo — no registration required.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Try demo</a> <a href="#" class="btn contactus">Contact us</a></p>
+            <div class="mfg-section-heading mfg-heading-center">
+                <p class="mfg-kicker">One order. Every step.</p>
+                <h2>The production cycle, end&nbsp;to&nbsp;end</h2>
+                <p>A manufacturing order plans the work, reserves the materials and explains its own cost — no spreadsheets in between.</p>
+            </div>
+            <div class="mfg-flow" aria-label="Production flow">
+                <article>
+                    <span class="mfg-flow-number">01</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 3 7l9 4.5L21 7l-9-4.5ZM3 12l9 4.5 9-4.5M3 17l9 4.5 9-4.5" /></svg>
+                    </div>
+                    <h3>Define</h3>
+                    <p>Multi-level BOMs with components, by-products and operations.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">02</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5h6v3H9zM15 5h3a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h3M9 11.5h6M9 15.5h4" /></svg>
+                    </div>
+                    <h3>Plan</h3>
+                    <p>Create orders by hand — or straight from sales orders.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">03</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg>
+                    </div>
+                    <h3>Produce</h3>
+                    <p>Reserve materials and run work orders through work centers.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">04</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.3 11.2 3.5H4.5v6.7l9.4 9.8a1.9 1.9 0 0 0 2.8 0l3.9-4a1.9 1.9 0 0 0 0-2.7ZM8 7.5h.01M13 13l3 3" /></svg>
+                    </div>
+                    <h3>Cost</h3>
+                    <p>Write off materials and post actual costs to the ledger.</p>
+                </article>
+            </div>
+            <div class="mfg-document-strip">
+                <span>Also covered</span>
+                <ul>
+                    <li>Disassembly orders</li>
+                    <li>By-products</li>
+                    <li>Production scrap</li>
+                    <li>Lot &amp; serial tracking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Bills of materials</h2>
-            <p>The built-in BOM software defines what each product is made of and how it is made:</p>
-            <ul>
-                <li>Components with quantities per base quantity, so material needs scale proportionally with the ordered amount</li>
-                <li>By-products that come out of the process alongside the main product</li>
-                <li>Operations with assigned work centers, start times and durations</li>
-                <li>A default BOM that is selected automatically when you create an order</li>
-                <li>Nested BOMs for multi-level, hierarchical product structures</li>
-            </ul>
+    <section class="mfg-features-section">
+        <div class="inner">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Built for real production</p>
+                <h2>Simple on the floor.<br />Serious underneath.</h2>
+            </div>
+            <div class="mfg-bento-grid">
+                <article class="mfg-feature-card mfg-bom-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Product structure</span>
+                        <h3>BOMs that mirror how you build</h3>
+                        <p>Component quantities scale with the ordered amount, by-products come out alongside the main product, and nested BOMs describe assemblies inside assemblies — with a default BOM picked automatically on every new order.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Explore bills of materials <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-bom-tree" aria-hidden="true">
+                        <div class="mfg-tree-level root"><i></i><strong>Trek Powerfly 5 — 2018</strong><em>BOM SP/000014</em></div>
+                        <div class="mfg-tree-branch">
+                            <div class="mfg-tree-level selected"><i></i><strong>Rolling chassis module</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-branch child">
+                                <div class="mfg-tree-level"><i></i><strong>Frame preparation assembly</strong><span class="mfg-tree-qty">×1</span></div>
+                                <div class="mfg-tree-level"><i></i><strong>Mid-drive motor unit</strong><span class="mfg-tree-qty">×1</span></div>
+                            </div>
+                            <div class="mfg-tree-level"><i></i><strong>E-bike battery pack</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-level byproduct"><i></i><strong>Cable offcuts · by-product</strong><span class="mfg-tree-qty">+0.2 kg</span></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Manufacturing orders and material reservation</h2>
-            <p>A manufacturing order plans either production or disassembly. The to-produce quantity drives the material requirements, and before the order starts the system checks stock availability and reserves the materials it needs. For make-to-order production, manufacturing orders are created directly from sales orders, so customer demand flows straight to the shop floor.</p>
+                <article class="mfg-feature-card mfg-mto-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Make-to-order</span>
+                        <h3>Sales demand, straight to the floor</h3>
+                        <p>Create manufacturing orders directly from confirmed sales orders. The to-produce quantity drives material needs, and stock is checked and reserved before work starts.</p>
+                    </div>
+                    <div class="mfg-mto-flow" aria-hidden="true">
+                        <div class="mfg-mto-doc">
+                            <span>SO</span>
+                            <div><strong>Sales order ZK/000042</strong><small>Trek Powerfly 5 — 2018 · 4 units</small></div>
+                            <em class="mfg-mto-status">Confirmed</em>
+                        </div>
+                        <div class="mfg-mto-connector"><span>Create manufacturing order</span></div>
+                        <div class="mfg-mto-doc result">
+                            <span>MO</span>
+                            <div><strong>Manufacturing order PRZ/000031</strong><small>To produce: 4 · Workshop</small></div>
+                            <em class="mfg-mto-status">Reserved</em>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Purchasing connected to production</h2>
-            <p>When materials are missing, purchase orders are created straight from the manufacturing order list — aggregated across orders and grouped by vendor. "Auto order" suggestions combine sales forecasts with production needs, so replenishment reflects what you actually plan to build.</p>
+                <article class="mfg-feature-card mfg-load-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Work centers</span>
+                        <h3>See capacity. Assign work.</h3>
+                        <p>The load dashboard shows every work center day by day, and new work orders start right from its cells. Each one moves through Ready, In progress and Done — with bulk actions for many at once.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">See work centers <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-load-window" aria-hidden="true">
+                        <div class="mfg-load-bar"><i></i><i></i><i></i><span>Work center load — July</span></div>
+                        <img src="/imgs/manufacturing-load.png" width="1200" height="336" alt="" loading="lazy" />
+                    </div>
+                </article>
 
-            <h2>Work centers and capacity planning</h2>
-            <p>Work centers model your machines and production areas. Each operation becomes a work order that moves through Ready, In Progress and Done, with bulk actions for processing many at once. The work center load dashboard shows a capacity matrix by day, and new work orders can be created directly from its cells — simple, visual production planning without a separate scheduling tool.</p>
+                <article class="mfg-feature-card mfg-po-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Purchasing connected</span>
+                        <h3>Missing materials, ordered in one click</h3>
+                        <p>Shortages become purchase orders straight from the manufacturing order list — aggregated across orders and grouped by vendor. Auto-order suggestions blend sales forecasts with production needs.</p>
+                    </div>
+                    <div class="mfg-po-panel" aria-hidden="true">
+                        <div class="mfg-po-head">Auto order <span>Grouped by vendor</span></div>
+                        <div class="mfg-po-vendor">Voltbike Supply</div>
+                        <div class="mfg-po-row">Lithium cell set <em>+18 pcs</em></div>
+                        <div class="mfg-po-row">Mid-drive motor unit <em>+6 pcs</em></div>
+                        <div class="mfg-po-vendor">Madison Cycle Parts</div>
+                        <div class="mfg-po-row">Hydraulic brake set <em>+12 pcs</em></div>
+                        <div class="mfg-po-foot">2 purchase orders created <b>✓</b></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Costing on actual figures</h2>
-            <p>Instead of relying on standard costs, MyCompany calculates what an order really cost: material write-offs plus scrap, labor taken from project time entries, and service costs from supplier bills distributed to the order. Unit cost is the line cost divided by the actual quantity produced, and cost ledger entries are posted when the order is done.</p>
+    <section class="mfg-costing-section">
+        <div class="inner mfg-costing-grid">
+            <div class="mfg-costing-copy">
+                <p class="mfg-kicker mfg-kicker-light">Actuals, not estimates</p>
+                <h2>Know what every order really cost.</h2>
+                <p>Costs flow into the order as production happens — and post to the cost ledger the moment it is done. Unit cost is the real line cost divided by the quantity actually produced.</p>
+                <ul class="mfg-check-list">
+                    <li><span>✓</span><div><strong>Materials</strong><small>Write-offs plus scrap, at actual write-off cost</small></div></li>
+                    <li><span>✓</span><div><strong>Labor</strong><small>Taken from project time entries</small></div></li>
+                    <li><span>✓</span><div><strong>Services</strong><small>Supplier bills distributed to the order</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank" class="mfg-text-link-light">See how costing works <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="mfg-cost-window" aria-label="Order costing preview">
+                <div class="mfg-cost-toolbar"><strong>Order cost</strong><span>PRZ/000016 ⌄</span><span class="done">Done ✓</span></div>
+                <div class="mfg-cost-summary">
+                    <div><span>Total cost</span><strong>$9,880</strong><small>4 units produced</small></div>
+                    <div><span>Unit cost</span><strong>$2,470</strong><small>line cost ÷ actual quantity</small></div>
+                </div>
+                <div class="mfg-cost-bar" aria-hidden="true"><b class="materials"></b><b class="labor"></b><b class="services"></b></div>
+                <ul class="mfg-cost-rows">
+                    <li><i class="materials"></i><strong>Materials</strong><em>write-offs + scrap</em>$7,110</li>
+                    <li><i class="labor"></i><strong>Labor</strong><em>time entries</em>$1,880</li>
+                    <li><i class="services"></i><strong>Services</strong><em>supplier bills</em>$890</li>
+                </ul>
+                <div class="mfg-cost-note"><b></b>Posted to the cost ledger when the order is done</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Part of a complete, customizable ERP</h2>
-            <p>Manufacturing works hand in hand with the sales, purchase, inventory and invoicing modules, including lot and serial-number tracking from inventory. You can also unbuild products back into components, record production scrap and print lot labels. Because the source code is open and the logic is written in lsFusion modules, you can adapt forms, fields and workflows to your own processes.</p>
+    <section class="mfg-connected-section">
+        <div class="inner">
+            <div class="mfg-connected-grid">
+                <div class="mfg-connected-copy">
+                    <p class="mfg-kicker">Not a bolt-on module</p>
+                    <h2>Manufacturing is already part of your ERP</h2>
+                    <p>Sales, purchasing, <a href="/open-source-inventory-management/">inventory</a> and invoicing share one database with production — including lot and serial-number tracking. Finished goods land on stock the moment an order is done, and you can even unbuild products back into components.</p>
+                    <a href="/open-source-erp/" class="mfg-inline-link">Discover the full open-source ERP <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="mfg-connection-map" aria-label="ERP connection diagram">
+                    <div class="mfg-connection-source sales"><span>SO</span><div><strong>Sales order</strong><small>Make-to-order demand</small></div></div>
+                    <div class="mfg-connection-source bom"><span>BOM</span><div><strong>Bill of materials</strong><small>Default per product</small></div></div>
+                    <div class="mfg-connection-core"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg><strong>Manufacturing</strong><small>One shared database</small></div>
+                    <div class="mfg-connection-target goods"><span>+4</span><div><strong>Finished goods</strong><small>Posted to inventory</small></div></div>
+                    <div class="mfg-connection-target cost"><span>$</span><div><strong>Cost ledger</strong><small>Actuals, on done</small></div></div>
+                </div>
+            </div>
 
-            <h2>How it works in MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">Manufacturing overview</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Bills of Materials</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">Manufacturing orders</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">Production and consumption</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">Costing</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Work centers</a></li>
-            </ul>
+            <div class="mfg-docs-panel">
+                <div>
+                    <span class="mfg-feature-tag">Go deeper</span>
+                    <h3>Everything is documented</h3>
+                    <p>From the first BOM to cost ledger logic, the complete workflow is open to inspect.</p>
+                </div>
+                <nav aria-label="Manufacturing documentation">
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">Overview <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Bills of Materials <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">Manufacturing orders <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">Production &amp; consumption <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">Costing <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Work centers <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>Is MyCompany suitable for a small manufacturer?</h3>
-            <p>Yes — that is exactly who it is built for. It is free, installs on your own server in 10-15 minutes, and covers BOMs, orders, work centers and costing without the overhead of a heavyweight ERP project.</p>
-            <h3>Does it handle multi-level bills of materials?</h3>
-            <p>Yes. BOMs can be nested to describe hierarchical product structures, with component quantities defined per base quantity so they scale with the order.</p>
-            <h3>How is the cost of a manufactured product calculated?</h3>
-            <p>On actuals: material write-offs and scrap, labor from project time entries and services from supplier bills are distributed to the order. Unit cost equals the line cost divided by the actual quantity, posted to the cost ledger when the order is done.</p>
-            <h3>Can I plan production by work center capacity?</h3>
-            <p>Yes. The work center load dashboard shows capacity as a matrix by day, and you can create work orders directly from its cells.</p>
-            <h3>Does it support make-to-order production?</h3>
-            <p>Yes. Manufacturing orders can be created straight from sales orders, and missing materials can be purchased from the same order list, grouped by vendor.</p>
-            <h3>Is it really free?</h3>
-            <p>Yes. MyCompany is open source under the Apache 2.0 license and is self-hosted, so there are no per-user fees, hidden costs or license lock-in. Paid help with customization and support is optional.</p>
+    <section class="mfg-faq-section">
+        <div class="inner mfg-faq-grid">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Questions, answered</p>
+                <h2>Before you start</h2>
+                <p>Need a detail that is not covered here? <a href="#" class="contactus">Talk to our team.</a></p>
+            </div>
+            <div class="mfg-faq-list">
+                <details open>
+                    <summary>Is MyCompany suitable for a small manufacturer?<span></span></summary>
+                    <p>Yes — that is exactly who it is built for. It is free, installs on your own server in 10-15 minutes, and covers BOMs, orders, work centers and costing without the overhead of a heavyweight ERP project.</p>
+                </details>
+                <details>
+                    <summary>Does it handle multi-level bills of materials?<span></span></summary>
+                    <p>Yes. BOMs can be nested to describe hierarchical product structures, with component quantities defined per base quantity so they scale with the order.</p>
+                </details>
+                <details>
+                    <summary>How is the cost of a manufactured product calculated?<span></span></summary>
+                    <p>On actuals: material write-offs and scrap, labor from project time entries and services from supplier bills are distributed to the order. Unit cost equals the line cost divided by the actual quantity, posted to the cost ledger when the order is done.</p>
+                </details>
+                <details>
+                    <summary>Can I plan production by work center capacity?<span></span></summary>
+                    <p>Yes. The work center load dashboard shows capacity as a matrix by day, and you can create work orders directly from its cells.</p>
+                </details>
+                <details>
+                    <summary>Does it support make-to-order production?<span></span></summary>
+                    <p>Yes. Manufacturing orders can be created straight from sales orders, and missing materials can be purchased from the same order list, grouped by vendor.</p>
+                </details>
+                <details>
+                    <summary>Is it really free?<span></span></summary>
+                    <p>Yes. MyCompany is open source under the Apache 2.0 license and is self-hosted, so there are no per-user fees, hidden costs or license lock-in. Paid help with customization and support is optional.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Explore related pages: <a href="/open-source-inventory-management/">open-source inventory management</a>, <a href="/open-source-erp/">open-source ERP</a> and <a href="/free-erp-software/">free ERP software</a>, or start from the <a href="/">MyCompany homepage</a>.</p>
+    <section class="mfg-final-cta">
+        <div class="inner">
+            <div class="mfg-cta-copy">
+                <p class="mfg-kicker mfg-kicker-light">Ready when you are</p>
+                <h2>Turn orders into product.<br />In one clear system.</h2>
+                <p>Open the live demo or tell us how you build.</p>
+            </div>
+            <div class="mfg-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">Explore live demo <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Contact us</a>
+            </div>
         </div>
     </section>
 </main>
