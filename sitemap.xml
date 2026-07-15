@@ -616,11 +616,41 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-manufacturing-erp/" />
   </url>
 
-  <!-- Landing cluster: self-hosted (en / pl / pt / es / zh / fr / de) -->
+  <!-- Landing cluster: self-hosted (en / ru / uk / pl / pt / es / zh / fr / de) -->
   <url>
     <loc>https://mycompany.lsfusion.org/self-hosted-erp/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/selbst-gehostetes-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/selbst-gehostetes-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -631,8 +661,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -643,8 +675,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -655,8 +689,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/es/erp-en-servidor-propio/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -667,8 +703,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/zh/siyou-bushu-erp/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -679,8 +717,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/fr/erp-auto-heberge/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -691,8 +731,10 @@
   </url>
   <url>
     <loc>https://mycompany.lsfusion.org/de/selbst-gehostetes-erp/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
@@ -703,7 +745,7 @@
   </url>
 
   <!-- Landing cluster: CRM (en / ru / uk / pl / pt / es / zh / fr / de) -->
-+  <url>
+  <url>
     <loc>https://mycompany.lsfusion.org/free-crm/</loc>
     <lastmod>2026-07-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/free-crm/" />
@@ -830,11 +872,135 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/free-crm/" />
   </url>
 
-  <!-- Single-language landing pages -->
+  <!-- Landing cluster: customizable ERP (en / ru / uk / pl / pt / es / zh / fr / de) -->
   <url>
     <loc>https://mycompany.lsfusion.org/customizable-erp/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
   </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pt/erp-personalizavel/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/es/erp-personalizable/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/fr/erp-personnalisable/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/de/anpassbares-erp/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/customizable-erp/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/nastraivaemaya-erp/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/nalashtovuvana-erp/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/konfigurowalny-system-erp/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-personalizavel/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-personalizable/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/ke-dingzhi-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-personnalisable/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/anpassbares-erp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
+  </url>
+
+  <!-- Single-language landing pages -->
   <url>
     <loc>https://mycompany.lsfusion.org/erp-for-developers/</loc>
     <lastmod>2026-07-14</lastmod>

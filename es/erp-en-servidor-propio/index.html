@@ -9,15 +9,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
     <!-- End Google Tag Manager -->
     <link rel="canonical" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
-    <link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
-    <link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
-    <link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
-    <link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
-    <link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
-    <link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
-    <link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/selbst-gehostetes-erp/" />
-    <link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
-
+<link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
+<link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-na-svoem-servere/" />
+<link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-na-vlasnomu-serveri/" />
+<link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-na-wlasnym-serwerze/" />
+<link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-no-proprio-servidor/" />
+<link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
+<link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/siyou-bushu-erp/" />
+<link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-auto-heberge/" />
+<link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/selbst-gehostetes-erp/" />
+<link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/self-hosted-erp/" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Aloje el ERP MyCompany en su propio servidor: instalación con un comando en Linux, instalador para Windows o Docker, mínimo 4 GB de RAM, cliente web incluido. Sus datos se quedan con usted: gratis y open source." />
@@ -28,9 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title" content="ERP en su propio servidor (self-hosted) | MyCompany" />
     <meta property="og:description" content="Aloje el ERP MyCompany en su propio servidor: instalación con un comando en Linux, instalador para Windows o Docker, mínimo 4 GB de RAM, cliente web incluido. Sus datos se quedan con usted: gratis y open source." />
     <meta property="og:url" content="https://mycompany.lsfusion.org/es/erp-en-servidor-propio/" />
-    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
-    <meta property="og:image:width" content="986" />
-    <meta property="og:image:height" content="564" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/inventory-demo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="700" />
     <meta property="og:locale" content="es_ES" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/erp.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -63,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex erp-page erp-self">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -99,73 +101,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </nav>
 
-<main id="top">
-    <section id="section-content">
-        <div class="inner">
-            <h1>ERP self-hosted que funciona en su propio servidor</h1>
-            <p><strong>MyCompany</strong> es un sistema ERP gratuito y open source concebido para el autoalojamiento. Lo instala en su propio servidor (físico o virtual, en su oficina o en su propia cuenta de nube) y todo se queda ahí: la aplicación, la base de datos y cada registro que crea su negocio. No hay cuenta SaaS, ni suscripción por usuario, ni un proveedor entre usted y sus datos.</p>
-            <p>Si busca un ERP self-hosted o un ERP on-premise que un equipo pequeño pueda poner en marcha sin un proyecto de consultoría, MyCompany es una opción práctica: se instala en su propio servidor en 10-15 minutos, sirve un cliente web de serie y se distribuye bajo la licencia Apache 2.0, sin costes ocultos y sin dependencia de licencias.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Probar demo</a> <a href="#" class="btn contactus">Contacte con nosotros</a></p>
-
-            <h2>Instalación: una línea en Linux, un instalador en Windows</h2>
-            <p>En Ubuntu 18+ o Debian 9+, toda la instalación es un único comando ejecutado en su servidor:</p>
-            <pre><code>source &lt;(curl -s https://download.lsfusion.org/solutions/install-mycompany-ubuntu18.sh)</code></pre>
-            <p>Una variante del script para CentOS cubre RHEL 8+, CentOS 8+ y Fedora 35+. En Windows hay un instalador independiente, y el despliegue con Docker está oficialmente documentado, si prefiere contenedores. Terminada la instalación, abra <code>http://ip-de-su-servidor:8080</code> en el navegador e inicie sesión como <code>admin</code> con la contraseña vacía; cámbiela, por supuesto.</p>
-
-            <h2>Requisitos de servidor modestos</h2>
-            <ul>
-                <li>Mínimo 4 GB de RAM: un VPS pequeño o una máquina de oficina basta para empezar</li>
-                <li>Cliente web servido en el puerto 8080, de serie</li>
-                <li>Cliente de escritorio disponible en el puerto 7652 para quien lo prefiera</li>
-                <li>Funciona sin problemas en su red local: los empleados se conectan solo con un navegador</li>
-            </ul>
-
-            <h2>Una pila que controla de principio a fin</h2>
-            <p>Por debajo, MyCompany es un servidor de aplicaciones lsFusion escrito en Java sobre PostgreSQL, con garantías ACID completas para sus transacciones. La plataforma lsFusion está licenciada bajo LGPL v3 y la aplicación MyCompany bajo Apache 2.0. Eso significa: sin llaves de licencia, sin DRM y sin licencias que «llaman a casa». El software que instala es completamente suyo.</p>
-
-            <h2>Por qué las empresas eligen el autoalojamiento</h2>
-            <ul>
-                <li><strong>Sus datos se quedan con usted.</strong> Clientes, precios, existencias y finanzas viven en su infraestructura, no en la nube de otro.</li>
-                <li><strong>Sin suscripción por usuario.</strong> Añada tantos empleados como necesite sin que la factura crezca.</li>
-                <li><strong>Funciona en su LAN.</strong> El cliente web se ejecuta en su propia red, en sus términos.</li>
-                <li><strong>Sin dependencia del proveedor.</strong> Código abierto y una base de datos PostgreSQL estándar significan que nunca queda atrapado.</li>
-            </ul>
-
-            <h2>Actualizaciones sencillas, personalización de verdad</h2>
-            <p>Actualizar un sistema self-hosted no debería ser un proyecto en sí mismo. En MyCompany, una actualización significa sustituir un único archivo JAR en el classpath del servidor; las versiones publicadas están en download.lsfusion.org. Y como la aplicación se construye a partir de módulos lsFusion, puede ampliarla en su propio servidor sin recompilar nada: coloque un archivo <code>.lsf</code> junto a la aplicación y apunte <code>logics.topModule</code> hacia él.</p>
-
-            <h2>Cómo funciona en MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank">Guía de instalación</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/administration/installation-docker/" target="_blank">Despliegue con Docker</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">Desarrollo y personalización</a></li>
-                <li><a href="https://download.lsfusion.org/" target="_blank">Descargas</a></li>
-                <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">Código fuente en GitHub</a></li>
-            </ul>
-
-            <h2>FAQ</h2>
-            <h3>¿Cuáles son los requisitos del servidor?</h3>
-            <p>Una máquina con al menos 4 GB de RAM con Ubuntu 18+, Debian 9+, RHEL 8+, CentOS 8+, Fedora 35+ o Windows. El cliente web se sirve en el puerto 8080 y el cliente de escritorio en el 7652.</p>
-
-            <h3>¿Cuánto tarda la instalación?</h3>
-            <p>Unos 10-15 minutos en su propio servidor. En Linux es un único comando; en Windows se ejecuta un instalador independiente. Después basta con abrir el cliente web en la dirección de su servidor, en el puerto 8080.</p>
-
-            <h3>¿Puedo ejecutarlo en Docker?</h3>
-            <p>Sí. El despliegue con Docker está oficialmente documentado, así que puede ejecutar MyCompany junto a sus demás servicios en contenedores.</p>
-
-            <h3>¿Cómo funcionan las actualizaciones?</h3>
-            <p>Se sustituye un único archivo JAR en el classpath del servidor por una versión más reciente de download.lsfusion.org. Sin reactivación de licencias, porque no hay licencias que activar.</p>
-
-            <h3>¿Funciona en una red local, sin nube?</h3>
-            <p>Sí. Todo se ejecuta en su propio servidor, así que el sistema funciona en su LAN sin depender de un servicio de nube externo: los empleados simplemente abren el cliente web en su navegador.</p>
-
-            <h3>¿Mis datos quedan bloqueados?</h3>
-            <p>No. Sus datos viven en una base de datos PostgreSQL estándar en su propio servidor, y el código de la aplicación es open source bajo Apache 2.0. Puede consultar, copiar o migrar los datos directamente en cualquier momento.</p>
-
-            <p>¿Quiere el panorama completo? Vea por qué MyCompany es una buena opción de <a href="/es/erp-open-source/">ERP open source</a>, qué significa realmente «gratis» en el <a href="/es/erp-gratis/">software ERP gratis</a>, o empiece por la <a href="/es/">página principal de MyCompany</a>.</p>
-        </div>
-    </section>
-</main>
+<main id="top"><section class="erp-hero"><div class="inner erp-hero-grid"><div class="erp-hero-copy"><p class="erp-eyebrow"><span></span> Servidor propio · Su infraestructura</p><h1>ERP self-hosted que funciona en su propio servidor</h1><p class="erp-hero-lead"><strong>MyCompany</strong> es un sistema ERP gratuito y open source concebido para el autoalojamiento. Lo instala en su propio servidor (físico o virtual, en su oficina o en su propia cuenta de nube) y todo se queda ahí: la aplicación, la base de datos y cada registro que crea su negocio. No hay cuenta SaaS, ni suscripción por usuario, ni un proveedor entre usted y sus datos.</p><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">Probar demo <span>↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">Contacte con nosotros</a></div><ul class="erp-proof"><li><strong>10–15 min</strong><span>instalación típica</span></li><li><strong>4 GB</strong><span>suficiente para empezar</span></li><li><strong>100%</strong><span>datos bajo control</span></li></ul></div><div class="erp-preview"><div class="erp-browser"><div class="erp-browser-bar"><i></i><i></i><i></i><span>MyCompany · ERP</span></div><img src="/imgs/inventory-demo.png" width="1200" height="700" alt="ERP self-hosted que funciona en su propio servidor" /></div><div class="erp-float-card top"><span class="erp-float-icon">UP</span><div><strong>Ejecútelo a su manera</strong><small>Linux · Windows · Docker</small></div></div><div class="erp-float-card bottom"><span class="erp-float-icon">DB</span><div><strong>Sus datos siguen siendo suyos</strong><small>PostgreSQL en su servidor</small></div></div></div></div></section>
+<section class="erp-trust-strip"><div class="inner erp-trust-row"><span>Elija el entorno adecuado para su empresa</span><ul><li><b>✓</b> Linux</li><li><b>✓</b> Windows</li><li><b>✓</b> Docker</li><li><b>✓</b> PostgreSQL</li><li><b>✓</b> Cliente web</li></ul></div></section>
+<section class="erp-value-section"><div class="inner"><div class="erp-section-heading center"><p class="erp-kicker">El control empieza en el despliegue</p><h2>El ERP funciona donde usted decide</h2><p>Si busca un ERP self-hosted o un ERP on-premise que un equipo pequeño pueda poner en marcha sin un proyecto de consultoría, MyCompany es una opción práctica: se instala en su propio servidor en 10-15 minutos, sirve un cliente web de serie y se distribuye bajo la licencia Apache 2.0, sin costes ocultos y sin dependencia de licencias.</p></div><div class="erp-value-grid"><article class="erp-value-card"><span class="erp-value-icon">→</span><h3>Instalación: una línea en Linux, un instalador en Windows</h3><p>En Ubuntu 18+ o Debian 9+, toda la instalación es un único comando ejecutado en su servidor:</p></article><article class="erp-value-card"><span class="erp-value-icon">4G</span><h3>Requisitos de servidor modestos</h3><p></p></article><article class="erp-value-card"><span class="erp-value-icon">DB</span><h3>Una pila que controla de principio a fin</h3><p>Por debajo, MyCompany es un servidor de aplicaciones lsFusion escrito en Java sobre PostgreSQL, con garantías ACID completas para sus transacciones. La plataforma lsFusion está licenciada bajo LGPL v3 y la aplicación MyCompany bajo Apache 2.0. Eso significa: sin llaves de licencia, sin DRM y sin licencias que «llaman a casa». El software que instala es completamente suyo.</p></article></div></div></section>
+<section class="erp-platform-section"><div class="inner erp-platform-grid"><div class="erp-platform-copy"><p class="erp-kicker">De la aplicación a la base de datos, todo es suyo</p><h2>Por qué las empresas eligen el autoalojamiento</h2><p></p><ul class="erp-check-list"><li><span>✓</span>Sus datos se quedan con usted. Clientes, precios, existencias y finanzas viven en su infraestructura, no en la nube de otro.</li><li><span>✓</span>Sin suscripción por usuario. Añada tantos empleados como necesite sin que la factura crezca.</li><li><span>✓</span>Funciona en su LAN. El cliente web se ejecuta en su propia red, en sus términos.</li></ul></div><div class="erp-stack"><div class="erp-stack-label"><span>MyCompany</span><span>De la aplicación a la base de datos, todo es suyo</span></div><div class="erp-stack-layer"><span>WEB</span><div><strong>Cliente web</strong><small>Usuarios conectados por HTTPS</small></div><em>incluido</em></div><div class="erp-stack-layer"><span>ERP</span><div><strong>MyCompany</strong><small>Módulos y extensiones</small></div><em>Apache 2.0</em></div><div class="erp-stack-layer"><span>LSF</span><div><strong>Servidor lsFusion</strong><small>Lógica, seguridad y transacciones</small></div><em>Java</em></div><div class="erp-stack-layer"><span>DB</span><div><strong>PostgreSQL</strong><small>Su base operativa</small></div><em>su servidor</em></div><div class="erp-code-note">deployment = <b>self-hosted</b><br />data_location = <b>your choice</b></div></div></div></section>
+<section class="erp-modules-section"><div class="inner"><div class="erp-section-heading"><p class="erp-kicker">Operaciones sin puntos ciegos</p><h2>Sepa exactamente qué queda en sus manos</h2><p>Actualizar un sistema self-hosted no debería ser un proyecto en sí mismo. En MyCompany, una actualización significa sustituir un único archivo JAR en el classpath del servidor; las versiones publicadas están en download.lsfusion.org. Y como la aplicación se construye a partir de módulos lsFusion, puede ampliarla en su propio servidor sin recompilar nada: coloque un archivo <code>.lsf</code> junto a la aplicación y apunte <code>logics.topModule</code> hacia él.</p></div><div class="erp-module-grid"><article class="erp-module-card"><span>DATA</span><h3>Base de datos</h3><p>Ubicación y retención de datos</p></article><article class="erp-module-card"><span>BACKUP</span><h3>Copias de seguridad</h3><p>Calendario y pruebas de restauración</p></article><article class="erp-module-card"><span>ACCESS</span><h3>Acceso</h3><p>Usuarios, roles y red</p></article><article class="erp-module-card"><span>UPDATE</span><h3>Actualizaciones</h3><p>Elija cuándo aplicar cada versión</p></article></div></div></section>
+<section class="erp-flow-section"><div class="inner erp-flow-grid"><div class="erp-flow-copy"><p class="erp-kicker">Una pila con límites claros</p><h2>Los usuarios se conectan a un ERP que usted opera</h2><p>Por debajo, MyCompany es un servidor de aplicaciones lsFusion escrito en Java sobre PostgreSQL, con garantías ACID completas para sus transacciones. La plataforma lsFusion está licenciada bajo LGPL v3 y la aplicación MyCompany bajo Apache 2.0. Eso significa: sin llaves de licencia, sin DRM y sin licencias que «llaman a casa». El software que instala es completamente suyo.</p></div><div class="erp-flow-board"><div class="erp-flow-node n1"><span>WEB</span><div><strong>Empleados</strong><small>acceso seguro</small></div></div><div class="erp-flow-node n2"><span>TLS</span><div><strong>Su dominio</strong><small>red y certificado</small></div></div><div class="erp-flow-node n3"><span>DB</span><div><strong>PostgreSQL</strong><small>datos del negocio</small></div></div><div class="erp-flow-node n4"><span>BK</span><div><strong>Copias</strong><small>su política de retención</small></div></div><div class="erp-flow-core"><span><strong>MyCompany</strong><small>ERP</small></span></div></div></div></section>
+<section class="erp-cost-section"><div class="inner erp-cost-grid"><div class="erp-cost-copy"><p class="erp-kicker">El control conlleva responsabilidad</p><h2>Sin dependencia del proveedor ni operaciones ocultas</h2><p>Las copias, la monitorización y la disponibilidad quedan en sus manos; el soporte de MyCompany es opcional.</p></div><div class="erp-cost-panel"><div class="erp-cost-head"><strong>Operación</strong><span>Transparente</span></div><div class="erp-cost-row"><strong>Licencia de la aplicación</strong><span>Apache 2.0</span><em>0 €</em></div><div class="erp-cost-row"><strong>Infraestructura</strong><span>Local o VM en la nube</span><em class="optional">Usted elige</em></div><div class="erp-cost-row"><strong>Operación</strong><span>Su equipo o ayuda</span><em class="optional">Flexible</em></div><div class="erp-cost-row"><strong>Soporte</strong><span>Documentación o nuestro equipo</span><em class="optional">Opcional</em></div></div></div></section>
+<section class="erp-deploy-section"><div class="inner erp-deploy-grid"><div class="erp-deploy-copy"><p class="erp-kicker">De la descarga al primer acceso</p><h2>Instalación: una línea en Linux, un instalador en Windows</h2><p>En Ubuntu 18+ o Debian 9+, toda la instalación es un único comando ejecutado en su servidor:</p></div><ol class="erp-deploy-steps"><li><span>01</span><div><strong><a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank">Guía de instalación</a></strong></div><em>MyCompany</em></li><li><span>02</span><div><strong><a href="https://mycompany-docs.lsfusion.org/administration/installation-docker/" target="_blank">Despliegue con Docker</a></strong></div><em>MyCompany</em></li><li><span>03</span><div><strong><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">Desarrollo y personalización</a></strong></div><em>MyCompany</em></li><li><span>04</span><div><strong><a href="https://download.lsfusion.org/" target="_blank">Descargas</a></strong></div><em>MyCompany</em></li><li><span>05</span><div><strong><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">Código fuente en GitHub</a></strong></div><em>MyCompany</em></li></ol></div></section>
+<section class="erp-faq-section"><div class="inner erp-faq-grid"><div class="erp-section-heading"><p class="erp-kicker">Preguntas respondidas</p><h2>Antes de alojar</h2><p><a href="#" class="contactus">Contacte con nosotros</a></p></div><div class="erp-faq-list"><details open><summary>¿Cuáles son los requisitos del servidor?<span></span></summary><p>Una máquina con al menos 4 GB de RAM con Ubuntu 18+, Debian 9+, RHEL 8+, CentOS 8+, Fedora 35+ o Windows. El cliente web se sirve en el puerto 8080 y el cliente de escritorio en el 7652.</p></details><details><summary>¿Cuánto tarda la instalación?<span></span></summary><p>Unos 10-15 minutos en su propio servidor. En Linux es un único comando; en Windows se ejecuta un instalador independiente. Después basta con abrir el cliente web en la dirección de su servidor, en el puerto 8080.</p></details><details><summary>¿Puedo ejecutarlo en Docker?<span></span></summary><p>Sí. El despliegue con Docker está oficialmente documentado, así que puede ejecutar MyCompany junto a sus demás servicios en contenedores.</p></details><details><summary>¿Cómo funcionan las actualizaciones?<span></span></summary><p>Se sustituye un único archivo JAR en el classpath del servidor por una versión más reciente de download.lsfusion.org. Sin reactivación de licencias, porque no hay licencias que activar.</p></details><details><summary>¿Funciona en una red local, sin nube?<span></span></summary><p>Sí. Todo se ejecuta en su propio servidor, así que el sistema funciona en su LAN sin depender de un servicio de nube externo: los empleados simplemente abren el cliente web en su navegador.</p></details><details><summary>¿Mis datos quedan bloqueados?<span></span></summary><p>No. Sus datos viven en una base de datos PostgreSQL estándar en su propio servidor, y el código de la aplicación es open source bajo Apache 2.0. Puede consultar, copiar o migrar los datos directamente en cualquier momento.</p></details></div></div></section>
+<section class="erp-final-cta"><div class="inner erp-final-row"><div class="erp-final-copy"><p class="erp-kicker">Su infraestructura. Sus reglas.</p><h2>Ejecute el ERP completo en su servidor</h2><p>Abra la demo, lea la guía o planifique el despliegue con nosotros.</p></div><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">Probar demo <span>↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">Contacte con nosotros</a></div></div></section></main>
 <footer>
     <div class="inner">
         <nav>

@@ -21,6 +21,22 @@
   --erp-pale: #eefaf6;
 }
 
+.erp-self {
+  --erp-accent: #178fc5;
+  --erp-bright: #4fd1f5;
+  --erp-deep: #08658f;
+  --erp-night: #052b3f;
+  --erp-pale: #edf9fc;
+}
+
+.erp-custom {
+  --erp-accent: #7158c7;
+  --erp-bright: #b8a8ff;
+  --erp-deep: #503ba4;
+  --erp-night: #241b4d;
+  --erp-pale: #f2efff;
+}
+
 .erp-page main,
 .erp-page main * {
   box-sizing: border-box;
@@ -95,7 +111,9 @@
   box-shadow: 0 0 0 5px color-mix(in srgb, var(--erp-bright) 17%, transparent);
 }
 
-.erp-open .erp-eyebrow {
+.erp-open .erp-eyebrow,
+.erp-self .erp-eyebrow,
+.erp-custom .erp-eyebrow {
   color: #a9eafa !important;
 }
 
@@ -112,6 +130,20 @@
     radial-gradient(circle at 88% 17%, rgba(38, 196, 247, .18), transparent 31%),
     radial-gradient(circle at 9% 90%, rgba(14, 132, 188, .2), transparent 34%),
     linear-gradient(122deg, #041e30 0%, #073650 57%, #075073 100%);
+}
+
+.erp-self .erp-hero {
+  background:
+    radial-gradient(circle at 88% 17%, rgba(79, 209, 245, .18), transparent 31%),
+    radial-gradient(circle at 9% 90%, rgba(23, 143, 197, .22), transparent 34%),
+    linear-gradient(122deg, #031d2c 0%, #06364e 57%, #07516d 100%);
+}
+
+.erp-custom .erp-hero {
+  background:
+    radial-gradient(circle at 88% 17%, rgba(184, 168, 255, .2), transparent 31%),
+    radial-gradient(circle at 9% 90%, rgba(83, 61, 165, .3), transparent 36%),
+    linear-gradient(122deg, #1c153f 0%, #30245f 57%, #4a3884 100%);
 }
 
 .erp-free .erp-hero {
@@ -168,7 +200,9 @@
   line-height: 1.1;
 }
 
-.erp-open .erp-hero h1 {
+.erp-open .erp-hero h1,
+.erp-self .erp-hero h1,
+.erp-custom .erp-hero h1 {
   color: #fff;
 }
 
@@ -177,8 +211,13 @@
   font-style: normal;
 }
 
-.erp-open .erp-hero h1 em {
+.erp-open .erp-hero h1 em,
+.erp-self .erp-hero h1 em {
   color: #82dcf6;
+}
+
+.erp-custom .erp-hero h1 em {
+  color: #c9bdff;
 }
 
 .erp-hero .erp-hero-lead {
@@ -189,8 +228,15 @@
   line-height: 1.66;
 }
 
-.erp-open .erp-hero .erp-hero-lead {
+.erp-open .erp-hero .erp-hero-lead,
+.erp-self .erp-hero .erp-hero-lead,
+.erp-custom .erp-hero .erp-hero-lead {
   color: #c6d9e3;
+}
+
+.erp-custom .erp-platform-copy .erp-kicker,
+.erp-custom .erp-final-cta .erp-kicker {
+  color: #c9bdff !important;
 }
 
 .erp-actions {
