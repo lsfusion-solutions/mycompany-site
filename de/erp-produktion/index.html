@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/manufacturing.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex manufacturing-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,64 +102,294 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="mfg-hero">
+        <div class="inner mfg-hero-grid">
+            <div class="mfg-hero-copy">
+                <p class="mfg-eyebrow"><span></span> Open Source · Apache 2.0</p>
+                <h1>Produktion planen.<br /><em>Kosten kennen.</em></h1>
+                <p class="mfg-lead">Planen Sie die Produktion mit Stücklisten, führen Sie Fertigungsaufträge über Ihre Arbeitsplätze und sehen Sie, was jede Einheit wirklich gekostet hat — in einem System auf Ihrem eigenen Server.</p>
+                <div class="mfg-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">Demo testen <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus mfg-secondary-action">Kontakt aufnehmen</a>
+                </div>
+                <ul class="mfg-proof" aria-label="Produkt-Highlights">
+                    <li><strong>End-to-End</strong><span>von BOM bis Ist-Kosten</span></li>
+                    <li><strong>10–15 Min.</strong><span>Installation auf eigenem Server</span></li>
+                    <li><strong>Null</strong><span>Lizenzgebühren</span></li>
+                </ul>
+            </div>
+
+            <div class="mfg-product-visual">
+                <a class="mfg-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Das MyCompany-Fertigungsdemo öffnen">
+                    <img src="/imgs/manufacturing-demo.png" width="1200" height="700" alt="Liste der Fertigungsaufträge in MyCompany mit Status, Artikeln, Startterminen und Filtern" />
+                    <span class="mfg-demo-badge"><i></i> Echte Produkt-UI</span>
+                    <span class="mfg-demo-open">Demo öffnen <b aria-hidden="true">↗</b></span>
+                </a>
+                <div class="mfg-float-card" aria-hidden="true">
+                    <div class="mfg-float-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v2.8M12 18.7v2.8M2.5 12h2.8M18.7 12h2.8M5.3 5.3l2 2M16.7 16.7l2 2M18.7 5.3l-2 2M7.3 16.7l-2 2"/></svg>
+                    </div>
+                    <div>
+                        <span>Arbeitsauftrag · Endmontagelinie</span>
+                        <strong>WO/000112 — In Arbeit</strong>
+                        <i><b></b></i>
+                    </div>
+                </div>
+                <p class="mfg-demo-caption"><span>Fertigungsaufträge</span><small>Aufgenommen im öffentlichen MyCompany-Demo</small></p>
+            </div>
+        </div>
+        <div class="mfg-hero-orb mfg-hero-orb-one"></div>
+        <div class="mfg-hero-orb mfg-hero-orb-two"></div>
+    </section>
+
+    <section class="mfg-flow-section">
         <div class="inner">
-            <h1>Open-Source-ERP für kleine Fertigungsbetriebe</h1>
-            <p><strong>MyCompany</strong> ist ein kostenloses Open-Source-ERP für kleine Werkstätten und Produktionsbetriebe. Es deckt den Produktionszyklus von Anfang bis Ende ab: Stücklisten, Fertigungsaufträge, Materialreservierung, Arbeitsplätze und Ist-Kostenkalkulation — alles in einem System, das auch Verkauf, Einkauf, Lager und Rechnungsstellung übernimmt.</p>
-            <p>Anders als geschlossene Produktions-ERP-Suiten mit Preisen pro Benutzer und Monat erscheint MyCompany unter der Apache-2.0-Lizenz: keine Lizenzgebühren, keine versteckten Kosten, keine Anbieterbindung. Es basiert auf der lsFusion-Plattform (LGPL v3, Java und PostgreSQL, vollständig ACID) und lässt sich in 10-15 Minuten auf Ihrem eigenen Server installieren — Ihre Produktionsdaten bleiben bei Ihnen.</p>
-            <p>Wenn Sie Open-Source-Produktionssoftware vergleichen, ist die Live-Demo der schnellste Weg, MyCompany zu bewerten — ganz ohne Registrierung.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Demo testen</a> <a href="#" class="btn contactus">Kontaktieren Sie uns</a></p>
+            <div class="mfg-section-heading mfg-heading-center">
+                <p class="mfg-kicker">Ein Auftrag. Jeder Schritt.</p>
+                <h2>Der Produktionszyklus, von Anfang bis&nbsp;Ende</h2>
+                <p>Ein Fertigungsauftrag plant die Arbeit, reserviert das Material und erklärt seine eigenen Kosten — ganz ohne Tabellenkalkulation dazwischen.</p>
+            </div>
+            <div class="mfg-flow" aria-label="Produktionsablauf">
+                <article>
+                    <span class="mfg-flow-number">01</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 3 7l9 4.5L21 7l-9-4.5ZM3 12l9 4.5 9-4.5M3 17l9 4.5 9-4.5" /></svg>
+                    </div>
+                    <h3>Definieren</h3>
+                    <p>Mehrstufige Stücklisten mit Komponenten, Nebenprodukten und Arbeitsgängen.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">02</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5h6v3H9zM15 5h3a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h3M9 11.5h6M9 15.5h4" /></svg>
+                    </div>
+                    <h3>Planen</h3>
+                    <p>Aufträge von Hand anlegen — oder direkt aus Verkaufsaufträgen.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">03</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg>
+                    </div>
+                    <h3>Fertigen</h3>
+                    <p>Material reservieren und Arbeitsaufträge über die Arbeitsplätze führen.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">04</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.3 11.2 3.5H4.5v6.7l9.4 9.8a1.9 1.9 0 0 0 2.8 0l3.9-4a1.9 1.9 0 0 0 0-2.7ZM8 7.5h.01M13 13l3 3" /></svg>
+                    </div>
+                    <h3>Kalkulieren</h3>
+                    <p>Material abbuchen und Ist-Kosten ins Kostenregister buchen.</p>
+                </article>
+            </div>
+            <div class="mfg-document-strip">
+                <span>Ebenfalls abgedeckt</span>
+                <ul>
+                    <li>Demontageaufträge</li>
+                    <li>Nebenprodukte</li>
+                    <li>Produktionsausschuss</li>
+                    <li>Chargen &amp; Seriennummern</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Stücklisten</h2>
-            <p>Das integrierte Stücklistenmodul (BOM) definiert, woraus jedes Produkt besteht und wie es gefertigt wird:</p>
-            <ul>
-                <li>Komponenten mit Mengen je Basismenge, sodass der Materialbedarf proportional zur bestellten Menge skaliert</li>
-                <li>Nebenprodukte, die neben dem Hauptprodukt aus dem Prozess hervorgehen</li>
-                <li>Arbeitsgänge mit zugewiesenen Arbeitsplätzen, Startzeiten und Dauern</li>
-                <li>Eine Standardstückliste, die beim Anlegen eines Auftrags automatisch gewählt wird</li>
-                <li>Verschachtelte Stücklisten für mehrstufige, hierarchische Produktstrukturen</li>
-            </ul>
+    <section class="mfg-features-section">
+        <div class="inner">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Für echte Produktion gebaut</p>
+                <h2>Einfach in der Halle.<br />Seriös darunter.</h2>
+            </div>
+            <div class="mfg-bento-grid">
+                <article class="mfg-feature-card mfg-bom-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Produktstruktur</span>
+                        <h3>Stücklisten, die so bauen wie Sie</h3>
+                        <p>Komponentenmengen skalieren mit der bestellten Menge, Nebenprodukte entstehen neben dem Hauptprodukt, und verschachtelte Stücklisten beschreiben Baugruppen in Baugruppen — die Standardstückliste wird bei jedem neuen Auftrag automatisch gewählt.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Stücklisten entdecken <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-bom-tree" aria-hidden="true">
+                        <div class="mfg-tree-level root"><i></i><strong>Trek Powerfly 5 — 2018</strong><em>BOM SP/000014</em></div>
+                        <div class="mfg-tree-branch">
+                            <div class="mfg-tree-level selected"><i></i><strong>Rolling chassis module</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-branch child">
+                                <div class="mfg-tree-level"><i></i><strong>Frame preparation assembly</strong><span class="mfg-tree-qty">×1</span></div>
+                                <div class="mfg-tree-level"><i></i><strong>Mid-drive motor unit</strong><span class="mfg-tree-qty">×1</span></div>
+                            </div>
+                            <div class="mfg-tree-level"><i></i><strong>E-bike battery pack</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-level byproduct"><i></i><strong>Cable offcuts · Nebenprodukt</strong><span class="mfg-tree-qty">+0,2 kg</span></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Fertigungsaufträge und Materialreservierung</h2>
-            <p>Ein Fertigungsauftrag plant entweder die Produktion oder die Demontage. Die zu fertigende Menge bestimmt den Materialbedarf; vor dem Start des Auftrags prüft das System die Bestandsverfügbarkeit und reserviert die benötigten Materialien. Bei Auftragsfertigung werden Fertigungsaufträge direkt aus Verkaufsaufträgen erstellt — die Kundennachfrage gelangt direkt in die Werkhalle.</p>
+                <article class="mfg-feature-card mfg-mto-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Auftragsfertigung</span>
+                        <h3>Kundennachfrage, direkt in die Halle</h3>
+                        <p>Erstellen Sie Fertigungsaufträge direkt aus bestätigten Verkaufsaufträgen. Die zu fertigende Menge bestimmt den Materialbedarf; Bestände werden geprüft und vor Arbeitsbeginn reserviert.</p>
+                    </div>
+                    <div class="mfg-mto-flow" aria-hidden="true">
+                        <div class="mfg-mto-doc">
+                            <span>VA</span>
+                            <div><strong>Verkaufsauftrag ZK/000042</strong><small>Trek Powerfly 5 — 2018 · 4 Stück</small></div>
+                            <em class="mfg-mto-status">Bestätigt</em>
+                        </div>
+                        <div class="mfg-mto-connector"><span>Fertigungsauftrag erstellen</span></div>
+                        <div class="mfg-mto-doc result">
+                            <span>FA</span>
+                            <div><strong>Fertigungsauftrag PRZ/000031</strong><small>Zu fertigen: 4 · Werkstatt</small></div>
+                            <em class="mfg-mto-status">Reserviert</em>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Einkauf, verbunden mit der Produktion</h2>
-            <p>Fehlen Materialien, werden Bestellungen direkt aus der Liste der Fertigungsaufträge erstellt — auftragsübergreifend zusammengefasst und nach Lieferant gruppiert. Die Vorschläge der „automatischen Bestellung“ kombinieren Verkaufsprognosen mit dem Produktionsbedarf, sodass der Nachschub widerspiegelt, was Sie tatsächlich fertigen wollen.</p>
+                <article class="mfg-feature-card mfg-load-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Arbeitsplätze</span>
+                        <h3>Kapazität sehen. Arbeit zuweisen.</h3>
+                        <p>Das Auslastungs-Dashboard zeigt jeden Arbeitsplatz Tag für Tag, neue Arbeitsaufträge entstehen direkt aus seinen Zellen. Jeder Auftrag durchläuft Bereit, In Arbeit und Fertig — mit Massenaktionen für viele auf einmal.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Arbeitsplätze ansehen <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-load-window" aria-hidden="true">
+                        <div class="mfg-load-bar"><i></i><i></i><i></i><span>Auslastung der Arbeitsplätze — Juli</span></div>
+                        <img src="/imgs/manufacturing-load.png" width="1200" height="336" alt="" loading="lazy" />
+                    </div>
+                </article>
 
-            <h2>Arbeitsplätze und Kapazitätsplanung</h2>
-            <p>Arbeitsplätze bilden Ihre Maschinen und Produktionsbereiche ab. Jeder Arbeitsgang wird zu einem Arbeitsauftrag, der die Status „Bereit“, „In Arbeit“ und „Fertig“ durchläuft — mit Massenaktionen für die gleichzeitige Bearbeitung vieler Aufträge. Das Auslastungs-Dashboard der Arbeitsplätze zeigt eine Kapazitätsmatrix pro Tag, und neue Arbeitsaufträge lassen sich direkt aus ihren Zellen anlegen — einfache, visuelle Produktionsplanung ohne separates Planungstool.</p>
+                <article class="mfg-feature-card mfg-po-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Einkauf, angebunden</span>
+                        <h3>Fehlendes Material, mit einem Klick bestellt</h3>
+                        <p>Engpässe werden direkt aus der Liste der Fertigungsaufträge zu Bestellungen — auftragsübergreifend zusammengefasst und nach Lieferant gruppiert. Die automatische Bestellung kombiniert Verkaufsprognosen mit dem Produktionsbedarf.</p>
+                    </div>
+                    <div class="mfg-po-panel" aria-hidden="true">
+                        <div class="mfg-po-head">Automatische Bestellung <span>Nach Lieferant</span></div>
+                        <div class="mfg-po-vendor">Voltbike Supply</div>
+                        <div class="mfg-po-row">Lithium cell set <em>+18 Stk.</em></div>
+                        <div class="mfg-po-row">Mid-drive motor unit <em>+6 Stk.</em></div>
+                        <div class="mfg-po-vendor">Madison Cycle Parts</div>
+                        <div class="mfg-po-row">Hydraulic brake set <em>+12 Stk.</em></div>
+                        <div class="mfg-po-foot">2 Bestellungen erstellt <b>✓</b></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Kalkulation auf Basis von Ist-Zahlen</h2>
-            <p>Statt sich auf Standardkosten zu verlassen, berechnet MyCompany, was ein Auftrag wirklich gekostet hat: Materialabbuchungen plus Ausschuss, Arbeitszeit aus den Zeiterfassungen der Projekte und Dienstleistungskosten aus Lieferantenrechnungen, die auf den Auftrag verteilt werden. Die Stückkosten sind die Zeilenkosten geteilt durch die tatsächlich gefertigte Menge; die Buchungen ins Kostenregister erfolgen beim Abschluss des Auftrags.</p>
+    <section class="mfg-costing-section">
+        <div class="inner mfg-costing-grid">
+            <div class="mfg-costing-copy">
+                <p class="mfg-kicker mfg-kicker-light">Ist-Zahlen statt Schätzungen</p>
+                <h2>Wissen, was jeder Auftrag wirklich gekostet hat.</h2>
+                <p>Kosten fließen während der Produktion in den Auftrag — und werden beim Abschluss ins Kostenregister gebucht. Die Stückkosten sind die tatsächlichen Zeilenkosten geteilt durch die gefertigte Menge.</p>
+                <ul class="mfg-check-list">
+                    <li><span>✓</span><div><strong>Material</strong><small>Abbuchungen plus Ausschuss, zu Ist-Kosten</small></div></li>
+                    <li><span>✓</span><div><strong>Arbeit</strong><small>Aus den Zeiterfassungen der Projekte</small></div></li>
+                    <li><span>✓</span><div><strong>Dienstleistungen</strong><small>Lieferantenrechnungen, auf den Auftrag verteilt</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank" class="mfg-text-link-light">So funktioniert die Kalkulation <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="mfg-cost-window" aria-label="Vorschau der Auftragskalkulation">
+                <div class="mfg-cost-toolbar"><strong>Auftragskosten</strong><span>PRZ/000016 ⌄</span><span class="done">Fertig ✓</span></div>
+                <div class="mfg-cost-summary">
+                    <div><span>Gesamtkosten</span><strong>$9,880</strong><small>4 Stück gefertigt</small></div>
+                    <div><span>Stückkosten</span><strong>$2,470</strong><small>Zeilenkosten ÷ Ist-Menge</small></div>
+                </div>
+                <div class="mfg-cost-bar" aria-hidden="true"><b class="materials"></b><b class="labor"></b><b class="services"></b></div>
+                <ul class="mfg-cost-rows">
+                    <li><i class="materials"></i><strong>Material</strong><em>Abbuchungen + Ausschuss</em>$7,110</li>
+                    <li><i class="labor"></i><strong>Arbeit</strong><em>Zeiterfassung</em>$1,880</li>
+                    <li><i class="services"></i><strong>Dienstleistungen</strong><em>Lieferantenrechnungen</em>$890</li>
+                </ul>
+                <div class="mfg-cost-note"><b></b>Beim Abschluss des Auftrags ins Kostenregister gebucht</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Teil eines vollständigen, anpassbaren ERP</h2>
-            <p>Die Produktion arbeitet Hand in Hand mit den Modulen Verkauf, Einkauf, Lager und Rechnungsstellung — inklusive der Chargen- und Seriennummernverfolgung aus dem Lager. Sie können Produkte auch wieder in ihre Komponenten zerlegen, Produktionsausschuss erfassen und Chargenetiketten drucken. Da der Quellcode offen ist und die Logik in lsFusion-Modulen steckt, passen Sie Formulare, Felder und Abläufe an Ihre eigenen Prozesse an.</p>
+    <section class="mfg-connected-section">
+        <div class="inner">
+            <div class="mfg-connected-grid">
+                <div class="mfg-connected-copy">
+                    <p class="mfg-kicker">Kein angeflanschtes Modul</p>
+                    <h2>Die Produktion ist schon Teil Ihres ERP</h2>
+                    <p>Verkauf, Einkauf, <a href="/de/lagerverwaltung/">Lager</a> und Rechnungsstellung teilen sich eine Datenbank mit der Produktion — inklusive Chargen- und Seriennummernverfolgung. Fertigware landet im Moment des Auftragsabschlusses auf Lager, und Produkte lassen sich wieder in Komponenten zerlegen.</p>
+                    <a href="/de/open-source-erp/" class="mfg-inline-link">Das komplette Open-Source-ERP entdecken <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="mfg-connection-map" aria-label="ERP-Verbindungsdiagramm">
+                    <div class="mfg-connection-source sales"><span>VA</span><div><strong>Verkaufsauftrag</strong><small>Auftragsfertigung</small></div></div>
+                    <div class="mfg-connection-source bom"><span>BOM</span><div><strong>Stückliste</strong><small>Standard je Produkt</small></div></div>
+                    <div class="mfg-connection-core"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg><strong>Produktion</strong><small>Eine gemeinsame Datenbank</small></div>
+                    <div class="mfg-connection-target goods"><span>+4</span><div><strong>Fertigwaren</strong><small>Auf Lager gebucht</small></div></div>
+                    <div class="mfg-connection-target cost"><span>$</span><div><strong>Kostenregister</strong><small>Ist-Kosten bei Abschluss</small></div></div>
+                </div>
+            </div>
 
-            <h2>So funktioniert es in MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">Produktionsübersicht</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Stücklisten</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">Fertigungsaufträge</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">Produktion und Verbrauch</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">Kalkulation</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Arbeitsplätze</a></li>
-            </ul>
+            <div class="mfg-docs-panel">
+                <div>
+                    <span class="mfg-feature-tag">Tiefer einsteigen</span>
+                    <h3>Alles ist dokumentiert</h3>
+                    <p>Von der ersten Stückliste bis zur Registerlogik — der komplette Ablauf ist offen einsehbar.</p>
+                </div>
+                <nav aria-label="Produktionsdokumentation">
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">Produktionsübersicht <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Stücklisten <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">Fertigungsaufträge <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">Produktion und Verbrauch <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">Kalkulation <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Arbeitsplätze <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>Eignet sich MyCompany für einen kleinen Fertigungsbetrieb?</h3>
-            <p>Ja — genau dafür ist es gemacht. Es ist kostenlos, in 10-15 Minuten auf dem eigenen Server installiert und deckt Stücklisten, Aufträge, Arbeitsplätze und Kalkulation ab — ohne den Ballast eines großen ERP-Projekts.</p>
-            <h3>Werden mehrstufige Stücklisten unterstützt?</h3>
-            <p>Ja. Stücklisten lassen sich verschachteln, um hierarchische Produktstrukturen abzubilden; die Komponentenmengen sind je Basismenge definiert und skalieren mit dem Auftrag.</p>
-            <h3>Wie werden die Kosten eines gefertigten Produkts berechnet?</h3>
-            <p>Anhand von Ist-Zahlen: Materialabbuchungen und Ausschuss, Arbeitszeit aus den Projektzeiterfassungen und Dienstleistungen aus Lieferantenrechnungen werden auf den Auftrag verteilt. Die Stückkosten sind die Zeilenkosten geteilt durch die Ist-Menge, gebucht ins Kostenregister beim Abschluss des Auftrags.</p>
-            <h3>Kann ich die Produktion nach Arbeitsplatzkapazität planen?</h3>
-            <p>Ja. Das Auslastungs-Dashboard zeigt die Kapazität als Matrix pro Tag, und Sie können Arbeitsaufträge direkt aus seinen Zellen anlegen.</p>
-            <h3>Wird Auftragsfertigung unterstützt?</h3>
-            <p>Ja. Fertigungsaufträge können direkt aus Verkaufsaufträgen erstellt werden, und fehlende Materialien lassen sich aus derselben Auftragsliste beschaffen, gruppiert nach Lieferant.</p>
-            <h3>Ist es wirklich kostenlos?</h3>
-            <p>Ja. MyCompany ist Open Source unter der Apache-2.0-Lizenz und wird selbst gehostet — es gibt keine Kosten pro Benutzer, keine versteckten Gebühren und keine Lizenzbindung. Kostenpflichtige Hilfe bei Anpassung und Support ist optional.</p>
+    <section class="mfg-faq-section">
+        <div class="inner mfg-faq-grid">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Fragen, beantwortet</p>
+                <h2>Bevor Sie starten</h2>
+                <p>Fehlt hier ein Detail? <a href="#" class="contactus">Sprechen Sie mit unserem Team.</a></p>
+            </div>
+            <div class="mfg-faq-list">
+                <details open>
+                    <summary>Eignet sich MyCompany für einen kleinen Fertigungsbetrieb?<span></span></summary>
+                    <p>Ja — genau dafür ist es gemacht. Es ist kostenlos, in 10-15 Minuten auf dem eigenen Server installiert und deckt Stücklisten, Aufträge, Arbeitsplätze und Kalkulation ab — ohne den Ballast eines großen ERP-Projekts.</p>
+                </details>
+                <details>
+                    <summary>Werden mehrstufige Stücklisten unterstützt?<span></span></summary>
+                    <p>Ja. Stücklisten lassen sich verschachteln, um hierarchische Produktstrukturen abzubilden; die Komponentenmengen sind je Basismenge definiert und skalieren mit dem Auftrag.</p>
+                </details>
+                <details>
+                    <summary>Wie werden die Kosten eines gefertigten Produkts berechnet?<span></span></summary>
+                    <p>Anhand von Ist-Zahlen: Materialabbuchungen und Ausschuss, Arbeitszeit aus den Projektzeiterfassungen und Dienstleistungen aus Lieferantenrechnungen werden auf den Auftrag verteilt. Die Stückkosten sind die Zeilenkosten geteilt durch die Ist-Menge, gebucht ins Kostenregister beim Abschluss des Auftrags.</p>
+                </details>
+                <details>
+                    <summary>Kann ich die Produktion nach Arbeitsplatzkapazität planen?<span></span></summary>
+                    <p>Ja. Das Auslastungs-Dashboard zeigt die Kapazität als Matrix pro Tag, und Sie können Arbeitsaufträge direkt aus seinen Zellen anlegen.</p>
+                </details>
+                <details>
+                    <summary>Wird Auftragsfertigung unterstützt?<span></span></summary>
+                    <p>Ja. Fertigungsaufträge können direkt aus Verkaufsaufträgen erstellt werden, und fehlende Materialien lassen sich aus derselben Auftragsliste beschaffen, gruppiert nach Lieferant.</p>
+                </details>
+                <details>
+                    <summary>Ist es wirklich kostenlos?<span></span></summary>
+                    <p>Ja. MyCompany ist Open Source unter der Apache-2.0-Lizenz und wird selbst gehostet — es gibt keine Kosten pro Benutzer, keine versteckten Gebühren und keine Lizenzbindung. Kostenpflichtige Hilfe bei Anpassung und Support ist optional.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Entdecken Sie die verwandten Seiten: <a href="/de/lagerverwaltung/">Open-Source-Lagerverwaltung</a>, <a href="/de/open-source-erp/">Open-Source-ERP</a> und <a href="/de/kostenloses-erp/">kostenlose ERP-Software</a> — oder starten Sie auf der <a href="/de/">MyCompany-Startseite</a>.</p>
+    <section class="mfg-final-cta">
+        <div class="inner">
+            <div class="mfg-cta-copy">
+                <p class="mfg-kicker mfg-kicker-light">Bereit, wenn Sie es sind</p>
+                <h2>Aus Aufträgen wird Produkt.<br />In einem klaren System.</h2>
+                <p>Öffnen Sie die Live-Demo oder erzählen Sie uns, wie Sie fertigen.</p>
+            </div>
+            <div class="mfg-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">Demo testen <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Kontaktieren Sie uns</a>
+            </div>
         </div>
     </section>
 </main>

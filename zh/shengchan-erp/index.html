@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/manufacturing.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex manufacturing-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,64 +102,294 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="mfg-hero">
+        <div class="inner mfg-hero-grid">
+            <div class="mfg-hero-copy">
+                <p class="mfg-eyebrow"><span></span> 开源 · Apache 2.0</p>
+                <h1>生产制造，<br /><em>从BOM到成品。</em></h1>
+                <p class="mfg-lead">用物料清单规划生产，让生产订单流经各工作中心，并掌握每件产品的实际成本——一套部署在自己服务器上的系统。</p>
+                <div class="mfg-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">试用演示 <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus mfg-secondary-action">联系我们</a>
+                </div>
+                <ul class="mfg-proof" aria-label="产品亮点">
+                    <li><strong>端到端</strong><span>从BOM到实际成本</span></li>
+                    <li><strong>10–15分钟</strong><span>部署到自己的服务器</span></li>
+                    <li><strong>零</strong><span>许可费用</span></li>
+                </ul>
+            </div>
+
+            <div class="mfg-product-visual">
+                <a class="mfg-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="打开MyCompany生产演示">
+                    <img src="/imgs/manufacturing-demo.png" width="1200" height="700" alt="MyCompany生产订单列表，含状态、产品、开始日期和筛选器" />
+                    <span class="mfg-demo-badge"><i></i> 真实产品界面</span>
+                    <span class="mfg-demo-open">打开演示 <b aria-hidden="true">↗</b></span>
+                </a>
+                <div class="mfg-float-card" aria-hidden="true">
+                    <div class="mfg-float-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v2.8M12 18.7v2.8M2.5 12h2.8M18.7 12h2.8M5.3 5.3l2 2M16.7 16.7l2 2M18.7 5.3l-2 2M7.3 16.7l-2 2"/></svg>
+                    </div>
+                    <div>
+                        <span>工单 · 总装线</span>
+                        <strong>WO/000112 — 进行中</strong>
+                        <i><b></b></i>
+                    </div>
+                </div>
+                <p class="mfg-demo-caption"><span>生产订单</span><small>截取自MyCompany公开演示</small></p>
+            </div>
+        </div>
+        <div class="mfg-hero-orb mfg-hero-orb-one"></div>
+        <div class="mfg-hero-orb mfg-hero-orb-two"></div>
+    </section>
+
+    <section class="mfg-flow-section">
         <div class="inner">
-            <h1>面向小型制造企业的开源ERP</h1>
-            <p><strong>MyCompany</strong>是面向小型车间和制造企业的免费开源生产ERP。它端到端覆盖生产周期：物料清单、生产订单、物料预留、工作中心和实际成本核算——所有这些都在一个同时处理销售、采购、库存和开票的系统中完成。</p>
-            <p>与按用户按月收费的封闭式生产ERP套件不同，MyCompany以Apache 2.0许可证发布：没有许可费、没有隐藏成本、没有供应商绑定。它基于lsFusion平台（LGPL v3，Java和PostgreSQL，完全ACID）构建，10-15分钟即可安装到您自己的服务器上——您的生产数据始终掌握在自己手中。</p>
-            <p>如果您正在比较开源生产软件，评估MyCompany最快的方式是在线演示——无需注册。</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">试用演示</a> <a href="#" class="btn contactus">联系我们</a></p>
+            <div class="mfg-section-heading mfg-heading-center">
+                <p class="mfg-kicker">一张订单，贯穿每一步</p>
+                <h2>端到端的生产周期</h2>
+                <p>生产订单负责规划工作、预留物料并解释自身成本——中间不需要任何电子表格。</p>
+            </div>
+            <div class="mfg-flow" aria-label="生产流程">
+                <article>
+                    <span class="mfg-flow-number">01</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 3 7l9 4.5L21 7l-9-4.5ZM3 12l9 4.5 9-4.5M3 17l9 4.5 9-4.5" /></svg>
+                    </div>
+                    <h3>定义</h3>
+                    <p>多层级BOM：组件、副产品和工序。</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">02</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5h6v3H9zM15 5h3a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h3M9 11.5h6M9 15.5h4" /></svg>
+                    </div>
+                    <h3>计划</h3>
+                    <p>手动创建订单，或直接从销售订单生成。</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">03</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg>
+                    </div>
+                    <h3>生产</h3>
+                    <p>预留物料，让工单流经各工作中心。</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">04</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.3 11.2 3.5H4.5v6.7l9.4 9.8a1.9 1.9 0 0 0 2.8 0l3.9-4a1.9 1.9 0 0 0 0-2.7ZM8 7.5h.01M13 13l3 3" /></svg>
+                    </div>
+                    <h3>核算</h3>
+                    <p>领用物料，把实际成本计入成本台账。</p>
+                </article>
+            </div>
+            <div class="mfg-document-strip">
+                <span>同样覆盖</span>
+                <ul>
+                    <li>拆解订单</li>
+                    <li>副产品</li>
+                    <li>生产报废</li>
+                    <li>批次与序列号</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>物料清单</h2>
-            <p>内置的BOM功能定义每个产品由什么构成、如何制造：</p>
-            <ul>
-                <li>组件数量按基准数量定义，物料需求随订单数量成比例扩展</li>
-                <li>与主产品一同产出的副产品</li>
-                <li>指定了工作中心、开始时间和持续时间的工序</li>
-                <li>创建订单时自动选用的默认BOM</li>
-                <li>支持多层级产品结构的嵌套BOM</li>
-            </ul>
+    <section class="mfg-features-section">
+        <div class="inner">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">为真实生产而生</p>
+                <h2>车间里简单。<br />底层很扎实。</h2>
+            </div>
+            <div class="mfg-bento-grid">
+                <article class="mfg-feature-card mfg-bom-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">产品结构</span>
+                        <h3>贴合实际工艺的物料清单</h3>
+                        <p>组件数量随订购量等比扩展，副产品与主产品一同产出，嵌套BOM可以描述任意层级的组件结构——默认BOM会在新订单中自动选用。</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">了解物料清单 <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-bom-tree" aria-hidden="true">
+                        <div class="mfg-tree-level root"><i></i><strong>Trek Powerfly 5 — 2018</strong><em>BOM SP/000014</em></div>
+                        <div class="mfg-tree-branch">
+                            <div class="mfg-tree-level selected"><i></i><strong>Rolling chassis module</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-branch child">
+                                <div class="mfg-tree-level"><i></i><strong>Frame preparation assembly</strong><span class="mfg-tree-qty">×1</span></div>
+                                <div class="mfg-tree-level"><i></i><strong>Mid-drive motor unit</strong><span class="mfg-tree-qty">×1</span></div>
+                            </div>
+                            <div class="mfg-tree-level"><i></i><strong>E-bike battery pack</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-level byproduct"><i></i><strong>Cable offcuts · 副产品</strong><span class="mfg-tree-qty">+0.2 kg</span></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>生产订单与物料预留</h2>
-            <p>生产订单既可以计划生产，也可以计划拆解。待生产数量决定物料需求；订单启动前，系统会检查库存可用性并预留所需物料。对于按单生产，生产订单可直接从销售订单创建，客户需求直达车间。</p>
+                <article class="mfg-feature-card mfg-mto-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">按单生产</span>
+                        <h3>销售需求，直达车间</h3>
+                        <p>直接从已确认的销售订单创建生产订单。待产数量决定物料需求，开工前系统会检查并预留库存。</p>
+                    </div>
+                    <div class="mfg-mto-flow" aria-hidden="true">
+                        <div class="mfg-mto-doc">
+                            <span>销售</span>
+                            <div><strong>销售订单 ZK/000042</strong><small>Trek Powerfly 5 — 2018 · 4件</small></div>
+                            <em class="mfg-mto-status">已确认</em>
+                        </div>
+                        <div class="mfg-mto-connector"><span>创建生产订单</span></div>
+                        <div class="mfg-mto-doc result">
+                            <span>生产</span>
+                            <div><strong>生产订单 PRZ/000031</strong><small>待产：4 · 车间</small></div>
+                            <em class="mfg-mto-status">已预留</em>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>与生产联动的采购</h2>
-            <p>缺料时，可直接从生产订单列表创建采购订单——跨订单汇总并按供应商分组。“自动订货”建议将销售预测与生产需求结合起来，使补货真正反映您的生产计划。</p>
+                <article class="mfg-feature-card mfg-load-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">工作中心</span>
+                        <h3>看清产能，分派工作。</h3>
+                        <p>负荷看板按天展示每个工作中心，新工单可直接在矩阵单元格中创建。工单经过就绪、进行中、完成三个状态，并支持批量操作。</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">查看工作中心 <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-load-window" aria-hidden="true">
+                        <div class="mfg-load-bar"><i></i><i></i><i></i><span>工作中心负荷 — 7月</span></div>
+                        <img src="/imgs/manufacturing-load.png" width="1200" height="336" alt="" loading="lazy" />
+                    </div>
+                </article>
 
-            <h2>工作中心与产能规划</h2>
-            <p>工作中心用于建模您的设备和生产区域。每道工序都会生成一张工单，在“就绪”“进行中”“完成”状态之间流转，并支持批量操作。工作中心负荷看板按天显示产能矩阵，还可以直接在单元格中创建新工单——简单直观的生产排程，无需单独的排程工具。</p>
+                <article class="mfg-feature-card mfg-po-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">采购联动</span>
+                        <h3>缺料一键下单</h3>
+                        <p>缺口直接从生产订单列表变成采购订单——跨订单汇总并按供应商分组。自动订货建议同时考虑销售预测和生产需求。</p>
+                    </div>
+                    <div class="mfg-po-panel" aria-hidden="true">
+                        <div class="mfg-po-head">自动订货 <span>按供应商分组</span></div>
+                        <div class="mfg-po-vendor">Voltbike Supply</div>
+                        <div class="mfg-po-row">Lithium cell set <em>+18件</em></div>
+                        <div class="mfg-po-row">Mid-drive motor unit <em>+6件</em></div>
+                        <div class="mfg-po-vendor">Madison Cycle Parts</div>
+                        <div class="mfg-po-row">Hydraulic brake set <em>+12件</em></div>
+                        <div class="mfg-po-foot">已创建2张采购订单 <b>✓</b></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>基于实际数字的成本核算</h2>
-            <p>MyCompany不依赖标准成本，而是核算订单的实际成本：物料领用与报废、来自项目工时记录的人工，以及分摊到订单的供应商服务发票。单位成本等于行成本除以实际产量，订单完成时计入成本台账。</p>
+    <section class="mfg-costing-section">
+        <div class="inner mfg-costing-grid">
+            <div class="mfg-costing-copy">
+                <p class="mfg-kicker mfg-kicker-light">实际数字，而非估算</p>
+                <h2>清楚每张订单的真实成本。</h2>
+                <p>成本随生产过程进入订单，订单完成即计入成本台账。单位成本等于行的实际成本除以实际产量。</p>
+                <ul class="mfg-check-list">
+                    <li><span>✓</span><div><strong>物料</strong><small>领用加报废，按实际领用成本</small></div></li>
+                    <li><span>✓</span><div><strong>人工</strong><small>来自项目工时记录</small></div></li>
+                    <li><span>✓</span><div><strong>服务</strong><small>供应商发票分摊到订单</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank" class="mfg-text-link-light">了解成本核算 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="mfg-cost-window" aria-label="订单成本示例">
+                <div class="mfg-cost-toolbar"><strong>订单成本</strong><span>PRZ/000016 ⌄</span><span class="done">已完成 ✓</span></div>
+                <div class="mfg-cost-summary">
+                    <div><span>总成本</span><strong>$9,880</strong><small>产出4件</small></div>
+                    <div><span>单位成本</span><strong>$2,470</strong><small>行成本 ÷ 实际数量</small></div>
+                </div>
+                <div class="mfg-cost-bar" aria-hidden="true"><b class="materials"></b><b class="labor"></b><b class="services"></b></div>
+                <ul class="mfg-cost-rows">
+                    <li><i class="materials"></i><strong>物料</strong><em>领用 + 报废</em>$7,110</li>
+                    <li><i class="labor"></i><strong>人工</strong><em>工时记录</em>$1,880</li>
+                    <li><i class="services"></i><strong>服务</strong><em>供应商发票</em>$890</li>
+                </ul>
+                <div class="mfg-cost-note"><b></b>订单完成时计入成本台账</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>完整可定制ERP的一部分</h2>
-            <p>生产与销售、采购、库存和开票模块紧密协作，包括库存的批次和序列号追溯。您还可以将产品拆解回组件、登记生产报废并打印批次标签。由于源代码开放且逻辑以lsFusion模块编写，您可以根据自己的流程调整表单、字段和工作流。</p>
+    <section class="mfg-connected-section">
+        <div class="inner">
+            <div class="mfg-connected-grid">
+                <div class="mfg-connected-copy">
+                    <p class="mfg-kicker">不是孤立模块</p>
+                    <h2>生产本来就是ERP的一部分</h2>
+                    <p>销售、采购、<a href="/zh/cangku-guanli/">仓库</a>和开票与生产共用同一个数据库——包括批次和序列号追踪。订单完成的那一刻成品即入库，产品还可以拆解回组件。</p>
+                    <a href="/zh/kaiyuan-erp/" class="mfg-inline-link">了解完整的开源ERP <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="mfg-connection-map" aria-label="ERP连接示意图">
+                    <div class="mfg-connection-source sales"><span>销售</span><div><strong>销售订单</strong><small>按单生产</small></div></div>
+                    <div class="mfg-connection-source bom"><span>BOM</span><div><strong>物料清单</strong><small>产品默认</small></div></div>
+                    <div class="mfg-connection-core"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg><strong>生产</strong><small>同一个数据库</small></div>
+                    <div class="mfg-connection-target goods"><span>+4</span><div><strong>成品</strong><small>入库</small></div></div>
+                    <div class="mfg-connection-target cost"><span>$</span><div><strong>成本台账</strong><small>完成时按实际计入</small></div></div>
+                </div>
+            </div>
 
-            <h2>在MyCompany中如何实现</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">生产概览</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">物料清单</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">生产订单</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">生产与消耗</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">成本核算</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">工作中心</a></li>
-            </ul>
+            <div class="mfg-docs-panel">
+                <div>
+                    <span class="mfg-feature-tag">深入了解</span>
+                    <h3>一切皆有文档</h3>
+                    <p>从第一张BOM到台账逻辑，完整流程全部公开。</p>
+                </div>
+                <nav aria-label="生产文档">
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">生产概览 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">物料清单 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">生产订单 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">生产与消耗 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">成本核算 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">工作中心 <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>常见问题</h2>
-            <h3>MyCompany适合小型制造商吗？</h3>
-            <p>适合——它正是为此而设计的。免费，10-15分钟安装到自己的服务器上，覆盖BOM、订单、工作中心和成本核算，没有重型ERP项目的负担。</p>
-            <h3>支持多层级物料清单吗？</h3>
-            <p>支持。BOM可以嵌套，用于描述层级化的产品结构，组件数量按基准数量定义，随订单等比扩展。</p>
-            <h3>制成品的成本如何计算？</h3>
-            <p>按实际数字计算：物料领用与报废、来自项目工时记录的人工、以及分摊到订单的供应商服务发票。单位成本等于行成本除以实际产量，订单完成时计入成本台账。</p>
-            <h3>可以按工作中心产能规划生产吗？</h3>
-            <p>可以。工作中心负荷看板按天显示产能矩阵，并且可以直接在其单元格中创建工单。</p>
-            <h3>支持按单生产吗？</h3>
-            <p>支持。生产订单可以直接从销售订单创建，缺少的物料可以从同一订单列表中按供应商分组采购。</p>
-            <h3>真的免费吗？</h3>
-            <p>是的。MyCompany以Apache 2.0许可证开源并由您自己托管，因此没有按用户收费、隐藏成本或许可证绑定。付费的定制和支持服务是可选的。</p>
+    <section class="mfg-faq-section">
+        <div class="inner mfg-faq-grid">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">常见问题</p>
+                <h2>开始之前</h2>
+                <p>还有其他问题？<a href="#" class="contactus">联系我们的团队。</a></p>
+            </div>
+            <div class="mfg-faq-list">
+                <details open>
+                    <summary>MyCompany适合小型制造商吗？<span></span></summary>
+                    <p>适合——它正是为此而设计的。免费，10-15分钟安装到自己的服务器上，覆盖BOM、订单、工作中心和成本核算，没有重型ERP项目的负担。</p>
+                </details>
+                <details>
+                    <summary>支持多层级物料清单吗？<span></span></summary>
+                    <p>支持。BOM可以嵌套，用于描述层级化的产品结构，组件数量按基准数量定义，随订单等比扩展。</p>
+                </details>
+                <details>
+                    <summary>制成品的成本如何计算？<span></span></summary>
+                    <p>按实际数字计算：物料领用与报废、来自项目工时记录的人工、以及分摊到订单的供应商服务发票。单位成本等于行成本除以实际产量，订单完成时计入成本台账。</p>
+                </details>
+                <details>
+                    <summary>可以按工作中心产能规划生产吗？<span></span></summary>
+                    <p>可以。工作中心负荷看板按天显示产能矩阵，并且可以直接在其单元格中创建工单。</p>
+                </details>
+                <details>
+                    <summary>支持按单生产吗？<span></span></summary>
+                    <p>支持。生产订单可以直接从销售订单创建，缺少的物料可以从同一订单列表中按供应商分组采购。</p>
+                </details>
+                <details>
+                    <summary>真的免费吗？<span></span></summary>
+                    <p>是的。MyCompany以Apache 2.0许可证开源并由您自己托管，因此没有按用户收费、隐藏成本或许可证绑定。付费的定制和支持服务是可选的。</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>浏览相关页面：<a href="/zh/cangku-guanli/">开源仓库管理</a>、<a href="/zh/kaiyuan-erp/">开源ERP</a>和<a href="/zh/mianfei-erp/">免费ERP软件</a>，或者从<a href="/zh/">MyCompany首页</a>开始。</p>
+    <section class="mfg-final-cta">
+        <div class="inner">
+            <div class="mfg-cta-copy">
+                <p class="mfg-kicker mfg-kicker-light">随时可以开始</p>
+                <h2>把订单变成产品。<br />在一套清晰的系统里。</h2>
+                <p>打开在线演示，或告诉我们您的生产方式。</p>
+            </div>
+            <div class="mfg-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">试用演示 <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">联系我们</a>
+            </div>
         </div>
     </section>
 </main>

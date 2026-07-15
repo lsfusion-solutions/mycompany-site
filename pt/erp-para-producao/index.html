@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/manufacturing.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex manufacturing-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,64 +102,294 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="mfg-hero">
+        <div class="inner mfg-hero-grid">
+            <div class="mfg-hero-copy">
+                <p class="mfg-eyebrow"><span></span> Open source · Apache 2.0</p>
+                <h1>Produção:<br /><em>do BOM ao produto.</em></h1>
+                <p class="mfg-lead">Planeie a produção com listas de materiais, conduza as ordens pelos seus centros de trabalho e saiba o que cada unidade custou realmente — num único sistema no seu próprio servidor.</p>
+                <div class="mfg-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">Experimentar demo <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus mfg-secondary-action">Contacte-nos</a>
+                </div>
+                <ul class="mfg-proof" aria-label="Destaques do produto">
+                    <li><strong>Ciclo completo</strong><span>do BOM ao custo real</span></li>
+                    <li><strong>10–15 min</strong><span>no seu próprio servidor</span></li>
+                    <li><strong>Zero</strong><span>custos de licença</span></li>
+                </ul>
+            </div>
+
+            <div class="mfg-product-visual">
+                <a class="mfg-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Abrir a demo de produção do MyCompany">
+                    <img src="/imgs/manufacturing-demo.png" width="1200" height="700" alt="Lista de ordens de produção do MyCompany com estados, artigos, datas de início e filtros" />
+                    <span class="mfg-demo-badge"><i></i> Interface real</span>
+                    <span class="mfg-demo-open">Abrir a demo <b aria-hidden="true">↗</b></span>
+                </a>
+                <div class="mfg-float-card" aria-hidden="true">
+                    <div class="mfg-float-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v2.8M12 18.7v2.8M2.5 12h2.8M18.7 12h2.8M5.3 5.3l2 2M16.7 16.7l2 2M18.7 5.3l-2 2M7.3 16.7l-2 2"/></svg>
+                    </div>
+                    <div>
+                        <span>Ordem de trabalho · Linha de montagem final</span>
+                        <strong>WO/000112 — Em curso</strong>
+                        <i><b></b></i>
+                    </div>
+                </div>
+                <p class="mfg-demo-caption"><span>Ordens de produção</span><small>Capturado na demo pública do MyCompany</small></p>
+            </div>
+        </div>
+        <div class="mfg-hero-orb mfg-hero-orb-one"></div>
+        <div class="mfg-hero-orb mfg-hero-orb-two"></div>
+    </section>
+
+    <section class="mfg-flow-section">
         <div class="inner">
-            <h1>ERP open source para pequenas indústrias</h1>
-            <p>O <strong>MyCompany</strong> é um ERP de produção gratuito e open source para pequenas oficinas e empresas industriais. Cobre o ciclo de produção de ponta a ponta: listas de materiais, ordens de produção, reserva de materiais, centros de trabalho e cálculo de custos reais — tudo num único sistema que também trata das vendas, das compras, do inventário e da faturação.</p>
-            <p>Ao contrário das suites de ERP industrial fechadas, com preços por utilizador por mês, o MyCompany é disponibilizado sob a licença Apache 2.0: sem custos de licença, sem custos ocultos e sem dependência de fornecedor. Assenta na plataforma lsFusion (LGPL v3, Java e PostgreSQL, totalmente ACID) e pode ser instalado no seu próprio servidor em 10-15 minutos — os seus dados de produção ficam consigo.</p>
-            <p>Se está a comparar software de produção open source, a forma mais rápida de avaliar o MyCompany é a demo ao vivo — sem necessidade de registo.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Experimentar demo</a> <a href="#" class="btn contactus">Contacte-nos</a></p>
+            <div class="mfg-section-heading mfg-heading-center">
+                <p class="mfg-kicker">Uma ordem. Cada passo.</p>
+                <h2>O ciclo de produção, de ponta a&nbsp;ponta</h2>
+                <p>Uma ordem de produção planeia o trabalho, reserva os materiais e explica o seu próprio custo — sem folhas de cálculo pelo meio.</p>
+            </div>
+            <div class="mfg-flow" aria-label="Fluxo de produção">
+                <article>
+                    <span class="mfg-flow-number">01</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 3 7l9 4.5L21 7l-9-4.5ZM3 12l9 4.5 9-4.5M3 17l9 4.5 9-4.5" /></svg>
+                    </div>
+                    <h3>Definir</h3>
+                    <p>BOMs multinível com componentes, subprodutos e operações.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">02</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5h6v3H9zM15 5h3a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h3M9 11.5h6M9 15.5h4" /></svg>
+                    </div>
+                    <h3>Planear</h3>
+                    <p>Crie ordens à mão — ou diretamente das encomendas de venda.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">03</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg>
+                    </div>
+                    <h3>Produzir</h3>
+                    <p>Reserve materiais e conduza as ordens de trabalho pelos centros.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">04</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.3 11.2 3.5H4.5v6.7l9.4 9.8a1.9 1.9 0 0 0 2.8 0l3.9-4a1.9 1.9 0 0 0 0-2.7ZM8 7.5h.01M13 13l3 3" /></svg>
+                    </div>
+                    <h3>Custear</h3>
+                    <p>Abata materiais e lance os custos reais no registo.</p>
+                </article>
+            </div>
+            <div class="mfg-document-strip">
+                <span>Também coberto</span>
+                <ul>
+                    <li>Ordens de desmontagem</li>
+                    <li>Subprodutos</li>
+                    <li>Quebras de produção</li>
+                    <li>Lotes e números de série</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Listas de materiais</h2>
-            <p>O módulo integrado de listas de materiais (BOM) define de que é feito cada produto e como é produzido:</p>
-            <ul>
-                <li>Componentes com quantidades por quantidade-base, para que as necessidades de material escalem proporcionalmente à quantidade encomendada</li>
-                <li>Subprodutos que resultam do processo juntamente com o produto principal</li>
-                <li>Operações com centros de trabalho atribuídos, horas de início e durações</li>
-                <li>Uma BOM predefinida, selecionada automaticamente ao criar uma ordem</li>
-                <li>BOMs aninhadas para estruturas de produto hierárquicas, de vários níveis</li>
-            </ul>
+    <section class="mfg-features-section">
+        <div class="inner">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Para produção a sério</p>
+                <h2>Simples na fábrica.<br />Sério por dentro.</h2>
+            </div>
+            <div class="mfg-bento-grid">
+                <article class="mfg-feature-card mfg-bom-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Estrutura do produto</span>
+                        <h3>Listas de materiais fiéis à sua fábrica</h3>
+                        <p>As quantidades de componentes escalam com a quantidade encomendada, os subprodutos saem junto com o produto principal e as BOMs aninhadas descrevem conjuntos dentro de conjuntos — a BOM padrão é escolhida automaticamente em cada ordem nova.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Explorar as listas de materiais <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-bom-tree" aria-hidden="true">
+                        <div class="mfg-tree-level root"><i></i><strong>Trek Powerfly 5 — 2018</strong><em>BOM SP/000014</em></div>
+                        <div class="mfg-tree-branch">
+                            <div class="mfg-tree-level selected"><i></i><strong>Rolling chassis module</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-branch child">
+                                <div class="mfg-tree-level"><i></i><strong>Frame preparation assembly</strong><span class="mfg-tree-qty">×1</span></div>
+                                <div class="mfg-tree-level"><i></i><strong>Mid-drive motor unit</strong><span class="mfg-tree-qty">×1</span></div>
+                            </div>
+                            <div class="mfg-tree-level"><i></i><strong>E-bike battery pack</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-level byproduct"><i></i><strong>Cable offcuts · subproduto</strong><span class="mfg-tree-qty">+0,2 kg</span></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Ordens de produção e reserva de materiais</h2>
-            <p>Uma ordem de produção planeia a produção ou a desmontagem. A quantidade a produzir determina as necessidades de material e, antes de a ordem arrancar, o sistema verifica a disponibilidade de stock e reserva os materiais necessários. Na produção por encomenda, as ordens de produção são criadas diretamente a partir das encomendas de venda, para que a procura dos clientes chegue diretamente ao chão de fábrica.</p>
+                <article class="mfg-feature-card mfg-mto-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Por encomenda</span>
+                        <h3>A procura, direta para a fábrica</h3>
+                        <p>Crie ordens de produção diretamente das encomendas de venda confirmadas. A quantidade a produzir determina as necessidades de material; o stock é verificado e reservado antes do arranque.</p>
+                    </div>
+                    <div class="mfg-mto-flow" aria-hidden="true">
+                        <div class="mfg-mto-doc">
+                            <span>EV</span>
+                            <div><strong>Encomenda de venda ZK/000042</strong><small>Trek Powerfly 5 — 2018 · 4 unidades</small></div>
+                            <em class="mfg-mto-status">Confirmada</em>
+                        </div>
+                        <div class="mfg-mto-connector"><span>Criar ordem de produção</span></div>
+                        <div class="mfg-mto-doc result">
+                            <span>OP</span>
+                            <div><strong>Ordem de produção PRZ/000031</strong><small>A produzir: 4 · Oficina</small></div>
+                            <em class="mfg-mto-status">Reservada</em>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Compras ligadas à produção</h2>
-            <p>Quando faltam materiais, as encomendas de compra criam-se diretamente a partir da lista de ordens de produção — agregadas entre ordens e agrupadas por fornecedor. As sugestões de «encomenda automática» combinam as previsões de vendas com as necessidades de produção, para que o reaprovisionamento reflita o que realmente planeia produzir.</p>
+                <article class="mfg-feature-card mfg-load-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Centros de trabalho</span>
+                        <h3>Ver a capacidade. Atribuir o trabalho.</h3>
+                        <p>O painel de carga mostra cada centro dia a dia, e as novas ordens de trabalho criam-se a partir das suas células. Cada uma passa por Pronto, Em curso e Concluído — com ações em massa para muitas de uma vez.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Ver os centros de trabalho <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-load-window" aria-hidden="true">
+                        <div class="mfg-load-bar"><i></i><i></i><i></i><span>Carga dos centros — julho</span></div>
+                        <img src="/imgs/manufacturing-load.png" width="1200" height="336" alt="" loading="lazy" />
+                    </div>
+                </article>
 
-            <h2>Centros de trabalho e planeamento de capacidade</h2>
-            <p>Os centros de trabalho modelam as suas máquinas e áreas de produção. Cada operação torna-se uma ordem de trabalho que passa pelos estados Pronta, Em curso e Concluída, com ações em massa para processar muitas de uma vez. O painel de carga dos centros de trabalho mostra uma matriz de capacidade por dia, e é possível criar novas ordens de trabalho diretamente a partir das suas células — planeamento de produção simples e visual, sem uma ferramenta de agendamento separada.</p>
+                <article class="mfg-feature-card mfg-po-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Compras ligadas</span>
+                        <h3>Materiais em falta, encomendados num clique</h3>
+                        <p>As faltas transformam-se em encomendas de compra diretamente da lista de ordens — agregadas entre ordens e agrupadas por fornecedor. As sugestões de encomenda automática combinam previsões de venda com necessidades de produção.</p>
+                    </div>
+                    <div class="mfg-po-panel" aria-hidden="true">
+                        <div class="mfg-po-head">Encomenda automática <span>Por fornecedor</span></div>
+                        <div class="mfg-po-vendor">Voltbike Supply</div>
+                        <div class="mfg-po-row">Lithium cell set <em>+18 un.</em></div>
+                        <div class="mfg-po-row">Mid-drive motor unit <em>+6 un.</em></div>
+                        <div class="mfg-po-vendor">Madison Cycle Parts</div>
+                        <div class="mfg-po-row">Hydraulic brake set <em>+12 un.</em></div>
+                        <div class="mfg-po-foot">2 encomendas de compra criadas <b>✓</b></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Custos com base em valores reais</h2>
-            <p>Em vez de depender de custos padrão, o MyCompany calcula o que uma ordem custou realmente: abates de materiais mais quebras, mão de obra retirada dos registos de tempo dos projetos e custos de serviços das faturas de fornecedores distribuídos pela ordem. O custo unitário é o custo da linha dividido pela quantidade realmente produzida, e os lançamentos no registo de custos são efetuados quando a ordem é concluída.</p>
+    <section class="mfg-costing-section">
+        <div class="inner mfg-costing-grid">
+            <div class="mfg-costing-copy">
+                <p class="mfg-kicker mfg-kicker-light">Valores reais, não estimativas</p>
+                <h2>Saiba o que cada ordem custou de verdade.</h2>
+                <p>Os custos entram na ordem à medida que a produção acontece — e são lançados no registo de custos quando termina. O custo unitário é o custo real da linha dividido pela quantidade produzida.</p>
+                <ul class="mfg-check-list">
+                    <li><span>✓</span><div><strong>Materiais</strong><small>Abates mais quebras, ao custo real</small></div></li>
+                    <li><span>✓</span><div><strong>Mão de obra</strong><small>Dos registos de tempo dos projetos</small></div></li>
+                    <li><span>✓</span><div><strong>Serviços</strong><small>Faturas de fornecedores distribuídas pela ordem</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank" class="mfg-text-link-light">Ver como se calculam os custos <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="mfg-cost-window" aria-label="Pré-visualização do custo de uma ordem">
+                <div class="mfg-cost-toolbar"><strong>Custo da ordem</strong><span>PRZ/000016 ⌄</span><span class="done">Concluído ✓</span></div>
+                <div class="mfg-cost-summary">
+                    <div><span>Custo total</span><strong>$9,880</strong><small>4 unidades produzidas</small></div>
+                    <div><span>Custo unitário</span><strong>$2,470</strong><small>custo da linha ÷ quantidade real</small></div>
+                </div>
+                <div class="mfg-cost-bar" aria-hidden="true"><b class="materials"></b><b class="labor"></b><b class="services"></b></div>
+                <ul class="mfg-cost-rows">
+                    <li><i class="materials"></i><strong>Materiais</strong><em>abates + quebras</em>$7,110</li>
+                    <li><i class="labor"></i><strong>Mão de obra</strong><em>registos de tempo</em>$1,880</li>
+                    <li><i class="services"></i><strong>Serviços</strong><em>faturas de fornecedores</em>$890</li>
+                </ul>
+                <div class="mfg-cost-note"><b></b>Lançado no registo de custos quando a ordem é concluída</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Parte de um ERP completo e personalizável</h2>
-            <p>A produção trabalha de mãos dadas com os módulos de vendas, compras, inventário e faturação, incluindo o rastreio por lotes e números de série do inventário. Pode também desmontar produtos de volta aos componentes, registar quebras de produção e imprimir etiquetas de lote. Como o código-fonte é aberto e a lógica está escrita em módulos lsFusion, pode adaptar formulários, campos e fluxos de trabalho aos seus próprios processos.</p>
+    <section class="mfg-connected-section">
+        <div class="inner">
+            <div class="mfg-connected-grid">
+                <div class="mfg-connected-copy">
+                    <p class="mfg-kicker">Não é um módulo à parte</p>
+                    <h2>A produção já faz parte do seu ERP</h2>
+                    <p>Vendas, compras, <a href="/pt/gestao-de-armazem/">armazém</a> e faturação partilham uma única base de dados com a produção — incluindo lotes e números de série. O produto acabado entra em stock no momento em que a ordem é concluída, e até pode desmontar produtos de volta a componentes.</p>
+                    <a href="/pt/erp-open-source/" class="mfg-inline-link">Descubra o ERP open source completo <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="mfg-connection-map" aria-label="Diagrama de ligações do ERP">
+                    <div class="mfg-connection-source sales"><span>EV</span><div><strong>Encomenda de venda</strong><small>Por encomenda</small></div></div>
+                    <div class="mfg-connection-source bom"><span>BOM</span><div><strong>Lista de materiais</strong><small>Padrão por produto</small></div></div>
+                    <div class="mfg-connection-core"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg><strong>Produção</strong><small>Uma base partilhada</small></div>
+                    <div class="mfg-connection-target goods"><span>+4</span><div><strong>Produto acabado</strong><small>Entrada em stock</small></div></div>
+                    <div class="mfg-connection-target cost"><span>$</span><div><strong>Registo de custos</strong><small>Real, ao concluir</small></div></div>
+                </div>
+            </div>
 
-            <h2>Como funciona no MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">Visão geral da produção</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Listas de materiais</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">Ordens de produção</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">Produção e consumo</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">Cálculo de custos</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Centros de trabalho</a></li>
-            </ul>
+            <div class="mfg-docs-panel">
+                <div>
+                    <span class="mfg-feature-tag">Vá mais fundo</span>
+                    <h3>Está tudo documentado</h3>
+                    <p>Da primeira BOM à lógica dos registos, todo o fluxo está aberto.</p>
+                </div>
+                <nav aria-label="Documentação de produção">
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/" target="_blank">Visão geral da produção <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/bom/" target="_blank">Listas de materiais <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/orders/" target="_blank">Ordens de produção <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/production-and-consumption/" target="_blank">Produção e consumo <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/costing/" target="_blank">Cálculo de custos <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/manufacturing/work-orders/" target="_blank">Centros de trabalho <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>O MyCompany é adequado para um pequeno fabricante?</h3>
-            <p>Sim — foi feito exatamente para isso. É gratuito, instala-se no seu próprio servidor em 10-15 minutos e cobre BOMs, ordens, centros de trabalho e custos sem o peso de um projeto de ERP de grande porte.</p>
-            <h3>Suporta listas de materiais de vários níveis?</h3>
-            <p>Sim. As BOMs podem ser aninhadas para descrever estruturas de produto hierárquicas, com quantidades de componentes definidas por quantidade-base, escalando com a ordem.</p>
-            <h3>Como é calculado o custo de um produto fabricado?</h3>
-            <p>Com base em valores reais: os abates de materiais e as quebras, a mão de obra dos registos de tempo dos projetos e os serviços das faturas de fornecedores são distribuídos pela ordem. O custo unitário é o custo da linha dividido pela quantidade real, lançado no registo de custos quando a ordem é concluída.</p>
-            <h3>Posso planear a produção pela capacidade dos centros de trabalho?</h3>
-            <p>Sim. O painel de carga dos centros de trabalho mostra a capacidade numa matriz por dia, e pode criar ordens de trabalho diretamente a partir das suas células.</p>
-            <h3>Suporta produção por encomenda?</h3>
-            <p>Sim. As ordens de produção podem ser criadas diretamente a partir das encomendas de venda, e os materiais em falta podem ser comprados a partir da mesma lista de ordens, agrupados por fornecedor.</p>
-            <h3>É mesmo gratuito?</h3>
-            <p>Sim. O MyCompany é open source sob a licença Apache 2.0 e é alojado por si, pelo que não há custos por utilizador, custos ocultos nem dependência de licenças. A ajuda paga com personalização e suporte é opcional.</p>
+    <section class="mfg-faq-section">
+        <div class="inner mfg-faq-grid">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Perguntas, respondidas</p>
+                <h2>Antes de começar</h2>
+                <p>Falta algum detalhe? <a href="#" class="contactus">Fale com a nossa equipa.</a></p>
+            </div>
+            <div class="mfg-faq-list">
+                <details open>
+                    <summary>O MyCompany é adequado para um pequeno fabricante?<span></span></summary>
+                    <p>Sim — foi feito exatamente para isso. É gratuito, instala-se no seu próprio servidor em 10-15 minutos e cobre BOMs, ordens, centros de trabalho e custos sem o peso de um projeto de ERP de grande porte.</p>
+                </details>
+                <details>
+                    <summary>Suporta listas de materiais de vários níveis?<span></span></summary>
+                    <p>Sim. As BOMs podem ser aninhadas para descrever estruturas de produto hierárquicas, com quantidades de componentes definidas por quantidade-base, escalando com a ordem.</p>
+                </details>
+                <details>
+                    <summary>Como é calculado o custo de um produto fabricado?<span></span></summary>
+                    <p>Com base em valores reais: os abates de materiais e as quebras, a mão de obra dos registos de tempo dos projetos e os serviços das faturas de fornecedores são distribuídos pela ordem. O custo unitário é o custo da linha dividido pela quantidade real, lançado no registo de custos quando a ordem é concluída.</p>
+                </details>
+                <details>
+                    <summary>Posso planear a produção pela capacidade dos centros de trabalho?<span></span></summary>
+                    <p>Sim. O painel de carga dos centros de trabalho mostra a capacidade numa matriz por dia, e pode criar ordens de trabalho diretamente a partir das suas células.</p>
+                </details>
+                <details>
+                    <summary>Suporta produção por encomenda?<span></span></summary>
+                    <p>Sim. As ordens de produção podem ser criadas diretamente a partir das encomendas de venda, e os materiais em falta podem ser comprados a partir da mesma lista de ordens, agrupados por fornecedor.</p>
+                </details>
+                <details>
+                    <summary>É mesmo gratuito?<span></span></summary>
+                    <p>Sim. O MyCompany é open source sob a licença Apache 2.0 e é alojado por si, pelo que não há custos por utilizador, custos ocultos nem dependência de licenças. A ajuda paga com personalização e suporte é opcional.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Explore as páginas relacionadas: <a href="/pt/gestao-de-armazem/">gestão de armazém open source</a>, <a href="/pt/erp-open-source/">ERP open source</a> e <a href="/pt/erp-gratuito/">software ERP gratuito</a>, ou comece pela <a href="/pt/">página inicial do MyCompany</a>.</p>
+    <section class="mfg-final-cta">
+        <div class="inner">
+            <div class="mfg-cta-copy">
+                <p class="mfg-kicker mfg-kicker-light">Prontos quando estiver</p>
+                <h2>Transforme encomendas em produto.<br />Num único sistema.</h2>
+                <p>Abra a demo ou conte-nos como produz.</p>
+            </div>
+            <div class="mfg-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn mfg-primary-action">Experimentar demo <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Contacte-nos</a>
+            </div>
         </div>
     </section>
 </main>

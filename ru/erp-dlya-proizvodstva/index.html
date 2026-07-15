@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/manufacturing.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex manufacturing-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -80,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li><a href="/ru/support.html">Поддержка</a></li>
             <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
             <li><a href="https://mycompany-docs.lsfusion.org/ru/" target="_blank">Документация</a></li>
-            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">Попробовать демо</a></li>
+            <li><a href="https://demo.lsfusion.ru/mycompany-ru/" target="_blank" class="special">Попробовать демо</a></li>
             <li id="languages">
                 <div class="language">
                     <strong>Ру</strong>
@@ -102,87 +103,294 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="mfg-hero">
+        <div class="inner mfg-hero-grid">
+            <div class="mfg-hero-copy">
+                <p class="mfg-eyebrow"><span></span> Открытый код · Apache 2.0</p>
+                <h1>Производство,<br /><em>от BOM до выпуска.</em></h1>
+                <p class="mfg-lead">Планируйте производство по спецификациям, ведите производственные заказы через рабочие центры и знайте фактическую себестоимость каждой единицы — в одной системе на вашем сервере.</p>
+                <div class="mfg-actions">
+                    <a href="https://demo.lsfusion.ru/mycompany-ru/" target="_blank" class="btn mfg-primary-action">Попробовать демо <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus mfg-secondary-action">Связаться с нами</a>
+                </div>
+                <ul class="mfg-proof" aria-label="Ключевые факты">
+                    <li><strong>Полный цикл</strong><span>от BOM до себестоимости</span></li>
+                    <li><strong>10–15 минут</strong><span>установка на свой сервер</span></li>
+                    <li><strong>0 ₽</strong><span>лицензионных платежей</span></li>
+                </ul>
+            </div>
+
+            <div class="mfg-product-visual">
+                <a class="mfg-demo-preview" href="https://demo.lsfusion.ru/mycompany-ru/" target="_blank" aria-label="Открыть демо производственного контура MyCompany">
+                    <img src="/imgs/manufacturing-demo-ru.png" width="1200" height="700" alt="Список производственных заказов MyCompany со статусами, номенклатурой и датами выпуска" />
+                    <span class="mfg-demo-badge"><i></i> Реальный интерфейс</span>
+                    <span class="mfg-demo-open">Открыть демо <b aria-hidden="true">↗</b></span>
+                </a>
+                <div class="mfg-float-card" aria-hidden="true">
+                    <div class="mfg-float-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v2.8M12 18.7v2.8M2.5 12h2.8M18.7 12h2.8M5.3 5.3l2 2M16.7 16.7l2 2M18.7 5.3l-2 2M7.3 16.7l-2 2"/></svg>
+                    </div>
+                    <div>
+                        <span>Задание · Цех 1</span>
+                        <strong>№ 000112 — В работе</strong>
+                        <i><b></b></i>
+                    </div>
+                </div>
+                <p class="mfg-demo-caption"><span>Производственные заказы</span><small>Снято в публичном демо MyCompany</small></p>
+            </div>
+        </div>
+        <div class="mfg-hero-orb mfg-hero-orb-one"></div>
+        <div class="mfg-hero-orb mfg-hero-orb-two"></div>
+    </section>
+
+    <section class="mfg-flow-section">
         <div class="inner">
-            <h1>ERP для небольшого производства</h1>
-            <p>
-                <strong>MyCompany</strong> — бесплатная ERP-система для производства с открытым исходным кодом (лицензия Apache 2.0). Учёт производства здесь не отдельная программа, а часть полноценной ERP: производственный контур работает вместе с продажами, закупками, складом и счетами, поэтому данные не приходится переносить между системами.
-            </p>
-            <p>
-                В системе есть всё, что нужно небольшому производственному предприятию: спецификации (BOM), производственные заказы, резервирование материалов, наряды по рабочим центрам и расчёт фактической себестоимости. Никаких лицензионных платежей и скрытых сборов: вы устанавливаете систему на собственном сервере за 10–15 минут и полностью контролируете свои данные.
-            </p>
-            <p>
-                Решение построено на открытой платформе <a href="https://lsfusion.org/ru/" target="_blank">lsFusion</a> (LGPL v3, Java + PostgreSQL, ACID-транзакции), поэтому любую логику можно доработать под свои процессы через модули — без привязки к вендору.
-            </p>
-            <p>
-                <a class="btn" href="https://demo.lsfusion.org/mycompany/" target="_blank">Попробовать демо</a>
-                <a href="#" class="btn contactus">Связаться с нами</a>
-            </p>
+            <div class="mfg-section-heading mfg-heading-center">
+                <p class="mfg-kicker">Один заказ. Все этапы.</p>
+                <h2>Производственный цикл от&nbsp;и&nbsp;до</h2>
+                <p>Производственный заказ планирует работу, резервирует материалы и объясняет собственную себестоимость — без электронных таблиц между этапами.</p>
+            </div>
+            <div class="mfg-flow" aria-label="Этапы производства">
+                <article>
+                    <span class="mfg-flow-number">01</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 3 7l9 4.5L21 7l-9-4.5ZM3 12l9 4.5 9-4.5M3 17l9 4.5 9-4.5" /></svg>
+                    </div>
+                    <h3>Опишите</h3>
+                    <p>Многоуровневые спецификации: компоненты, побочные продукты, операции.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">02</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5h6v3H9zM15 5h3a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h3M9 11.5h6M9 15.5h4" /></svg>
+                    </div>
+                    <h3>Запланируйте</h3>
+                    <p>Создавайте заказы вручную — или прямо из заказов покупателей.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">03</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg>
+                    </div>
+                    <h3>Произведите</h3>
+                    <p>Резервируйте материалы и ведите задания по рабочим центрам.</p>
+                </article>
+                <article>
+                    <span class="mfg-flow-number">04</span>
+                    <div class="mfg-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.3 11.2 3.5H4.5v6.7l9.4 9.8a1.9 1.9 0 0 0 2.8 0l3.9-4a1.9 1.9 0 0 0 0-2.7ZM8 7.5h.01M13 13l3 3" /></svg>
+                    </div>
+                    <h3>Посчитайте</h3>
+                    <p>Списывайте материалы и относите фактические затраты в регистр.</p>
+                </article>
+            </div>
+            <div class="mfg-document-strip">
+                <span>Также поддерживается</span>
+                <ul>
+                    <li>Заказы на разборку</li>
+                    <li>Побочные продукты</li>
+                    <li>Производственный брак</li>
+                    <li>Партии и серийные номера</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Спецификации (BOM) и состав изделий</h2>
-            <p>
-                Спецификация описывает, из чего и как производится изделие: компоненты с количествами на базовое количество выпуска (при изменении объёма заказа потребность масштабируется пропорционально), побочные продукты, а также операции с привязкой к рабочим центрам, временем начала и длительностью. Для изделия можно завести несколько спецификаций и назначить одну по умолчанию. Многоуровневые изделия описываются вложенными BOM: полуфабрикат со своей спецификацией включается в состав готовой продукции.
-            </p>
+    <section class="mfg-features-section">
+        <div class="inner">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Для реального производства</p>
+                <h2>Просто в цеху.<br />Серьёзно внутри.</h2>
+            </div>
+            <div class="mfg-bento-grid">
+                <article class="mfg-feature-card mfg-bom-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Состав изделия</span>
+                        <h3>Спецификации, которые отражают производство</h3>
+                        <p>Количества компонентов масштабируются с объёмом заказа, побочные продукты выпускаются вместе с основным изделием, а вложенные BOM описывают узлы внутри узлов — спецификация по умолчанию подставляется в новый заказ автоматически.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/bom/" target="_blank">Подробнее о спецификациях <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-bom-tree" aria-hidden="true">
+                        <div class="mfg-tree-level root"><i></i><strong>Электролизер в сборе</strong><em>Специф. SP/000014</em></div>
+                        <div class="mfg-tree-branch">
+                            <div class="mfg-tree-level selected"><i></i><strong>Электродный блок</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-branch child">
+                                <div class="mfg-tree-level"><i></i><strong>Пластина электродная</strong><span class="mfg-tree-qty">×24</span></div>
+                                <div class="mfg-tree-level"><i></i><strong>Мембрана МФ-4СК</strong><span class="mfg-tree-qty">×2</span></div>
+                            </div>
+                            <div class="mfg-tree-level"><i></i><strong>Корпус электролизера</strong><span class="mfg-tree-qty">×1</span></div>
+                            <div class="mfg-tree-level byproduct"><i></i><strong>Обрезки кабеля · побочный продукт</strong><span class="mfg-tree-qty">+0,2 кг</span></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Производственные заказы и резервирование материалов</h2>
-            <p>
-                Производственный заказ создаётся на производство или разборку изделия. Плановое количество выпуска определяет потребность в материалах, а перед стартом система проверяет доступность компонентов на складе и резервирует их под заказ. Заказы можно создавать прямо из заказов клиентов — так организуется производство под заказ, когда выпуск привязан к конкретной продаже.
-            </p>
+                <article class="mfg-feature-card mfg-mto-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Производство под заказ</span>
+                        <h3>Спрос — сразу в цех</h3>
+                        <p>Создавайте производственные заказы прямо из подтверждённых заказов покупателей. Количество к выпуску определяет потребность в материалах, а система проверяет остатки и резервирует их до старта работ.</p>
+                    </div>
+                    <div class="mfg-mto-flow" aria-hidden="true">
+                        <div class="mfg-mto-doc">
+                            <span>ЗП</span>
+                            <div><strong>Заказ покупателя № 000042</strong><small>Электролизер в сборе · 4 шт.</small></div>
+                            <em class="mfg-mto-status">Подтверждён</em>
+                        </div>
+                        <div class="mfg-mto-connector"><span>Создать производственный заказ</span></div>
+                        <div class="mfg-mto-doc result">
+                            <span>ПЗ</span>
+                            <div><strong>Производственный заказ № 000031</strong><small>К выпуску: 4 · Цех 1</small></div>
+                            <em class="mfg-mto-status">Резерв</em>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Связь с закупками: недостающие материалы</h2>
-            <p>
-                Если материалов не хватает, заказы поставщикам формируются прямо из списка производственных заказов: потребности агрегируются и группируются по поставщикам. Кроме того, работает автоматический заказ по прогнозам продаж и потребностям производства — закупки перестают быть «ручной» работой снабженца.
-            </p>
+                <article class="mfg-feature-card mfg-load-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Рабочие центры</span>
+                        <h3>Видеть загрузку. Назначать работу.</h3>
+                        <p>Дашборд загрузки показывает каждый рабочий центр по дням, а новые задания создаются прямо из ячеек матрицы. Задание проходит статусы «Готов», «В работе», «Выполнен» — с массовыми действиями над многими сразу.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/work-orders/" target="_blank">Подробнее о рабочих центрах <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="mfg-load-window" aria-hidden="true">
+                        <div class="mfg-load-bar"><i></i><i></i><i></i><span>Загрузка рабочих центров — июль</span></div>
+                        <img src="/imgs/manufacturing-load-ru.png" width="1200" height="200" alt="" loading="lazy" />
+                    </div>
+                </article>
 
-            <h2>Рабочие центры и производственные задания</h2>
-            <p>
-                Рабочие центры — это станки или участки, на которых выполняются операции. По каждому заказу формируются наряды со статусами «Готов», «В работе», «Выполнен», доступны массовые действия над ними. Дашборд загрузки рабочих центров показывает матрицу по дням: видно, какой участок чем занят, а новые наряды создаются прямо из ячеек матрицы.
-            </p>
+                <article class="mfg-feature-card mfg-po-card">
+                    <div class="mfg-feature-copy">
+                        <span class="mfg-feature-tag">Связь с закупками</span>
+                        <h3>Недостающие материалы — в один клик</h3>
+                        <p>Дефицит превращается в заказы поставщикам прямо из списка производственных заказов: потребности агрегируются и группируются по поставщикам. Автозаказ учитывает и прогноз продаж, и потребности производства.</p>
+                    </div>
+                    <div class="mfg-po-panel" aria-hidden="true">
+                        <div class="mfg-po-head">Автозаказ <span>По поставщикам</span></div>
+                        <div class="mfg-po-vendor">ООО «Промснаб»</div>
+                        <div class="mfg-po-row">Пластина электродная <em>+18 шт.</em></div>
+                        <div class="mfg-po-row">Мембрана МФ-4СК <em>+6 шт.</em></div>
+                        <div class="mfg-po-vendor">ТД «Комплект»</div>
+                        <div class="mfg-po-row">Кабель силовой <em>+12 м</em></div>
+                        <div class="mfg-po-foot">Создано 2 заказа поставщикам <b>✓</b></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Себестоимость по факту</h2>
-            <p>
-                Себестоимость заказа складывается из фактических списаний материалов, списаний брака, труда из учёта времени по проектам и услуг из счетов поставщиков, распределённых на заказ. Себестоимость единицы продукции считается как стоимость строки выпуска, делённая на фактическое количество. При завершении заказа записи попадают в регистр себестоимости. Дополнительно поддерживаются разборка изделий, производственный учёт брака и печать партий, а партии и серийные номера ведутся в складском модуле.
-            </p>
+    <section class="mfg-costing-section">
+        <div class="inner mfg-costing-grid">
+            <div class="mfg-costing-copy">
+                <p class="mfg-kicker mfg-kicker-light">По факту, а не по нормативам</p>
+                <h2>Знайте, сколько заказ стоил на самом деле.</h2>
+                <p>Затраты попадают в заказ по мере производства и при завершении проводятся в регистр себестоимости. Себестоимость единицы — фактическая стоимость выпуска, делённая на фактическое количество.</p>
+                <ul class="mfg-check-list">
+                    <li><span>✓</span><div><strong>Материалы</strong><small>Списания плюс брак — по фактической стоимости</small></div></li>
+                    <li><span>✓</span><div><strong>Труд</strong><small>Из учёта рабочего времени по проектам</small></div></li>
+                    <li><span>✓</span><div><strong>Услуги</strong><small>Счета поставщиков, распределённые на заказ</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/costing/" target="_blank" class="mfg-text-link-light">Как считается себестоимость <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="mfg-cost-window" aria-label="Пример расчёта себестоимости заказа">
+                <div class="mfg-cost-toolbar"><strong>Себестоимость заказа</strong><span>№ 000016 ⌄</span><span class="done">Выполнен ✓</span></div>
+                <div class="mfg-cost-summary">
+                    <div><span>Всего</span><strong>988 000 ₽</strong><small>выпущено 4 шт.</small></div>
+                    <div><span>На единицу</span><strong>247 000 ₽</strong><small>стоимость выпуска ÷ факт. количество</small></div>
+                </div>
+                <div class="mfg-cost-bar" aria-hidden="true"><b class="materials"></b><b class="labor"></b><b class="services"></b></div>
+                <ul class="mfg-cost-rows">
+                    <li><i class="materials"></i><strong>Материалы</strong><em>списания + брак</em>711 000 ₽</li>
+                    <li><i class="labor"></i><strong>Труд</strong><em>учёт времени</em>188 000 ₽</li>
+                    <li><i class="services"></i><strong>Услуги</strong><em>счета поставщиков</em>89 000 ₽</li>
+                </ul>
+                <div class="mfg-cost-note"><b></b>Проводки в регистр себестоимости — при завершении заказа</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Как это работает в MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/" target="_blank">Производство — пользовательская документация</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/bom/" target="_blank">Спецификации (состав изделий)</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/orders/" target="_blank">Производственные заказы: список и карточка</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/costing/" target="_blank">Себестоимость: как рассчитывается</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/work-orders/" target="_blank">Рабочие центры и производственные задания</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/" target="_blank">Склад — пользовательская документация</a></li>
-            </ul>
+    <section class="mfg-connected-section">
+        <div class="inner">
+            <div class="mfg-connected-grid">
+                <div class="mfg-connected-copy">
+                    <p class="mfg-kicker">Не отдельный модуль</p>
+                    <h2>Производство — уже часть вашей ERP</h2>
+                    <p>Продажи, закупки, <a href="/ru/programma-skladskogo-ucheta/">склад</a> и счета работают с производством в одной базе — включая партии и серийные номера. Готовая продукция приходуется на склад в момент завершения заказа, а изделия можно разбирать обратно на компоненты.</p>
+                    <a href="/ru/erp-s-otkrytym-kodom/" class="mfg-inline-link">Смотреть всю open-source ERP <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="mfg-connection-map" aria-label="Схема связей производства с другими модулями ERP">
+                    <div class="mfg-connection-source sales"><span>ЗП</span><div><strong>Заказ покупателя</strong><small>Производство под заказ</small></div></div>
+                    <div class="mfg-connection-source bom"><span>BOM</span><div><strong>Спецификация</strong><small>По умолчанию для изделия</small></div></div>
+                    <div class="mfg-connection-core"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9.5l5.5 3V9.5l5.5 3V4l7-1.8V21M3 21h18M7 17.2h2M12 17.2h2M16.5 17.2h2" /></svg><strong>Производство</strong><small>Одна общая база</small></div>
+                    <div class="mfg-connection-target goods"><span>+4</span><div><strong>Готовая продукция</strong><small>Приход на склад</small></div></div>
+                    <div class="mfg-connection-target cost"><span>₽</span><div><strong>Регистр себестоимости</strong><small>По факту, при завершении</small></div></div>
+                </div>
+            </div>
 
-            <h2>Частые вопросы</h2>
-            <h3>Подходит ли MyCompany для небольшого производства?</h3>
-            <p>
-                Да, система рассчитана именно на малый и средний бизнес. Производственный учёт ведётся в связке с продажами, закупками и складом, при этом не нужно платить за лицензии — решение бесплатное и с открытым кодом.
-            </p>
-            <h3>Поддерживаются ли многоуровневые спецификации BOM?</h3>
-            <p>
-                Да. Спецификации могут быть вложенными: полуфабрикат со своим составом включается в спецификацию готового изделия, и так на любую глубину.
-            </p>
-            <h3>Как рассчитывается себестоимость продукции?</h3>
-            <p>
-                По факту: материалы, брак, труд из учёта времени и услуги поставщиков распределяются на производственный заказ, а себестоимость единицы получается делением стоимости выпуска на фактическое количество.
-            </p>
-            <h3>Можно ли видеть загрузку рабочих центров?</h3>
-            <p>
-                Да, есть дашборд загрузки: матрица рабочих центров по дням, из ячеек которой можно сразу создавать производственные задания.
-            </p>
-            <h3>Можно ли работать под заказ?</h3>
-            <p>
-                Да. Производственные заказы создаются напрямую из заказов клиентов, а недостающие материалы заказываются у поставщиков из того же списка производственных заказов.
-            </p>
-            <h3>Сколько стоит система?</h3>
-            <p>
-                MyCompany распространяется бесплатно по лицензии Apache 2.0: без платы за пользователей, скрытых сборов и привязки к вендору. Вы платите только за собственный сервер, а при необходимости можете заказать у нас платные доработки и поддержку.
-            </p>
+            <div class="mfg-docs-panel">
+                <div>
+                    <span class="mfg-feature-tag">Глубже</span>
+                    <h3>Всё описано в документации</h3>
+                    <p>От первой спецификации до логики регистров — весь процесс открыт и задокументирован.</p>
+                </div>
+                <nav aria-label="Документация по производству">
+                    <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/" target="_blank">Обзор производства <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/bom/" target="_blank">Спецификации (BOM) <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/orders/" target="_blank">Производственные заказы <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/costing/" target="_blank">Себестоимость <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/manufacturing/work-orders/" target="_blank">Рабочие центры <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/" target="_blank">Складской учёт <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <p>
-                Смотрите также: <a href="/ru/programma-skladskogo-ucheta/">программа складского учёта</a>, <a href="/ru/besplatnaya-erp-sistema/">бесплатная ERP-система</a>, <a href="/ru/erp-s-otkrytym-kodom/">ERP с открытым кодом</a> — или начните с <a href="/ru/">главной страницы MyCompany</a>.
-            </p>
+    <section class="mfg-faq-section">
+        <div class="inner mfg-faq-grid">
+            <div class="mfg-section-heading">
+                <p class="mfg-kicker">Вопросы и ответы</p>
+                <h2>Перед стартом</h2>
+                <p>Не нашли ответа на свой вопрос? <a href="#" class="contactus">Напишите нам.</a></p>
+            </div>
+            <div class="mfg-faq-list">
+                <details open>
+                    <summary>Подходит ли MyCompany для небольшого производства?<span></span></summary>
+                    <p>Да, система рассчитана именно на малый и средний бизнес. Производственный учёт ведётся в связке с продажами, закупками и складом, при этом не нужно платить за лицензии — решение бесплатное и с открытым кодом.</p>
+                </details>
+                <details>
+                    <summary>Поддерживаются ли многоуровневые спецификации BOM?<span></span></summary>
+                    <p>Да. Спецификации могут быть вложенными: полуфабрикат со своим составом включается в спецификацию готового изделия, и так на любую глубину.</p>
+                </details>
+                <details>
+                    <summary>Как рассчитывается себестоимость продукции?<span></span></summary>
+                    <p>По факту: материалы, брак, труд из учёта времени и услуги поставщиков распределяются на производственный заказ, а себестоимость единицы получается делением стоимости выпуска на фактическое количество.</p>
+                </details>
+                <details>
+                    <summary>Можно ли видеть загрузку рабочих центров?<span></span></summary>
+                    <p>Да, есть дашборд загрузки: матрица рабочих центров по дням, из ячеек которой можно сразу создавать производственные задания.</p>
+                </details>
+                <details>
+                    <summary>Можно ли работать под заказ?<span></span></summary>
+                    <p>Да. Производственные заказы создаются напрямую из заказов клиентов, а недостающие материалы заказываются у поставщиков из того же списка производственных заказов.</p>
+                </details>
+                <details>
+                    <summary>Сколько стоит система?<span></span></summary>
+                    <p>MyCompany распространяется бесплатно по лицензии Apache 2.0: без платы за пользователей, скрытых сборов и привязки к вендору. Вы платите только за собственный сервер, а при необходимости можете заказать у нас платные доработки и поддержку.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="mfg-final-cta">
+        <div class="inner">
+            <div class="mfg-cta-copy">
+                <p class="mfg-kicker mfg-kicker-light">Когда будете готовы</p>
+                <h2>Превратите заказы в продукцию.<br />В одной системе.</h2>
+                <p>Откройте демо или расскажите, как устроено ваше производство.</p>
+            </div>
+            <div class="mfg-actions">
+                <a href="https://demo.lsfusion.ru/mycompany-ru/" target="_blank" class="btn mfg-primary-action">Попробовать демо <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Связаться с нами</a>
+            </div>
         </div>
     </section>
 </main>
