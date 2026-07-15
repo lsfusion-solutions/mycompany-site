@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/inventory.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex inventory-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -102,71 +103,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="inventory-hero">
+        <div class="inner inventory-hero-grid">
+            <div class="inventory-hero-copy">
+                <p class="inventory-eyebrow"><span></span> Open source · Apache 2.0</p>
+                <h1>Inventory in sync.<br /><em>From dock to dispatch.</em></h1>
+                <p class="inventory-lead">Track every item, bin, lot and movement across all your warehouses — in one self-hosted system connected to purchasing and sales.</p>
+                <div class="inventory-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Explore live demo <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus inventory-secondary-action">Talk to us</a>
+                </div>
+                <ul class="inventory-proof" aria-label="Product highlights">
+                    <li><strong>Any number</strong><span>of warehouses</span></li>
+                    <li><strong>10–15 min</strong><span>self-hosted setup</span></li>
+                    <li><strong>Zero</strong><span>license fees</span></li>
+                </ul>
+            </div>
+
+            <div class="inventory-product-visual">
+                <a class="inventory-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Open the live MyCompany inventory demo">
+                    <img src="/imgs/inventory-demo.png" width="1200" height="700" alt="MyCompany live inventory report with warehouse locations, available quantities and stock movement history" />
+                    <span class="inventory-demo-badge"><i></i> Actual product UI</span>
+                    <span class="inventory-demo-open">Open live demo <b aria-hidden="true">↗</b></span>
+                </a>
+                <p class="inventory-demo-caption"><span>Current stock report</span><small>Captured from the public MyCompany demo</small></p>
+            </div>
+        </div>
+        <div class="inventory-hero-orb inventory-hero-orb-one"></div>
+        <div class="inventory-hero-orb inventory-hero-orb-two"></div>
+    </section>
+
+    <section class="inventory-flow-section">
         <div class="inner">
-            <h1>Open-source inventory and warehouse management</h1>
-            <p><strong>MyCompany</strong> is free, open-source inventory management software: it tracks stock across any number of warehouses, records every receipt, shipment and transfer, and shows you exactly what is on hand, reserved and available at any moment. The code is published under the Apache 2.0 license, so there are no hidden fees and no license lock-in.</p>
-            <p>Unlike a standalone stock control app, MyCompany is a complete small-business ERP built on the lsFusion platform (LGPL v3, Java and PostgreSQL, ACID transactions). Your warehouse management software shares one database with purchasing and sales, and you can install it on your own server in 10-15 minutes.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Try demo</a> <a href="#" class="btn contactus">Contact us</a></p>
+            <div class="inventory-section-heading inventory-heading-center">
+                <p class="inventory-kicker">One ledger. Every movement.</p>
+                <h2>A clear path through your warehouse</h2>
+                <p>Every change is recorded as a document, so stock stays accurate, explainable and ready to audit.</p>
+            </div>
+            <div class="inventory-flow" aria-label="Inventory movement flow">
+                <article>
+                    <span class="inventory-flow-number">01</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 2l9 4.5M4 7v10l8 4 8-4V7M12 12v9M4 7l8 5 8-5M8 4l9 5" /></svg>
+                    </div>
+                    <h3>Receive</h3>
+                    <p>Turn purchase orders into traceable receipts.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">02</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V5l5-3v19M8 7h13v14M11 10h2M16 10h2M11 14h2M16 14h2M11 18h2M16 18h2" /></svg>
+                    </div>
+                    <h3>Put away</h3>
+                    <p>Place goods in any warehouse, zone or bin.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">03</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l3 5v6H7V7ZM7 18H3V5h4M10 18a2 2 0 1 0 0 .1M18 18a2 2 0 1 0 0 .1M18 9h-4v3h7" /></svg>
+                    </div>
+                    <h3>Move & pick</h3>
+                    <p>Scan items and bins on any mobile device.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">04</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M9 13l2 2 4-4" /></svg>
+                    </div>
+                    <h3>Ship</h3>
+                    <p>Reserve, confirm and dispatch with confidence.</p>
+                </article>
+            </div>
+            <div class="inventory-document-strip">
+                <span>Also covered</span>
+                <ul>
+                    <li>Transfers</li>
+                    <li>Stock counts</li>
+                    <li>Adjustments</li>
+                    <li>Scrap write-offs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Warehouses, zones and bins</h2>
-            <p>Locations form a hierarchical tree of arbitrary depth: warehouse, zones inside it, bins inside the zones. You can run any number of warehouses, and the structure stays flexible — bin-level detail is optional, so a small stockroom can be a single location while a larger site is broken down as finely as you need.</p>
+    <section class="inventory-features-section">
+        <div class="inner">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Built for real stock</p>
+                <h2>Simple on the floor.<br />Serious underneath.</h2>
+            </div>
+            <div class="inventory-bento-grid">
+                <article class="inventory-feature-card inventory-locations-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Flexible structure</span>
+                        <h3>Warehouses, zones and bins — your way</h3>
+                        <p>Build a location tree to any depth. Keep a small stockroom simple, or map every aisle and bin across multiple sites.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">Explore locations <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="inventory-location-tree" aria-hidden="true">
+                        <div class="inventory-tree-level root"><i></i><strong>Main warehouse</strong><em>12,480 units</em></div>
+                        <div class="inventory-tree-branch">
+                            <div class="inventory-tree-level"><i></i><strong>Zone A</strong><em>4,820</em></div>
+                            <div class="inventory-tree-branch child">
+                                <div class="inventory-tree-level selected"><i></i><strong>Bin A-01</strong><em>1,240</em></div>
+                                <div class="inventory-tree-level"><i></i><strong>Bin A-02</strong><em>3,580</em></div>
+                            </div>
+                            <div class="inventory-tree-level"><i></i><strong>Zone B</strong><em>7,660</em></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Every stock movement is a document</h2>
-            <p>All changes to inventory go through documents, which keeps stock control auditable:</p>
-            <ul>
-                <li><strong>Receipts</strong> for incoming goods and <strong>shipments</strong> for outgoing ones</li>
-                <li><strong>Transfers</strong> between warehouses or bins</li>
-                <li><strong>Stock adjustments</strong> — physical counts that post surpluses and shortages</li>
-                <li><strong>Scrap write-offs</strong> for damage, loss, defects, or an expiry write-off reason</li>
-            </ul>
+                <article class="inventory-feature-card inventory-mobile-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Mobile workflow</span>
+                        <h3>Scan. Pick. Done.</h3>
+                        <p>Guide operators through picks and transfers with bin and item barcode scanning.</p>
+                    </div>
+                    <div class="inventory-phone" aria-hidden="true">
+                        <div class="inventory-phone-speaker"></div>
+                        <div class="inventory-phone-head"><span>Pick list</span><b>3 / 4</b></div>
+                        <div class="inventory-phone-product"><i></i><div><span>Wireless scanner</span><small>BIN A-01-04</small></div></div>
+                        <div class="inventory-scan-area">
+                            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                            <svg viewBox="0 0 72 42"><path d="M4 4v34M10 4v34M17 4v34M25 4v34M32 4v34M40 4v34M51 4v34M58 4v34M67 4v34" /></svg>
+                        </div>
+                        <div class="inventory-phone-confirm">Item scanned <b>✓</b></div>
+                    </div>
+                </article>
 
-            <h2>Barcode picking on mobile devices</h2>
-            <p>When a shipment flagged for picking reaches the Ready state, a picking task is generated automatically. Each line tracks the required versus picked quantity, the operator, and timestamps. Warehouse staff work from a mobile picking form, scanning bin and item barcodes as they go, and can also move goods between locations with mobile transfers.</p>
+                <article class="inventory-feature-card inventory-lots-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">End-to-end traceability</span>
+                        <h3>Lots and serial numbers</h3>
+                        <p>Follow batches through receipts, transfers, shipments and write-offs. Use one lot per unit when serial-level control matters.</p>
+                    </div>
+                    <div class="inventory-lot-labels" aria-hidden="true">
+                        <div class="inventory-lot-label back"><span>LOT-000122</span><i></i></div>
+                        <div class="inventory-lot-label front"><small>MYCOMPANY / LOT</small><strong>LOT-000123</strong><span>Wireless scanner · 12 pcs</span><i></i><em>EXP 2028-06</em></div>
+                    </div>
+                </article>
 
-            <h2>Lot and serial-number tracking</h2>
-            <p>Lots give you batch tracking across receipts, shipments, transfers, scrap and adjustments. IDs are generated automatically from a prefix and numerator (for example, LOT-000123), and a serial-number mode creates one lot per unit when you need item-level traceability. Scanning a barcode resolves it to the matching lot — and an unknown barcode can create a new one on the spot. Lot barcode labels print to PDF, DOCX, XLSX, RTF or HTML.</p>
+                <article class="inventory-feature-card inventory-open-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Open by design</span>
+                        <h3>Your data. Your server. Your rules.</h3>
+                        <p>Self-host a Java and PostgreSQL stack, customize it on lsFusion, and connect other systems through a JSON HTTP API.</p>
+                        <div class="inventory-tech-list"><span>Apache 2.0</span><span>PostgreSQL</span><span>REST / JSON</span></div>
+                    </div>
+                    <div class="inventory-code-card" aria-label="API response example">
+                        <div><i></i><i></i><i></i><span>GET /stock</span></div>
+                        <pre><code><b>{</b>
+  <em>"location"</em>: <span>"A-01"</span>,
+  <em>"onHand"</em>: <strong>248</strong>,
+  <em>"available"</em>: <strong>216</strong>
+<b>}</b></code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Reports built on ledgers you can trust</h2>
-            <p>All figures come from three ledgers — inventory, reservation and cost — so every balance can be traced back to the movements behind it:</p>
-            <ul>
-                <li><strong>Inventory report</strong> — Expected, Reserved, Available and On-hand quantities as of any date, with filters and a pivot view</li>
-                <li><strong>Inventory valuation</strong> — unit and total cost of stock</li>
-                <li><strong>Product moves</strong> — the full movement history of an item</li>
-                <li><strong>Cost report</strong> — how costs flow through your inventory</li>
-            </ul>
+    <section class="inventory-insights-section">
+        <div class="inner inventory-insights-grid">
+            <div class="inventory-insights-copy">
+                <p class="inventory-kicker inventory-kicker-light">Live, explainable numbers</p>
+                <h2>Know what you have.<br /> And why.</h2>
+                <p>Inventory, reservation and cost ledgers give every balance a trail back to the document that changed it.</p>
+                <ul class="inventory-check-list">
+                    <li><span>✓</span><div><strong>Inventory report</strong><small>Expected, reserved, available and on hand</small></div></li>
+                    <li><span>✓</span><div><strong>Valuation & cost</strong><small>Unit and total value as of any date</small></div></li>
+                    <li><span>✓</span><div><strong>Product moves</strong><small>The complete history behind every item</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank" class="inventory-text-link-light">See reports and ledgers <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="inventory-report-window" aria-label="Inventory analytics preview">
+                <div class="inventory-report-toolbar"><strong>Inventory report</strong><span>All warehouses ⌄</span><span>Jul 15, 2026 ⌄</span></div>
+                <div class="inventory-report-summary">
+                    <div><span>Stock value</span><strong>$428,760</strong><small>+8.2% this month</small></div>
+                    <div><span>Available units</span><strong>15,560</strong><small>84.5% of on-hand</small></div>
+                </div>
+                <div class="inventory-chart">
+                    <div class="inventory-chart-y"><span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span></div>
+                    <div class="inventory-chart-area">
+                        <span class="grid-line one"></span><span class="grid-line two"></span><span class="grid-line three"></span><span class="grid-line four"></span>
+                        <svg viewBox="0 0 500 175" preserveAspectRatio="none" aria-hidden="true">
+                            <defs><linearGradient id="inventoryArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#26C4F7" stop-opacity=".34"/><stop offset="1" stop-color="#26C4F7" stop-opacity="0"/></linearGradient></defs>
+                            <path class="area" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23 L500 175 L0 175 Z"/>
+                            <path class="line" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23"/>
+                        </svg>
+                        <div class="inventory-chart-labels"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Part of a full ERP, open to other systems</h2>
-            <p>Because inventory lives inside the ERP, purchase orders automatically create receipts and sales invoices automatically create shipments — no re-keying. Several sales items can map to one stock unit through a conversion coefficient, and packaging units can be set per document type. Current stock is also available to external systems over an HTTP API that returns JSON and supports filtering by category and location.</p>
+    <section class="inventory-connected-section">
+        <div class="inner">
+            <div class="inventory-connected-grid">
+                <div class="inventory-connected-copy">
+                    <p class="inventory-kicker">Not another data island</p>
+                    <h2>Inventory is already part of your ERP</h2>
+                    <p>Purchasing, sales and stock share one database. Orders create the warehouse documents you need automatically — without re-keying or fragile sync jobs.</p>
+                    <a href="/open-source-erp/" class="inventory-inline-link">Discover the full open-source ERP <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="inventory-connection-map" aria-label="ERP connection diagram">
+                    <div class="inventory-connection-source purchase"><span>PO</span><div><strong>Purchase order</strong><small>Approved</small></div></div>
+                    <div class="inventory-connection-source sales"><span>SI</span><div><strong>Sales invoice</strong><small>Ready</small></div></div>
+                    <div class="inventory-connection-core"><i></i><strong>Inventory</strong><small>One shared database</small></div>
+                    <div class="inventory-connection-target receipt"><span>+84</span><div><strong>Receipt</strong><small>Incoming</small></div></div>
+                    <div class="inventory-connection-target shipment"><span>−24</span><div><strong>Shipment</strong><small>Outgoing</small></div></div>
+                </div>
+            </div>
 
-            <h2>How it works in MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">Inventory overview</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">Locations</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">Receipts</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">Shipments</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">Transfers</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/adjustments/" target="_blank">Stock adjustments</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">Picking</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">Lots and packages</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank">Reports and ledgers</a></li>
-            </ul>
+            <div class="inventory-docs-panel">
+                <div>
+                    <span class="inventory-feature-tag">Go deeper</span>
+                    <h3>Everything is documented</h3>
+                    <p>From the first location to ledger logic, the complete workflow is open to inspect.</p>
+                </div>
+                <nav aria-label="Inventory documentation">
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">Overview <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">Receipts <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">Shipments <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">Transfers <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">Picking <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">Lots & packages <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>Is the inventory software really free?</h3>
-            <p>Yes. MyCompany is open source under the Apache 2.0 license, with no hidden fees and no license lock-in. You host it yourself, and installation on your own server takes 10-15 minutes.</p>
-            <h3>How many warehouses and locations can I manage?</h3>
-            <p>Any number of warehouses. Each one is a hierarchical tree of arbitrary depth — warehouse, zones, bins — and bin-level tracking is optional, so you set only as much structure as your operation needs.</p>
-            <h3>Does it support barcodes?</h3>
-            <p>Yes. Operators scan bin and item barcodes in the mobile picking form, a scanned barcode resolves to its lot (unknown barcodes can create one), and lot barcode labels can be printed to PDF, DOCX, XLSX, RTF or HTML.</p>
-            <h3>Can I track lots and serial numbers?</h3>
-            <p>Yes. Batch tracking works across receipts, shipments, transfers, scrap and adjustments, with auto-generated lot IDs. A serial-number mode assigns one lot per unit for item-level traceability.</p>
-            <h3>Does it work on mobile devices?</h3>
-            <p>Yes. Warehouse staff use a mobile picking form with barcode scanning and can perform transfers between locations from a mobile device.</p>
-            <h3>Can other systems read my stock levels?</h3>
-            <p>Yes. Current stock is exposed over an HTTP API that returns JSON and can be filtered by category and location, so external systems can query availability directly.</p>
+    <section class="inventory-faq-section">
+        <div class="inner inventory-faq-grid">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Questions, answered</p>
+                <h2>Before you start</h2>
+                <p>Need a detail that is not covered here? <a href="#" class="contactus">Talk to our team.</a></p>
+            </div>
+            <div class="inventory-faq-list">
+                <details open>
+                    <summary>Is the inventory software really free?<span></span></summary>
+                    <p>Yes. MyCompany is open source under the Apache 2.0 license, with no hidden fees or license lock-in. You host it on your own infrastructure.</p>
+                </details>
+                <details>
+                    <summary>How many warehouses can I manage?<span></span></summary>
+                    <p>Any number. Each warehouse can contain a location tree of arbitrary depth, while bin-level tracking remains optional.</p>
+                </details>
+                <details>
+                    <summary>Does it support barcodes and mobile devices?<span></span></summary>
+                    <p>Yes. Operators can scan item, bin and lot barcodes while picking or transferring goods from a mobile device.</p>
+                </details>
+                <details>
+                    <summary>Can I track lots and serial numbers?<span></span></summary>
+                    <p>Yes. Lots work across all inventory documents, and serial mode creates one lot per unit for item-level traceability.</p>
+                </details>
+                <details>
+                    <summary>Can other systems read current stock?<span></span></summary>
+                    <p>Yes. A JSON HTTP API exposes current stock and supports filtering by category and location.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Inventory is one part of the picture: see how MyCompany works as a full <a href="/open-source-erp/">open-source ERP</a>, handles production in the <a href="/open-source-manufacturing-erp/">manufacturing ERP</a> overview, or compare it with other <a href="/free-erp-software/">free ERP software</a> — and start from the <a href="/">MyCompany homepage</a> for the complete feature list.</p>
+    <section class="inventory-final-cta">
+        <div class="inner">
+            <div class="inventory-cta-copy">
+                <p class="inventory-kicker inventory-kicker-light">Ready when you are</p>
+                <h2>See your warehouse<br />as one clear system.</h2>
+                <p>Open the live demo or tell us what your operation needs.</p>
+            </div>
+            <div class="inventory-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Explore live demo <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Contact us</a>
+            </div>
         </div>
     </section>
 </main>
