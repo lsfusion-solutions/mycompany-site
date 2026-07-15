@@ -37,6 +37,14 @@
   --erp-pale: #f2efff;
 }
 
+.erp-dev {
+  --erp-accent: #15998f;
+  --erp-bright: #62dfcf;
+  --erp-deep: #0b6e72;
+  --erp-night: #082d3b;
+  --erp-pale: #ecfaf8;
+}
+
 .erp-page main,
 .erp-page main * {
   box-sizing: border-box;
@@ -113,7 +121,8 @@
 
 .erp-open .erp-eyebrow,
 .erp-self .erp-eyebrow,
-.erp-custom .erp-eyebrow {
+.erp-custom .erp-eyebrow,
+.erp-dev .erp-eyebrow {
   color: #a9eafa !important;
 }
 
@@ -144,6 +153,13 @@
     radial-gradient(circle at 88% 17%, rgba(184, 168, 255, .2), transparent 31%),
     radial-gradient(circle at 9% 90%, rgba(83, 61, 165, .3), transparent 36%),
     linear-gradient(122deg, #1c153f 0%, #30245f 57%, #4a3884 100%);
+}
+
+.erp-dev .erp-hero {
+  background:
+    radial-gradient(circle at 88% 17%, rgba(98, 223, 207, .18), transparent 31%),
+    radial-gradient(circle at 9% 90%, rgba(21, 153, 143, .25), transparent 36%),
+    linear-gradient(122deg, #061f2d 0%, #0b3a49 57%, #0c5a5e 100%);
 }
 
 .erp-free .erp-hero {
@@ -202,7 +218,8 @@
 
 .erp-open .erp-hero h1,
 .erp-self .erp-hero h1,
-.erp-custom .erp-hero h1 {
+.erp-custom .erp-hero h1,
+.erp-dev .erp-hero h1 {
   color: #fff;
 }
 
@@ -220,6 +237,10 @@
   color: #c9bdff;
 }
 
+.erp-dev .erp-hero h1 em {
+  color: #8ce9dd;
+}
+
 .erp-hero .erp-hero-lead {
   max-width: 525px;
   margin-bottom: 30px;
@@ -230,13 +251,19 @@
 
 .erp-open .erp-hero .erp-hero-lead,
 .erp-self .erp-hero .erp-hero-lead,
-.erp-custom .erp-hero .erp-hero-lead {
+.erp-custom .erp-hero .erp-hero-lead,
+.erp-dev .erp-hero .erp-hero-lead {
   color: #c6d9e3;
 }
 
 .erp-custom .erp-platform-copy .erp-kicker,
 .erp-custom .erp-final-cta .erp-kicker {
   color: #c9bdff !important;
+}
+
+.erp-dev .erp-platform-copy .erp-kicker,
+.erp-dev .erp-final-cta .erp-kicker {
+  color: #8ce9dd !important;
 }
 
 .erp-actions {

@@ -1000,11 +1000,135 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/customizable-erp/" />
   </url>
 
-  <!-- Single-language landing pages -->
+  <!-- Landing cluster: ERP for developers (en / ru / uk / pl / pt / es / zh / fr / de) -->
   <url>
     <loc>https://mycompany.lsfusion.org/erp-for-developers/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
   </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/erp-dla-programistow/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pt/erp-para-programadores/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/es/erp-para-desarrolladores/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/zh/kaifazhe-erp/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/de/erp-fuer-entwickler/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+  </url>
+
+  <!-- Single-language landing pages -->
   <url>
     <loc>https://mycompany.lsfusion.org/odoo-alternative/</loc>
     <lastmod>2026-07-15</lastmod>

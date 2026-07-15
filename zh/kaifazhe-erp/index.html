@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+<link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+<link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/erp-dlya-razrabotchikov/" />
+<link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/erp-dlya-rozrobnykiv/" />
+<link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/erp-dla-programistow/" />
+<link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/erp-para-programadores/" />
+<link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/erp-para-desarrolladores/" />
+<link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+<link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/erp-pour-developpeurs/" />
+<link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/erp-fuer-entwickler/" />
+<link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/erp-for-developers/" />
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="使用 lsFusion 开发和扩展 MyCompany：一种声明式语言、IntelliJ IDEA、Java、PostgreSQL、ACID 事务，以及不影响升级的独立模块。" />
+
+    <title>面向开发者的开源ERP平台 | MyCompany</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyCompany" />
+    <meta property="og:title" content="面向开发者的开源ERP平台 | MyCompany" />
+    <meta property="og:description" content="使用 lsFusion 开发和扩展 MyCompany：一种声明式语言、IntelliJ IDEA、Java、PostgreSQL、ACID 事务，以及不影响升级的独立模块。" />
+    <meta property="og:url" content="https://mycompany.lsfusion.org/zh/kaifazhe-erp/" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/crm-leads-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="700" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/erp.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon_16x16.png">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon/favicon.ico">
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(95551513, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body class="flex erp-page erp-dev">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <noscript><div><img src="https://mc.yandex.ru/watch/95551513" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<nav>
+    <div class="inner">
+        <h2><a href="/zh/" title="返回首页">MyCompany</a></h2>
+        <a class="menu-link" href="#menu">导航</a>
+        <ul class="nav">
+            <li><a href="/zh/#functions">功能</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">开发</a></li>
+            <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">文档</a></li>
+            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">试用演示</a></li>
+            <li id="languages">
+                <div class="language">
+                    <strong>中文</strong>
+                    <ul>
+                        <li><a href="/erp-for-developers/">En</a></li>
+                        <li><a href="/ru/erp-dlya-razrabotchikov/">Ру</a></li>
+                        <li><a href="/uk/erp-dlya-rozrobnykiv/">Ук</a></li>
+                        <li><a href="/pl/erp-dla-programistow/">Pl</a></li>
+                        <li><a href="/pt/erp-para-programadores/">Pt</a></li>
+                        <li><a href="/es/erp-para-desarrolladores/">Es</a></li>
+                        <li><span class="current">中文</span></li>
+                        <li><a href="/fr/erp-pour-developpeurs/">Fr</a></li>
+                        <li><a href="/de/erp-fuer-entwickler/">De</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main id="top">
+<section class="erp-hero"><div class="inner erp-hero-grid"><div class="erp-hero-copy"><p class="erp-eyebrow"><span></span> 面向开发者的 ERP · 一切皆代码</p><h1>为<em>开发者</em>打造的开源 ERP 平台</h1><p class="erp-hero-lead">MyCompany 是基于 lsFusion 的生产级 ERP，面向需要修改真实业务逻辑的团队。用一种声明式语言定义数据模型、计算、约束、操作与表单，把每次改动保存在 Git 中，并通过独立模块扩展产品而无需维护分叉。</p><div class="erp-actions"><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank" class="btn erp-primary-action">阅读开发指南 <span>↗</span></a><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank" class="btn-empty erp-secondary-action">查看源代码</a></div><ul class="erp-proof"><li><strong>1 种语言</strong><span>数据、逻辑与界面</span></li><li><strong>0 许可证密钥</strong><span>Apache 2.0 + LGPL v3</span></li><li><strong>适合 Git</strong><span>纯文本模块</span></li></ul></div><div class="erp-preview"><div class="erp-browser"><div class="erp-browser-bar"><i></i><i></i><i></i><span>MyCompany · ERP</span></div><img src="/imgs/crm-leads-en.png" width="1200" height="700" alt="为开发者打造的开源 ERP 平台" /></div><div class="erp-float-card top"><span class="erp-float-icon">IDE</span><div><strong>IntelliJ IDEA 工具</strong><small>补全 · 引用 · 调试器</small></div></div><div class="erp-float-card bottom"><span class="erp-float-icon">DB</span><div><strong>默认支持 ACID</strong><small>Java · PostgreSQL · Web 客户端</small></div></div></div></div></section>
+<section class="erp-trust-strip"><div class="inner erp-trust-row"><span>熟悉的技术栈，更短的业务逻辑开发路径</span><ul><li><b>◇</b> lsFusion</li><li><b>◇</b> IntelliJ IDEA</li><li><b>◇</b> Java / JVM</li><li><b>◇</b> PostgreSQL</li><li><b>◇</b> Git 与 Maven</li></ul></div></section>
+<section class="erp-value-section"><div class="inner"><div class="erp-section-heading center"><p class="erp-kicker">专注业务系统，而不是框架样板代码</p><h2>从数据库到界面使用同一套模型</h2><p>lsFusion 将 ERP 的关键部分放在一致的代码库中。平台根据声明式定义生成持久化、事务和界面行为，而应用仍是普通文本，可使用标准的评审、分支与部署流程。</p></div><div class="erp-value-grid"><article class="erp-value-card"><span class="erp-value-icon">LSF</span><h3>一种声明式语言</h3><p>用同一种语言描述存储与计算数据、约束、事件、操作和表单，无需将规则分散到 ORM、服务与前端。</p></article><article class="erp-value-card"><span class="erp-value-icon">IDE</span><h3>真正的开发工具</h3><p>在基于 IntelliJ IDEA 的环境中使用代码补全、错误提示、引用搜索，以及数据变化断点调试。</p></article><article class="erp-value-card"><span class="erp-value-icon">MOD</span><h3>用模块而不是分叉</h3><p>将企业逻辑放在独立 .lsf 模块中并 REQUIRE MyCompany。升级只替换产品 JAR，扩展代码仍然保留。</p></article></div></div></section>
+<section class="erp-platform-section"><div class="inner erp-platform-grid"><div class="erp-platform-copy"><p class="erp-kicker">清晰可理解的技术栈</p><h2>从 .lsf 源码到三层 ERP</h2><p>lsFusion 服务器运行在 JVM 上，使用 PostgreSQL 存储数据并提供原生 Web 客户端。声明式逻辑靠近数据执行，所有操作默认具备事务性，一个模块即可扩展所有层。</p><a href="https://lsfusion.org/features" target="_blank" class="erp-text-link-light">探索 lsFusion 功能 →</a></div><div class="erp-stack"><div class="erp-stack-label"><span>应用技术栈</span><span>端到端开源</span></div><div class="erp-stack-layer"><span>YOU</span><div><strong>您的 .lsf 模块</strong><small>企业数据、逻辑、表单与集成</small></div><em>Git</em></div><div class="erp-stack-layer"><span>MC</span><div><strong>MyCompany ERP</strong><small>现成业务模块与流程</small></div><em>Apache 2.0</em></div><div class="erp-stack-layer"><span>LSF</span><div><strong>lsFusion 服务器</strong><small>JVM 上的声明式运行时</small></div><em>LGPL v3</em></div><div class="erp-stack-layer"><span>DB</span><div><strong>PostgreSQL</strong><small>数据、查询与 ACID 事务</small></div><em>标准</em></div><div class="erp-code-note"><b>MODULE</b> YourCompany;<br /><b>REQUIRE</b> MyCompany;<br /><b>ordersTotal</b> = GROUP SUM sum(Order o);</div></div></div></section>
+<section class="erp-modules-section"><div class="inner"><div class="erp-section-heading"><p class="erp-kicker">为业务逻辑设计的语言</p><h2>一个模块可以构建什么</h2><p>同一源文件可以同时增加数据、行为和界面，因此一个业务功能始终对应一组清晰的改动。</p></div><div class="erp-module-grid"><article class="erp-module-card"><span>DATA</span><h3>数据模型</h3><p>类、属性与关系</p></article><article class="erp-module-card"><span>CALC</span><h3>计算数据</h3><p>聚合、公式与依赖</p></article><article class="erp-module-card"><span>RULE</span><h3>约束</h3><p>校验与一致性规则</p></article><article class="erp-module-card"><span>ACTION</span><h3>事件与操作</h3><p>响应式流程与自动化</p></article><article class="erp-module-card"><span>FORM</span><h3>表单</h3><p>表格、筛选、操作与布局</p></article><article class="erp-module-card"><span>REPORT</span><h3>报表</h3><p>运营分析与打印模板</p></article><article class="erp-module-card"><span>API</span><h3>集成</h3><p>HTTP、JSON、XML、CSV、XLS 与 DBF</p></article><article class="erp-module-card"><span>ROLE</span><h3>安全</h3><p>按角色与上下文控制访问</p></article></div></div></section>
+<section class="erp-flow-section"><div class="inner erp-flow-grid"><div class="erp-flow-copy"><p class="erp-kicker">标准工程流程</p><h2>克隆、编码、评审并部署</h2><p>在 IntelliJ IDEA 中运行 MyCompany，开发独立模块，评审普通文本 diff，并将扩展与产品一起部署。无需专有可视化元数据或构建服务器。</p></div><div class="erp-flow-board"><div class="erp-flow-node n1"><span>GIT</span><div><strong>克隆</strong><small>MyCompany 仓库</small></div></div><div class="erp-flow-node n2"><span>IDE</span><div><strong>开发</strong><small>lsFusion 插件</small></div></div><div class="erp-flow-core"><span><strong>MODULE</strong><small>版本化代码</small></span></div><div class="erp-flow-node n3"><span>JAR</span><div><strong>构建</strong><small>Maven 产物</small></div></div><div class="erp-flow-node n4"><span>RUN</span><div><strong>部署</strong><small>您的服务器</small></div></div></div></div></section>
+<section class="erp-cost-section"><div class="inner erp-cost-grid"><div class="erp-cost-copy"><p class="erp-kicker">一切皆代码</p><h2>让工程团队始终掌握系统</h2><p>源代码、配置与扩展均可检查。团队无需购买专有 SDK 席位，也无需把数据模型交给供应商。</p></div><div class="erp-cost-panel"><div class="erp-cost-head"><strong>开发体验</strong><span>开放</span></div><div class="erp-cost-row"><strong>应用源代码</strong><span>普通 .lsf 文件</span><em>Git</em></div><div class="erp-cost-row"><strong>代码评审</strong><span>清晰的 diff 与分支</span><em class="optional">标准</em></div><div class="erp-cost-row"><strong>部署</strong><span>JAR 与独立模块</span><em class="optional">简单</em></div><div class="erp-cost-row"><strong>许可证</strong><span>Apache 2.0 与 LGPL v3</span><em class="optional">无密钥</em></div></div></div></section>
+<section class="erp-deploy-section"><div class="inner erp-deploy-grid"><div class="erp-deploy-copy"><p class="erp-kicker">从可运行代码开始</p><h2>文档、示例与源代码</h2><p>先探索运行中的 ERP，再打开开发指南和仓库。工具链使用 IntelliJ IDEA、Maven、Java 与 PostgreSQL。</p></div><ol class="erp-deploy-steps"><li><span>01</span><div><strong><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">开发指南</a></strong></div><em>Docs</em></li><li><span>02</span><div><strong><a href="https://docs.lsfusion.org/" target="_blank">lsFusion 文档</a></strong></div><em>Docs</em></li><li><span>03</span><div><strong><a href="https://lsfusion.org/try" target="_blank">在线试用 lsFusion</a></strong></div><em>Open source</em></li><li><span>04</span><div><strong><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">MyCompany 源代码</a></strong></div><em>Open source</em></li><li><span>05</span><div><strong><a href="https://github.com/lsfusion/platform" target="_blank">lsFusion 源代码</a></strong></div><em>Open source</em></li></ol></div></section>
+<section class="erp-faq-section"><div class="inner erp-faq-grid"><div class="erp-section-heading"><p class="erp-kicker">开发者常见问题</p><h2>打开 IDE 之前</h2><p><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">阅读开发指南</a></p></div><div class="erp-faq-list"><details open><summary>使用什么技术栈？<span></span></summary><p>应用服务器运行在 JVM 上，数据存储在 PostgreSQL 中，用户通过 Web 客户端工作。应用逻辑与表单使用 lsFusion 编写。</p></details><details><summary>如何搭建开发环境？<span></span></summary><p>安装带 lsFusion 插件的 IntelliJ IDEA，克隆 MyCompany 仓库，并按照指南在本地运行应用和模块。</p></details><details><summary>模块如何跨版本升级？<span></span></summary><p>您的 .lsf 模块依赖 MyCompany，而不是修改产品。升级只替换产品 JAR，独立模块继续保留。</p></details><details><summary>是否提供 API？<span></span></summary><p>是。MyCompany 支持 HTTP、JSON、XML、CSV、XLS 与 DBF，外部系统无需直接访问数据库。</p></details><details><summary>可以开发商业解决方案吗？<span></span></summary><p>可以。MyCompany 使用 Apache 2.0，平台使用 LGPL v3；技术栈中没有许可证密钥或 DRM。</p></details><details><summary>不安装能否试用语言？<span></span></summary><p>可以。使用 lsFusion 在线环境、查看 GitHub 仓库，或在自己的服务器上安装 MyCompany。</p></details></div></div></section>
+<section class="erp-final-cta"><div class="inner erp-final-row"><div class="erp-final-copy"><p class="erp-kicker">从真实 ERP 开始</p><h2>构建企业真正需要的流程</h2><p>打开开发指南、查看源代码，或体验正在运行的应用。</p></div><div class="erp-actions"><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn erp-primary-action">体验演示 <span>↗</span></a><a href="#" class="btn-empty erp-secondary-action contactus">联系我们</a></div></div></section>
+</main>
+<footer>
+    <div class="inner">
+        <nav>
+            <div>
+                <h3><a href="#top">MyCompany</a></h3>
+                <p>基于免费开源平台<br /> <a href="https://lsfusion.org/" target="_blank">lsFusion</a> 开发</p>
+            </div>
+            <ul class="links">
+                <li><a href="https://mycompany-docs.lsfusion.org/" target="_blank">文档</a></li>
+                <li><a href="/zh/mianfei-erp/">免费ERP</a></li>
+                <li><a href="/zh/kaiyuan-erp/">开源ERP</a></li>
+                <li><a href="/zh/siyou-bushu-erp/">私有部署ERP</a></li>
+                <li><a href="/zh/cangku-guanli/">仓库管理</a></li>
+                <li><a href="/zh/shengchan-erp/">生产ERP</a></li>
+            <li><a href="/zh/kaifazhe-erp/">开发者 ERP</a></li></ul>
+            <ul class="social">
+                <li class="tel"><a href="https://t.me/lsfusion_official" target="_blank" title="点击在新标签页中打开">在Telegram上关注我们</a></li>
+                <li class="blog"><a href="https://habr.com/en/company/lsfusion/blog/" target="_blank" title="点击在新标签页中打开">在Habr上阅读我们的博客</a></li>
+                <li class="ln"><a href="https://www.linkedin.com/company/lsfusion" target="_blank" title="点击在新标签页中打开">在LinkedIn上关注我们的动态</a></li>
+                <li class="sl"><a href="https://join.slack.com/t/lsfusion/shared_invite/zt-2klihpl2q-h6ol~nDRPky~O1uHC14Dwg" target="_blank" title="点击在新标签页中打开">加入我们的Slack聊天</a></li>
+            </ul>
+            <ul class="community">
+                <li class="em"><a href="mailto:info@lsfusion.org" target="_blank" title="点击在新标签页中打开">info@lsfusion.org</a></li>
+            </ul>
+        </nav>
+
+        <div id="absfooter">
+            <p id="copyright">&copy; <script>document.write((new Date()).getFullYear())</script> lsFusion Foundation</p>
+
+            <ul>
+                <li><a href="mailto:info@lsfusion.org">报告错误</a></li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+<span class="contactus" title="联系我们">联系我们</span>
+
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>给我们写信</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+            <input type="hidden" name="to" value="info@lsfusion.org" />
+            <input type="hidden" name="subject" value="面向开发者的开源ERP平台 — contact" />
+            <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/zh/thankyou.html" />
+
+            <fieldset>
+                <input type="text" name="name" value="" placeholder="姓名*" required />
+                <input type="text" name="phone" value="" placeholder="电话*" required />
+                <span class="note">请在电话号码中加上国家区号，例如 <strong>+375 (29) 351-97-73</strong></span>
+                <input type="email" name="email" value="" placeholder="E-mail*" required />
+                <input type="text" name="company" value="" placeholder="公司*" required />
+                <input type="text" name="position" value="" placeholder="职位*" required />
+                <textarea name="comment" placeholder="留言*" rows="10" cols="6" required></textarea>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="发送" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
+<script src="/js/jquery.popupoverlay.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/localization/messages_zh.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
