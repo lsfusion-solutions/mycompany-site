@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/inventory.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex inventory-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,71 +102,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="inventory-hero">
+        <div class="inner inventory-hero-grid">
+            <div class="inventory-hero-copy">
+                <p class="inventory-eyebrow"><span></span> Open source · Apache 2.0</p>
+                <h1>Des stocks toujours synchronisés.<br /><em>De la réception à l’expédition.</em></h1>
+                <p class="inventory-lead">Suivez chaque article, emplacement, lot et mouvement dans tous vos entrepôts, au sein d’un système auto-hébergé relié aux achats et aux ventes.</p>
+                <div class="inventory-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Explorer la démo <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus inventory-secondary-action">Parlons-en</a>
+                </div>
+                <ul class="inventory-proof" aria-label="Fonctionnalités principales du produit">
+                    <li><strong>Nombre illimité</strong><span>d’entrepôts</span></li>
+                    <li><strong>10–15 min</strong><span>pour l’installation auto-hébergée</span></li>
+                    <li><strong>Zéro</strong><span>frais de licence</span></li>
+                </ul>
+            </div>
+
+            <div class="inventory-product-visual">
+                <a class="inventory-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Ouvrir la démo de gestion de stock MyCompany">
+                    <img src="/imgs/inventory-demo.png" width="1200" height="700" alt="Rapport de stock MyCompany avec emplacements, quantités disponibles et historique des mouvements" />
+                    <span class="inventory-demo-badge"><i></i> Interface réelle du produit</span>
+                    <span class="inventory-demo-open">Ouvrir la démo <b aria-hidden="true">↗</b></span>
+                </a>
+                <p class="inventory-demo-caption"><span>Rapport de stock actuel</span><small>Capture de la démo publique MyCompany</small></p>
+            </div>
+        </div>
+        <div class="inventory-hero-orb inventory-hero-orb-one"></div>
+        <div class="inventory-hero-orb inventory-hero-orb-two"></div>
+    </section>
+
+    <section class="inventory-flow-section">
         <div class="inner">
-            <h1>Gestion de stock et d'entrepôt open source</h1>
-            <p><strong>MyCompany</strong> est un logiciel de gestion de stock gratuit et open source : il suit les stocks dans un nombre illimité d'entrepôts, enregistre chaque réception, expédition et transfert, et montre à tout moment ce qui est en stock, réservé et disponible. Le code est publié sous licence Apache 2.0 : pas de coûts cachés ni de dépendance aux licences.</p>
-            <p>Contrairement à une application de gestion de stock isolée, MyCompany est un ERP complet pour petites entreprises, construit sur la plateforme lsFusion (LGPL v3, Java et PostgreSQL, transactions ACID). Votre logiciel de gestion d'entrepôt partage une seule base de données avec les achats et les ventes, et vous pouvez l'installer sur votre propre serveur en 10-15 minutes.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Essayer la démo</a> <a href="#" class="btn contactus">Contactez-nous</a></p>
+            <div class="inventory-section-heading inventory-heading-center">
+                <p class="inventory-kicker">Un registre. Chaque mouvement.</p>
+                <h2>Un parcours clair dans votre entrepôt</h2>
+                <p>Chaque modification est enregistrée dans un document : les stocks restent exacts, explicables et prêts pour l’audit.</p>
+            </div>
+            <div class="inventory-flow" aria-label="Flux des mouvements de stock">
+                <article>
+                    <span class="inventory-flow-number">01</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 2l9 4.5M4 7v10l8 4 8-4V7M12 12v9M4 7l8 5 8-5M8 4l9 5" /></svg>
+                    </div>
+                    <h3>Réceptionner</h3>
+                    <p>Transformez les commandes d’achat en réceptions traçables.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">02</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V5l5-3v19M8 7h13v14M11 10h2M16 10h2M11 14h2M16 14h2M11 18h2M16 18h2" /></svg>
+                    </div>
+                    <h3>Ranger</h3>
+                    <p>Placez les marchandises dans tout entrepôt, toute zone ou tout emplacement.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">03</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l3 5v6H7V7ZM7 18H3V5h4M10 18a2 2 0 1 0 0 .1M18 18a2 2 0 1 0 0 .1M18 9h-4v3h7" /></svg>
+                    </div>
+                    <h3>Transférer et préparer</h3>
+                    <p>Scannez articles et emplacements sur tout appareil mobile.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">04</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M9 13l2 2 4-4" /></svg>
+                    </div>
+                    <h3>Expédier</h3>
+                    <p>Réservez, confirmez et expédiez en toute confiance.</p>
+                </article>
+            </div>
+            <div class="inventory-document-strip">
+                <span>Également inclus</span>
+                <ul>
+                    <li>Transferts</li>
+                    <li>Inventaires</li>
+                    <li>Ajustements</li>
+                    <li>Mises au rebut</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Entrepôts, zones et emplacements</h2>
-            <p>Les emplacements forment une arborescence hiérarchique de profondeur arbitraire : l'entrepôt, des zones à l'intérieur, des emplacements (bins) dans les zones. Vous pouvez gérer autant d'entrepôts que vous voulez, et la structure reste souple — le détail au niveau de l'emplacement est facultatif : une petite réserve peut être un emplacement unique, tandis qu'un site plus grand est découpé aussi finement que nécessaire.</p>
+    <section class="inventory-features-section">
+        <div class="inner">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Conçu pour des stocks réels</p>
+                <h2>Simple sur le terrain.<br />Solide en profondeur.</h2>
+            </div>
+            <div class="inventory-bento-grid">
+                <article class="inventory-feature-card inventory-locations-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Structure flexible</span>
+                        <h3>Entrepôts, zones et emplacements à votre façon</h3>
+                        <p>Construisez une arborescence d’emplacements sans limite de profondeur. Gardez une petite réserve simple ou cartographiez chaque allée et emplacement sur plusieurs sites.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">Explorer les emplacements <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="inventory-location-tree" aria-hidden="true">
+                        <div class="inventory-tree-level root"><i></i><strong>Entrepôt principal</strong><em>12,480 unités</em></div>
+                        <div class="inventory-tree-branch">
+                            <div class="inventory-tree-level"><i></i><strong>Zone A</strong><em>4,820</em></div>
+                            <div class="inventory-tree-branch child">
+                                <div class="inventory-tree-level selected"><i></i><strong>Bin A-01</strong><em>1,240</em></div>
+                                <div class="inventory-tree-level"><i></i><strong>Bin A-02</strong><em>3,580</em></div>
+                            </div>
+                            <div class="inventory-tree-level"><i></i><strong>Zone B</strong><em>7,660</em></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Chaque mouvement de stock est un document</h2>
-            <p>Toutes les modifications du stock passent par des documents, ce qui garde la gestion auditable :</p>
-            <ul>
-                <li><strong>Réceptions</strong> pour les entrées de marchandises et <strong>expéditions</strong> pour les sorties</li>
-                <li><strong>Transferts</strong> entre entrepôts ou emplacements</li>
-                <li><strong>Ajustements de stock</strong> — des inventaires physiques qui enregistrent excédents et manquants</li>
-                <li><strong>Mises au rebut</strong> pour casse, perte, défaut ou péremption</li>
-            </ul>
+                <article class="inventory-feature-card inventory-mobile-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Flux mobile</span>
+                        <h3>Scannez. Préparez. Terminé.</h3>
+                        <p>Guidez les opérateurs pendant la préparation et les transferts grâce au scan des codes des emplacements et des articles.</p>
+                    </div>
+                    <div class="inventory-phone" aria-hidden="true">
+                        <div class="inventory-phone-speaker"></div>
+                        <div class="inventory-phone-head"><span>Liste de préparation</span><b>3 / 4</b></div>
+                        <div class="inventory-phone-product"><i></i><div><span>Scanner sans fil</span><small>BIN A-01-04</small></div></div>
+                        <div class="inventory-scan-area">
+                            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                            <svg viewBox="0 0 72 42"><path d="M4 4v34M10 4v34M17 4v34M25 4v34M32 4v34M40 4v34M51 4v34M58 4v34M67 4v34" /></svg>
+                        </div>
+                        <div class="inventory-phone-confirm">Article scanné <b>✓</b></div>
+                    </div>
+                </article>
 
-            <h2>Préparation avec codes-barres sur mobile</h2>
-            <p>Lorsqu'une expédition marquée pour préparation atteint l'état Prêt, une tâche de préparation est générée automatiquement. Chaque ligne enregistre la quantité demandée et la quantité prélevée, l'opérateur et les horodatages. Le personnel de l'entrepôt travaille depuis un formulaire de préparation mobile, en scannant les codes-barres des emplacements et des articles, et peut aussi déplacer la marchandise entre emplacements par des transferts mobiles.</p>
+                <article class="inventory-feature-card inventory-lots-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Traçabilité de bout en bout</span>
+                        <h3>Lots et numéros de série</h3>
+                        <p>Suivez les lots lors des réceptions, transferts, expéditions et mises au rebut. Utilisez un lot par unité lorsque le suivi en série est nécessaire.</p>
+                    </div>
+                    <div class="inventory-lot-labels" aria-hidden="true">
+                        <div class="inventory-lot-label back"><span>LOT-000122</span><i></i></div>
+                        <div class="inventory-lot-label front"><small>MYCOMPANY / LOT</small><strong>LOT-000123</strong><span>Scanner sans fil · 12 pièces</span><i></i><em>EXP 2028-06</em></div>
+                    </div>
+                </article>
 
-            <h2>Traçabilité par lots et numéros de série</h2>
-            <p>Les lots assurent la traçabilité par lot dans les réceptions, expéditions, transferts, rebuts et ajustements. Les identifiants sont générés automatiquement à partir d'un préfixe et d'un compteur (par exemple LOT-000123), et un mode numéros de série crée un lot par unité quand vous avez besoin d'une traçabilité à la pièce. Scanner un code-barres renvoie le lot correspondant — et un code inconnu peut créer un nouveau lot sur-le-champ. Les étiquettes codes-barres des lots s'impriment en PDF, DOCX, XLSX, RTF ou HTML.</p>
+                <article class="inventory-feature-card inventory-open-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Ouvert par conception</span>
+                        <h3>Vos données. Votre serveur. Vos règles.</h3>
+                        <p>Auto-hébergez Java et PostgreSQL, personnalisez le système avec lsFusion et connectez d’autres systèmes via une API HTTP JSON.</p>
+                        <div class="inventory-tech-list"><span>Apache 2.0</span><span>PostgreSQL</span><span>REST / JSON</span></div>
+                    </div>
+                    <div class="inventory-code-card" aria-label="Exemple de réponse API">
+                        <div><i></i><i></i><i></i><span>GET /stock</span></div>
+                        <pre><code><b>{</b>
+  <em>"location"</em>: <span>"A-01"</span>,
+  <em>"onHand"</em>: <strong>248</strong>,
+  <em>"available"</em>: <strong>216</strong>
+<b>}</b></code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Des rapports fondés sur des registres fiables</h2>
-            <p>Tous les chiffres proviennent de trois registres — stock, réservations et coûts — de sorte que chaque solde peut être retracé jusqu'aux mouvements qui l'expliquent :</p>
-            <ul>
-                <li><strong>Rapport de stock</strong> — quantités Attendue, Réservée, Disponible et En stock à n'importe quelle date, avec filtres et vue croisée</li>
-                <li><strong>Valorisation du stock</strong> — coût unitaire et total du stock</li>
-                <li><strong>Mouvements d'articles</strong> — l'historique complet des mouvements d'un article</li>
-                <li><strong>Rapport de coûts</strong> — la façon dont les coûts circulent dans votre stock</li>
-            </ul>
+    <section class="inventory-insights-section">
+        <div class="inner inventory-insights-grid">
+            <div class="inventory-insights-copy">
+                <p class="inventory-kicker inventory-kicker-light">Des chiffres actuels et explicables</p>
+                <h2>Sachez ce que vous avez.<br />Et pourquoi.</h2>
+                <p>Les registres de stock, de réservation et de coûts relient chaque solde au document qui l’a modifié.</p>
+                <ul class="inventory-check-list">
+                    <li><span>✓</span><div><strong>Rapport de stock</strong><small>Attendu, réservé, disponible et en stock</small></div></li>
+                    <li><span>✓</span><div><strong>Valorisation et coût</strong><small>Valeur unitaire et totale à toute date</small></div></li>
+                    <li><span>✓</span><div><strong>Mouvements d’articles</strong><small>L’historique complet de chaque article</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank" class="inventory-text-link-light">Voir les rapports et registres <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="inventory-report-window" aria-label="Aperçu des analyses de stock">
+                <div class="inventory-report-toolbar"><strong>Rapport de stock</strong><span>Tous les entrepôts ⌄</span><span>15 juil. 2026 ⌄</span></div>
+                <div class="inventory-report-summary">
+                    <div><span>Valeur du stock</span><strong>$428,760</strong><small>+8,2 % ce mois-ci</small></div>
+                    <div><span>Unités disponibles</span><strong>15,560</strong><small>84,5 % du stock</small></div>
+                </div>
+                <div class="inventory-chart">
+                    <div class="inventory-chart-y"><span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span></div>
+                    <div class="inventory-chart-area">
+                        <span class="grid-line one"></span><span class="grid-line two"></span><span class="grid-line three"></span><span class="grid-line four"></span>
+                        <svg viewBox="0 0 500 175" preserveAspectRatio="none" aria-hidden="true">
+                            <defs><linearGradient id="inventoryArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#26C4F7" stop-opacity=".34"/><stop offset="1" stop-color="#26C4F7" stop-opacity="0"/></linearGradient></defs>
+                            <path class="area" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23 L500 175 L0 175 Z"/>
+                            <path class="line" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23"/>
+                        </svg>
+                        <div class="inventory-chart-labels"><span>Jan</span><span>Fév</span><span>Mar</span><span>Avr</span><span>Mai</span><span>Juin</span><span>Juil</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Une brique d'un ERP complet, ouverte aux autres systèmes</h2>
-            <p>Comme les stocks vivent au sein de l'ERP, les commandes d'achat créent automatiquement des réceptions et les factures de vente créent automatiquement des expéditions — sans ressaisie. Plusieurs articles de vente peuvent correspondre à une même unité de stock via un coefficient de conversion, et les unités d'emballage se définissent par type de document. Le stock courant est aussi accessible aux systèmes externes via une API HTTP qui renvoie du JSON et accepte des filtres par catégorie et par emplacement.</p>
+    <section class="inventory-connected-section">
+        <div class="inner">
+            <div class="inventory-connected-grid">
+                <div class="inventory-connected-copy">
+                    <p class="inventory-kicker">Pas un énième silo de données</p>
+                    <h2>Le stock fait déjà partie de votre ERP</h2>
+                    <p>Achats, ventes et stocks partagent une base de données. Les commandes créent automatiquement les documents d’entrepôt nécessaires, sans ressaisie ni synchronisations fragiles.</p>
+                    <a href="/fr/erp-open-source/" class="inventory-inline-link">Découvrir l’ERP open source complet <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="inventory-connection-map" aria-label="Schéma des connexions ERP">
+                    <div class="inventory-connection-source purchase"><span>PO</span><div><strong>Commande d’achat</strong><small>Approuvée</small></div></div>
+                    <div class="inventory-connection-source sales"><span>SI</span><div><strong>Commande client</strong><small>Prête</small></div></div>
+                    <div class="inventory-connection-core"><i></i><strong>Stock</strong><small>Une base de données partagée</small></div>
+                    <div class="inventory-connection-target receipt"><span>+84</span><div><strong>Réception</strong><small>Entrée</small></div></div>
+                    <div class="inventory-connection-target shipment"><span>−24</span><div><strong>Expédition</strong><small>Sortie</small></div></div>
+                </div>
+            </div>
 
-            <h2>Comment ça marche dans MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">Vue d'ensemble des stocks</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">Emplacements</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">Réceptions</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">Expéditions</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">Transferts</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/adjustments/" target="_blank">Ajustements de stock</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">Préparation</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">Lots et emballages</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank">Rapports et registres</a></li>
-            </ul>
+            <div class="inventory-docs-panel">
+                <div>
+                    <span class="inventory-feature-tag">Approfondir</span>
+                    <h3>Tout est documenté</h3>
+                    <p>Du premier emplacement à la logique des registres, l’ensemble du flux est ouvert à la consultation.</p>
+                </div>
+                <nav aria-label="Documentation des stocks">
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">Vue d’ensemble <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">Réceptions <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">Expéditions <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">Transferts <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">Préparation <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">Lots et emballages <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>Le logiciel de gestion de stock est-il vraiment gratuit ?</h3>
-            <p>Oui. MyCompany est open source sous licence Apache 2.0, sans coûts cachés ni dépendance aux licences. Vous l'hébergez vous-même, et l'installation sur votre propre serveur prend 10-15 minutes.</p>
-            <h3>Combien d'entrepôts et d'emplacements puis-je gérer ?</h3>
-            <p>Autant d'entrepôts que nécessaire. Chacun est une arborescence hiérarchique de profondeur arbitraire — entrepôt, zones, emplacements — et le suivi au niveau de l'emplacement est facultatif : vous ne définissez que la structure dont votre activité a besoin.</p>
-            <h3>Les codes-barres sont-ils pris en charge ?</h3>
-            <p>Oui. Les opérateurs scannent les codes des emplacements et des articles dans le formulaire de préparation mobile, un code scanné est résolu vers son lot (un code inconnu peut en créer un) et les étiquettes codes-barres des lots s'impriment en PDF, DOCX, XLSX, RTF ou HTML.</p>
-            <h3>Puis-je tracer les lots et les numéros de série ?</h3>
-            <p>Oui. La traçabilité par lot fonctionne dans les réceptions, expéditions, transferts, rebuts et ajustements, avec des identifiants de lot générés automatiquement. Un mode numéros de série attribue un lot par unité pour une traçabilité à la pièce.</p>
-            <h3>Fonctionne-t-il sur mobile ?</h3>
-            <p>Oui. Le personnel de l'entrepôt utilise un formulaire de préparation mobile avec lecture de codes-barres et peut effectuer des transferts entre emplacements depuis un appareil mobile.</p>
-            <h3>D'autres systèmes peuvent-ils consulter mon stock ?</h3>
-            <p>Oui. Le stock courant est exposé via une API HTTP qui renvoie du JSON et peut être filtrée par catégorie et par emplacement : les systèmes externes peuvent interroger la disponibilité directement.</p>
+    <section class="inventory-faq-section">
+        <div class="inner inventory-faq-grid">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Vos questions, nos réponses</p>
+                <h2>Avant de commencer</h2>
+                <p>Il vous manque une information ? <a href="#" class="contactus">Parlez-en à notre équipe.</a></p>
+            </div>
+            <div class="inventory-faq-list">
+                <details open>
+                    <summary>Le logiciel de gestion de stock est-il vraiment gratuit ?<span></span></summary>
+                    <p>Oui. MyCompany est open source sous licence Apache 2.0, sans frais cachés ni verrouillage de licence. Vous l’hébergez sur votre propre infrastructure.</p>
+                </details>
+                <details>
+                    <summary>Combien d’entrepôts puis-je gérer ?<span></span></summary>
+                    <p>Un nombre illimité. Chaque entrepôt peut contenir une arborescence d’emplacements de profondeur quelconque, et le suivi au niveau de l’emplacement reste facultatif.</p>
+                </details>
+                <details>
+                    <summary>Prend-il en charge les codes-barres et les appareils mobiles ?<span></span></summary>
+                    <p>Oui. Les opérateurs peuvent scanner les codes des articles, emplacements et lots pendant la préparation ou les transferts depuis un appareil mobile.</p>
+                </details>
+                <details>
+                    <summary>Puis-je suivre les lots et les numéros de série ?<span></span></summary>
+                    <p>Oui. Les lots fonctionnent dans tous les documents de stock et le mode série crée un lot par unité.</p>
+                </details>
+                <details>
+                    <summary>D’autres systèmes peuvent-ils lire le stock actuel ?<span></span></summary>
+                    <p>Oui. Une API HTTP JSON expose le stock actuel et permet de filtrer par catégorie et emplacement.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Le stock n'est qu'une partie du tableau : découvrez MyCompany comme <a href="/fr/erp-open-source/">ERP open source</a> complet, sa gestion de la fabrication dans l'<a href="/fr/erp-production/">ERP production</a>, ou ce que « gratuit » veut dire dans le <a href="/fr/erp-gratuit/">logiciel ERP gratuit</a> — et partez de la <a href="/fr/">page d'accueil de MyCompany</a> pour la liste complète des fonctionnalités.</p>
+    <section class="inventory-final-cta">
+        <div class="inner">
+            <div class="inventory-cta-copy">
+                <p class="inventory-kicker inventory-kicker-light">Quand vous êtes prêt</p>
+                <h2>Voyez votre entrepôt<br />comme un système clair.</h2>
+                <p>Ouvrez la démo ou décrivez-nous les besoins de votre activité.</p>
+            </div>
+            <div class="inventory-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Explorer la démo <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Contactez-nous</a>
+            </div>
         </div>
     </section>
 </main>
@@ -241,7 +451,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
 <script src="/js/jquery.popupoverlay.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
-<script src="/js/localization/messages_fr.min.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

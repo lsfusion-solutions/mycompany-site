@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/inventory.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex inventory-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,71 +102,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="inventory-hero">
+        <div class="inner inventory-hero-grid">
+            <div class="inventory-hero-copy">
+                <p class="inventory-eyebrow"><span></span> Open Source · Apache 2.0</p>
+                <h1>Bestände im Gleichlauf.<br /><em>Vom Wareneingang bis zum Versand.</em></h1>
+                <p class="inventory-lead">Verfolgen Sie jeden Artikel, Lagerplatz, jede Charge und jede Bewegung über alle Läger hinweg — in einem selbst gehosteten System, das Einkauf und Verkauf verbindet.</p>
+                <div class="inventory-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Live-Demo ansehen <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus inventory-secondary-action">Sprechen Sie mit uns</a>
+                </div>
+                <ul class="inventory-proof" aria-label="Wichtigste Produktfunktionen">
+                    <li><strong>Beliebig viele</strong><span>Läger</span></li>
+                    <li><strong>10–15 Min.</strong><span>für die eigene Installation</span></li>
+                    <li><strong>Keine</strong><span>Lizenzgebühren</span></li>
+                </ul>
+            </div>
+
+            <div class="inventory-product-visual">
+                <a class="inventory-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Live-Demo der MyCompany-Lagerverwaltung öffnen">
+                    <img src="/imgs/inventory-demo.png" width="1200" height="700" alt="MyCompany-Bestandsbericht mit Lagerorten, verfügbaren Mengen und Bewegungshistorie" />
+                    <span class="inventory-demo-badge"><i></i> Echte Produktoberfläche</span>
+                    <span class="inventory-demo-open">Live-Demo öffnen <b aria-hidden="true">↗</b></span>
+                </a>
+                <p class="inventory-demo-caption"><span>Aktueller Bestandsbericht</span><small>Aufgenommen in der öffentlichen MyCompany-Demo</small></p>
+            </div>
+        </div>
+        <div class="inventory-hero-orb inventory-hero-orb-one"></div>
+        <div class="inventory-hero-orb inventory-hero-orb-two"></div>
+    </section>
+
+    <section class="inventory-flow-section">
         <div class="inner">
-            <h1>Open-Source-Lager- und Bestandsverwaltung</h1>
-            <p><strong>MyCompany</strong> ist kostenlose Open-Source-Software für die Bestandsverwaltung: Sie verfolgt Bestände in beliebig vielen Lägern, erfasst jeden Wareneingang, Warenausgang und jede Umlagerung und zeigt jederzeit genau, was vorrätig, reserviert und verfügbar ist. Der Code ist unter der Apache-2.0-Lizenz veröffentlicht — keine versteckten Kosten, keine Lizenzbindung.</p>
-            <p>Anders als eine isolierte Lager-App ist MyCompany ein vollständiges ERP für kleine Unternehmen auf Basis der lsFusion-Plattform (LGPL v3, Java und PostgreSQL, ACID-Transaktionen). Ihre Lagerverwaltungssoftware teilt sich eine Datenbank mit Einkauf und Verkauf, und Sie installieren sie in 10-15 Minuten auf Ihrem eigenen Server.</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Demo testen</a> <a href="#" class="btn contactus">Kontaktieren Sie uns</a></p>
+            <div class="inventory-section-heading inventory-heading-center">
+                <p class="inventory-kicker">Ein Register. Jede Bewegung.</p>
+                <h2>Ein klarer Weg durch Ihr Lager</h2>
+                <p>Jede Änderung wird als Beleg erfasst. So bleiben Bestände korrekt, nachvollziehbar und jederzeit prüfbar.</p>
+            </div>
+            <div class="inventory-flow" aria-label="Ablauf der Bestandsbewegungen">
+                <article>
+                    <span class="inventory-flow-number">01</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 2l9 4.5M4 7v10l8 4 8-4V7M12 12v9M4 7l8 5 8-5M8 4l9 5" /></svg>
+                    </div>
+                    <h3>Annehmen</h3>
+                    <p>Wandeln Sie Bestellungen in nachvollziehbare Wareneingänge um.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">02</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V5l5-3v19M8 7h13v14M11 10h2M16 10h2M11 14h2M16 14h2M11 18h2M16 18h2" /></svg>
+                    </div>
+                    <h3>Einlagern</h3>
+                    <p>Lagern Sie Waren in jedem Lager, jeder Zone oder jedem Lagerplatz ein.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">03</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l3 5v6H7V7ZM7 18H3V5h4M10 18a2 2 0 1 0 0 .1M18 18a2 2 0 1 0 0 .1M18 9h-4v3h7" /></svg>
+                    </div>
+                    <h3>Umlagern und kommissionieren</h3>
+                    <p>Scannen Sie Artikel und Lagerplätze auf jedem Mobilgerät.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">04</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M9 13l2 2 4-4" /></svg>
+                    </div>
+                    <h3>Versenden</h3>
+                    <p>Reservieren, bestätigen und versenden Sie zuverlässig.</p>
+                </article>
+            </div>
+            <div class="inventory-document-strip">
+                <span>Ebenfalls enthalten</span>
+                <ul>
+                    <li>Umlagerungen</li>
+                    <li>Inventuren</li>
+                    <li>Bestandskorrekturen</li>
+                    <li>Verschrottungen</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Läger, Zonen und Lagerplätze</h2>
-            <p>Die Lagerorte bilden einen hierarchischen Baum beliebiger Tiefe: das Lager, Zonen darin, Lagerplätze (Bins) in den Zonen. Sie können beliebig viele Läger führen, und die Struktur bleibt flexibel — Details auf Lagerplatzebene sind optional: Ein kleines Lager kann ein einziger Ort sein, während ein größerer Standort so fein untergliedert wird, wie Sie es brauchen.</p>
+    <section class="inventory-features-section">
+        <div class="inner">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Für echte Bestände gebaut</p>
+                <h2>Einfach im Lager.<br />Leistungsstark im Kern.</h2>
+            </div>
+            <div class="inventory-bento-grid">
+                <article class="inventory-feature-card inventory-locations-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Flexible Struktur</span>
+                        <h3>Läger, Zonen und Lagerplätze nach Ihren Regeln</h3>
+                        <p>Erstellen Sie einen Lagerortbaum beliebiger Tiefe. Halten Sie ein kleines Lager einfach oder bilden Sie jeden Gang und Lagerplatz über mehrere Standorte ab.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">Lagerorte entdecken <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="inventory-location-tree" aria-hidden="true">
+                        <div class="inventory-tree-level root"><i></i><strong>Hauptlager</strong><em>12,480 Einheiten</em></div>
+                        <div class="inventory-tree-branch">
+                            <div class="inventory-tree-level"><i></i><strong>Zone A</strong><em>4,820</em></div>
+                            <div class="inventory-tree-branch child">
+                                <div class="inventory-tree-level selected"><i></i><strong>Bin A-01</strong><em>1,240</em></div>
+                                <div class="inventory-tree-level"><i></i><strong>Bin A-02</strong><em>3,580</em></div>
+                            </div>
+                            <div class="inventory-tree-level"><i></i><strong>Zone B</strong><em>7,660</em></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Jede Bestandsbewegung ist ein Beleg</h2>
-            <p>Alle Bestandsänderungen laufen über Belege — so bleibt die Lagerverwaltung revisionssicher:</p>
-            <ul>
-                <li><strong>Wareneingänge</strong> für eingehende und <strong>Warenausgänge</strong> für ausgehende Waren</li>
-                <li><strong>Umlagerungen</strong> zwischen Lägern oder Lagerplätzen</li>
-                <li><strong>Bestandskorrekturen</strong> — Inventuren, die Überschüsse und Fehlmengen verbuchen</li>
-                <li><strong>Verschrottungen</strong> bei Beschädigung, Verlust, Defekt oder Ablauf des Verfallsdatums</li>
-            </ul>
+                <article class="inventory-feature-card inventory-mobile-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Mobiler Ablauf</span>
+                        <h3>Scannen. Kommissionieren. Fertig.</h3>
+                        <p>Führen Sie Mitarbeitende mit Barcode-Scans von Lagerplätzen und Artikeln durch Kommissionierung und Umlagerung.</p>
+                    </div>
+                    <div class="inventory-phone" aria-hidden="true">
+                        <div class="inventory-phone-speaker"></div>
+                        <div class="inventory-phone-head"><span>Kommissionierliste</span><b>3 / 4</b></div>
+                        <div class="inventory-phone-product"><i></i><div><span>Funkscanner</span><small>BIN A-01-04</small></div></div>
+                        <div class="inventory-scan-area">
+                            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                            <svg viewBox="0 0 72 42"><path d="M4 4v34M10 4v34M17 4v34M25 4v34M32 4v34M40 4v34M51 4v34M58 4v34M67 4v34" /></svg>
+                        </div>
+                        <div class="inventory-phone-confirm">Artikel gescannt <b>✓</b></div>
+                    </div>
+                </article>
 
-            <h2>Barcode-Kommissionierung auf Mobilgeräten</h2>
-            <p>Erreicht ein zur Kommissionierung markierter Warenausgang den Status „Bereit“, wird automatisch eine Kommissionieraufgabe erzeugt. Jede Zeile erfasst Soll- und Ist-Menge, den Bearbeiter und Zeitstempel. Das Lagerpersonal arbeitet mit einem mobilen Kommissionierformular, scannt unterwegs die Barcodes von Lagerplätzen und Artikeln und kann Waren per mobiler Umlagerung zwischen Lagerplätzen bewegen.</p>
+                <article class="inventory-feature-card inventory-lots-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Lückenlose Rückverfolgbarkeit</span>
+                        <h3>Chargen und Seriennummern</h3>
+                        <p>Verfolgen Sie Chargen durch Wareneingänge, Umlagerungen, Warenausgänge und Verschrottungen. Für die Serienkontrolle verwenden Sie eine Charge pro Einheit.</p>
+                    </div>
+                    <div class="inventory-lot-labels" aria-hidden="true">
+                        <div class="inventory-lot-label back"><span>LOT-000122</span><i></i></div>
+                        <div class="inventory-lot-label front"><small>MYCOMPANY / LOT</small><strong>LOT-000123</strong><span>Funkscanner · 12 Stk.</span><i></i><em>EXP 2028-06</em></div>
+                    </div>
+                </article>
 
-            <h2>Chargen- und Seriennummernverfolgung</h2>
-            <p>Chargen ermöglichen die chargengenaue Rückverfolgung über Wareneingänge, Warenausgänge, Umlagerungen, Verschrottungen und Bestandskorrekturen hinweg. Die IDs werden automatisch aus Präfix und Zähler erzeugt (zum Beispiel LOT-000123), und ein Seriennummernmodus legt eine Charge pro Stück an, wenn Sie stückgenaue Rückverfolgbarkeit brauchen. Das Scannen eines Barcodes führt zur passenden Charge — ein unbekannter Barcode kann sofort eine neue anlegen. Chargen-Barcode-Etiketten lassen sich als PDF, DOCX, XLSX, RTF oder HTML drucken.</p>
+                <article class="inventory-feature-card inventory-open-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Von Grund auf offen</span>
+                        <h3>Ihre Daten. Ihr Server. Ihre Regeln.</h3>
+                        <p>Hosten Sie Java und PostgreSQL selbst, passen Sie das System mit lsFusion an und verbinden Sie andere Systeme über eine JSON-HTTP-API.</p>
+                        <div class="inventory-tech-list"><span>Apache 2.0</span><span>PostgreSQL</span><span>REST / JSON</span></div>
+                    </div>
+                    <div class="inventory-code-card" aria-label="Beispiel einer API-Antwort">
+                        <div><i></i><i></i><i></i><span>GET /stock</span></div>
+                        <pre><code><b>{</b>
+  <em>"location"</em>: <span>"A-01"</span>,
+  <em>"onHand"</em>: <strong>248</strong>,
+  <em>"available"</em>: <strong>216</strong>
+<b>}</b></code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Berichte auf Basis verlässlicher Register</h2>
-            <p>Alle Zahlen stammen aus drei Registern — Bestand, Reservierung und Kosten —, sodass sich jeder Saldo bis zu den zugrunde liegenden Bewegungen zurückverfolgen lässt:</p>
-            <ul>
-                <li><strong>Bestandsbericht</strong> — erwartete, reservierte, verfügbare und vorrätige Mengen zu jedem Stichtag, mit Filtern und Pivot-Ansicht</li>
-                <li><strong>Bestandsbewertung</strong> — Stück- und Gesamtkosten des Bestands</li>
-                <li><strong>Artikelbewegungen</strong> — die vollständige Bewegungshistorie eines Artikels</li>
-                <li><strong>Kostenbericht</strong> — wie die Kosten durch Ihren Bestand fließen</li>
-            </ul>
+    <section class="inventory-insights-section">
+        <div class="inner inventory-insights-grid">
+            <div class="inventory-insights-copy">
+                <p class="inventory-kicker inventory-kicker-light">Aktuelle, nachvollziehbare Zahlen</p>
+                <h2>Wissen, was da ist.<br />Und warum.</h2>
+                <p>Bestands-, Reservierungs- und Kostenregister führen jeden Saldo auf den Beleg zurück, der ihn verändert hat.</p>
+                <ul class="inventory-check-list">
+                    <li><span>✓</span><div><strong>Bestandsbericht</strong><small>Erwartet, reserviert, verfügbar und vorrätig</small></div></li>
+                    <li><span>✓</span><div><strong>Bewertung und Kosten</strong><small>Stück- und Gesamtwert zu jedem Stichtag</small></div></li>
+                    <li><span>✓</span><div><strong>Artikelbewegungen</strong><small>Die vollständige Historie jedes Artikels</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank" class="inventory-text-link-light">Berichte und Register ansehen <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="inventory-report-window" aria-label="Vorschau der Bestandsanalyse">
+                <div class="inventory-report-toolbar"><strong>Bestandsbericht</strong><span>Alle Läger ⌄</span><span>15. Juli 2026 ⌄</span></div>
+                <div class="inventory-report-summary">
+                    <div><span>Bestandswert</span><strong>$428,760</strong><small>+8,2 % in diesem Monat</small></div>
+                    <div><span>Verfügbare Einheiten</span><strong>15,560</strong><small>84,5 % des Bestands</small></div>
+                </div>
+                <div class="inventory-chart">
+                    <div class="inventory-chart-y"><span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span></div>
+                    <div class="inventory-chart-area">
+                        <span class="grid-line one"></span><span class="grid-line two"></span><span class="grid-line three"></span><span class="grid-line four"></span>
+                        <svg viewBox="0 0 500 175" preserveAspectRatio="none" aria-hidden="true">
+                            <defs><linearGradient id="inventoryArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#26C4F7" stop-opacity=".34"/><stop offset="1" stop-color="#26C4F7" stop-opacity="0"/></linearGradient></defs>
+                            <path class="area" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23 L500 175 L0 175 Z"/>
+                            <path class="line" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23"/>
+                        </svg>
+                        <div class="inventory-chart-labels"><span>Jan</span><span>Feb</span><span>Mär</span><span>Apr</span><span>Mai</span><span>Jun</span><span>Jul</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Teil eines vollständigen ERP, offen für andere Systeme</h2>
-            <p>Da der Bestand im ERP lebt, erzeugen Bestellungen automatisch Wareneingänge und Verkaufsrechnungen automatisch Warenausgänge — ohne erneute Erfassung. Mehrere Verkaufsartikel können über einen Umrechnungsfaktor derselben Lagereinheit entsprechen, und Verpackungseinheiten lassen sich je Belegart festlegen. Der aktuelle Bestand steht externen Systemen zudem über eine HTTP-API zur Verfügung, die JSON liefert und Filter nach Kategorie und Lagerort unterstützt.</p>
+    <section class="inventory-connected-section">
+        <div class="inner">
+            <div class="inventory-connected-grid">
+                <div class="inventory-connected-copy">
+                    <p class="inventory-kicker">Keine weitere Dateninsel</p>
+                    <h2>Der Bestand ist bereits Teil Ihres ERP</h2>
+                    <p>Einkauf, Verkauf und Bestand nutzen eine gemeinsame Datenbank. Aufträge erzeugen automatisch die nötigen Lagerbelege — ohne Doppelerfassung oder fragile Synchronisation.</p>
+                    <a href="/de/open-source-erp/" class="inventory-inline-link">Das vollständige Open-Source-ERP entdecken <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="inventory-connection-map" aria-label="ERP-Verbindungsdiagramm">
+                    <div class="inventory-connection-source purchase"><span>PO</span><div><strong>Bestellung</strong><small>Freigegeben</small></div></div>
+                    <div class="inventory-connection-source sales"><span>SI</span><div><strong>Verkaufsauftrag</strong><small>Bereit</small></div></div>
+                    <div class="inventory-connection-core"><i></i><strong>Bestand</strong><small>Eine gemeinsame Datenbank</small></div>
+                    <div class="inventory-connection-target receipt"><span>+84</span><div><strong>Wareneingang</strong><small>Eingehend</small></div></div>
+                    <div class="inventory-connection-target shipment"><span>−24</span><div><strong>Warenausgang</strong><small>Ausgehend</small></div></div>
+                </div>
+            </div>
 
-            <h2>So funktioniert es in MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">Lagerübersicht</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">Lagerorte</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">Wareneingänge</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">Warenausgänge</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">Umlagerungen</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/adjustments/" target="_blank">Bestandskorrekturen</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">Kommissionierung</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">Chargen und Verpackungen</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank">Berichte und Register</a></li>
-            </ul>
+            <div class="inventory-docs-panel">
+                <div>
+                    <span class="inventory-feature-tag">Mehr erfahren</span>
+                    <h3>Alles ist dokumentiert</h3>
+                    <p>Vom ersten Lagerort bis zur Registerlogik ist der gesamte Ablauf offen einsehbar.</p>
+                </div>
+                <nav aria-label="Lagerdokumentation">
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">Übersicht <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">Wareneingänge <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">Warenausgänge <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">Umlagerungen <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">Kommissionierung <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">Chargen und Verpackungen <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>Ist die Lagersoftware wirklich kostenlos?</h3>
-            <p>Ja. MyCompany ist Open Source unter der Apache-2.0-Lizenz, ohne versteckte Kosten und ohne Lizenzbindung. Sie hosten es selbst, die Installation auf dem eigenen Server dauert 10-15 Minuten.</p>
-            <h3>Wie viele Läger und Lagerorte kann ich verwalten?</h3>
-            <p>Beliebig viele Läger. Jedes ist ein hierarchischer Baum beliebiger Tiefe — Lager, Zonen, Lagerplätze — und die Verfolgung auf Lagerplatzebene ist optional: Sie definieren nur so viel Struktur, wie Ihr Betrieb braucht.</p>
-            <h3>Werden Barcodes unterstützt?</h3>
-            <p>Ja. Die Mitarbeiter scannen Lagerplatz- und Artikelbarcodes im mobilen Kommissionierformular, ein gescannter Barcode wird seiner Charge zugeordnet (unbekannte Barcodes können eine neue anlegen), und Chargen-Barcode-Etiketten lassen sich als PDF, DOCX, XLSX, RTF oder HTML drucken.</p>
-            <h3>Kann ich Chargen und Seriennummern verfolgen?</h3>
-            <p>Ja. Die Chargenverfolgung funktioniert über Wareneingänge, Warenausgänge, Umlagerungen, Verschrottungen und Bestandskorrekturen hinweg, mit automatisch erzeugten Chargen-IDs. Ein Seriennummernmodus vergibt eine Charge pro Stück für stückgenaue Rückverfolgbarkeit.</p>
-            <h3>Funktioniert es auf Mobilgeräten?</h3>
-            <p>Ja. Das Lagerpersonal nutzt ein mobiles Kommissionierformular mit Barcode-Scanning und kann Umlagerungen zwischen Lagerorten direkt vom Mobilgerät aus durchführen.</p>
-            <h3>Können andere Systeme meine Bestände abfragen?</h3>
-            <p>Ja. Der aktuelle Bestand wird über eine HTTP-API bereitgestellt, die JSON liefert und sich nach Kategorie und Lagerort filtern lässt — externe Systeme können die Verfügbarkeit direkt abfragen.</p>
+    <section class="inventory-faq-section">
+        <div class="inner inventory-faq-grid">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Fragen und Antworten</p>
+                <h2>Bevor Sie starten</h2>
+                <p>Fehlt Ihnen eine Information? <a href="#" class="contactus">Sprechen Sie mit unserem Team.</a></p>
+            </div>
+            <div class="inventory-faq-list">
+                <details open>
+                    <summary>Ist die Lagersoftware wirklich kostenlos?<span></span></summary>
+                    <p>Ja. MyCompany ist unter der Apache-2.0-Lizenz quelloffen, ohne versteckte Gebühren oder Lizenzbindung. Sie betreiben es auf Ihrer eigenen Infrastruktur.</p>
+                </details>
+                <details>
+                    <summary>Wie viele Läger kann ich verwalten?<span></span></summary>
+                    <p>Beliebig viele. Jedes Lager kann einen Lagerortbaum beliebiger Tiefe enthalten; die Verfolgung auf Lagerplatzebene bleibt optional.</p>
+                </details>
+                <details>
+                    <summary>Unterstützt das System Barcodes und Mobilgeräte?<span></span></summary>
+                    <p>Ja. Mitarbeitende können Artikel-, Lagerplatz- und Chargenbarcodes beim Kommissionieren oder Umlagern auf einem Mobilgerät scannen.</p>
+                </details>
+                <details>
+                    <summary>Kann ich Chargen und Seriennummern verfolgen?<span></span></summary>
+                    <p>Ja. Chargen funktionieren in allen Lagerbelegen, und der Serienmodus erstellt eine Charge pro Einheit.</p>
+                </details>
+                <details>
+                    <summary>Können andere Systeme aktuelle Bestände lesen?<span></span></summary>
+                    <p>Ja. Eine JSON-HTTP-API stellt aktuelle Bestände bereit und unterstützt Filter nach Kategorie und Lagerort.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Das Lager ist nur ein Teil des Ganzen: Sehen Sie, wie MyCompany als vollständiges <a href="/de/open-source-erp/">Open-Source-ERP</a> funktioniert, wie das <a href="/de/erp-produktion/">ERP für die Produktion</a> die Fertigung abbildet oder was „kostenlos“ bei der <a href="/de/kostenloses-erp/">kostenlosen ERP-Software</a> wirklich heißt — und starten Sie auf der <a href="/de/">MyCompany-Startseite</a> für die vollständige Funktionsliste.</p>
+    <section class="inventory-final-cta">
+        <div class="inner">
+            <div class="inventory-cta-copy">
+                <p class="inventory-kicker inventory-kicker-light">Wenn Sie bereit sind</p>
+                <h2>Sehen Sie Ihr Lager<br />als ein klares System.</h2>
+                <p>Öffnen Sie die Live-Demo oder erzählen Sie uns, was Ihr Betrieb braucht.</p>
+            </div>
+            <div class="inventory-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Live-Demo ansehen <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Kontakt aufnehmen</a>
+            </div>
         </div>
     </section>
 </main>
@@ -241,7 +451,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
 <script src="/js/jquery.popupoverlay.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
-<script src="/js/localization/messages_de.min.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/inventory.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex inventory-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -80,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li><a href="https://mycompany-docs.lsfusion.org/ru/administration/development/" target="_blank">Разработка</a></li>
             <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
             <li><a href="https://mycompany-docs.lsfusion.org/ru/" target="_blank">Документация</a></li>
-            <li><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="special">Попробовать демо</a></li>
+            <li><a href="https://demo.lsfusion.org/mycompany-ru/" target="_blank" class="special">Попробовать демо</a></li>
             <li id="languages">
                 <div class="language">
                     <strong>Ру</strong>
@@ -102,98 +103,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="inventory-hero">
+        <div class="inner inventory-hero-grid">
+            <div class="inventory-hero-copy">
+                <p class="inventory-eyebrow"><span></span> Открытый код · Apache 2.0</p>
+                <h1>Весь склад в синхронизации.<br /><em>От приёмки до отгрузки.</em></h1>
+                <p class="inventory-lead">Контролируйте каждый товар, ячейку, партию и движение по всем складам — в одной системе на собственном сервере, связанной с закупками и продажами.</p>
+                <div class="inventory-actions">
+                    <a href="https://demo.lsfusion.org/mycompany-ru/" target="_blank" class="btn inventory-primary-action">Открыть демо <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus inventory-secondary-action">Обсудить задачу</a>
+                </div>
+                <ul class="inventory-proof" aria-label="Основные возможности продукта">
+                    <li><strong>Любое количество</strong><span>складов</span></li>
+                    <li><strong>10–15 минут</strong><span>развёртывание на своём сервере</span></li>
+                    <li><strong>Ноль</strong><span>лицензионных платежей</span></li>
+                </ul>
+            </div>
+
+            <div class="inventory-product-visual">
+                <a class="inventory-demo-preview" href="https://demo.lsfusion.org/mycompany-ru/" target="_blank" aria-label="Открыть демо складского учёта MyCompany">
+                    <img src="/imgs/inventory-demo-ru.png" width="1200" height="700" alt="Складской отчёт MyCompany с местами хранения, доступными остатками и историей движения товара" />
+                    <span class="inventory-demo-badge"><i></i> Реальный интерфейс продукта</span>
+                    <span class="inventory-demo-open">Открыть демо <b aria-hidden="true">↗</b></span>
+                </a>
+                <p class="inventory-demo-caption"><span>Текущие остатки</span><small>Скриншот из публичного демо MyCompany</small></p>
+            </div>
+        </div>
+        <div class="inventory-hero-orb inventory-hero-orb-one"></div>
+        <div class="inventory-hero-orb inventory-hero-orb-two"></div>
+    </section>
+
+    <section class="inventory-flow-section">
         <div class="inner">
-            <h1>
-                Бесплатная программа складского учёта с открытым кодом
-            </h1>
-            <p>
-                MyCompany — бесплатная программа складского учёта с открытым исходным кодом под лицензией Apache 2.0. Она поддерживает любое количество складов, зоны и ячейки хранения, приёмки и отгрузки, внутренние перемещения, партии и серийные номера, штрихкоды, мобильную комплектацию и инвентаризацию. Никаких скрытых платежей и привязки к поставщику: код открыт, а данные всегда остаются у вас.
-            </p>
-            <p>
-                Программа устанавливается на собственном сервере за 10-15 минут и работает через браузер. В основе — открытая платформа lsFusion (LGPL v3) на Java и PostgreSQL: складские операции выполняются в ACID-транзакциях, поэтому остатки остаются корректными даже при одновременной работе многих пользователей.
-            </p>
-            <p>
-                При этом склад — не изолированная программа, а часть полноценной ERP-системы: закупки, продажи, производство и расчёты работают с теми же товарами и остатками в единой базе.
-            </p>
-            <p>
-                <a class="btn" href="https://demo.lsfusion.org/mycompany/" target="_blank">Попробовать демо</a>
-                <a href="#" class="btn contactus">Связаться с нами</a>
-            </p>
+            <div class="inventory-section-heading inventory-heading-center">
+                <p class="inventory-kicker">Один регистр. Каждое движение.</p>
+                <h2>Понятный путь товара по складу</h2>
+                <p>Каждое изменение оформляется документом, поэтому остатки точны, объяснимы и готовы к проверке.</p>
+            </div>
+            <div class="inventory-flow" aria-label="Схема движения запасов">
+                <article>
+                    <span class="inventory-flow-number">01</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 2l9 4.5M4 7v10l8 4 8-4V7M12 12v9M4 7l8 5 8-5M8 4l9 5" /></svg>
+                    </div>
+                    <h3>Приёмка</h3>
+                    <p>Преобразуйте заказы поставщикам в прослеживаемые приёмки.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">02</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V5l5-3v19M8 7h13v14M11 10h2M16 10h2M11 14h2M16 14h2M11 18h2M16 18h2" /></svg>
+                    </div>
+                    <h3>Размещение</h3>
+                    <p>Размещайте товары на любом складе, в зоне или ячейке.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">03</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l3 5v6H7V7ZM7 18H3V5h4M10 18a2 2 0 1 0 0 .1M18 18a2 2 0 1 0 0 .1M18 9h-4v3h7" /></svg>
+                    </div>
+                    <h3>Перемещение и отбор</h3>
+                    <p>Сканируйте товары и ячейки на любом мобильном устройстве.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">04</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M9 13l2 2 4-4" /></svg>
+                    </div>
+                    <h3>Отгрузка</h3>
+                    <p>Резервируйте, подтверждайте и отгружайте без ошибок.</p>
+                </article>
+            </div>
+            <div class="inventory-document-strip">
+                <span>Также поддерживаются</span>
+                <ul>
+                    <li>Перемещения</li>
+                    <li>Инвентаризации</li>
+                    <li>Корректировки</li>
+                    <li>Списания</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Склады, зоны и ячейки</h2>
-            <p>
-                Места хранения организованы в иерархическое дерево любой глубины: склад делится на зоны, зоны — на ячейки. Число складов не ограничено, а ячейки необязательны — небольшой склад можно вести без адресного хранения и включить его позже. Для локаций настраиваются запрет отрицательных остатков и лимит резервов, причём настройки наследуются вниз по дереву.
-            </p>
+    <section class="inventory-features-section">
+        <div class="inner">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Для реальной работы со складом</p>
+                <h2>Просто для кладовщика.<br />Надёжно внутри.</h2>
+            </div>
+            <div class="inventory-bento-grid">
+                <article class="inventory-feature-card inventory-locations-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Гибкая структура</span>
+                        <h3>Склады, зоны и ячейки — как вам удобно</h3>
+                        <p>Создавайте дерево мест хранения любой глубины. Оставьте небольшой склад простым или разметьте каждый проход и ячейку на нескольких площадках.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/ru/inventory/locations/" target="_blank">Подробнее о местах хранения <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="inventory-location-tree" aria-hidden="true">
+                        <div class="inventory-tree-level root"><i></i><strong>Основной склад</strong><em>12,480 единиц</em></div>
+                        <div class="inventory-tree-branch">
+                            <div class="inventory-tree-level"><i></i><strong>Зона A</strong><em>4,820</em></div>
+                            <div class="inventory-tree-branch child">
+                                <div class="inventory-tree-level selected"><i></i><strong>Bin A-01</strong><em>1,240</em></div>
+                                <div class="inventory-tree-level"><i></i><strong>Bin A-02</strong><em>3,580</em></div>
+                            </div>
+                            <div class="inventory-tree-level"><i></i><strong>Зона B</strong><em>7,660</em></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Приёмки, отгрузки и перемещения</h2>
-            <p>
-                Приёмки проходят статусы «Черновик» → «Готов» → «Выполнен» и поддерживают адресное размещение по ячейкам. Подтверждение заказа поставщику автоматически создаёт приёмку, начальные остатки импортируются из Excel, а текущие — выгружаются обратно. Отгрузки контролируют доступность товара и резервируют его под заказ. Перемещения между складами выполняются с двусторонним подтверждением: принимающий склад получает товар по той же себестоимости, что и на исходном складе. Порча, потери, брак и просрочка оформляются документами списания, а расхождения остатков — инвентаризациями.
-            </p>
+                <article class="inventory-feature-card inventory-mobile-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Мобильная работа</span>
+                        <h3>Сканируйте. Отбирайте. Готово.</h3>
+                        <p>Ведите сотрудников по заданиям на отбор и перемещение со сканированием штрихкодов ячеек и товаров.</p>
+                    </div>
+                    <div class="inventory-phone" aria-hidden="true">
+                        <div class="inventory-phone-speaker"></div>
+                        <div class="inventory-phone-head"><span>Задание на отбор</span><b>3 / 4</b></div>
+                        <div class="inventory-phone-product"><i></i><div><span>Беспроводной сканер</span><small>BIN A-01-04</small></div></div>
+                        <div class="inventory-scan-area">
+                            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                            <svg viewBox="0 0 72 42"><path d="M4 4v34M10 4v34M17 4v34M25 4v34M32 4v34M40 4v34M51 4v34M58 4v34M67 4v34" /></svg>
+                        </div>
+                        <div class="inventory-phone-confirm">Товар отсканирован <b>✓</b></div>
+                    </div>
+                </article>
 
-            <h2>Штрихкоды, партии и серийные номера</h2>
-            <p>
-                Партионный учёт включается глобально, на категорию или на отдельный товар. Идентификаторы партий генерируются автоматически по шаблону «префикс + счётчик» (например, LOT-000123), а для штучного отслеживания есть режим серийных номеров. Этикетки со штрихкодами печатаются в PDF, DOCX, XLSX, RTF и HTML; если при сканировании встретился неизвестный штрихкод, программа может тут же создать по нему партию. Несколько товаров продажи могут учитываться как одна складская позиция (SKU) с коэффициентом пересчёта, а упаковки настраиваются по типам документов.
-            </p>
+                <article class="inventory-feature-card inventory-lots-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Полная прослеживаемость</span>
+                        <h3>Партии и серийные номера</h3>
+                        <p>Отслеживайте партии в приёмках, перемещениях, отгрузках и списаниях. Для серийного учёта создавайте отдельную партию на каждую единицу.</p>
+                    </div>
+                    <div class="inventory-lot-labels" aria-hidden="true">
+                        <div class="inventory-lot-label back"><span>LOT-000122</span><i></i></div>
+                        <div class="inventory-lot-label front"><small>MYCOMPANY / LOT</small><strong>LOT-000123</strong><span>Беспроводной сканер · 12 шт.</span><i></i><em>EXP 2028-06</em></div>
+                    </div>
+                </article>
 
-            <h2>Мобильная комплектация</h2>
-            <p>
-                Для отгрузок в статусе «Готов» задания на отбор создаются автоматически. Кладовщик выполняет их в мобильной форме прямо в браузере — сканирует штрихкоды ячеек и товаров, не устанавливая отдельных приложений. Так же с мобильного устройства выполняются и перемещения.
-            </p>
+                <article class="inventory-feature-card inventory-open-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Открыто по замыслу</span>
+                        <h3>Ваши данные. Ваш сервер. Ваши правила.</h3>
+                        <p>Разверните Java и PostgreSQL на своём сервере, настраивайте систему на lsFusion и подключайте другие решения через JSON HTTP API.</p>
+                        <div class="inventory-tech-list"><span>Apache 2.0</span><span>PostgreSQL</span><span>REST / JSON</span></div>
+                    </div>
+                    <div class="inventory-code-card" aria-label="Пример ответа API">
+                        <div><i></i><i></i><i></i><span>GET /stock</span></div>
+                        <pre><code><b>{</b>
+  <em>"location"</em>: <span>"A-01"</span>,
+  <em>"onHand"</em>: <strong>248</strong>,
+  <em>"available"</em>: <strong>216</strong>
+<b>}</b></code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Инвентаризация</h2>
-            <p>
-                Инвентаризационная ведомость заполняется по локации, по категории или вручную со сканированием штрихкодов. Программа сама рассчитывает излишки и недостачи и формирует корректировки остатков. Большой склад можно пересчитывать несколькими командами по отдельным ведомостям — итоги суммируются автоматически, а ведомости и этикетки печатаются из программы.
-            </p>
+    <section class="inventory-insights-section">
+        <div class="inner inventory-insights-grid">
+            <div class="inventory-insights-copy">
+                <p class="inventory-kicker inventory-kicker-light">Актуальные и объяснимые цифры</p>
+                <h2>Знайте, что есть на складе.<br />И почему.</h2>
+                <p>Регистры запасов, резервов и себестоимости связывают каждый остаток с документом, который его изменил.</p>
+                <ul class="inventory-check-list">
+                    <li><span>✓</span><div><strong>Отчёт по остаткам</strong><small>Ожидается, зарезервировано, доступно и в наличии</small></div></li>
+                    <li><span>✓</span><div><strong>Оценка и себестоимость</strong><small>Цена единицы и общая стоимость на любую дату</small></div></li>
+                    <li><span>✓</span><div><strong>Движение товара</strong><small>Полная история по каждой позиции</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/ru/inventory/reports-and-ledgers/" target="_blank" class="inventory-text-link-light">Смотреть отчёты и регистры <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="inventory-report-window" aria-label="Предпросмотр аналитики запасов">
+                <div class="inventory-report-toolbar"><strong>Отчёт по остаткам</strong><span>Все склады ⌄</span><span>15 июл. 2026 ⌄</span></div>
+                <div class="inventory-report-summary">
+                    <div><span>Стоимость запасов</span><strong>$428,760</strong><small>+8,2% за месяц</small></div>
+                    <div><span>Доступно единиц</span><strong>15,560</strong><small>84,5% от остатка</small></div>
+                </div>
+                <div class="inventory-chart">
+                    <div class="inventory-chart-y"><span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span></div>
+                    <div class="inventory-chart-area">
+                        <span class="grid-line one"></span><span class="grid-line two"></span><span class="grid-line three"></span><span class="grid-line four"></span>
+                        <svg viewBox="0 0 500 175" preserveAspectRatio="none" aria-hidden="true">
+                            <defs><linearGradient id="inventoryArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#26C4F7" stop-opacity=".34"/><stop offset="1" stop-color="#26C4F7" stop-opacity="0"/></linearGradient></defs>
+                            <path class="area" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23 L500 175 L0 175 Z"/>
+                            <path class="line" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23"/>
+                        </svg>
+                        <div class="inventory-chart-labels"><span>Янв</span><span>Фев</span><span>Мар</span><span>Апр</span><span>Май</span><span>Июн</span><span>Июл</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Отчёты и доступ по API</h2>
-            <p>
-                Отчёт по остаткам показывает величины «Ожидается», «Резерв», «Доступно» и «На складе», срез на любую дату, сводные таблицы (pivot), историю движения и разбивку по партиям. Доступны стоимостная оценка запасов и отчёт по себестоимости — учёт ведётся на трёх регистрах: остатков, резервов и себестоимости. Текущие остатки можно получать и по HTTP API в формате JSON с фильтрами по категории и локации.
-            </p>
+    <section class="inventory-connected-section">
+        <div class="inner">
+            <div class="inventory-connected-grid">
+                <div class="inventory-connected-copy">
+                    <p class="inventory-kicker">Не ещё один остров данных</p>
+                    <h2>Склад уже является частью вашей ERP</h2>
+                    <p>Закупки, продажи и склад работают в одной базе. Заказы автоматически создают нужные складские документы — без повторного ввода и хрупких синхронизаций.</p>
+                    <a href="/ru/erp-s-otkrytym-kodom/" class="inventory-inline-link">Узнать больше об ERP с открытым кодом <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="inventory-connection-map" aria-label="Схема связей ERP">
+                    <div class="inventory-connection-source purchase"><span>PO</span><div><strong>Заказ поставщику</strong><small>Согласован</small></div></div>
+                    <div class="inventory-connection-source sales"><span>SI</span><div><strong>Заказ покупателя</strong><small>Готов</small></div></div>
+                    <div class="inventory-connection-core"><i></i><strong>Склад</strong><small>Единая база данных</small></div>
+                    <div class="inventory-connection-target receipt"><span>+84</span><div><strong>Приёмка</strong><small>Поступление</small></div></div>
+                    <div class="inventory-connection-target shipment"><span>−24</span><div><strong>Отгрузка</strong><small>Выбытие</small></div></div>
+                </div>
+            </div>
 
-            <h2>Как это работает в MyCompany</h2>
-            <p>Пошаговые инструкции с примерами — в пользовательской документации:</p>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/" target="_blank">Склад — пользовательская документация</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/locations/" target="_blank">Места хранения (склады и зоны)</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/receipts/" target="_blank">Приемки</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/shipments/" target="_blank">Отгрузки и перемещения</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/transfers/" target="_blank">Перемещения</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/adjustments/" target="_blank">Инвентаризация</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/picking/" target="_blank">Задания на отбор</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/lots-and-packages/" target="_blank">Партии и упаковки</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/ru/inventory/reports-and-ledgers/" target="_blank">Отчёты и регистры</a></li>
-            </ul>
+            <div class="inventory-docs-panel">
+                <div>
+                    <span class="inventory-feature-tag">Подробнее</span>
+                    <h3>Всё задокументировано</h3>
+                    <p>От первого места хранения до логики регистров — весь процесс открыт для изучения.</p>
+                </div>
+                <nav aria-label="Документация по складу">
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/" target="_blank">Обзор <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/receipts/" target="_blank">Приёмки <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/shipments/" target="_blank">Отгрузки <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/transfers/" target="_blank">Перемещения <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/picking/" target="_blank">Отбор <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/ru/inventory/lots-and-packages/" target="_blank">Партии и упаковки <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>Частые вопросы</h2>
-            <h3>Программа действительно бесплатная?</h3>
-            <p>
-                Да. MyCompany распространяется бесплатно под лицензией Apache 2.0 — без скрытых платежей и привязки к поставщику. Система работает на вашем собственном сервере, поэтому данные принадлежат только вам.
-            </p>
-            <h3>Сколько складов можно вести?</h3>
-            <p>
-                Сколько угодно. Каждый склад описывается деревом локаций любой глубины — от одной общей площадки до зон и ячеек. Адресное хранение можно включить только там, где оно действительно нужно.
-            </p>
-            <h3>Есть ли поддержка штрихкодов и терминалов сбора данных?</h3>
-            <p>
-                Да. Комплектация, перемещения и заполнение инвентаризаций выполняются со сканированием штрихкодов ячеек и товаров в мобильной форме, которая открывается в обычном браузере — устанавливать отдельное приложение не нужно.
-            </p>
-            <h3>Поддерживаются ли партии и серийные номера?</h3>
-            <p>
-                Да. Партионный учёт включается глобально, для категории или конкретного товара, идентификаторы партий генерируются автоматически. Для поштучного отслеживания предусмотрен режим серийных номеров, а этикетки со штрихкодами печатаются прямо из программы.
-            </p>
-            <h3>Как провести инвентаризацию?</h3>
-            <p>
-                Создайте документ инвентаризации и заполните его по локации, по категории или вручную со сканированием. Программа автоматически рассчитает излишки и недостачи и скорректирует остатки. Большой склад удобно считать несколькими командами по отдельным ведомостям — итоги сложатся сами.
-            </p>
-            <h3>Можно ли получить остатки по API?</h3>
-            <p>
-                Да. Текущие остатки доступны по HTTP API в формате JSON с фильтрами по категории товара и локации.
-            </p>
+    <section class="inventory-faq-section">
+        <div class="inner inventory-faq-grid">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Ответы на вопросы</p>
+                <h2>Перед началом</h2>
+                <p>Не нашли нужную деталь? <a href="#" class="contactus">Напишите нашей команде.</a></p>
+            </div>
+            <div class="inventory-faq-list">
+                <details open>
+                    <summary>Программа складского учёта действительно бесплатная?<span></span></summary>
+                    <p>Да. MyCompany распространяется с открытым кодом по лицензии Apache 2.0 — без скрытых платежей и лицензионной привязки. Система работает на вашей инфраструктуре.</p>
+                </details>
+                <details>
+                    <summary>Сколько складов можно вести?<span></span></summary>
+                    <p>Любое количество. На каждом складе можно создать дерево мест хранения любой глубины, а учёт по ячейкам остаётся необязательным.</p>
+                </details>
+                <details>
+                    <summary>Поддерживаются штрихкоды и мобильные устройства?<span></span></summary>
+                    <p>Да. Сотрудники могут сканировать штрихкоды товаров, ячеек и партий при отборе или перемещении с мобильного устройства.</p>
+                </details>
+                <details>
+                    <summary>Можно учитывать партии и серийные номера?<span></span></summary>
+                    <p>Да. Партии используются во всех складских документах, а серийный режим создаёт отдельную партию для каждой единицы товара.</p>
+                </details>
+                <details>
+                    <summary>Могут ли другие системы получать текущие остатки?<span></span></summary>
+                    <p>Да. JSON HTTP API отдаёт текущие остатки и поддерживает фильтрацию по категории и месту хранения.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>
-                Складской учёт — часть <a href="/ru/besplatnaya-erp-sistema/">бесплатной ERP-системы</a> MyCompany с <a href="/ru/erp-s-otkrytym-kodom/">открытым исходным кодом</a>. Если вы выпускаете продукцию, посмотрите также страницу <a href="/ru/erp-dlya-proizvodstva/">ERP для производства</a>, а полный обзор возможностей системы — на <a href="/ru/">главной странице</a>.
-            </p>
+    <section class="inventory-final-cta">
+        <div class="inner">
+            <div class="inventory-cta-copy">
+                <p class="inventory-kicker inventory-kicker-light">Можно начинать</p>
+                <h2>Увидьте весь склад<br />как одну понятную систему.</h2>
+                <p>Откройте демо или расскажите нам о задачах вашего склада.</p>
+            </div>
+            <div class="inventory-actions">
+                <a href="https://demo.lsfusion.org/mycompany-ru/" target="_blank" class="btn inventory-primary-action">Открыть демо <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Связаться с нами</a>
+            </div>
         </div>
     </section>
 </main>
@@ -269,7 +452,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
 <script src="/js/jquery.popupoverlay.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
-<script src="/js/localization/messages_ru.min.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

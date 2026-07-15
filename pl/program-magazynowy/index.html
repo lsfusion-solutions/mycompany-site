@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/inventory.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex inventory-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -102,65 +103,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="inventory-hero">
+        <div class="inner inventory-hero-grid">
+            <div class="inventory-hero-copy">
+                <p class="inventory-eyebrow"><span></span> Open source · Apache 2.0</p>
+                <h1>Magazyn w pełnej synchronizacji.<br /><em>Od przyjęcia do wysyłki.</em></h1>
+                <p class="inventory-lead">Śledź każdy artykuł, miejsce składowania, partię i ruch we wszystkich magazynach — w jednym systemie na własnym serwerze, połączonym z zakupami i sprzedażą.</p>
+                <div class="inventory-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Otwórz demo <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus inventory-secondary-action">Porozmawiaj z nami</a>
+                </div>
+                <ul class="inventory-proof" aria-label="Najważniejsze możliwości produktu">
+                    <li><strong>Dowolna liczba</strong><span>magazynów</span></li>
+                    <li><strong>10–15 min</strong><span>instalacja na własnym serwerze</span></li>
+                    <li><strong>Zero</strong><span>opłat licencyjnych</span></li>
+                </ul>
+            </div>
+
+            <div class="inventory-product-visual">
+                <a class="inventory-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="Otwórz demo magazynu MyCompany">
+                    <img src="/imgs/inventory-demo.png" width="1200" height="700" alt="Raport magazynowy MyCompany z lokalizacjami, dostępnymi ilościami i historią ruchów" />
+                    <span class="inventory-demo-badge"><i></i> Rzeczywisty interfejs produktu</span>
+                    <span class="inventory-demo-open">Otwórz demo <b aria-hidden="true">↗</b></span>
+                </a>
+                <p class="inventory-demo-caption"><span>Raport bieżących stanów</span><small>Zrzut z publicznego demo MyCompany</small></p>
+            </div>
+        </div>
+        <div class="inventory-hero-orb inventory-hero-orb-one"></div>
+        <div class="inventory-hero-orb inventory-hero-orb-two"></div>
+    </section>
+
+    <section class="inventory-flow-section">
         <div class="inner">
-            <h1>Darmowy program magazynowy dla małych i średnich firm</h1>
-            <p><strong>MyCompany</strong> to darmowy program magazynowy o otwartym kodzie źródłowym (licencja Apache 2.0), stworzony z myślą o małych i średnich firmach. Nie płacisz za licencje, nie ma ukrytych opłat ani uzależnienia od dostawcy — system instalujesz na własnym serwerze w 10–15 minut i zachowujesz pełną kontrolę nad danymi.</p>
-            <p>Jako system magazynowy MyCompany obejmuje całą gospodarkę magazynową: strukturę magazynów ze strefami i miejscami składowania, przyjęcia, wydania i przemieszczenia, partie i numery seryjne, inwentaryzację, mobilną kompletację ze skanowaniem kodów kreskowych oraz raporty stanów magazynowych. Całość działa na platformie lsFusion (LGPL v3, Java + PostgreSQL, transakcje ACID).</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Wypróbuj demo</a> <a href="#" class="btn contactus">Skontaktuj się z nami</a></p>
+            <div class="inventory-section-heading inventory-heading-center">
+                <p class="inventory-kicker">Jeden rejestr. Każdy ruch.</p>
+                <h2>Przejrzysta droga towaru przez magazyn</h2>
+                <p>Każda zmiana jest zapisywana jako dokument, dzięki czemu stany są dokładne, wyjaśnialne i gotowe do audytu.</p>
+            </div>
+            <div class="inventory-flow" aria-label="Przepływ ruchów magazynowych">
+                <article>
+                    <span class="inventory-flow-number">01</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 2l9 4.5M4 7v10l8 4 8-4V7M12 12v9M4 7l8 5 8-5M8 4l9 5" /></svg>
+                    </div>
+                    <h3>Przyjęcie</h3>
+                    <p>Zamieniaj zamówienia zakupu w identyfikowalne przyjęcia.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">02</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V5l5-3v19M8 7h13v14M11 10h2M16 10h2M11 14h2M16 14h2M11 18h2M16 18h2" /></svg>
+                    </div>
+                    <h3>Rozmieszczenie</h3>
+                    <p>Odkładaj towary do dowolnego magazynu, strefy lub miejsca.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">03</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l3 5v6H7V7ZM7 18H3V5h4M10 18a2 2 0 1 0 0 .1M18 18a2 2 0 1 0 0 .1M18 9h-4v3h7" /></svg>
+                    </div>
+                    <h3>Przemieszczenie i kompletacja</h3>
+                    <p>Skanuj artykuły i miejsca na dowolnym urządzeniu mobilnym.</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">04</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M9 13l2 2 4-4" /></svg>
+                    </div>
+                    <h3>Wydanie</h3>
+                    <p>Rezerwuj, potwierdzaj i wysyłaj z pewnością.</p>
+                </article>
+            </div>
+            <div class="inventory-document-strip">
+                <span>Dostępne również</span>
+                <ul>
+                    <li>Przemieszczenia</li>
+                    <li>Inwentaryzacje</li>
+                    <li>Korekty</li>
+                    <li>Odpisy i złomowanie</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>Magazyny, strefy i miejsca składowania</h2>
-            <p>Lokalizacje tworzą drzewo o dowolnej głębokości: magazyny dzielą się na strefy, a strefy na miejsca składowania. Liczba magazynów jest nieograniczona. Dla wybranych lokalizacji możesz włączyć „Zakaz ujemnych stanów” oraz blokadę nadmiernych rezerwacji — ustawienia te są dziedziczone przez lokalizacje podrzędne.</p>
+    <section class="inventory-features-section">
+        <div class="inner">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Stworzony do realnej pracy</p>
+                <h2>Prosty na magazynie.<br />Solidny od środka.</h2>
+            </div>
+            <div class="inventory-bento-grid">
+                <article class="inventory-feature-card inventory-locations-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Elastyczna struktura</span>
+                        <h3>Magazyny, strefy i miejsca — po Twojemu</h3>
+                        <p>Buduj drzewo lokalizacji o dowolnej głębokości. Zachowaj prostotę małego magazynu albo odwzoruj każdą alejkę i miejsce w wielu obiektach.</p>
+                        <a href="https://mycompany-docs.lsfusion.org/pl/inventory/locations/" target="_blank">Poznaj lokalizacje <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="inventory-location-tree" aria-hidden="true">
+                        <div class="inventory-tree-level root"><i></i><strong>Magazyn główny</strong><em>12,480 sztuk</em></div>
+                        <div class="inventory-tree-branch">
+                            <div class="inventory-tree-level"><i></i><strong>Strefa A</strong><em>4,820</em></div>
+                            <div class="inventory-tree-branch child">
+                                <div class="inventory-tree-level selected"><i></i><strong>Bin A-01</strong><em>1,240</em></div>
+                                <div class="inventory-tree-level"><i></i><strong>Bin A-02</strong><em>3,580</em></div>
+                            </div>
+                            <div class="inventory-tree-level"><i></i><strong>Strefa B</strong><em>7,660</em></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>Przyjęcia, wydania i przemieszczenia</h2>
-            <p>Ruch towarów rejestrujesz dokumentami: przyjęcia, wydania, przemieszczenia, odpady (odpisy z tytułu uszkodzeń, strat, wad lub przeterminowania) oraz korekty zapasów.</p>
-            <ul>
-                <li>Przyjęcia przechodzą przez statusy Projekt → Gotowy → Wykonano i obsługują rozmieszczenie adresowe; zatwierdzenie zamówienia zakupu automatycznie tworzy dokument przyjęcia.</li>
-                <li>Wydania kontrolują dostępność towaru i rezerwują go na stanie.</li>
-                <li>Przemieszczenia działają z dwustronnym potwierdzaniem — magazyn źródłowy potwierdza wydanie, a docelowy przyjęcie; towar trafia do magazynu docelowego z kosztem z magazynu źródłowego.</li>
-                <li>Stany początkowe zaimportujesz z Excela, a aktualne stany magazynowe możesz wyeksportować.</li>
-            </ul>
+                <article class="inventory-feature-card inventory-mobile-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Praca mobilna</span>
+                        <h3>Skanuj. Kompletuj. Gotowe.</h3>
+                        <p>Prowadź operatorów przez kompletację i przemieszczenia za pomocą skanowania kodów miejsc i artykułów.</p>
+                    </div>
+                    <div class="inventory-phone" aria-hidden="true">
+                        <div class="inventory-phone-speaker"></div>
+                        <div class="inventory-phone-head"><span>Lista kompletacyjna</span><b>3 / 4</b></div>
+                        <div class="inventory-phone-product"><i></i><div><span>Skaner bezprzewodowy</span><small>BIN A-01-04</small></div></div>
+                        <div class="inventory-scan-area">
+                            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                            <svg viewBox="0 0 72 42"><path d="M4 4v34M10 4v34M17 4v34M25 4v34M32 4v34M40 4v34M51 4v34M58 4v34M67 4v34" /></svg>
+                        </div>
+                        <div class="inventory-phone-confirm">Artykuł zeskanowany <b>✓</b></div>
+                    </div>
+                </article>
 
-            <h2>Kompletacja mobilna ze skanowaniem kodów</h2>
-            <p>Dla wydań w statusie Gotowy system automatycznie generuje zadania kompletacji. Magazynier realizuje je na mobilnym formularzu kompletacji, skanując kody kreskowe miejsc składowania i towarów. Z urządzenia mobilnego wykona też przemieszczenia między lokalizacjami.</p>
+                <article class="inventory-feature-card inventory-lots-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Pełna identyfikowalność</span>
+                        <h3>Partie i numery seryjne</h3>
+                        <p>Śledź partie przez przyjęcia, przemieszczenia, wydania i odpisy. Gdy potrzebna jest kontrola seryjna, użyj jednej partii na sztukę.</p>
+                    </div>
+                    <div class="inventory-lot-labels" aria-hidden="true">
+                        <div class="inventory-lot-label back"><span>LOT-000122</span><i></i></div>
+                        <div class="inventory-lot-label front"><small>MYCOMPANY / LOT</small><strong>LOT-000123</strong><span>Skaner bezprzewodowy · 12 szt.</span><i></i><em>EXP 2028-06</em></div>
+                    </div>
+                </article>
 
-            <h2>Partie i numery seryjne</h2>
-            <p>Śledzenie partii włączysz globalnie, dla wybranej kategorii albo dla pojedynczego towaru; dostępny jest również tryb numerów seryjnych. Identyfikatory partii nadawane są automatycznie według wzorca prefiks + licznik (np. LOT-000123). Partie rejestruje się w przyjęciach, wydaniach i przemieszczeniach, a zeskanowanie nowego kodu może od razu utworzyć partię. Etykiety partii z kodem kreskowym zapiszesz do PDF, DOCX, XLSX, RTF lub HTML.</p>
+                <article class="inventory-feature-card inventory-open-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">Otwarty z założenia</span>
+                        <h3>Twoje dane. Twój serwer. Twoje zasady.</h3>
+                        <p>Uruchom stos Java i PostgreSQL na własnym serwerze, dostosuj go w lsFusion i łącz inne systemy przez JSON HTTP API.</p>
+                        <div class="inventory-tech-list"><span>Apache 2.0</span><span>PostgreSQL</span><span>REST / JSON</span></div>
+                    </div>
+                    <div class="inventory-code-card" aria-label="Przykładowa odpowiedź API">
+                        <div><i></i><i></i><i></i><span>GET /stock</span></div>
+                        <pre><code><b>{</b>
+  <em>"location"</em>: <span>"A-01"</span>,
+  <em>"onHand"</em>: <strong>248</strong>,
+  <em>"available"</em>: <strong>216</strong>
+<b>}</b></code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Inwentaryzacja</h2>
-            <p>Arkusz inwentaryzacji wypełnisz według lokalizacji, według kategorii lub ręcznie — także ze skanowaniem kodów kreskowych. System sam wylicza różnice inwentaryzacyjne: nadwyżki i braki. Przy większych spisach pracę dzielisz na arkusze inwentaryzacyjne dla zespołów, które są automatycznie sumowane; arkusze i etykiety można drukować.</p>
+    <section class="inventory-insights-section">
+        <div class="inner inventory-insights-grid">
+            <div class="inventory-insights-copy">
+                <p class="inventory-kicker inventory-kicker-light">Aktualne, zrozumiałe liczby</p>
+                <h2>Wiesz, co masz.<br />I dlaczego.</h2>
+                <p>Rejestry zapasów, rezerwacji i kosztów prowadzą od każdego salda do dokumentu, który je zmienił.</p>
+                <ul class="inventory-check-list">
+                    <li><span>✓</span><div><strong>Raport magazynowy</strong><small>Oczekiwane, zarezerwowane, dostępne i na stanie</small></div></li>
+                    <li><span>✓</span><div><strong>Wycena i koszt</strong><small>Wartość jednostkowa i łączna na dowolny dzień</small></div></li>
+                    <li><span>✓</span><div><strong>Ruchy artykułu</strong><small>Pełna historia każdego artykułu</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/pl/inventory/reports-and-ledgers/" target="_blank" class="inventory-text-link-light">Zobacz raporty i rejestry <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="inventory-report-window" aria-label="Podgląd analityki magazynowej">
+                <div class="inventory-report-toolbar"><strong>Raport magazynowy</strong><span>Wszystkie magazyny ⌄</span><span>15 lip 2026 ⌄</span></div>
+                <div class="inventory-report-summary">
+                    <div><span>Wartość zapasu</span><strong>$428,760</strong><small>+8,2% w tym miesiącu</small></div>
+                    <div><span>Dostępne sztuki</span><strong>15,560</strong><small>84,5% stanu</small></div>
+                </div>
+                <div class="inventory-chart">
+                    <div class="inventory-chart-y"><span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span></div>
+                    <div class="inventory-chart-area">
+                        <span class="grid-line one"></span><span class="grid-line two"></span><span class="grid-line three"></span><span class="grid-line four"></span>
+                        <svg viewBox="0 0 500 175" preserveAspectRatio="none" aria-hidden="true">
+                            <defs><linearGradient id="inventoryArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#26C4F7" stop-opacity=".34"/><stop offset="1" stop-color="#26C4F7" stop-opacity="0"/></linearGradient></defs>
+                            <path class="area" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23 L500 175 L0 175 Z"/>
+                            <path class="line" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23"/>
+                        </svg>
+                        <div class="inventory-chart-labels"><span>Sty</span><span>Lut</span><span>Mar</span><span>Kwi</span><span>Maj</span><span>Cze</span><span>Lip</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Stany magazynowe i raporty</h2>
-            <p>Raport bieżących stanów pokazuje wartości Oczekiwane, Zarezerwowane, Dostępne i Na stanie — z widokiem pivot, historią i podziałem na partie. Do tego dochodzą wycena stanów, historia ruchu oraz raport kosztów, prowadzone na trzech rejestrach: stanów, rezerwacji i kosztów. Stany magazynowe udostępnisz też innym systemom przez HTTP API w formacie JSON, z filtrowaniem po kategorii i lokalizacji.</p>
-            <p>Jednostki miary są elastyczne: wiele towarów sprzedażowych można zmapować na jeden magazynowy SKU ze współczynnikiem przeliczenia, a jednostki opakowań ustawić osobno dla każdego typu dokumentu.</p>
+    <section class="inventory-connected-section">
+        <div class="inner">
+            <div class="inventory-connected-grid">
+                <div class="inventory-connected-copy">
+                    <p class="inventory-kicker">Nie kolejna wyspa danych</p>
+                    <h2>Magazyn jest już częścią Twojego ERP</h2>
+                    <p>Zakupy, sprzedaż i zapasy korzystają z jednej bazy. Zamówienia automatycznie tworzą potrzebne dokumenty magazynowe — bez ponownego wpisywania i zawodnej synchronizacji.</p>
+                    <a href="/pl/system-erp-open-source/" class="inventory-inline-link">Poznaj pełny ERP open source <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="inventory-connection-map" aria-label="Schemat połączeń ERP">
+                    <div class="inventory-connection-source purchase"><span>PO</span><div><strong>Zamówienie zakupu</strong><small>Zatwierdzone</small></div></div>
+                    <div class="inventory-connection-source sales"><span>SI</span><div><strong>Zamówienie sprzedaży</strong><small>Gotowe</small></div></div>
+                    <div class="inventory-connection-core"><i></i><strong>Magazyn</strong><small>Jedna wspólna baza</small></div>
+                    <div class="inventory-connection-target receipt"><span>+84</span><div><strong>Przyjęcie</strong><small>Przychód</small></div></div>
+                    <div class="inventory-connection-target shipment"><span>−24</span><div><strong>Wydanie</strong><small>Rozchód</small></div></div>
+                </div>
+            </div>
 
-            <h2>Jak to działa w MyCompany</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/" target="_blank">Magazynowanie — przegląd</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/locations/" target="_blank">Lokalizacje: magazyny, strefy, miejsca składowania</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/receipts/" target="_blank">Przyjęcia</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/shipments/" target="_blank">Wydania</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/transfers/" target="_blank">Przemieszczenia</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/adjustments/" target="_blank">Inwentaryzacja i korekty zapasów</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/lots-and-packages/" target="_blank">Partie i pakiety</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/pl/inventory/reports-and-ledgers/" target="_blank">Raporty i rejestry</a></li>
-            </ul>
+            <div class="inventory-docs-panel">
+                <div>
+                    <span class="inventory-feature-tag">Dowiedz się więcej</span>
+                    <h3>Wszystko jest udokumentowane</h3>
+                    <p>Od pierwszej lokalizacji po logikę rejestrów — cały proces można otwarcie prześledzić.</p>
+                </div>
+                <nav aria-label="Dokumentacja magazynu">
+                    <a href="https://mycompany-docs.lsfusion.org/pl/inventory/" target="_blank">Przegląd <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/pl/inventory/receipts/" target="_blank">Przyjęcia <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/pl/inventory/shipments/" target="_blank">Wydania <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/pl/inventory/transfers/" target="_blank">Przemieszczenia <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/pl/inventory/picking/" target="_blank">Kompletacja <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/pl/inventory/lots-and-packages/" target="_blank">Partie i opakowania <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>FAQ</h2>
-            <h3>Czy ten program magazynowy jest naprawdę darmowy?</h3>
-            <p>Tak. MyCompany jest bezpłatny i ma otwarty kod źródłowy na licencji Apache 2.0 — bez ukrytych opłat i bez uzależnienia od dostawcy. Instalujesz go na własnym serwerze w 10–15 minut.</p>
-            <h3>Ile magazynów mogę prowadzić?</h3>
-            <p>Dowolną liczbę. Każdy magazyn możesz dodatkowo podzielić na strefy i miejsca składowania — drzewo lokalizacji ma dowolną głębokość.</p>
-            <h3>Czy program obsługuje kody kreskowe?</h3>
-            <p>Tak. Kody kreskowe skanujesz przy mobilnej kompletacji (miejsca i towary), przy inwentaryzacji oraz przy pracy z partiami; etykiety partii z kodem kreskowym wydrukujesz z systemu.</p>
-            <h3>Czy system śledzi partie i numery seryjne?</h3>
-            <p>Tak. Partie włączysz globalnie, dla wybranej kategorii lub pojedynczego towaru, z automatyczną numeracją (np. LOT-000123); dostępny jest też tryb numerów seryjnych.</p>
-            <h3>Jak przeprowadzę inwentaryzację?</h3>
-            <p>Tworzysz korektę zapasów i wypełniasz ją według lokalizacji, kategorii albo ręcznie ze skanowaniem. System automatycznie wylicza nadwyżki i braki, a przy większych spisach sumuje arkusze poszczególnych zespołów.</p>
-            <h3>Czy magazynierzy mogą pracować na urządzeniach mobilnych?</h3>
-            <p>Tak — dostępny jest mobilny formularz kompletacji ze skanowaniem kodów kreskowych oraz mobilne przemieszczenia towarów.</p>
+    <section class="inventory-faq-section">
+        <div class="inner inventory-faq-grid">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">Odpowiedzi na pytania</p>
+                <h2>Zanim zaczniesz</h2>
+                <p>Brakuje tu potrzebnej informacji? <a href="#" class="contactus">Porozmawiaj z naszym zespołem.</a></p>
+            </div>
+            <div class="inventory-faq-list">
+                <details open>
+                    <summary>Czy program magazynowy jest naprawdę darmowy?<span></span></summary>
+                    <p>Tak. MyCompany jest open source na licencji Apache 2.0, bez ukrytych opłat i uzależnienia licencyjnego. System działa na Twojej infrastrukturze.</p>
+                </details>
+                <details>
+                    <summary>Ile magazynów mogę prowadzić?<span></span></summary>
+                    <p>Dowolną liczbę. Każdy magazyn może mieć drzewo lokalizacji o dowolnej głębokości, a śledzenie na poziomie miejsca jest opcjonalne.</p>
+                </details>
+                <details>
+                    <summary>Czy obsługuje kody kreskowe i urządzenia mobilne?<span></span></summary>
+                    <p>Tak. Operatorzy mogą skanować kody artykułów, miejsc i partii podczas kompletacji lub przemieszczeń na urządzeniu mobilnym.</p>
+                </details>
+                <details>
+                    <summary>Czy mogę śledzić partie i numery seryjne?<span></span></summary>
+                    <p>Tak. Partie działają we wszystkich dokumentach magazynowych, a tryb seryjny tworzy jedną partię na sztukę.</p>
+                </details>
+                <details>
+                    <summary>Czy inne systemy mogą odczytywać bieżące stany?<span></span></summary>
+                    <p>Tak. JSON HTTP API udostępnia bieżące stany i pozwala filtrować je według kategorii i lokalizacji.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>Zobacz także: <a href="/pl/darmowy-system-erp/">darmowy system ERP</a> — pełen obraz możliwości MyCompany, <a href="/pl/program-do-faktur-ksef/">program do faktur z KSeF</a> oraz <a href="/pl/">stronę główną MyCompany</a>.</p>
+    <section class="inventory-final-cta">
+        <div class="inner">
+            <div class="inventory-cta-copy">
+                <p class="inventory-kicker inventory-kicker-light">Kiedy tylko zechcesz</p>
+                <h2>Zobacz swój magazyn<br />jako jeden przejrzysty system.</h2>
+                <p>Otwórz demo albo opowiedz nam o potrzebach swojej firmy.</p>
+            </div>
+            <div class="inventory-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">Otwórz demo <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">Skontaktuj się z nami</a>
+            </div>
         </div>
     </section>
 </main>
@@ -231,6 +447,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </form>
     </div>
 </div>
+
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -238,7 +455,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
 <script src="/js/jquery.popupoverlay.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
-<script src="/js/localization/messages_pl.min.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

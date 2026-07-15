@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/inventory.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png">
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="flex">
+<body class="flex inventory-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,71 +102,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-content">
+    <section class="inventory-hero">
+        <div class="inner inventory-hero-grid">
+            <div class="inventory-hero-copy">
+                <p class="inventory-eyebrow"><span></span> 开源 · Apache 2.0</p>
+                <h1>库存始终同步。<br /><em>从收货到发货。</em></h1>
+                <p class="inventory-lead">在一个自托管系统中跟踪所有仓库的每件商品、每个库位、每个批次和每次移动，并与采购和销售直接连接。</p>
+                <div class="inventory-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">体验在线演示 <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus inventory-secondary-action">联系我们</a>
+                </div>
+                <ul class="inventory-proof" aria-label="产品主要功能">
+                    <li><strong>任意数量</strong><span>的仓库</span></li>
+                    <li><strong>10–15 分钟</strong><span>完成自托管部署</span></li>
+                    <li><strong>零</strong><span>许可费用</span></li>
+                </ul>
+            </div>
+
+            <div class="inventory-product-visual">
+                <a class="inventory-demo-preview" href="https://demo.lsfusion.org/mycompany/" target="_blank" aria-label="打开 MyCompany 库存管理在线演示">
+                    <img src="/imgs/inventory-demo.png" width="1200" height="700" alt="MyCompany 库存报表，显示仓库库位、可用数量和库存移动历史" />
+                    <span class="inventory-demo-badge"><i></i> 真实产品界面</span>
+                    <span class="inventory-demo-open">打开在线演示 <b aria-hidden="true">↗</b></span>
+                </a>
+                <p class="inventory-demo-caption"><span>当前库存报表</span><small>截图来自 MyCompany 公共演示</small></p>
+            </div>
+        </div>
+        <div class="inventory-hero-orb inventory-hero-orb-one"></div>
+        <div class="inventory-hero-orb inventory-hero-orb-two"></div>
+    </section>
+
+    <section class="inventory-flow-section">
         <div class="inner">
-            <h1>开源仓库与库存管理</h1>
-            <p><strong>MyCompany</strong>是免费的开源库存管理软件：跟踪任意数量仓库中的库存，记录每一次入库、出库和移库，随时准确显示在库、已预留和可用的数量。代码以Apache 2.0许可证发布，没有隐藏费用，也没有许可证绑定。</p>
-            <p>与孤立的库存管理应用不同，MyCompany是基于lsFusion平台（LGPL v3，Java和PostgreSQL，ACID事务）构建的完整中小企业ERP。仓库管理与采购、销售共享同一个数据库，10-15分钟即可安装到您自己的服务器上。</p>
-            <p><a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">试用演示</a> <a href="#" class="btn contactus">联系我们</a></p>
+            <div class="inventory-section-heading inventory-heading-center">
+                <p class="inventory-kicker">一本台账。每次移动。</p>
+                <h2>货物在仓库中的清晰路径</h2>
+                <p>每次变化都记录为单据，因此库存准确、可解释，并随时可供审计。</p>
+            </div>
+            <div class="inventory-flow" aria-label="库存移动流程">
+                <article>
+                    <span class="inventory-flow-number">01</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 2l9 4.5M4 7v10l8 4 8-4V7M12 12v9M4 7l8 5 8-5M8 4l9 5" /></svg>
+                    </div>
+                    <h3>收货</h3>
+                    <p>将采购订单转换为可追溯的入库单。</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">02</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V5l5-3v19M8 7h13v14M11 10h2M16 10h2M11 14h2M16 14h2M11 18h2M16 18h2" /></svg>
+                    </div>
+                    <h3>上架</h3>
+                    <p>将货物放入任意仓库、区域或库位。</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">03</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11l3 5v6H7V7ZM7 18H3V5h4M10 18a2 2 0 1 0 0 .1M18 18a2 2 0 1 0 0 .1M18 9h-4v3h7" /></svg>
+                    </div>
+                    <h3>移库与拣货</h3>
+                    <p>在任何移动设备上扫描商品和库位。</p>
+                </article>
+                <article>
+                    <span class="inventory-flow-number">04</span>
+                    <div class="inventory-icon-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M9 13l2 2 4-4" /></svg>
+                    </div>
+                    <h3>发货</h3>
+                    <p>可靠地预留、确认并完成发货。</p>
+                </article>
+            </div>
+            <div class="inventory-document-strip">
+                <span>还包括</span>
+                <ul>
+                    <li>移库</li>
+                    <li>库存盘点</li>
+                    <li>库存调整</li>
+                    <li>报废出库</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <h2>仓库、区域和库位</h2>
-            <p>库位构成任意深度的层级树：仓库、仓库内的区域、区域内的库位（bin）。仓库数量不限，结构保持灵活——库位级明细是可选的，小仓库可以只是一个存储位置，而更大的场地则可以按需要的精细程度进行划分。</p>
+    <section class="inventory-features-section">
+        <div class="inner">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">为真实库存而生</p>
+                <h2>现场操作简单。<br />底层能力强大。</h2>
+            </div>
+            <div class="inventory-bento-grid">
+                <article class="inventory-feature-card inventory-locations-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">灵活结构</span>
+                        <h3>仓库、区域和库位，由您定义</h3>
+                        <p>可创建任意深度的库位树。小型仓库保持简单，也可在多个场地映射每条通道和每个库位。</p>
+                        <a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">了解库位管理 <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="inventory-location-tree" aria-hidden="true">
+                        <div class="inventory-tree-level root"><i></i><strong>主仓库</strong><em>12,480 件</em></div>
+                        <div class="inventory-tree-branch">
+                            <div class="inventory-tree-level"><i></i><strong>区域 A</strong><em>4,820</em></div>
+                            <div class="inventory-tree-branch child">
+                                <div class="inventory-tree-level selected"><i></i><strong>Bin A-01</strong><em>1,240</em></div>
+                                <div class="inventory-tree-level"><i></i><strong>Bin A-02</strong><em>3,580</em></div>
+                            </div>
+                            <div class="inventory-tree-level"><i></i><strong>区域 B</strong><em>7,660</em></div>
+                        </div>
+                    </div>
+                </article>
 
-            <h2>每一次库存变动都是一张单据</h2>
-            <p>所有库存变动都通过单据完成，从而保证库存管理可审计：</p>
-            <ul>
-                <li><strong>入库单</strong>处理货物入库，<strong>出库单</strong>处理货物出库</li>
-                <li>仓库或库位之间的<strong>移库单</strong></li>
-                <li><strong>库存盘点</strong>——实物盘点，登记盘盈和盘亏</li>
-                <li>针对损坏、丢失、缺陷或过期原因的<strong>报废核销</strong></li>
-            </ul>
+                <article class="inventory-feature-card inventory-mobile-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">移动作业</span>
+                        <h3>扫描。拣货。完成。</h3>
+                        <p>通过扫描库位和商品条码，引导操作员完成拣货与移库。</p>
+                    </div>
+                    <div class="inventory-phone" aria-hidden="true">
+                        <div class="inventory-phone-speaker"></div>
+                        <div class="inventory-phone-head"><span>拣货清单</span><b>3 / 4</b></div>
+                        <div class="inventory-phone-product"><i></i><div><span>无线扫描器</span><small>BIN A-01-04</small></div></div>
+                        <div class="inventory-scan-area">
+                            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                            <svg viewBox="0 0 72 42"><path d="M4 4v34M10 4v34M17 4v34M25 4v34M32 4v34M40 4v34M51 4v34M58 4v34M67 4v34" /></svg>
+                        </div>
+                        <div class="inventory-phone-confirm">商品已扫描 <b>✓</b></div>
+                    </div>
+                </article>
 
-            <h2>移动设备上的条码拣货</h2>
-            <p>当标记为需要拣货的出库单进入“就绪”状态时，系统会自动生成拣货任务。每一行都记录应拣数量与实拣数量、操作员和时间戳。仓库人员使用移动拣货表单工作，边走边扫描库位和商品条码，还可以通过移动移库在库位之间转移货物。</p>
+                <article class="inventory-feature-card inventory-lots-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">端到端追溯</span>
+                        <h3>批次与序列号</h3>
+                        <p>在收货、移库、发货和报废过程中追踪批次。需要序列级管理时，每件商品使用一个批次。</p>
+                    </div>
+                    <div class="inventory-lot-labels" aria-hidden="true">
+                        <div class="inventory-lot-label back"><span>LOT-000122</span><i></i></div>
+                        <div class="inventory-lot-label front"><small>MYCOMPANY / LOT</small><strong>LOT-000123</strong><span>无线扫描器 · 12 件</span><i></i><em>EXP 2028-06</em></div>
+                    </div>
+                </article>
 
-            <h2>批次与序列号追溯</h2>
-            <p>批次让您在入库、出库、移库、报废和盘点中实现按批追溯。批次编号根据前缀和流水号自动生成（例如LOT-000123）；当需要单件追溯时，序列号模式会为每件商品创建一个批次。扫描条码即可定位到对应批次——未知条码还可以当场创建新批次。批次条码标签支持打印为PDF、DOCX、XLSX、RTF或HTML。</p>
+                <article class="inventory-feature-card inventory-open-card">
+                    <div class="inventory-feature-copy">
+                        <span class="inventory-feature-tag">开放式设计</span>
+                        <h3>您的数据。您的服务器。您的规则。</h3>
+                        <p>在自己的服务器上部署 Java 和 PostgreSQL，通过 lsFusion 定制，并使用 JSON HTTP API 连接其他系统。</p>
+                        <div class="inventory-tech-list"><span>Apache 2.0</span><span>PostgreSQL</span><span>REST / JSON</span></div>
+                    </div>
+                    <div class="inventory-code-card" aria-label="API 响应示例">
+                        <div><i></i><i></i><i></i><span>GET /stock</span></div>
+                        <pre><code><b>{</b>
+  <em>"location"</em>: <span>"A-01"</span>,
+  <em>"onHand"</em>: <strong>248</strong>,
+  <em>"available"</em>: <strong>216</strong>
+<b>}</b></code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>基于可信台账的报表</h2>
-            <p>所有数字都来自三本台账——库存、预留和成本——因此每个余额都能追溯到背后的变动记录：</p>
-            <ul>
-                <li><strong>库存报表</strong>——任意日期的预期、预留、可用和在库数量，支持筛选和透视视图</li>
-                <li><strong>库存估值</strong>——库存的单位成本和总成本</li>
-                <li><strong>商品流水</strong>——单个商品的完整变动历史</li>
-                <li><strong>成本报表</strong>——成本在库存中的流转情况</li>
-            </ul>
+    <section class="inventory-insights-section">
+        <div class="inner inventory-insights-grid">
+            <div class="inventory-insights-copy">
+                <p class="inventory-kicker inventory-kicker-light">实时且可解释的数据</p>
+                <h2>知道库存有什么。<br />也知道为什么。</h2>
+                <p>库存、预留和成本台账可将每个余额追溯到改变它的原始单据。</p>
+                <ul class="inventory-check-list">
+                    <li><span>✓</span><div><strong>库存报表</strong><small>预计、已预留、可用和在库</small></div></li>
+                    <li><span>✓</span><div><strong>估值与成本</strong><small>任意日期的单位价值和总价值</small></div></li>
+                    <li><span>✓</span><div><strong>商品移动</strong><small>每件商品的完整历史</small></div></li>
+                </ul>
+                <a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank" class="inventory-text-link-light">查看报表与台账 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="inventory-report-window" aria-label="库存分析预览">
+                <div class="inventory-report-toolbar"><strong>库存报表</strong><span>全部仓库 ⌄</span><span>2026年7月15日 ⌄</span></div>
+                <div class="inventory-report-summary">
+                    <div><span>库存价值</span><strong>$428,760</strong><small>本月 +8.2%</small></div>
+                    <div><span>可用数量</span><strong>15,560</strong><small>占在库量的 84.5%</small></div>
+                </div>
+                <div class="inventory-chart">
+                    <div class="inventory-chart-y"><span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span></div>
+                    <div class="inventory-chart-area">
+                        <span class="grid-line one"></span><span class="grid-line two"></span><span class="grid-line three"></span><span class="grid-line four"></span>
+                        <svg viewBox="0 0 500 175" preserveAspectRatio="none" aria-hidden="true">
+                            <defs><linearGradient id="inventoryArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#26C4F7" stop-opacity=".34"/><stop offset="1" stop-color="#26C4F7" stop-opacity="0"/></linearGradient></defs>
+                            <path class="area" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23 L500 175 L0 175 Z"/>
+                            <path class="line" d="M0 143 C54 130,72 136,105 112 S172 128,214 86 S280 98,323 58 S390 72,432 43 S475 48,500 23"/>
+                        </svg>
+                        <div class="inventory-chart-labels"><span>1月</span><span>2月</span><span>3月</span><span>4月</span><span>5月</span><span>6月</span><span>7月</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>完整ERP的一部分，对外部系统开放</h2>
-            <p>由于库存位于ERP内部，采购订单自动生成入库单，销售发票自动生成出库单——无需重复录入。多个销售商品可以通过换算系数对应同一个库存单位，包装单位可按单据类型设置。当前库存还可通过HTTP API提供给外部系统，返回JSON并支持按类别和库位筛选。</p>
+    <section class="inventory-connected-section">
+        <div class="inner">
+            <div class="inventory-connected-grid">
+                <div class="inventory-connected-copy">
+                    <p class="inventory-kicker">不再形成数据孤岛</p>
+                    <h2>库存已经是 ERP 的一部分</h2>
+                    <p>采购、销售和库存共享同一数据库。订单会自动创建所需的仓库单据，无需重复录入，也无需脆弱的数据同步。</p>
+                    <a href="/zh/kaiyuan-erp/" class="inventory-inline-link">了解完整的开源 ERP <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="inventory-connection-map" aria-label="ERP 连接示意图">
+                    <div class="inventory-connection-source purchase"><span>PO</span><div><strong>采购订单</strong><small>已批准</small></div></div>
+                    <div class="inventory-connection-source sales"><span>SI</span><div><strong>销售订单</strong><small>已就绪</small></div></div>
+                    <div class="inventory-connection-core"><i></i><strong>库存</strong><small>一个共享数据库</small></div>
+                    <div class="inventory-connection-target receipt"><span>+84</span><div><strong>收货</strong><small>入库</small></div></div>
+                    <div class="inventory-connection-target shipment"><span>−24</span><div><strong>发货</strong><small>出库</small></div></div>
+                </div>
+            </div>
 
-            <h2>在MyCompany中如何实现</h2>
-            <ul>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">库存概览</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/locations/" target="_blank">库位</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">入库</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">出库</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">移库</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/adjustments/" target="_blank">库存盘点</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">拣货</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">批次与包装</a></li>
-                <li><a href="https://mycompany-docs.lsfusion.org/inventory/reports-and-ledgers/" target="_blank">报表与台账</a></li>
-            </ul>
+            <div class="inventory-docs-panel">
+                <div>
+                    <span class="inventory-feature-tag">深入了解</span>
+                    <h3>一切都有文档</h3>
+                    <p>从第一个库位到台账逻辑，完整工作流均可公开查阅。</p>
+                </div>
+                <nav aria-label="库存文档">
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/" target="_blank">概览 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/receipts/" target="_blank">收货 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/shipments/" target="_blank">发货 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/transfers/" target="_blank">移库 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/picking/" target="_blank">拣货 <span>↗</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/inventory/lots-and-packages/" target="_blank">批次与包装 <span>↗</span></a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
-            <h2>常见问题</h2>
-            <h3>这款库存软件真的免费吗？</h3>
-            <p>是的。MyCompany以Apache 2.0许可证开源，没有隐藏费用和许可证绑定。系统由您自己托管，安装到自己的服务器上只需10-15分钟。</p>
-            <h3>可以管理多少个仓库和库位？</h3>
-            <p>仓库数量不限。每个仓库都是任意深度的层级树——仓库、区域、库位——库位级追踪是可选的，您只需按业务需要设置结构。</p>
-            <h3>支持条码吗？</h3>
-            <p>支持。操作员在移动拣货表单中扫描库位和商品条码，扫描的条码会解析到对应批次（未知条码可以创建新批次），批次条码标签可打印为PDF、DOCX、XLSX、RTF或HTML。</p>
-            <h3>可以追溯批次和序列号吗？</h3>
-            <p>可以。批次追溯覆盖入库、出库、移库、报废和盘点，批次编号自动生成。序列号模式为每件商品分配一个批次，实现单件级追溯。</p>
-            <h3>支持移动设备吗？</h3>
-            <p>支持。仓库人员使用带条码扫描的移动拣货表单，并可通过移动设备执行库位间移库。</p>
-            <h3>其他系统能读取我的库存吗？</h3>
-            <p>能。当前库存通过HTTP API对外提供，返回JSON并支持按类别和库位筛选，外部系统可以直接查询可用量。</p>
+    <section class="inventory-faq-section">
+        <div class="inner inventory-faq-grid">
+            <div class="inventory-section-heading">
+                <p class="inventory-kicker">常见问题解答</p>
+                <h2>开始之前</h2>
+                <p>这里没有您需要的信息？<a href="#" class="contactus">请联系我们的团队。</a></p>
+            </div>
+            <div class="inventory-faq-list">
+                <details open>
+                    <summary>这款库存软件真的免费吗？<span></span></summary>
+                    <p>是的。MyCompany 采用 Apache 2.0 许可证开源，没有隐藏费用或许可证绑定，并部署在您自己的基础设施上。</p>
+                </details>
+                <details>
+                    <summary>可以管理多少个仓库？<span></span></summary>
+                    <p>数量不限。每个仓库都可包含任意深度的库位树，是否启用库位级跟踪由您决定。</p>
+                </details>
+                <details>
+                    <summary>支持条码和移动设备吗？<span></span></summary>
+                    <p>支持。操作员可在移动设备上进行拣货或移库时扫描商品、库位和批次条码。</p>
+                </details>
+                <details>
+                    <summary>可以跟踪批次和序列号吗？<span></span></summary>
+                    <p>可以。批次适用于所有库存单据，序列号模式会为每件商品创建一个独立批次。</p>
+                </details>
+                <details>
+                    <summary>其他系统可以读取当前库存吗？<span></span></summary>
+                    <p>可以。JSON HTTP API 提供当前库存数据，并支持按类别和库位筛选。</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
-            <p>库存只是全局的一部分：了解MyCompany作为完整<a href="/zh/kaiyuan-erp/">开源ERP</a>的能力，看看<a href="/zh/shengchan-erp/">生产ERP</a>如何处理制造，或者了解<a href="/zh/mianfei-erp/">免费ERP</a>中“免费”的真正含义——完整功能列表请从<a href="/zh/">MyCompany首页</a>开始。</p>
+    <section class="inventory-final-cta">
+        <div class="inner">
+            <div class="inventory-cta-copy">
+                <p class="inventory-kicker inventory-kicker-light">随时可以开始</p>
+                <h2>将整个仓库<br />呈现为一个清晰系统。</h2>
+                <p>打开在线演示，或告诉我们您的业务需求。</p>
+            </div>
+            <div class="inventory-actions">
+                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn inventory-primary-action">体验在线演示 <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">联系我们</a>
+            </div>
         </div>
     </section>
 </main>
@@ -241,7 +451,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
 <script src="/js/jquery.popupoverlay.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
-<script src="/js/localization/messages_zh.min.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>
