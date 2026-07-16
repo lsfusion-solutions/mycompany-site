@@ -1472,6 +1472,135 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-pos-software/" />
   </url>
 
++  <!-- Landing cluster: project management software (en / ru / uk / pl / pt / es / zh / fr / de) -->
+  <url>
+    <loc>https://mycompany.lsfusion.org/open-source-project-management-software/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+  <url>
+    <loc>https://mycompany.lsfusion.org/de/projektmanagement-software/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/sistema-upravleniya-proektami/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/systema-upravlinnya-proektamy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-do-zarzadzania-projektami/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-gestao-de-projetos/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-gestion-de-proyectos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/xiangmu-guanli-xitong/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-gestion-de-projet/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/projektmanagement-software/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-project-management-software/" />
+  </url>
+
+
   <!-- Single-language landing pages -->
   <url>
     <loc>https://mycompany.lsfusion.org/pl/program-do-faktur-ksef/</loc>

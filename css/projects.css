@@ -1,0 +1,30 @@
+@import url("/css/retail.css");
+
+.projects-page {
+  --retail-blue: #3568c4;
+  --retail-bright: #54b9f2;
+  --retail-deep: #2856ae;
+  --retail-navy: #132f55;
+  --retail-pale: #f1f6fc;
+  --retail-line: #dce6f2;
+}
+
+.projects-page .retail-hero {
+  background: linear-gradient(115deg, rgba(241, 246, 252, .99), #fff 61%, rgba(230, 240, 252, .96));
+}
+
+.projects-page .retail-shot img {
+  object-position: center top;
+}
+
+.projects-page .retail-connected-section {
+  background: linear-gradient(128deg, #102b4c, #153a64 58%, #174d75);
+}
+
+.projects-page .retail-system-core {
+  background: linear-gradient(145deg, #3568c4, #438fd8);
+}
+
+.projects-page .retail-final-cta {
+  background: linear-gradient(120deg, #2856ae, #3568c4 58%, #318fc7);
+}
