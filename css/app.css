@@ -2110,7 +2110,7 @@ body > footer {
     @media (min-width: 768px) {
       body > footer nav div {
         float: left;
-        width: 39%; } }
+        width: 30%; } }
     @media (max-width: 767px) {
       body > footer nav div {
         margin: 0 0 20px 0;
@@ -2157,31 +2157,40 @@ body > footer {
             padding: 0 0 0 27px; } }
       @media (min-width: 768px) {
         body > footer nav ul.links {
-          width: 17%; } }
+          width: 34%; } }
       @media (max-width: 767px) {
         body > footer nav ul.links {
-          width: 25%; } }
-      @media (max-width: 599px) {
-        body > footer nav ul.links {
-          width: 100%; } }
-      @media (min-width: 768px) {
-        body > footer nav ul.social {
-          width: 27%; } }
-      @media (max-width: 767px) {
-        body > footer nav ul.social {
           width: 50%; } }
       @media (max-width: 599px) {
-        body > footer nav ul.social {
+        body > footer nav ul.links {
           width: 100%; } }
+      body > footer nav ul.links {
+        column-count: 2;
+        column-gap: 28px; }
+        body > footer nav ul.links li {
+          break-inside: avoid;
+          page-break-inside: avoid; }
+      @media (max-width: 479px) {
+        body > footer nav ul.links {
+          column-count: 1; } }
+      @media (min-width: 768px) {
+        body > footer nav ul.social {
+          width: 22%; } }
+      @media (max-width: 767px) {
+        body > footer nav ul.social {
+          width: 30%; } }
+      @media (max-width: 599px) {
+        body > footer nav ul.social {
+          width: 60%; } }
       @media (min-width: 768px) {
         body > footer nav ul.community {
-          width: 17%; } }
+          width: 14%; } }
       @media (max-width: 767px) {
         body > footer nav ul.community {
-          width: 25%; } }
+          width: 20%; } }
       @media (max-width: 599px) {
         body > footer nav ul.community {
-          width: 100%; } }
+          width: 40%; } }
       body > footer nav ul li {
         margin: 0 0 9px 0; }
         body > footer nav ul li a {
