@@ -1,0 +1,30 @@
+@import url("/css/retail.css");
+
+.invoicing-page {
+  --retail-blue: #087f8c;
+  --retail-bright: #23b5a5;
+  --retail-deep: #086873;
+  --retail-navy: #123b48;
+  --retail-pale: #eef9f7;
+  --retail-line: #d5ebe7;
+}
+
+.invoicing-page .retail-hero {
+  background: linear-gradient(115deg, rgba(238, 249, 247, .99), #fff 61%, rgba(222, 245, 240, .96));
+}
+
+.invoicing-page .retail-shot img {
+  object-position: center top;
+}
+
+.invoicing-page .retail-connected-section {
+  background: linear-gradient(128deg, #103b45, #12515c 58%, #176573);
+}
+
+.invoicing-page .retail-system-core {
+  background: linear-gradient(145deg, #087f8c, #20a89d);
+}
+
+.invoicing-page .retail-final-cta {
+  background: linear-gradient(120deg, #086873, #087f8c 58%, #1b9d91);
+}
