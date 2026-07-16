@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRJTB9CH');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="lsFusion Foundation" />
+    <meta name="application-name" content="MyCompany" />
+    <meta name="theme-color" content="#087fbd" />
+    <meta name="description" content="免费开源零售 POS 系统：收银、销售退货、班次、付款、折扣、会员卡和库存管理，支持自托管与灵活定制。" />
+    <title>免费开源零售 POS 系统 | MyCompany</title>
+    <link rel="canonical" href="https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/" />
+<link rel="alternate" hreflang="en" href="https://mycompany.lsfusion.org/open-source-pos-software/" />
+<link rel="alternate" hreflang="ru" href="https://mycompany.lsfusion.org/ru/programma-dlya-magazina/" />
+<link rel="alternate" hreflang="uk" href="https://mycompany.lsfusion.org/uk/programa-dlya-magazynu/" />
+<link rel="alternate" hreflang="pl" href="https://mycompany.lsfusion.org/pl/program-pos-dla-sklepu/" />
+<link rel="alternate" hreflang="pt" href="https://mycompany.lsfusion.org/pt/software-pos-para-lojas/" />
+<link rel="alternate" hreflang="es" href="https://mycompany.lsfusion.org/es/software-pos-para-tiendas/" />
+<link rel="alternate" hreflang="zh" href="https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/" />
+<link rel="alternate" hreflang="fr" href="https://mycompany.lsfusion.org/fr/logiciel-de-caisse-magasin/" />
+<link rel="alternate" hreflang="de" href="https://mycompany.lsfusion.org/de/kassensoftware-einzelhandel/" />
+<link rel="alternate" hreflang="x-default" href="https://mycompany.lsfusion.org/open-source-pos-software/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyCompany" />
+    <meta property="og:title" content="免费开源零售 POS 系统 | MyCompany" />
+    <meta property="og:description" content="免费开源零售 POS，将收银、退货、班次、付款、会员和库存连接在同一个自托管系统中。" />
+    <meta property="og:url" content="https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/retail-pos-demo.png" />
+    <meta property="og:image:secure_url" content="https://mycompany.lsfusion.org/imgs/retail-pos-demo.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="MyCompany POS 收银界面，包含条码输入、销售明细、付款按钮和触控商品分类" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="pt_PT" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="免费开源零售 POS 系统 | MyCompany" />
+    <meta name="twitter:description" content="免费开源零售 POS，将收银、退货、班次、付款、会员和库存连接在同一个自托管系统中。" />
+    <meta name="twitter:image" content="https://mycompany.lsfusion.org/imgs/retail-pos-demo.png" />
+    <meta name="twitter:image:alt" content="MyCompany POS 收银界面，包含条码输入、销售明细、付款按钮和触控商品分类" />
+    <link rel="preload" href="/imgs/retail-pos-demo.png" as="image" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet" />
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="/css/retail.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon_32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon_16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon/favicon.ico" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/#software",
+      "name": "免费开源零售 POS 系统",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Point of Sale Software",
+      "operatingSystem": "Web, Linux, Windows, Docker",
+      "softwareVersion": "Open source",
+      "description": "免费开源零售 POS 系统：收银、销售退货、班次、付款、折扣、会员卡和库存管理，支持自托管与灵活定制。",
+      "url": "https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/",
+      "image": "https://mycompany.lsfusion.org/imgs/retail-pos-demo.png",
+      "downloadUrl": "https://github.com/lsfusion-solutions/mycompany",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "publisher": {
+        "@type": "Organization",
+        "name": "lsFusion Foundation",
+        "url": "https://lsfusion.org/"
+      },
+      "featureList": [
+        "快速 POS 收银",
+        "销售与退货",
+        "班次管理",
+        "灵活付款",
+        "折扣与会员",
+        "库存与 ERP"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "MyCompany",
+          "item": "https://mycompany.lsfusion.org/zh/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "免费开源零售 POS 系统",
+          "item": "https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mycompany.lsfusion.org/zh/lingshou-pos-xitong/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "MyCompany POS 真的免费吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是。MyCompany 采用 Apache 2.0 许可证，不按用户或收银台收费，并运行在您自己的基础设施上。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以使用条码扫描器和触摸屏吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。商品可通过搜索、扫描条码或触控商品网格添加，具体取决于配置。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "系统支持退货和收银班次吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。零售模块包括销售、顾客退货、开班结班以及按收银台控制操作。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以配置多个收银台和付款方式吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。收银台、门店和付款方式均可配置，实际规模取决于基础设施与部署设计。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "POS 能按我们的流程和设备定制吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。源代码和业务逻辑均可定制；财税设备、支付终端与地区集成按目标市场配置。"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+    ym(95551513,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ecommerce:"dataLayer"});
+    </script>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body class="flex retail-page">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<noscript><div><img src="https://mc.yandex.ru/watch/95551513" style="position:absolute;left:-9999px" alt="" /></div></noscript>
+<nav>
+    <div class="inner">
+        <h2><a href="/zh/" title="返回首页">MyCompany</a></h2>
+        <a class="menu-link" href="#menu">导航</a>
+        <ul class="nav">
+            <li><a href="/zh/#functions">功能</a></li>
+            <li><a href="/services.html">服务</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/administration/development/" target="_blank">开发</a></li>
+            <li><a href="https://github.com/lsfusion-solutions/mycompany" target="_blank">GitHub</a></li>
+            <li><a href="https://mycompany-docs.lsfusion.org/retail/" target="_blank">文档</a></li>
+            <li><a href="https://demo.lsfusion.org/mycompany/?locale=zh" target="_blank" class="special">试用演示</a></li>
+            <li id="languages">
+                <div class="language">
+                    <strong>中文</strong>
+                    <ul>
+                        <li><a href="/open-source-pos-software/">En</a></li>
+                        <li><a href="/ru/programma-dlya-magazina/">Ру</a></li>
+                        <li><a href="/uk/programa-dlya-magazynu/">Ук</a></li>
+                        <li><a href="/pl/program-pos-dla-sklepu/">Pl</a></li>
+                        <li><a href="/pt/software-pos-para-lojas/">Pt</a></li>
+                        <li><a href="/es/software-pos-para-tiendas/">Es</a></li>
+                        <li><span class="current">中文</span></li>
+                        <li><a href="/fr/logiciel-de-caisse-magasin/">Fr</a></li>
+                        <li><a href="/de/kassensoftware-einzelhandel/">De</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main id="top">
+    <section class="retail-hero">
+        <div class="inner retail-hero-grid">
+            <div class="retail-hero-copy">
+                <p class="retail-eyebrow"><span></span>免费 · 开源 · 私有部署</p>
+                <h1>免费开源 <em>零售 POS 系统</em></h1>
+                <p class="retail-lead">在一个与库存和销售相连的系统中完成收银、退货、班次、付款、折扣和会员卡管理。</p>
+                <div class="retail-actions">
+                    <a href="https://demo.lsfusion.org/mycompany/?locale=zh" target="_blank" class="btn retail-primary-action">打开 POS 演示 <span aria-hidden="true">↗</span></a>
+                    <a href="#" class="btn-empty-invert contactus retail-secondary-action">联系我们</a>
+                </div>
+                <ul class="retail-proof" aria-label="零售核心能力">
+                    <li><strong>零</strong><span>许可证费用</span></li><li><strong>完整</strong><span>源代码</span></li><li><strong>您的</strong><span>服务器与数据</span></li>
+                </ul>
+            </div>
+            <div class="retail-visual">
+                <a class="retail-shot" href="https://demo.lsfusion.org/mycompany/?locale=zh" target="_blank" aria-label="打开 POS 演示">
+                    <img src="/imgs/retail-pos-demo.png" width="1280" height="720" alt="MyCompany POS 收银界面，包含条码输入、销售明细、付款按钮和触控商品分类" />
+                    <span class="retail-demo-badge"><i></i>真实产品界面</span>
+                    <span class="retail-demo-open">打开演示 <b>↗</b></span>
+                </a>
+                <p class="retail-demo-caption"><span>零售 · POS 收银工作台</span><small>截取自 MyCompany 公共演示</small></p>
+            </div>
+        </div>
+    </section>
+    <section class="retail-flow-section">
+        <div class="inner">
+            <div class="retail-section-heading">
+                <p class="retail-kicker">从开班到结班</p>
+                <h2>清晰完成一个完整的收银班次</h2>
+                <p>收银员始终在一个界面工作，MyCompany 将每笔操作写入同一套 ERP 数据库。</p>
+            </div>
+            <div class="retail-flow">
+                <article>
+                    <span class="retail-flow-number">01</span>
+                    <div class="retail-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v18M6 7h10M6 17h10"/><path d="M16 7l2 2-2 2M16 13l2 2-2 2"/></svg></div>
+                    <h3>开启班次</h3>
+                    <p>选择收银台并开启受控的收银会话。</p>
+                </article>
+                <article>
+                    <span class="retail-flow-number">02</span>
+                    <div class="retail-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5v14M7 5v14M11 5v14M14 5v14M19 5v14"/><path d="M3 21h18"/></svg></div>
+                    <h3>添加商品</h3>
+                    <p>通过搜索、扫码或触控商品网格录入。</p>
+                </article>
+                <article>
+                    <span class="retail-flow-number">03</span>
+                    <div class="retail-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 15h3"/></svg></div>
+                    <h3>完成付款</h3>
+                    <p>应用折扣或会员卡，并选择一种或多种付款方式。</p>
+                </article>
+                <article>
+                    <span class="retail-flow-number">04</span>
+                    <div class="retail-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/><circle cx="12" cy="12" r="10"/></svg></div>
+                    <h3>结班核对</h3>
+                    <p>关闭班次，销售、退货和付款数据即可核对。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="retail-features-section">
+        <div class="inner">
+            <div class="retail-section-heading">
+                <p class="retail-kicker">零售核心能力</p>
+                <h2>收银员与门店管理者所需的一切</h2>
+                <p>前台操作简单，后台数据与整个业务保持一致。</p>
+            </div>
+            <div class="retail-feature-grid">
+                <article class="retail-feature-card">
+                    <div class="retail-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5v14M7 5v14M11 5v14M14 5v14M19 5v14"/><path d="M3 21h18"/></svg></div>
+                    <h3>快速 POS 收银</h3>
+                    <p>按名称或条码查找商品，使用触控网格，修改数量并在一个界面完成销售明细。</p>
+                </article>
+                <article class="retail-feature-card">
+                    <div class="retail-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 15h3"/></svg></div>
+                    <h3>销售与退货</h3>
+                    <p>在同一工作区处理正常销售或顾客退货，并保留商品、价格与折扣。</p>
+                </article>
+                <article class="retail-feature-card">
+                    <div class="retail-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/><circle cx="12" cy="12" r="10"/></svg></div>
+                    <h3>班次管理</h3>
+                    <p>开启和关闭收银班次，查看当前收银台，并按班次归集操作。</p>
+                </article>
+                <article class="retail-feature-card">
+                    <div class="retail-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM8 3v6M16 3v6"/><path d="M8 14h8"/></svg></div>
+                    <h3>灵活付款</h3>
+                    <p>配置现金、银行卡和其他方式，并可按流程组合付款。</p>
+                </article>
+                <article class="retail-feature-card">
+                    <div class="retail-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M7 7h8.5a2.5 2.5 0 010 5H9a2.5 2.5 0 000 5h8"/><path d="M4 5h3M17 19h3"/></svg></div>
+                    <h3>折扣与会员</h3>
+                    <p>在销售单上应用手工折扣，或通过会员折扣卡识别顾客。</p>
+                </article>
+                <article class="retail-feature-card">
+                    <div class="retail-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v18M6 7h10M6 17h10"/><path d="M16 7l2 2-2 2M16 13l2 2-2 2"/></svg></div>
+                    <h3>库存与 ERP</h3>
+                    <p>每笔零售操作与库存、销售、采购、CRM 和报表共享同一套数据。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="retail-connected-section">
+        <div class="inner retail-connected-grid">
+            <div class="retail-connected-copy">
+                <p class="retail-kicker retail-kicker-light">统一数据源</p>
+                <h2>不是孤立的收银机，而是 ERP 的一部分</h2>
+                <p>MyCompany POS 原生属于 ERP。柜台销售会立即形成库存变动、收入和客户历史，无需额外同步层。</p>
+                <ul class="retail-check-list">
+                    <li><span>✓</span><div><strong>实时库存</strong><small>收银时同步更新库存与销售数据。</small></div></li>
+                    <li><span>✓</span><div><strong>灵活配置</strong><small>配置收银台、门店、付款方式和折扣卡。</small></div></li>
+                    <li><span>✓</span><div><strong>统一分析</strong><small>报表、CRM、采购与库存使用相同主数据。</small></div></li>
+                </ul>
+            </div>
+            <div class="retail-system-map" aria-label="不是孤立的收银机，而是 ERP 的一部分">
+                <div class="retail-system-core"><strong>POS</strong><small>零售收银工作台</small></div>
+                <div class="retail-system-node retail-node-stock"><span>01</span>库存</div>
+                <div class="retail-system-node retail-node-sales"><span>02</span>销售</div>
+                <div class="retail-system-node retail-node-crm"><span>03</span>CRM</div>
+                <div class="retail-system-node retail-node-reports"><span>04</span>报表</div>
+            </div>
+        </div>
+    </section>
+    <section class="retail-faq-section">
+        <div class="inner retail-faq-grid">
+            <div class="retail-section-heading">
+                <p class="retail-kicker">上线前须知</p>
+                <h2>团队经常咨询的问题</h2>
+                <p>实施前即可查看在线演示、文档与完整源代码。</p>
+            </div>
+            <div class="retail-faq-list">
+                <details open>
+                    <summary>MyCompany POS 真的免费吗？<span aria-hidden="true"></span></summary>
+                    <p>是。MyCompany 采用 Apache 2.0 许可证，不按用户或收银台收费，并运行在您自己的基础设施上。</p>
+                </details>
+                <details>
+                    <summary>可以使用条码扫描器和触摸屏吗？<span aria-hidden="true"></span></summary>
+                    <p>可以。商品可通过搜索、扫描条码或触控商品网格添加，具体取决于配置。</p>
+                </details>
+                <details>
+                    <summary>系统支持退货和收银班次吗？<span aria-hidden="true"></span></summary>
+                    <p>支持。零售模块包括销售、顾客退货、开班结班以及按收银台控制操作。</p>
+                </details>
+                <details>
+                    <summary>可以配置多个收银台和付款方式吗？<span aria-hidden="true"></span></summary>
+                    <p>可以。收银台、门店和付款方式均可配置，实际规模取决于基础设施与部署设计。</p>
+                </details>
+                <details>
+                    <summary>POS 能按我们的流程和设备定制吗？<span aria-hidden="true"></span></summary>
+                    <p>可以。源代码和业务逻辑均可定制；财税设备、支付终端与地区集成按目标市场配置。</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section class="retail-final-cta">
+        <div class="inner">
+            <div class="retail-cta-copy">
+                <p class="retail-kicker retail-kicker-light">查看真实流程</p>
+                <h2>在一个屏幕完成整个收银班次。</h2>
+                <p>打开公共 POS 演示，或告诉我们您的门店如何运作。</p>
+            </div>
+            <div class="retail-actions">
+                <a href="https://demo.lsfusion.org/mycompany/?locale=zh" target="_blank" class="btn retail-primary-action">打开 POS 演示 <span aria-hidden="true">↗</span></a>
+                <a href="#" class="btn-empty contactus">联系我们</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="inner">
+        <nav>
+            <div>
+                <h3><a href="#top">MyCompany</a></h3>
+                <p>基于免费的开源平台开发<br /><a href="https://lsfusion.org/" target="_blank">lsFusion</a></p>
+            </div>
+            <ul class="links">
+                <li><a href="https://mycompany-docs.lsfusion.org/retail/" target="_blank">文档</a></li>
+                <li><a href="/zh/kaiyuan-erp/">开源 ERP</a></li>
+                <li><a href="/zh/mianfei-erp/">免费 ERP</a></li>
+                <li><a href="/zh/siyou-bushu-erp/">私有部署 ERP</a></li>
+                <li><a href="/zh/cangku-guanli/">仓库管理</a></li>
+                <li><a href="/zh/shengchan-erp/">生产 ERP</a></li>
+                <li><a href="/zh/mianfei-kaiyuan-crm/">免费开源 CRM</a></li>
+                <li><a href="/zh/lingshou-pos-xitong/">零售 POS 系统</a></li>
+                <li><a href="/zh/ke-dingzhi-erp/">可定制 ERP</a></li>
+                <li><a href="/zh/kaifazhe-erp/">开发者 ERP</a></li>
+                <li><a href="/zh/odoo-tidai-fangan/">Odoo 替代方案</a></li>
+            </ul>
+            <ul class="social">
+                <li class="tel"><a href="https://t.me/lsfusion_official" target="_blank">Telegram</a></li>
+                <li class="ln"><a href="https://www.linkedin.com/company/lsfusion" target="_blank">LinkedIn</a></li>
+                <li class="sl"><a href="https://join.slack.com/t/lsfusion/shared_invite/zt-2klihpl2q-h6ol~nDRPky~O1uHC14Dwg" target="_blank">Slack</a></li>
+            </ul>
+            <ul class="community"><li class="em"><a href="mailto:info@lsfusion.org">info@lsfusion.org</a></li></ul>
+        </nav>
+        <div id="absfooter">
+            <p id="copyright">&copy; <script>document.write((new Date()).getFullYear())</script> lsFusion Foundation</p>
+            <ul><li><a href="mailto:info@lsfusion.org">报告错误</a></li></ul>
+        </div>
+    </div>
+</footer>
+<span class="contactus" title="联系我们">联系我们</span>
+<div id="contactuspopup" class="popup">
+    <span class="close">x</span>
+    <div class="inner">
+        <h3>给我们留言</h3>
+        <form method="post" action="https://luxsoft.by/brended_sites/unstatic.php" class="frm">
+            <input type="hidden" name="to" value="info@lsfusion.org" />
+            <input type="hidden" name="subject" value="零售 POS 系统 — 联系" />
+            <input type="hidden" name="thankyou" value="https://mycompany.lsfusion.org/zh/thankyou.html" />
+            <fieldset>
+                <input type="text" name="name" placeholder="姓名*" required />
+                <input type="text" name="phone" placeholder="电话*" required />
+                <input type="email" name="email" placeholder="电子邮件*" required />
+                <input type="text" name="company" placeholder="公司*" required />
+                <input type="text" name="position" placeholder="职位*" required />
+                <textarea name="comment" placeholder="留言*" rows="10" cols="6" required></textarea>
+            </fieldset>
+            <div class="buttons"><input type="submit" value="发送" /></div>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.js?features=IntersectionObserver"></script>
+<script src="/js/jquery.popupoverlay.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
+
