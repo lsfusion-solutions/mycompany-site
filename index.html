@@ -29,19 +29,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title" content="Flexible Open-Source ERP & CRM for SMBs | MyCompany" />
     <meta property="og:description" content="Flexible open-source ERP and CRM for SMBs: inventory, invoicing, manufacturing, sales, purchasing, projects and HR. Self-host and customize MyCompany." />
     <meta property="og:url" content="https://mycompany.lsfusion.org/" />
-    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
-    <meta property="og:image:width" content="986" />
-    <meta property="og:image:height" content="564" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/crm-leads-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="700" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Flexible Open-Source ERP & CRM for SMBs | MyCompany" />
     <meta name="twitter:description" content="Flexible open-source ERP and CRM for SMBs: inventory, invoicing, manufacturing, sales, purchasing, projects and HR. Self-host and customize MyCompany." />
-    <meta name="twitter:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
+    <meta name="twitter:image" content="https://mycompany.lsfusion.org/imgs/crm-leads-en.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" >
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon_32x32.png">
@@ -59,7 +60,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "license": "https://www.apache.org/licenses/LICENSE-2.0",
       "description": "MyCompany is a flexible open-source ERP and CRM for small and medium businesses: inventory, invoicing, manufacturing, sales, purchasing, projects, HR and CRM. Self-host it and adapt it to your workflows.",
       "url": "https://mycompany.lsfusion.org/",
-      "image": "https://mycompany.lsfusion.org/imgs/mycompany.png",
+      "image": "https://mycompany.lsfusion.org/imgs/crm-leads-en.png",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
       "sameAs": [ "https://github.com/lsfusion-solutions/mycompany" ],
       "publisher": { "@type": "Organization", "name": "lsFusion", "url": "https://lsfusion.org/" }
@@ -98,12 +99,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     }
     </script>
+<!-- Yandex.Metrika counter -->
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(95551513,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ecommerce:"dataLayer"});</script>
+<!-- /Yandex.Metrika counter -->
 </head>
-<body>
+<body class="home-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<noscript><div><img src="https://mc.yandex.ru/watch/95551513" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 <nav>
     <div class="inner">
         <h2><a href="./#top" title="Go to home page">MyCompany</a></h2>
@@ -138,36 +143,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-header">
-        <div class="inner">
-            <!--h1>Build your own ERP<br /> with ready-to-use modules</h1>
-            <p>MyCompany is a free open-source ERP constructor<br/> for small businesses</p-->
-            <h1>Open-source ERP & CRM<br />you can adapt to your business</h1>
-            <p>Start with ready modules, customize freely for non-standard business workflows,
-            self-host if needed, avoid license lock-in.</p>
-            <nav>
-                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">Try demo</a>
-                <a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank" title="Click to open in new tab" class="btn btn-empty">Install</a>
-                <a href="https://t.me/lsfusion_official" target="_blank" class="btn" title="Click to open in new tab">Discuss</a>
-            </nav>
+    <section id="section-header" class="home-hero">
+        <div class="inner home-hero-grid">
+            <div class="home-hero-copy">
+                <p class="home-eyebrow"><span></span> Open source · Apache 2.0 · Self-hosted</p>
+                <h1>Open-source ERP &amp; CRM<br /> <em>built around your business.</em></h1>
+                <p class="home-hero-lead">Run sales, inventory, finance, manufacturing and projects in one flexible system. Start with ready modules, then adapt every workflow without license lock-in.</p>
+                <nav class="home-actions" aria-label="Get started with MyCompany">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="home-primary">Try live demo <span aria-hidden="true">→</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank" title="Installation guide opens in a new tab" class="home-secondary">Install MyCompany</a>
+                </nav>
+                <ul class="home-proof" aria-label="MyCompany benefits">
+                    <li><strong>$0</strong><span>license fees</span></li>
+                    <li><strong>10 modules</strong><span>one shared database</span></li>
+                    <li><strong>Your server</strong><span>your code and data</span></li>
+                </ul>
+            </div>
+            <div class="home-preview" aria-label="MyCompany CRM interface preview">
+                <div class="home-browser">
+                    <div class="home-browser-bar" aria-hidden="true">
+                        <span class="home-window-dots"><i></i><i></i><i></i></span>
+                        <span>MyCompany · ERP + CRM</span>
+                    </div>
+                    <img src="imgs/crm-leads-en.png" alt="MyCompany CRM sales pipeline interface" width="1200" height="700" />
+                </div>
+                <div class="home-float-card home-float-card-top"><strong>10 modules</strong><span>One connected system</span></div>
+                <div class="home-float-card home-float-card-bottom"><strong>Apache 2.0</strong><span>No vendor lock-in</span></div>
+            </div>
         </div>
     </section>
 
     <section id="section-functions">
         <div class="inner" id="functions">
-            <h2>Take ready-to-use modules or customize them to your needs</h2>
-            <p>For wholesale, retail, e-commerce, services, contract work, small-batch and custom manufacturing.</p>
+            <p class="home-kicker">One system. Every workflow.</p>
+            <h2>Start with the modules you need.<br />Add the rest when you are ready.</h2>
+            <p class="home-section-lead">Built for wholesale, retail, e-commerce, services, contract work and custom manufacturing.</p>
             <ul class="list3">
                 <li>
                     <a href="https://mycompany-docs.lsfusion.org/purchase/" target="_blank" class="inner">
                         <h3>Purchase</h3>
-                        <p>Management of the procurement process and control over the document flow - from the supplier quotation request creation to payments and placement of goods in warehouses.</p>
+                        <p>Plan replenishment, manage supplier orders, payments and warehouse receipts.</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://mycompany-docs.lsfusion.org/sales/" target="_blank" class="inner">
                         <h3>Sales</h3>
-                        <p>Product promotion, price policy management, configuring discounts, implementation and receipt of payments.</p>
+                        <p>Manage pricing, discounts, customer orders, fulfillment and payments.</p>
                     </a>
                 </li>
                 <li>
@@ -179,37 +200,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <li>
                     <a href="/open-source-manufacturing-erp/" class="inner">
                         <h3>Manufacturing</h3>
-                        <p>Automation of manufacturing processes. Control and writing-off consumed materials, registration of finished products.</p>
+                        <p>Plan production, track consumed materials and register finished products.</p>
                     </a>
                 </li>
                 <li>
                     <a href="/free-invoicing-software/" class="inner">
                         <h3>Invoicing</h3>
-                        <p>Control over company's finance, terms of delivery, payments and debts, fast returns.</p>
+                        <p>Create invoices and control delivery terms, payments, debts and returns.</p>
                     </a>
                 </li>
                 <li>
                     <a href="/open-source-pos-software/" class="inner">
                         <h3>POS</h3>
-                        <p>The possibility to replace the cash register with a PC</p>
+                        <p>Turn a standard PC into a flexible point-of-sale workstation.</p>
                     </a>
                 </li>
                 <li>
                     <a href="/open-source-project-management-software/" class="inner">
                         <h3>Projects</h3>
-                        <p>Task management, employees assignment, accounting of time spent, materials used, services rendered  </p>
+                        <p>Plan tasks, assign employees and track time, materials and services.</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://mycompany-docs.lsfusion.org/humanResources/" target="_blank" class="inner">
                         <h3>Human Resources</h3>
-                        <p>Recruitment, time tracking, payroll management</p>
+                        <p>Handle recruitment, employee records, time tracking and payroll.</p>
                     </a>
                 </li>
                 <li>
                     <a href="/free-crm/" class="inner">
                         <h3>CRM</h3>
-                        <p>Leads processing, sales funnel management, email integration, IP telephony</p>
+                        <p>Process leads, manage pipelines and connect email and IP telephony.</p>
                     </a>
                 </li>
                 <li>
@@ -248,7 +269,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </ul>
             </div>
             <div class="img">
-                <img src="imgs/sql-en.png" alt="lsFusion code and the resulting MyCompany form" width="479" height="260" />
+                <img src="imgs/sql-en.png" alt="Current MyCompany item catalog with filters and configurable columns" width="500" height="280" />
             </div>
         </div>
     </section>
@@ -300,7 +321,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div></li>
                 <li><div class="inner">
                     <strong>No hidden fees</strong>
-                    <p>lsFusion is built on advanced free technologies 
+                    <p>lsFusion is built on advanced free technologies
                         and does not require buying
                         Windows and SQL server.</p>
                 </div></li>
@@ -415,7 +436,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         even if a huge amount of data is involved.</li>
                 </ul>
                 <div class="img">
-                    <img src="imgs/easy-user-en.png" alt="MyCompany user interface" width="502" height="324" loading="lazy" />
+                    <img src="imgs/easy-user-en.png" alt="Current MyCompany project task Kanban board with filters" width="500" height="280" loading="lazy" />
                 </div>
             </div>
             <div class="for_business">
@@ -428,7 +449,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <li>Built-in encryption of transmitted data. Corporate-ready.</li>
                 </ul>
                 <div class="img">
-                    <img src="imgs/easy-user.png" alt="Order form in MyCompany" width="475" height="287" loading="lazy" />
+                    <img src="imgs/easy-user.png" alt="Current MyCompany sales analytics dashboard" width="500" height="280" loading="lazy" />
                 </div>
             </div>
         </div>

@@ -29,19 +29,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:title" content="灵活的开源ERP和CRM，适合中小企业 | MyCompany" />
     <meta property="og:description" content="MyCompany是一款灵活的开源ERP和CRM系统，适用于中小企业：仓库、开票、生产、销售、采购、项目、人力资源和CRM。可部署在自己的服务器上，并根据业务流程自由定制。" />
     <meta property="og:url" content="https://mycompany.lsfusion.org/zh/" />
-    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
-    <meta property="og:image:width" content="986" />
-    <meta property="og:image:height" content="564" />
+    <meta property="og:image" content="https://mycompany.lsfusion.org/imgs/crm-leads-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="700" />
     <meta property="og:locale" content="zh_CN" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="灵活的开源ERP和CRM，适合中小企业 | MyCompany" />
     <meta name="twitter:description" content="MyCompany是一款灵活的开源ERP和CRM系统，适用于中小企业：仓库、开票、生产、销售、采购、项目、人力资源和CRM。可部署在自己的服务器上，并根据业务流程自由定制。" />
-    <meta name="twitter:image" content="https://mycompany.lsfusion.org/imgs/mycompany.png" />
+    <meta name="twitter:image" content="https://mycompany.lsfusion.org/imgs/crm-leads-en.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link href="../css/app.css" rel="stylesheet" type="text/css" />
+    <link href="../css/home.css" rel="stylesheet" type="text/css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="../imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon/favicon_32x32.png">
@@ -59,18 +60,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "license": "https://www.apache.org/licenses/LICENSE-2.0",
       "description": "MyCompany是一款灵活的开源ERP和CRM系统，适用于中小企业：仓库、开票、生产、销售、采购、项目、人力资源和CRM。可部署在自己的服务器上，并根据业务流程自由定制。",
       "url": "https://mycompany.lsfusion.org/zh/",
-      "image": "https://mycompany.lsfusion.org/imgs/mycompany.png",
+      "image": "https://mycompany.lsfusion.org/imgs/crm-leads-en.png",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
       "sameAs": [ "https://github.com/lsfusion-solutions/mycompany" ],
       "publisher": { "@type": "Organization", "name": "lsFusion", "url": "https://lsfusion.org/" }
     }
     </script>
+<!-- Yandex.Metrika counter -->
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(95551513,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ecommerce:"dataLayer"});</script>
+<!-- /Yandex.Metrika counter -->
 </head>
-<body>
+<body class="home-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRJTB9CH"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<noscript><div><img src="https://mc.yandex.ru/watch/95551513" style="position:absolute;left:-9999px" alt="" /></div></noscript>
 <nav>
     <div class="inner">
         <h2><a href="#top" title="返回首页">MyCompany</a></h2>
@@ -102,23 +107,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 <main id="top">
-    <section id="section-header">
-        <div class="inner">
-            <h1>开源ERP和CRM系统<br />可根据您的业务自由定制</h1>
-            <p>从现成的模块开始，自由定制非标准业务流程，
-                需要时可部署在自己的服务器上，避免许可证绑定。</p>
-            <nav>
-                <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="btn">试用演示</a>
-                <a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank" title="点击在新标签页中打开" class="btn btn-empty">安装</a>
-                <a href="https://t.me/lsfusion_official" target="_blank" class="btn" title="点击在新标签页中打开">咨询</a>
-            </nav>
+    <section id="section-header" class="home-hero">
+        <div class="inner home-hero-grid">
+            <div class="home-hero-copy">
+                <p class="home-eyebrow"><span></span> 开源 · Apache 2.0 · 私有部署</p>
+                <h1>开源ERP与CRM<br /> <em>围绕您的业务而构建。</em></h1>
+                <p class="home-hero-lead">在一个灵活的系统中管理销售、库存、财务、生产和项目。先使用现成模块快速启动，再自由调整每个流程，无需受许可证约束。</p>
+                <nav class="home-actions" aria-label="开始使用MyCompany">
+                    <a href="https://demo.lsfusion.org/mycompany/" target="_blank" class="home-primary">试用在线演示 <span aria-hidden="true">→</span></a>
+                    <a href="https://mycompany-docs.lsfusion.org/administration/installation/" target="_blank" title="安装指南将在新标签页中打开" class="home-secondary">安装MyCompany</a>
+                </nav>
+                <ul class="home-proof" aria-label="MyCompany优势">
+                    <li><strong>$0</strong><span>许可证费用</span></li>
+                    <li><strong>10个模块</strong><span>共享一个数据库</span></li>
+                    <li><strong>您的服务器</strong><span>您的代码和数据</span></li>
+                </ul>
+            </div>
+            <div class="home-preview" aria-label="MyCompany CRM界面预览">
+                <div class="home-browser">
+                    <div class="home-browser-bar" aria-hidden="true">
+                        <span class="home-window-dots"><i></i><i></i><i></i></span>
+                        <span>MyCompany · ERP + CRM</span>
+                    </div>
+                    <img src="../imgs/crm-leads-en.png" alt="MyCompany CRM销售管道界面" width="1200" height="700" />
+                </div>
+                <div class="home-float-card home-float-card-top"><strong>10个模块</strong><span>一个互联系统</span></div>
+                <div class="home-float-card home-float-card-bottom"><strong>Apache 2.0</strong><span>无供应商锁定</span></div>
+            </div>
         </div>
     </section>
 
     <section id="section-functions">
         <div class="inner" id="functions">
-            <h2>使用现成的模块，或根据需要进行定制</h2>
-            <p>适用于批发、零售、电子商务、服务业、承包工程、小批量及定制生产。</p>
+            <p class="home-kicker">一个系统，覆盖所有流程。</p>
+            <h2>从所需模块开始。<br />准备好后再添加其他模块。</h2>
+            <p class="home-section-lead">适用于批发、零售、电子商务、服务业、承包工程、小批量及定制生产。</p>
             <ul class="list3">
                 <li>
                     <a href="https://mycompany-docs.lsfusion.org/purchase/" target="_blank" class="inner">

@@ -138,6 +138,7 @@
 
 .home-page section#section-header .home-actions {
   display: flex;
+  flex-wrap: wrap;
   float: none;
   gap: 12px;
   margin: 0 0 35px;
@@ -553,6 +554,11 @@
   border-radius: 7px;
 }
 
+.home-page section#section-ksef > .inner div.img img {
+  width: 100%;
+  height: auto;
+}
+
 /* Open-source story */
 .home-page section#section-free {
   padding: 0;
@@ -628,6 +634,96 @@
   color: var(--home-blue);
   font-weight: 600;
   text-decoration: none;
+}
+
+/* The Russian homepage has an extra customization panel in this section. */
+.home-page section#section-free.section-free-ru > .inner {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-areas:
+    "actions commits"
+    "story story";
+  gap: 34px 70px;
+  align-items: stretch;
+}
+
+.home-page section#section-free.section-free-ru nav#functions-nav {
+  grid-area: actions;
+  width: 100%;
+  min-height: 300px;
+  margin: 0;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-content: center;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 18px 45px rgba(18, 64, 89, 0.11);
+}
+
+.home-page section#section-free.section-free-ru nav#functions-nav::after {
+  display: none;
+}
+
+.home-page section#section-free.section-free-ru nav#functions-nav p {
+  grid-column: 1 / -1;
+  margin: 0 0 8px;
+  font-family: Poppins, Montserrat, "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.home-page section#section-free.section-free-ru nav#functions-nav a {
+  width: auto;
+  min-width: 0;
+  min-height: 96px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  float: none;
+}
+
+.home-page section#section-free.section-free-ru nav#functions-nav a:nth-of-type(1),
+.home-page section#section-free.section-free-ru nav#functions-nav a:nth-of-type(2) {
+  background-position: 18px 50%;
+}
+
+.home-page section#section-free.section-free-ru nav#functions-nav a span {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 32px 14px 48px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.home-page section#section-free.section-free-ru > .inner > .img {
+  grid-area: commits;
+  width: 100%;
+  min-width: 0;
+  min-height: 300px;
+  box-sizing: border-box;
+}
+
+.home-page section#section-free.section-free-ru > .inner > .info {
+  grid-area: story;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
+  gap: 0 70px;
+  align-items: start;
+  padding-top: 24px;
+}
+
+.home-page section#section-free.section-free-ru > .inner > .info h2 {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  margin: 0;
+}
+
+.home-page section#section-free.section-free-ru > .inner > .info p,
+.home-page section#section-free.section-free-ru > .inner > .info > a {
+  grid-column: 2;
 }
 
 /* Platform strengths */
@@ -770,6 +866,43 @@
   color: var(--home-muted);
   font-size: 14px;
   line-height: 1.65;
+}
+
+/* Keep the Russian customer stories compatible with jCarousel. */
+.home-page section#section-tasks.section-tasks-ru .jcarousel {
+  width: 100%;
+  max-width: 100%;
+}
+
+.home-page section#section-tasks.section-tasks-ru .jcarousel ul.list2 {
+  width: 1000%;
+  display: flex;
+  grid-template-columns: none;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+
+.home-page section#section-tasks.section-tasks-ru .jcarousel ul.list2 > li {
+  width: 5%;
+  min-width: 0;
+  flex: 0 0 5%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.home-page section#section-tasks.section-tasks-ru .jcarousel ul.list2 > li > .inner,
+.home-page section#section-tasks.section-tasks-ru .jcarousel ul.list2 .info {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.home-page section#section-tasks.section-tasks-ru .jcarousel ul.list2 .info p {
+  overflow-wrap: anywhere;
+}
+
+.home-page section#section-tasks.section-tasks-ru .jcarousel-pagination {
+  margin: 24px 0 0;
+  line-height: 20px;
 }
 
 /* Developer / administrator */
@@ -1077,6 +1210,44 @@
     grid-template-columns: 1fr;
   }
 
+  .home-page section#section-free.section-free-ru > .inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "actions"
+      "commits"
+      "story";
+    gap: 28px;
+  }
+
+  .home-page section#section-free.section-free-ru > .inner > .img {
+    width: 100%;
+    min-height: 0;
+    order: initial;
+  }
+
+  .home-page section#section-free.section-free-ru > .inner > .info {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: 12px;
+  }
+
+  .home-page section#section-free.section-free-ru > .inner > .info h2,
+  .home-page section#section-free.section-free-ru > .inner > .info p,
+  .home-page section#section-free.section-free-ru > .inner > .info > a {
+    grid-column: 1;
+  }
+
+  .home-page section#section-free.section-free-ru > .inner > .info h2 {
+    grid-row: auto;
+    margin-bottom: 20px;
+  }
+
+  .home-page section#section-tasks.section-tasks-ru .jcarousel ul.list2 > li {
+    width: 10%;
+    flex-basis: 10%;
+    padding: 0 8px;
+  }
+
   .home-page section#section-sql > .inner .img,
   .home-page section#section-free > .inner .img {
     width: min(100%, 590px);
@@ -1203,6 +1374,16 @@
   .home-page section#section-functions > .inner > nav a {
     width: 100%;
     justify-content: center;
+  }
+
+  .home-page section#section-free.section-free-ru nav#functions-nav {
+    min-height: 0;
+    padding: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .home-page section#section-free.section-free-ru nav#functions-nav a {
+    min-height: 82px;
   }
 
   .home-page section#section-tasks > .inner ul.list2 > li > .inner {
