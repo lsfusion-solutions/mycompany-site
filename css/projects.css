@@ -1,4 +1,4 @@
-@import url("/css/retail.css");
+/* retail.css is linked directly from HTML (avoids @import request chain) */
 
 .projects-page {
   --retail-blue: #3568c4;

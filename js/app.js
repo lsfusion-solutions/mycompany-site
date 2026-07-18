@@ -69,17 +69,29 @@ $(document).ready(function() {
         phoneErrorMessage = "Некоректний формат номера телефону";
     }else if(document.location.href.indexOf("/by/") !== -1){
         phoneErrorMessage = "Некарэктны фармат нумара тэлефона";
+    }else if(document.location.href.indexOf("/pl/") !== -1){
+        phoneErrorMessage = "Nieprawidłowy format numeru telefonu";
+    }else if(document.location.href.indexOf("/de/") !== -1){
+        phoneErrorMessage = "Ungültiges Telefonnummernformat";
+    }else if(document.location.href.indexOf("/es/") !== -1){
+        phoneErrorMessage = "Formato de número de teléfono no válido";
+    }else if(document.location.href.indexOf("/fr/") !== -1){
+        phoneErrorMessage = "Format de numéro de téléphone invalide";
+    }else if(document.location.href.indexOf("/pt/") !== -1){
+        phoneErrorMessage = "Formato de número de telefone inválido";
+    }else if(document.location.href.indexOf("/zh/") !== -1){
+        phoneErrorMessage = "电话号码格式无效";
     }
-    $("#orderpopup form").validate({
-        rules: {
-            phone: {
-                matches: /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/,
-            }
-        },
-        messages: {
-            phone: phoneErrorMessage,
+    let phoneRules = {
+        phone: {
+            matches: /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9()]*$/,
         }
-    });
+    };
+    let phoneMessages = {
+        phone: {
+            matches: phoneErrorMessage,
+        }
+    };
 
 
     $(".contactus, #contactus").click(function(e){
@@ -89,6 +101,8 @@ $(document).ready(function() {
     })
     if( $("#contactuspopup").length > 0) {
         $("#contactuspopup form").validate({
+            rules: phoneRules,
+            messages: phoneMessages,
             errorPlacement: function(error, element) {
                 if( $(element).closest(".line").length > 0 ){
                     error.appendTo($(element).closest(".line"));
@@ -100,6 +114,8 @@ $(document).ready(function() {
     }
     if( $("#contactusfrm").length > 0) {
         $("#contactusfrm").validate({
+            rules: phoneRules,
+            messages: phoneMessages,
             errorPlacement: function(error, element) {
                 if( $(element).closest(".line").length > 0 ){
                     error.appendTo($(element).closest(".line"));
@@ -233,10 +249,18 @@ $(document).ready(function() {
             'url': $(".commits").attr("data-url"),//'https://api.github.com/repos/lsfusion-solutions/mycompany/commits',
             'type': 'GET',
             'success': function (data) {
+                if( !Array.isArray(data) ) return;// rate limit / error payloads are objects
                 $(".commits").html("");
 
-                for (var i in data) {
-                    $(".commits").append("<p><em>" + data[i].committer.login + "</em> <date>" + extractDateTime(data[i].commit.committer.date) + "</date>: <strong>" + data[i].commit.message + "</strong></p>");
+                for (var i = 0; i < data.length; i++) {
+                    var c = data[i];
+                    if( !c || !c.commit ) continue;
+                    var login = (c.committer && c.committer.login) || (c.commit.committer && c.commit.committer.name) || "";
+                    var date = (c.commit.committer && c.commit.committer.date) ? extractDateTime(c.commit.committer.date) : "";
+                    // build via .text() — commit messages and logins are untrusted external data
+                    $(".commits").append(
+                        $("<p>").append($("<em>").text(login), " ", $("<date>").text(date), ": ", $("<strong>").text(c.commit.message || ""))
+                    );
                 }
             }
         });
