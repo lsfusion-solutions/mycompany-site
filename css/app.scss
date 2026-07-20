@@ -109,6 +109,15 @@ body > nav{
     padding: 20px 0;
     height: 40px;
   }
+  // expanded mobile menu can grow taller than the screen (9 languages);
+  // desktop must stay overflow-visible for the absolute dropdown.
+  // own shadow: the scroll container clips .inner's shadow
+  @media (max-width: 949px) {
+    max-height: 100vh;
+    max-height: 100dvh;
+    overflow-y: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
   & > div.inner{
     @media (min-width: $siteWidth) {
       width: $siteWidth;
